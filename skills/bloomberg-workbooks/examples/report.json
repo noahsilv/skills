@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "fixture": true,
+  "status": "FORMULAS_CONSTRUCTED",
+  "live_refresh": "NOT_RUN",
+  "reference_date": "2030-06-30",
+  "provider_formula_count": 4,
+  "function": "_xll.BDP",
+  "snapshot_created": false,
+  "evidence_status": "Caller statements recorded; not independently verified",
+  "limits": [
+    "BDP only; no BDH/BDS layout generation",
+    "No provider connection, entitlement or field coverage check",
+    "No native Excel rendering or recalculation performed",
+    "Reference date does not establish quote time"
+  ]
+}

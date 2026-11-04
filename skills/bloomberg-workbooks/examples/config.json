@@ -1,0 +1,32 @@
+{
+  "title": "Synthetic market-data matrix",
+  "reference_date": "2030-06-30",
+  "fixture": true,
+  "function": "_xll.BDP",
+  "securities": [
+    {
+      "label": "Example issuer A",
+      "identifier": "SYNTHETIC_A Corp",
+      "evidence": "Invented identifier for construction testing; not a provider lookup"
+    },
+    {
+      "label": "Example issuer B",
+      "identifier": "SYNTHETIC_B Corp",
+      "evidence": "Invented identifier for construction testing; not a provider lookup"
+    }
+  ],
+  "fields": [
+    {
+      "label": "Mid price",
+      "mnemonic": "PX_MID",
+      "unit": "Price basis requires provider verification",
+      "evidence": "Illustrative mnemonic; no coverage verified"
+    },
+    {
+      "label": "Currency",
+      "mnemonic": "CRNCY",
+      "unit": "Currency code",
+      "evidence": "Illustrative mnemonic; no coverage verified"
+    }
+  ]
+}

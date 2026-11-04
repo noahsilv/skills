@@ -8,11 +8,15 @@ Start with the financial and diligence case studies. Look for explicit definitio
 
 The debt and scenario demonstrations expose assumptions instead of embedding unexplained benchmark thresholds. The actuals workflow produces a plan that can be reviewed before a model is changed. The evidence workflow preserves uncertainty and the difference between a proposal and an accepted decision.
 
+The Bloomberg and Capital IQ examples show how provider formulas are prepared and checked before a licensed refresh. The model audit compares recomputed financial results with supplied outputs and identifies missing coverage. These examples make the difference between a constructed workbook and verified financial data visible.
+
 ## If you are reviewing engineering capability
 
 Start with routing and quality controls, then inspect a package's implementation and tests. Look for deterministic boundaries around language-model work: input schemas, identifier stability, exact numeric handling, read-only or non-overwriting output behavior, content hashes, failure states and reproducible test fixtures.
 
 The router proposes workflows and reports capability gaps; it does not pretend that a suggestion executed a tool. A quality gate ties check evidence to a particular artifact; it does not treat a matching hash as proof that a calculation or judgment is correct. These distinctions are intentional interface design.
+
+The data-retrieval and MCP packages include executable adapters and synthetic service fixtures. Inspect how they handle pagination, invalid requests and upstream failures. The MCP project descriptions in the README also link to separate public implementations.
 
 ## How to interpret authorship and evidence
 

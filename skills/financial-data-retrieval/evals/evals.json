@@ -1,0 +1,23 @@
+{
+  "skill_name": "financial-data-retrieval",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Retrieve the supplied fictional annual series using the two fixture pages. Explain why 2021 is zero while 2022 and 2023 remain missing, and state whether any live provider data was fetched.",
+      "expected_output": "Three output files, two distinct gap reasons, zero preserved, synthetic-fixture mode and caller-supplied unit disclosed.",
+      "files": ["examples/request.json", "examples/fixtures/metadata.json", "examples/fixtures/page-1.json", "examples/fixtures/page-2.json"]
+    },
+    {
+      "id": 2,
+      "prompt": "The second fixture page now claims to be page 1. Produce the annual table if possible, and describe what is safe to hand to the financial model.",
+      "expected_output": "Reject the inconsistent page sequence. No new complete report; do not hand a partial series to the model as complete.",
+      "files": ["examples/request.json", "examples/fixtures/page-2.json"]
+    },
+    {
+      "id": 3,
+      "prompt": "The fixture metadata has no unit. Can the resulting percent values be described as provider-verified rates, and can this helper also fetch a Bloomberg series?",
+      "expected_output": "Unit remains caller-supplied; confirm methodology separately. Bloomberg is outside this helper's scope. Fixture results do not establish live compatibility.",
+      "files": ["examples/fixtures/metadata.json"]
+    }
+  ]
+}

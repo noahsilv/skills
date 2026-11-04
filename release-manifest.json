@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "2.0.0",
+  "release": "3.0.0",
   "review_date": "2026-11-04",
   "excluded_from_hashes": [
     "release-manifest.json"
@@ -28,18 +28,18 @@
     },
     {
       "path": "README.md",
-      "sha256": "9ff9a53b959c180c30fa792a79c7c36c160fe7abe5340bd9a97bd5e24d3a3ec1",
-      "bytes": 7417
+      "sha256": "14d968a546511b205c43788eaa8a6548a42f1229cf6fea81b13566c3be298e5c",
+      "bytes": 8708
     },
     {
       "path": "catalog/skills.json",
-      "sha256": "612788253d093f858065dd2d55bd6c4a7edd3a48116ef9de723144e6d4392d08",
-      "bytes": 9509
+      "sha256": "b4a70d4c640adb94da987c0f3071c99ca2397c9c7482e8841919cb4ecbf7c05b",
+      "bytes": 12456
     },
     {
       "path": "docs/PORTFOLIO_GUIDE.md",
-      "sha256": "4f653a27cd1b270e89e13b1d17bd451bc74717cf262329284c4507f3c1434d8b",
-      "bytes": 2879
+      "sha256": "a1d8e4980116f2e602f50c9c2d21686162675b1535df7f725256345e4a2fa785",
+      "bytes": 3471
     },
     {
       "path": "docs/PROMPT_EVALUATIONS.md",
@@ -48,8 +48,13 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "9668cdaffcc9b3ca9c3f422d63f7b8142646bdbe41b5048c5cc42c19edd18129",
-      "bytes": 2383
+      "sha256": "163b42281ba51d2a0d9e9163725a3f209b33704a57c978107cbc437a24bef2b1",
+      "bytes": 3528
+    },
+    {
+      "path": "docs/case-studies/data-and-model-review.md",
+      "sha256": "cf9825025dc46b7daf829150055b7d21d0f381b8877e04e2a8bfb592f6f94269",
+      "bytes": 2802
     },
     {
       "path": "docs/case-studies/diligence-workflow.md",
@@ -103,8 +108,8 @@
     },
     {
       "path": "scripts/build_catalog.py",
-      "sha256": "3462ed715347ce30acb487068710ca39512cd6aa4e6ca576de48fc579112e9de",
-      "bytes": 3273
+      "sha256": "aaa6ae9e33069aa470c5e325d5cf5d6ce04fcdb5b702c79442fdba00ad23d8ea",
+      "bytes": 3679
     },
     {
       "path": "scripts/test.py",
@@ -245,6 +250,111 @@
       "path": "skills/artifact-quality-gate/tests/test_gate.py",
       "sha256": "8557d949edd0bacb0c08d412efacb92f905c518baf391cdb8cb988cd3fea1f75",
       "bytes": 18492
+    },
+    {
+      "path": "skills/bloomberg-workbooks/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/bloomberg-workbooks/README.md",
+      "sha256": "54eb9479a1ed44f8a29359e0c6a29e2ab64eaab5cc4dc46e5b7ada4bc1b44db1",
+      "bytes": 1389
+    },
+    {
+      "path": "skills/bloomberg-workbooks/SKILL.md",
+      "sha256": "6405d7e169f7a914acf65c9a8c3fa1fffc3d364f0b77975a208200321ed04a8f",
+      "bytes": 3786
+    },
+    {
+      "path": "skills/bloomberg-workbooks/evals/evals.json",
+      "sha256": "85f2106b6c5e10d9b7bf1127367d802de961fe8ade3af95661eb08c615f74193",
+      "bytes": 893
+    },
+    {
+      "path": "skills/bloomberg-workbooks/examples/config.json",
+      "sha256": "a52ce39b273e2dbacd888c47f256be3d722a87a4f2a12c124c737fda2a80b09a",
+      "bytes": 872
+    },
+    {
+      "path": "skills/bloomberg-workbooks/examples/inspection.md",
+      "sha256": "55ad89dd3a7f05a8024e330faa60c31e79c675a5dd5d5779f4a6b8c2472ab997",
+      "bytes": 644
+    },
+    {
+      "path": "skills/bloomberg-workbooks/examples/report.json",
+      "sha256": "6c3e95efbd0eec828d67daec070e9df9ebf40a12d6921bfbda0e45e1bb84d6f9",
+      "bytes": 552
+    },
+    {
+      "path": "skills/bloomberg-workbooks/references/config.md",
+      "sha256": "a2f855a5a85a166347a06d5f24d2a0e9fd6609f7646c622b83339b506911cac3",
+      "bytes": 1917
+    },
+    {
+      "path": "skills/bloomberg-workbooks/references/workflow.md",
+      "sha256": "c2969d218de2b0759b48a9e9a2dd741998629ec3505d1ff92ffebd426fffc411",
+      "bytes": 1647
+    },
+    {
+      "path": "skills/bloomberg-workbooks/scripts/build_workbook.py",
+      "sha256": "5d841c2d70927b5e11517fcdfa782a7e64b4f62ed8cee89344cb851426780ae1",
+      "bytes": 7141
+    },
+    {
+      "path": "skills/bloomberg-workbooks/tests/test_workbook.py",
+      "sha256": "ae3b7fc9715bfa596ddc8d9ad78be11f975e7f9d51c50618d10f46068fb8d9c9",
+      "bytes": 6290
+    },
+    {
+      "path": "skills/capiq-workbooks/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/capiq-workbooks/README.md",
+      "sha256": "036e8f69df2bdea399c1b663fd1b66c447f572537bec9e71f383f62bf85a1275",
+      "bytes": 1223
+    },
+    {
+      "path": "skills/capiq-workbooks/SKILL.md",
+      "sha256": "ae5fb18b6b92913789b322fc7c378e2563d3578489a10080800a0bce326317ba",
+      "bytes": 3983
+    },
+    {
+      "path": "skills/capiq-workbooks/evals/evals.json",
+      "sha256": "3adba5310239c4819fa16c082a1ac03dd2d3372c49bc047850a9016d559f3f6f",
+      "bytes": 862
+    },
+    {
+      "path": "skills/capiq-workbooks/examples/config.json",
+      "sha256": "b1ddd3f1aa7954e655366be09f190a87468839eb378e94f32c477321235c5a44",
+      "bytes": 829
+    },
+    {
+      "path": "skills/capiq-workbooks/examples/plan.json",
+      "sha256": "3e98207b57dc527f4b48d27f88a87c1c36a1b1e85e484df1f03c968fdf7115e3",
+      "bytes": 1452
+    },
+    {
+      "path": "skills/capiq-workbooks/references/config.md",
+      "sha256": "9175eca41042f1fc607e8f5e0bd61b852a2e89a80a4249e7710e7b98adc56f14",
+      "bytes": 2679
+    },
+    {
+      "path": "skills/capiq-workbooks/references/workflow.md",
+      "sha256": "b7429537434d2feff0fb7a1c7187e08d96f2f3f6dcbba9324b257dbe00f1df73",
+      "bytes": 1879
+    },
+    {
+      "path": "skills/capiq-workbooks/scripts/build_plan.py",
+      "sha256": "648e06afa43e5d881cbdec4dcd4ee825ad231917be5b4e415c949554ac962f37",
+      "bytes": 9709
+    },
+    {
+      "path": "skills/capiq-workbooks/tests/test_plan.py",
+      "sha256": "c26617ecb13c721afdcf9a217e0aca35dcd72968951378f11419155a9cb8e3b5",
+      "bytes": 7159
     },
     {
       "path": "skills/debt-schedule/LICENSE",
@@ -757,6 +867,81 @@
       "bytes": 9208
     },
     {
+      "path": "skills/financial-data-retrieval/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/financial-data-retrieval/README.md",
+      "sha256": "08705c566411dd534848067fafbe1f68be54d751626702487d4c1df24350a81a",
+      "bytes": 1252
+    },
+    {
+      "path": "skills/financial-data-retrieval/SKILL.md",
+      "sha256": "2189465cd164fb65bfb625f200539df4c3549acb033b0c85f0254e761427071a",
+      "bytes": 4474
+    },
+    {
+      "path": "skills/financial-data-retrieval/evals/evals.json",
+      "sha256": "a318e0299585133edf16810e5d7e96e371f524a1c8a5014dcc6cd9ffc14a7c65",
+      "bytes": 1446
+    },
+    {
+      "path": "skills/financial-data-retrieval/examples/README.md",
+      "sha256": "3d0c8a4bec732b0a5d4cab19aa5150713a12b44327e23da7f9c8715b7d2773a5",
+      "bytes": 1457
+    },
+    {
+      "path": "skills/financial-data-retrieval/examples/fixtures/metadata.json",
+      "sha256": "e6b490cbda92b7818451f0a1079bc5640b725c98d44c9bcc8c2fc0a05d32b2c0",
+      "bytes": 285
+    },
+    {
+      "path": "skills/financial-data-retrieval/examples/fixtures/page-1.json",
+      "sha256": "41cfc2ff903bf3ba9603ed62b71374d37b306ab5a235ed6db9d0075d87ba5e16",
+      "bytes": 831
+    },
+    {
+      "path": "skills/financial-data-retrieval/examples/fixtures/page-2.json",
+      "sha256": "a54f1158d8da6db6d23b88f0212759db52964792d35d8a2485e9a19e10e7208e",
+      "bytes": 482
+    },
+    {
+      "path": "skills/financial-data-retrieval/examples/output/observations.csv",
+      "sha256": "7d20253795ebee89384ad2b2eab4f529db2a02b3f5c5161477ed486386b4eaf0",
+      "bytes": 1232
+    },
+    {
+      "path": "skills/financial-data-retrieval/examples/output/report.json",
+      "sha256": "817471c6372418e674ffd0250d11708db5328485b5a92d70c5d5d41bec74cbfe",
+      "bytes": 3792
+    },
+    {
+      "path": "skills/financial-data-retrieval/examples/output/report.md",
+      "sha256": "db31d78146a2fc96cdb316548077b44bfef7a37d5628b660ee812289124daa99",
+      "bytes": 884
+    },
+    {
+      "path": "skills/financial-data-retrieval/examples/request.json",
+      "sha256": "117781976e7c675c29e7faf277130982d1ff740c8dacddd49cc38a8ecbfbc861",
+      "bytes": 139
+    },
+    {
+      "path": "skills/financial-data-retrieval/references/contract.md",
+      "sha256": "5e246e2569871343e74abccaeed72dbd931becf862199b9cdc1335643a6927cb",
+      "bytes": 4234
+    },
+    {
+      "path": "skills/financial-data-retrieval/scripts/retrieve.py",
+      "sha256": "41dd2040075a10999c1c1fcb6a7dcb0be252a0a91eb8cc392708ffc3ceb263d1",
+      "bytes": 14912
+    },
+    {
+      "path": "skills/financial-data-retrieval/tests/test_retrieve.py",
+      "sha256": "1f26f800ece2249c3498db31167557184dc5f2a6f748d6e5286d2864513c2905",
+      "bytes": 11632
+    },
+    {
       "path": "skills/financial-statement-analysis/LICENSE",
       "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
       "bytes": 466
@@ -845,6 +1030,161 @@
       "path": "skills/financial-statement-analysis/tests/test_analysis.py",
       "sha256": "6fa221329325beaa4178b54200e41a5556039675d0a8149128822dff61fad750",
       "bytes": 11946
+    },
+    {
+      "path": "skills/independent-model-audit/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/independent-model-audit/README.md",
+      "sha256": "65e8a634f90c2499199699fb6e0269420736e1a291cdee1de341546ee653b464",
+      "bytes": 1197
+    },
+    {
+      "path": "skills/independent-model-audit/SKILL.md",
+      "sha256": "6f076d1caa59e2184b18166e95bbae40f5187cc557b02920a63dcdf99b412120",
+      "bytes": 5235
+    },
+    {
+      "path": "skills/independent-model-audit/evals/evals.json",
+      "sha256": "b51040385ce276ec18d14edacbcac344cc885bbaec9ea298d0d8987b7cc6705e",
+      "bytes": 1311
+    },
+    {
+      "path": "skills/independent-model-audit/examples/README.md",
+      "sha256": "a79b42ed7cea526355bb475db0a55035b461ce48bfa482340aa7e0db8775b60d",
+      "bytes": 2211
+    },
+    {
+      "path": "skills/independent-model-audit/examples/clean-output/report.json",
+      "sha256": "46953dec78cfff38c9d47c76b3b9aa606fefb384b37c5586178a0e9fece6e731",
+      "bytes": 8620
+    },
+    {
+      "path": "skills/independent-model-audit/examples/clean-output/report.md",
+      "sha256": "9c249398a79a53cfdc73ede067341adc2b09ce5a2a6f571138e380e67873274f",
+      "bytes": 1682
+    },
+    {
+      "path": "skills/independent-model-audit/examples/clean.json",
+      "sha256": "ade7b9eecd1a75b671c60705d1ce956aa6f90ab31e1ce00f78508ee2a00ce3cd",
+      "bytes": 2483
+    },
+    {
+      "path": "skills/independent-model-audit/examples/make_examples.py",
+      "sha256": "52741ec80f68d02826ffc6747e1c4af9c7ca6c1ad5f4983da448b77b0be549e2",
+      "bytes": 2466
+    },
+    {
+      "path": "skills/independent-model-audit/examples/missing-data-output/report.json",
+      "sha256": "ac914cd8166a62a7baf40d4062cce00b870b0aab8f5e5d57bfeebae8b90b4e14",
+      "bytes": 8644
+    },
+    {
+      "path": "skills/independent-model-audit/examples/missing-data-output/report.md",
+      "sha256": "ef99585626c2b90920e4f2ef67547a71a34a7e7dd4778c1ecd45dcf1927bf1f6",
+      "bytes": 1753
+    },
+    {
+      "path": "skills/independent-model-audit/examples/missing-data.json",
+      "sha256": "11760ff326aa83ec8b06d2d1f3654328ced3b29e48ced1eea8804a7f6806f056",
+      "bytes": 2478
+    },
+    {
+      "path": "skills/independent-model-audit/examples/planted-errors-output/report.json",
+      "sha256": "0025b14dddaa2e65b4797a111e8951ba354322cda893726d5b12ee769e9ef21b",
+      "bytes": 8628
+    },
+    {
+      "path": "skills/independent-model-audit/examples/planted-errors-output/report.md",
+      "sha256": "17afbf0b92d3739ddc5cd8f3c09915b8e65c587205bd32d2b335716ba451efd7",
+      "bytes": 1675
+    },
+    {
+      "path": "skills/independent-model-audit/examples/planted-errors.json",
+      "sha256": "2477a87fd701e64a976b92d358957338df07097a12b5a8dd251dc12615932369",
+      "bytes": 2480
+    },
+    {
+      "path": "skills/independent-model-audit/references/snapshot-contract.md",
+      "sha256": "584816a6409e6cacd52eec522c1e148c4d00c366196c14448017006156704bf8",
+      "bytes": 5333
+    },
+    {
+      "path": "skills/independent-model-audit/scripts/audit_model.py",
+      "sha256": "d918a2dfff01995ef572acae60b513884c17996eedffb3aae321892551e5d677",
+      "bytes": 14875
+    },
+    {
+      "path": "skills/independent-model-audit/tests/test_audit_model.py",
+      "sha256": "2a76a265e9ea357939fd202f97f5e074ff651accdc361d43a975dd9f642d21dc",
+      "bytes": 10584
+    },
+    {
+      "path": "skills/mcp-api-integration/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/mcp-api-integration/README.md",
+      "sha256": "1a4930f2c21dd36110341d92345270821520dc88f84870c1bd7acddb15bcd8d5",
+      "bytes": 3091
+    },
+    {
+      "path": "skills/mcp-api-integration/SKILL.md",
+      "sha256": "f03e1b891de0f76eb3947949b2a13a779c8355194c270672f3248d89c7d9ea77",
+      "bytes": 3850
+    },
+    {
+      "path": "skills/mcp-api-integration/evals/evals.json",
+      "sha256": "b72b5ce73d48bd866a29a905a469fa8beb54d29f87eaf06f99ade7d364ca3763",
+      "bytes": 1259
+    },
+    {
+      "path": "skills/mcp-api-integration/examples/demo-output.json",
+      "sha256": "d44bd8b48abeb964fc2748fa017abcca906eca061e52b2d0e82ad1890949347b",
+      "bytes": 936
+    },
+    {
+      "path": "skills/mcp-api-integration/examples/fixture_api.py",
+      "sha256": "b659b51d2d1810bd0e2830d9612b799d176e523a4b19cd3a6a295de89e4ba14f",
+      "bytes": 2111
+    },
+    {
+      "path": "skills/mcp-api-integration/examples/run_demo.py",
+      "sha256": "f41332d4c3d183db5aa01dff2cd979f92375d6fbb6c0c5647fd81ff37cae6305",
+      "bytes": 3759
+    },
+    {
+      "path": "skills/mcp-api-integration/examples/run_sdk_demo.py",
+      "sha256": "2f29612c031ef2f326d4b05576a0f91445eb99a1b3b424194b4d1711297895fa",
+      "bytes": 2716
+    },
+    {
+      "path": "skills/mcp-api-integration/examples/sdk-output.json",
+      "sha256": "3eb4730ac407d29e2f9f13ff669bd22bf56f6f8e639d4b97821082e806495d4e",
+      "bytes": 262
+    },
+    {
+      "path": "skills/mcp-api-integration/references/contract.md",
+      "sha256": "3ed50ad2642728c457ef065c1872f00ca895314f9602c9b2a692c3ebc0a4e6f4",
+      "bytes": 4755
+    },
+    {
+      "path": "skills/mcp-api-integration/requirements-sdk.txt",
+      "sha256": "e1ffdd26fef56c457d6ecf37b0a617c88d82c9be7d6612d792e8fba5e625bcd2",
+      "bytes": 94
+    },
+    {
+      "path": "skills/mcp-api-integration/scripts/server.py",
+      "sha256": "02d5a22ba898630d5c478b83fbee204d7c0788c6f5db277f08497d6ad55c1735",
+      "bytes": 13763
+    },
+    {
+      "path": "skills/mcp-api-integration/tests/test_adapter.py",
+      "sha256": "478330c4b43533e57c6b8a6a0fe8418e1f7d6c528414ffdfa925ccaa21848187",
+      "bytes": 14153
     },
     {
       "path": "skills/model-regression-testing/LICENSE",

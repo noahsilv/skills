@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "title": "Synthetic company-data formula plan",
+  "fixture": true,
+  "status": "FORMULA_PLAN_ONLY",
+  "live_refresh": "NOT_RUN",
+  "cells": [
+    {
+      "sheet": "Raw Data",
+      "cell": "B2",
+      "value": "=_xll.SPG(A2,\"SYNTHETIC_FIELD\",,\"SYNTHETIC_PERIOD\")",
+      "role": "provider_formula"
+    },
+    {
+      "sheet": "Raw Data",
+      "cell": "A2",
+      "value": "SYNTHETIC_ENTITY",
+      "role": "literal_parameter"
+    },
+    {
+      "sheet": "Outputs",
+      "cell": "B4",
+      "value": "='Raw Data'!B2",
+      "role": "presentation_link"
+    }
+  ],
+  "queries": [
+    {
+      "id": "company",
+      "sheet": "Raw Data",
+      "anchor": "B2",
+      "output_range": "B2",
+      "function": "SPG",
+      "syntax_status": "synthetic_fixture",
+      "syntax_source": "Synthetic formula for preservation tests; no provider-valid arguments claimed"
+    }
+  ],
+  "output_metadata": [
+    {
+      "cell": "B4",
+      "query_id": "company",
+      "source_cell": "B2",
+      "label": "Demonstration metric",
+      "unit": "Synthetic units",
+      "period": "Synthetic period",
+      "currency": "Not applicable",
+      "quote_side": "Not applicable"
+    }
+  ],
+  "limits": [
+    "Caller-supplied formula and evidence; no verification of provider arguments or entitlement",
+    "Layout checks cover only declared ranges and assigned cells",
+    "No XLSX authoring, provider execution, cached values or snapshot"
+  ]
+}

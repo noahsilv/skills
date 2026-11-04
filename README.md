@@ -10,6 +10,7 @@ The workflows record what numbers mean, which sources support a claim and what s
 | --- | --- | --- |
 | [Financial analysis and model updates](docs/case-studies/financial-workflow.md) | Reconcile reported figures, examine debt and scenarios, and plan an actuals update. | Typed inputs, explicit units, immutable baselines and reproducible differences. |
 | [Diligence and evidence-based briefing](docs/case-studies/diligence-workflow.md) | Track information requests and distinguish supported facts, gaps and decisions. | Stable IDs, versioned evidence, review proposals and traceable outputs. |
+| [Data preparation and model review](docs/case-studies/data-and-model-review.md) | Prepare market-data formulas and audit financial results. | Preserve provider syntax, validate API responses and inspect an MCP interface. |
 | [Routing and quality controls](docs/case-studies/engineering-controls.md) | Identify what can be relied on before a deliverable is used. | Capability checks, content fingerprints, stale-evidence rejection and bounded tools. |
 
 Each case study includes generated results and the commands used to produce them. The financial inputs and outcomes are invented for the examples. They are not client work or investment recommendations.
@@ -38,6 +39,7 @@ The public repositories provide code and test suites for inspection. These descr
 | [Scenario analysis](skills/scenario-analysis/SKILL.md) | Keep the baseline explicit while comparing changes in assumptions. |
 | [Actuals update planner](skills/actuals-update-planner/SKILL.md) | Turn sourced historical data into a reviewable model-update plan. |
 | [Workbook tieout](skills/workbook-tieout/SKILL.md) | Reconcile mapped cells with declared periods, units and coverage. |
+| [Independent model audit](skills/independent-model-audit/SKILL.md) | Recompute mapped financial outputs and report errors or missing audit coverage. |
 | [Model regression testing](skills/model-regression-testing/SKILL.md) | Separate intentional changes from unexplained movement in selected outputs. |
 
 ### Diligence, evidence and documents
@@ -58,6 +60,17 @@ The public repositories provide code and test suites for inspection. These descr
 | [Skill router](skills/skill-router/SKILL.md) | Select relevant workflows from an explicit catalog and expose missing capabilities. |
 | [Artifact quality gate](skills/artifact-quality-gate/SKILL.md) | Reject missing, stale or mismatched check evidence before relying on an artifact. |
 | [Prompt optimizer](skills/prompt-optimizer/SKILL.md) | Preserve intent while making a request executable and testable. |
+
+### Financial data and integrations
+
+| Skill | Purpose |
+| --- | --- |
+| [Bloomberg workbooks](skills/bloomberg-workbooks/SKILL.md) | Prepare provider-linked workbooks and distinguish saved formulas from verified data returns. |
+| [Capital IQ workbooks](skills/capiq-workbooks/SKILL.md) | Preserve supplied add-in formulas in a reviewable workbook plan. |
+| [Financial data retrieval](skills/financial-data-retrieval/SKILL.md) | Retrieve public observations with explicit scope, source metadata and missing-data handling. |
+| [MCP API integration](skills/mcp-api-integration/SKILL.md) | Expose a bounded API through MCP tools and test requests and failure behavior. |
+
+The Bloomberg and Capital IQ demonstrations use synthetic inputs. Live retrieval requires the relevant licensed Excel add-in and has not been verified here. API and MCP checks distinguish synthetic transport tests from calls to live services.
 
 ## What this portfolio represents
 

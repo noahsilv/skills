@@ -1,0 +1,23 @@
+{
+  "skill_name": "independent-model-audit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Audit this normalized model snapshot before I freeze regression outputs. Identify wrong calculations even where its reported balances and ratios appear internally consistent. Do not repair it.",
+      "expected_output": "Report five failed comparisons, including incorrect Y1 debt service and DSCR, and explain why a passed reported-continuity check does not clear the wrong balance.",
+      "files": ["examples/planted-errors.json"]
+    },
+    {
+      "id": 2,
+      "prompt": "Does this model pass? Distinguish calculation accuracy from covenant compliance and say what was not verified.",
+      "expected_output": "21 checks pass, but Y3 breaches the explicitly supplied minimum DSCR. No claim to have opened or recalculated Excel, verified the source inputs or performed a professional independent audit.",
+      "files": ["examples/clean.json"]
+    },
+    {
+      "id": 3,
+      "prompt": "Review this snapshot with missing CFADS. Can I count the ratio and covenant as passed because there are no observed errors?",
+      "expected_output": "No. Two Y2 checks are UNVERIFIED and report is INCOMPLETE; missing evidence is not zero, passed or cleared.",
+      "files": ["examples/missing-data.json"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "page": 2,
+    "pages": 2,
+    "per_page": 2,
+    "total": 3,
+    "sourceid": "2",
+    "lastupdated": "2026-01-15"
+  },
+  [
+    {
+      "indicator": {
+        "id": "DEMO.ANNUAL.RATE",
+        "value": "Invented annual funding rate"
+      },
+      "country": {
+        "id": "ZZ",
+        "value": "Fictional economy"
+      },
+      "countryiso3code": "ZZZ",
+      "date": "2021",
+      "value": 0,
+      "unit": "",
+      "obs_status": "",
+      "decimal": 2
+    }
+  ]
+]

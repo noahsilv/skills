@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "model_id": "synthetic-debt-review",
+  "claimed_model_sha256": "d5d6298b1a46c0d938147386cb5f789c250975c32fd76284d1a5003713ac313e",
+  "model_file_verified": false,
+  "status": "CHECKS_PASSED",
+  "currency": "USD",
+  "amount_unit": "millions",
+  "money_tolerance": "0.000001",
+  "ratio_tolerance": "0.000001",
+  "covenant": {
+    "operator": "gte",
+    "threshold": "1.2"
+  },
+  "period_count": 3,
+  "check_count": 21,
+  "counts": {
+    "PASS": 21
+  },
+  "checks": [
+    {
+      "period": "Y1",
+      "check": "opening_debt",
+      "status": "PASS",
+      "expected": "100",
+      "observed": "100",
+      "method": "initial debt plus all earlier drawdowns minus repayments",
+      "input_references": [
+        "root.initial_debt"
+      ],
+      "output_reference": "Model!B2"
+    },
+    {
+      "period": "Y1",
+      "check": "closing_debt",
+      "status": "PASS",
+      "expected": "70",
+      "observed": "70",
+      "method": "recomputed opening plus drawdown minus repayment",
+      "input_references": [
+        "root.initial_debt",
+        "Inputs!B2",
+        "Inputs!B3"
+      ],
+      "output_reference": "Model!B3"
+    },
+    {
+      "period": "Y1",
+      "check": "principal_nonnegative",
+      "status": "PASS",
+      "expected": ">= 0",
+      "observed": "70",
+      "method": "repayment cannot exceed available principal",
+      "input_references": [
+        "root.initial_debt",
+        "Inputs!B2",
+        "Inputs!B3"
+      ],
+      "output_reference": "Model!B3"
+    },
+    {
+      "period": "Y1",
+      "check": "debt_service",
+      "status": "PASS",
+      "expected": "40",
+      "observed": "40",
+      "method": "repayment plus supplied cash interest",
+      "input_references": [
+        "Inputs!B3",
+        "Inputs!B4"
+      ],
+      "output_reference": "Model!B4"
+    },
+    {
+      "period": "Y1",
+      "check": "dscr",
+      "status": "PASS",
+      "expected": "5/4",
+      "observed": "5/4",
+      "method": "CFADS divided by recomputed debt service",
+      "input_references": [
+        "Inputs!B5",
+        "Inputs!B3",
+        "Inputs!B4"
+      ],
+      "output_reference": "Model!B5"
+    },
+    {
+      "period": "Y1",
+      "check": "covenant",
+      "status": "PASS",
+      "expected": "PASS",
+      "observed": "PASS",
+      "method": "exact unrounded DSCR gte supplied threshold; no comparison tolerance",
+      "input_references": [
+        "Inputs!B5",
+        "Inputs!B3",
+        "Inputs!B4",
+        "root.covenant.threshold"
+      ],
+      "output_reference": "Model!B6"
+    },
+    {
+      "period": "Y2",
+      "check": "opening_debt",
+      "status": "PASS",
+      "expected": "70",
+      "observed": "70",
+      "method": "initial debt plus all earlier drawdowns minus repayments",
+      "input_references": [
+        "root.initial_debt",
+        "Inputs!B2",
+        "Inputs!B3"
+      ],
+      "output_reference": "Model!C2"
+    },
+    {
+      "period": "Y2",
+      "check": "closing_debt",
+      "status": "PASS",
+      "expected": "40",
+      "observed": "40",
+      "method": "recomputed opening plus drawdown minus repayment",
+      "input_references": [
+        "root.initial_debt",
+        "Inputs!B2",
+        "Inputs!B3",
+        "Inputs!C2",
+        "Inputs!C3"
+      ],
+      "output_reference": "Model!C3"
+    },
+    {
+      "period": "Y2",
+      "check": "principal_nonnegative",
+      "status": "PASS",
+      "expected": ">= 0",
+      "observed": "40",
+      "method": "repayment cannot exceed available principal",
+      "input_references": [
+        "root.initial_debt",
+        "Inputs!B2",
+        "Inputs!B3",
+        "Inputs!C2",
+        "Inputs!C3"
+      ],
+      "output_reference": "Model!C3"
+    },
+    {
+      "period": "Y2",
+      "check": "debt_service",
+      "status": "PASS",
+      "expected": "37",
+      "observed": "37",
+      "method": "repayment plus supplied cash interest",
+      "input_references": [
+        "Inputs!C3",
+        "Inputs!C4"
+      ],
+      "output_reference": "Model!C4"
+    },
+    {
+      "period": "Y2",
+      "check": "dscr",
+      "status": "PASS",
+      "expected": "6/5",
+      "observed": "6/5",
+      "method": "CFADS divided by recomputed debt service",
+      "input_references": [
+        "Inputs!C5",
+        "Inputs!C3",
+        "Inputs!C4"
+      ],
+      "output_reference": "Model!C5"
+    },
+    {
+      "period": "Y2",
+      "check": "covenant",
+      "status": "PASS",
+      "expected": "PASS",
+      "observed": "PASS",
+      "method": "exact unrounded DSCR gte supplied threshold; no comparison tolerance",
+      "input_references": [
+        "Inputs!C5",
+        "Inputs!C3",
+        "Inputs!C4",
+        "root.covenant.threshold"
+      ],
+      "output_reference": "Model!C6"
+    },
+    {
+      "period": "Y2",
+      "check": "reported_continuity",
+      "status": "PASS",
+      "expected": "70",
+      "observed": "70",
+      "method": "reported opening equals previous reported closing",
+      "input_references": [
+        "Model!B3"
+      ],
+      "output_reference": "Model!C2"
+    },
+    {
+      "period": "Y3",
+      "check": "opening_debt",
+      "status": "PASS",
+      "expected": "40",
+      "observed": "40",
+      "method": "initial debt plus all earlier drawdowns minus repayments",
+      "input_references": [
+        "root.initial_debt",
+        "Inputs!B2",
+        "Inputs!B3",
+        "Inputs!C2",
+        "Inputs!C3"
+      ],
+      "output_reference": "Model!D2"
+    },
+    {
+      "period": "Y3",
+      "check": "closing_debt",
+      "status": "PASS",
+      "expected": "0",
+      "observed": "0",
+      "method": "recomputed opening plus drawdown minus repayment",
+      "input_references": [
+        "root.initial_debt",
+        "Inputs!B2",
+        "Inputs!B3",
+        "Inputs!C2",
+        "Inputs!C3",
+        "Inputs!D2",
+        "Inputs!D3"
+      ],
+      "output_reference": "Model!D3"
+    },
+    {
+      "period": "Y3",
+      "check": "principal_nonnegative",
+      "status": "PASS",
+      "expected": ">= 0",
+      "observed": "0",
+      "method": "repayment cannot exceed available principal",
+      "input_references": [
+        "root.initial_debt",
+        "Inputs!B2",
+        "Inputs!B3",
+        "Inputs!C2",
+        "Inputs!C3",
+        "Inputs!D2",
+        "Inputs!D3"
+      ],
+      "output_reference": "Model!D3"
+    },
+    {
+      "period": "Y3",
+      "check": "debt_service",
+      "status": "PASS",
+      "expected": "44",
+      "observed": "44",
+      "method": "repayment plus supplied cash interest",
+      "input_references": [
+        "Inputs!D3",
+        "Inputs!D4"
+      ],
+      "output_reference": "Model!D4"
+    },
+    {
+      "period": "Y3",
+      "check": "dscr",
+      "status": "PASS",
+      "expected": "1",
+      "observed": "1",
+      "method": "CFADS divided by recomputed debt service",
+      "input_references": [
+        "Inputs!D5",
+        "Inputs!D3",
+        "Inputs!D4"
+      ],
+      "output_reference": "Model!D5"
+    },
+    {
+      "period": "Y3",
+      "check": "covenant",
+      "status": "PASS",
+      "expected": "FAIL",
+      "observed": "FAIL",
+      "method": "exact unrounded DSCR gte supplied threshold; no comparison tolerance",
+      "input_references": [
+        "Inputs!D5",
+        "Inputs!D3",
+        "Inputs!D4",
+        "root.covenant.threshold"
+      ],
+      "output_reference": "Model!D6"
+    },
+    {
+      "period": "Y3",
+      "check": "reported_continuity",
+      "status": "PASS",
+      "expected": "40",
+      "observed": "40",
+      "method": "reported opening equals previous reported closing",
+      "input_references": [
+        "Model!C3"
+      ],
+      "output_reference": "Model!D2"
+    },
+    {
+      "period": "Y3",
+      "check": "final_principal",
+      "status": "PASS",
+      "expected": "0",
+      "observed": "0",
+      "method": "recomputed final principal equals explicit target",
+      "input_references": [
+        "root.required_final_debt"
+      ],
+      "output_reference": "recomputed final principal"
+    }
+  ],
+  "required_final_debt": "0",
+  "final_principal_checked": true,
+  "covenant_breach_periods": [
+    "Y3"
+  ],
+  "limits": [
+    "Normalized snapshot only; mapping and model-file identity are caller-supplied.",
+    "No spreadsheet calculation, formula inspection, interest accrual verification or source-document review.",
+    "Arithmetic is recomputed separately from reported outputs; this is not an independent professional audit.",
+    "CHECKS_PASSED means checked outputs agree, not that covenants are met or a loan is affordable."
+  ],
+  "snapshot_sha256": "ade7b9eecd1a75b671c60705d1ce956aa6f90ab31e1ce00f78508ee2a00ce3cd"
+}

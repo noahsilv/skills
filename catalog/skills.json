@@ -25,6 +25,29 @@
       ]
     },
     {
+      "id": "bloomberg-workbooks",
+      "path": "skills/bloomberg-workbooks/SKILL.md",
+      "description": "Build and review Bloomberg-linked Excel workbooks for current values, historical series or bulk data. Use for BDP, BDH or BDS formulas, market-data tables, bond-comparison inputs and refresh troubleshooting. Includes a bounded BDP matrix builder; live returns require the licensed Excel add-in.",
+      "aliases": [
+        "build a Bloomberg workbook"
+      ],
+      "required_capabilities": [
+        "python3.11",
+        "openpyxl"
+      ]
+    },
+    {
+      "id": "capiq-workbooks",
+      "path": "skills/capiq-workbooks/SKILL.md",
+      "description": "Plan and review Capital IQ Excel workflows using supplied Pro SPG or legacy CIQ formulas. Use for provider-linked financials, history, security tables or screens that need formula preservation, reserved result areas and linked presentation cells. Live retrieval requires the licensed add-in.",
+      "aliases": [
+        "prepare Capital IQ formulas"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
       "id": "debt-schedule",
       "path": "skills/debt-schedule/SKILL.md",
       "description": "Build and verify a dated debt roll-forward for a fixed-rate non-revolving facility from explicit terms, drawdowns and repayments. Use for loan amortization, partial-period interest or debt-service calculations when the caller needs traceable balances and cash payments. Produces an exact accrual trail, CSV schedule and readable report; does not recalculate an Excel model.",
@@ -89,11 +112,44 @@
       ]
     },
     {
+      "id": "financial-data-retrieval",
+      "path": "skills/financial-data-retrieval/SKILL.md",
+      "description": "Retrieve an annual country indicator from the World Bank Indicators API with source metadata, bounded pagination and explicit missing observations. Use when a financial analysis needs a traceable public economic series, or when testing a retrieval workflow against saved synthetic responses. This helper supports one indicator, source and country per request; it does not implement other providers.",
+      "aliases": [
+        "retrieve public financial data"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
       "id": "financial-statement-analysis",
       "path": "skills/financial-statement-analysis/SKILL.md",
       "description": "Normalize historical financial statements into explicit entity, period, currency, scale and source records, then reconcile accounting identities and calculate defined metrics with coverage. Use for source-linked historical financial analysis, missing-data review or statement reconciliation. Produces JSON and a readable report from reviewed normalized inputs; excludes forecasts, valuations and credit ratings.",
       "aliases": [
         "analyze normalized statements"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "independent-model-audit",
+      "path": "skills/independent-model-audit/SKILL.md",
+      "description": "Audit a declared debt and coverage snapshot by recomputing balances, debt service, DSCR and covenant results from mapped inputs. Use when reviewing model correctness, testing a model before freezing regression outputs, or investigating plausible-looking but inconsistent financial results. Reports every comparison and missing observation; the bundled helper does not extract or recalculate Excel files.",
+      "aliases": [
+        "recompute model outputs"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "mcp-api-integration",
+      "path": "skills/mcp-api-integration/SKILL.md",
+      "description": "Build and review a bounded API-to-MCP integration. Use when exposing a read-only data API as tools, defining input contracts, checking pagination or testing a connector without live credentials. Includes a runnable stdio adapter and synthetic HTTP demonstration.",
+      "aliases": [
+        "build an API-backed MCP tool"
       ],
       "required_capabilities": [
         "python3.11"

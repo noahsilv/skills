@@ -1,0 +1,33 @@
+{
+  "title": "Synthetic company-data formula plan",
+  "fixture": true,
+  "queries": [
+    {
+      "id": "company",
+      "sheet": "Raw Data",
+      "anchor": "B2",
+      "output_range": "B2",
+      "formula": "=_xll.SPG(A2,\"SYNTHETIC_FIELD\",,\"SYNTHETIC_PERIOD\")",
+      "syntax_source": "Synthetic formula for preservation tests; no provider-valid arguments claimed",
+      "syntax_status": "synthetic_fixture",
+      "parameters": [
+        {
+          "cell": "A2",
+          "value": "SYNTHETIC_ENTITY"
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "cell": "B4",
+      "query_id": "company",
+      "source_cell": "B2",
+      "label": "Demonstration metric",
+      "unit": "Synthetic units",
+      "period": "Synthetic period",
+      "currency": "Not applicable",
+      "quote_side": "Not applicable"
+    }
+  ]
+}

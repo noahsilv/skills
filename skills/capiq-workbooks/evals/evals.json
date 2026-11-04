@@ -1,0 +1,23 @@
+{
+  "skill_name": "capiq-workbooks",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Preserve this supplied synthetic SPG formula, including its omitted argument, and link a presentation cell.",
+      "expected_output": "Produce an unchanged formula with a result link and live refresh NOT_RUN.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Two provider queries have overlapping return rectangles. Make the plan.",
+      "expected_output": "Reject the collision rather than overwrite or silently shift the layout.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I have a legacy CIQ formula and a list of bond CUSIPs. Can you translate it directly to SPGTable?",
+      "expected_output": "Require provider-generated syntax and security-level identifier evidence; do not invent a translation.",
+      "files": []
+    }
+  ]
+}

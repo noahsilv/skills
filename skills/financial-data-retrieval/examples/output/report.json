@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "mode": "synthetic-fixture",
+  "status": "COMPLETE_WITH_GAPS",
+  "request": {
+    "country": "ZZZ",
+    "indicator": "DEMO.ANNUAL.RATE",
+    "source_id": 2,
+    "start_year": 2021,
+    "end_year": 2024,
+    "unit": "percent"
+  },
+  "indicator_name": "Invented annual funding rate",
+  "metadata_url": "https://api.worldbank.org/v2/indicator/DEMO.ANNUAL.RATE?format=json&source=2&per_page=100",
+  "request_count": 3,
+  "provider_rows": 3,
+  "gap_count": 2,
+  "rows": [
+    {
+      "country": "ZZZ",
+      "indicator": "DEMO.ANNUAL.RATE",
+      "period": "2021",
+      "value": "0",
+      "gap": null,
+      "observation_status": "",
+      "response_url": "https://api.worldbank.org/v2/country/ZZZ/indicator/DEMO.ANNUAL.RATE?format=json&source=2&date=2021%3A2024&per_page=100&page=2",
+      "unit": "percent",
+      "unit_basis": "caller-supplied; provider metadata unit is blank",
+      "source": "Synthetic fixture source",
+      "source_id": 2,
+      "retrieved_at": "2026-11-04T00:00:00Z",
+      "source_last_updated": "2026-01-15",
+      "mode": "synthetic-fixture"
+    },
+    {
+      "country": "ZZZ",
+      "indicator": "DEMO.ANNUAL.RATE",
+      "period": "2022",
+      "value": null,
+      "gap": "provider omitted requested year",
+      "observation_status": "",
+      "response_url": null,
+      "unit": "percent",
+      "unit_basis": "caller-supplied; provider metadata unit is blank",
+      "source": "Synthetic fixture source",
+      "source_id": 2,
+      "retrieved_at": "2026-11-04T00:00:00Z",
+      "source_last_updated": "2026-01-15",
+      "mode": "synthetic-fixture"
+    },
+    {
+      "country": "ZZZ",
+      "indicator": "DEMO.ANNUAL.RATE",
+      "period": "2023",
+      "value": null,
+      "gap": "provider returned null",
+      "observation_status": "",
+      "response_url": "https://api.worldbank.org/v2/country/ZZZ/indicator/DEMO.ANNUAL.RATE?format=json&source=2&date=2021%3A2024&per_page=100&page=1",
+      "unit": "percent",
+      "unit_basis": "caller-supplied; provider metadata unit is blank",
+      "source": "Synthetic fixture source",
+      "source_id": 2,
+      "retrieved_at": "2026-11-04T00:00:00Z",
+      "source_last_updated": "2026-01-15",
+      "mode": "synthetic-fixture"
+    },
+    {
+      "country": "ZZZ",
+      "indicator": "DEMO.ANNUAL.RATE",
+      "period": "2024",
+      "value": "3.25",
+      "gap": null,
+      "observation_status": "",
+      "response_url": "https://api.worldbank.org/v2/country/ZZZ/indicator/DEMO.ANNUAL.RATE?format=json&source=2&date=2021%3A2024&per_page=100&page=1",
+      "unit": "percent",
+      "unit_basis": "caller-supplied; provider metadata unit is blank",
+      "source": "Synthetic fixture source",
+      "source_id": 2,
+      "retrieved_at": "2026-11-04T00:00:00Z",
+      "source_last_updated": "2026-01-15",
+      "mode": "synthetic-fixture"
+    }
+  ],
+  "responses": [
+    {
+      "request": "metadata",
+      "url": "https://api.worldbank.org/v2/indicator/DEMO.ANNUAL.RATE?format=json&source=2&per_page=100",
+      "sha256": "e6b490cbda92b7818451f0a1079bc5640b725c98d44c9bcc8c2fc0a05d32b2c0",
+      "bytes": 285
+    },
+    {
+      "request": "page-1",
+      "url": "https://api.worldbank.org/v2/country/ZZZ/indicator/DEMO.ANNUAL.RATE?format=json&source=2&date=2021%3A2024&per_page=100&page=1",
+      "sha256": "41cfc2ff903bf3ba9603ed62b71374d37b306ab5a235ed6db9d0075d87ba5e16",
+      "bytes": 831
+    },
+    {
+      "request": "page-2",
+      "url": "https://api.worldbank.org/v2/country/ZZZ/indicator/DEMO.ANNUAL.RATE?format=json&source=2&date=2021%3A2024&per_page=100&page=2",
+      "sha256": "a54f1158d8da6db6d23b88f0212759db52964792d35d8a2485e9a19e10e7208e",
+      "bytes": 482
+    }
+  ],
+  "request_sha256": "117781976e7c675c29e7faf277130982d1ff740c8dacddd49cc38a8ecbfbc861"
+}

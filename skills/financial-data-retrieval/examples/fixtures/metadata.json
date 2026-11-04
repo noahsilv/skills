@@ -1,0 +1,19 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": 100,
+    "total": 1
+  },
+  [
+    {
+      "id": "DEMO.ANNUAL.RATE",
+      "name": "Invented annual funding rate",
+      "unit": "",
+      "source": {
+        "id": "2",
+        "value": "Synthetic fixture source"
+      }
+    }
+  ]
+]

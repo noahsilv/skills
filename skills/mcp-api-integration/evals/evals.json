@@ -1,0 +1,21 @@
+{
+  "skill_name": "mcp-api-integration",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Expose a small annual metrics API as MCP tools. Show that discovery works and retrieve the fictional output series over two pages, preserving its missing observation.",
+      "expected_output": "Run the subprocess demo, show both tools, retain decimal strings and null, and distinguish synthetic execution from live-provider verification.",
+      "files": ["examples/fixture_api.py"]
+    },
+    {
+      "id": 2,
+      "prompt": "The API returned an HTTP error containing the bearer token. Make the tool error useful without exposing the response body or credentials, and prove the server can handle another request.",
+      "expected_output": "A sanitized tool error, no upstream body or secret, and a subsequent successful ping or tool call. Tests exercise the failing transport."
+    },
+    {
+      "id": 3,
+      "prompt": "The connector returns values for the wrong series and says there are more pages than the response count supports. Can the result be accepted as an empty dataset?",
+      "expected_output": "Reject mismatched scope or pagination; no empty-success substitution. Explain the upstream contract and the missing validation evidence."
+    }
+  ]
+}

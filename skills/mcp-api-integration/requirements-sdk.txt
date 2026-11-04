@@ -1,0 +1,2 @@
+# Optional interoperability demonstration; the adapter and unit tests use stdlib.
+mcp==1.29.0

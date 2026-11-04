@@ -1,0 +1,23 @@
+{
+  "skill_name": "bloomberg-workbooks",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a two-security current-price workbook from this synthetic config without a Bloomberg session.",
+      "expected_output": "Construct BDP formulas, preserve literal inputs and report live refresh NOT_RUN.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "The spreadsheet has formulas and a current reference date. Can I call these prices refreshed?",
+      "expected_output": "Reject the inference; require observed provider returns and timestamp evidence.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Build a historical bond series and compare its yield with a floating-rate loan margin.",
+      "expected_output": "Choose BDH from generated syntax, reserve its return area, and reject subtracting yield from a floating margin.",
+      "files": []
+    }
+  ]
+}

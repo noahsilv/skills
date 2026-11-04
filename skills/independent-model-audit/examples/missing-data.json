@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "model_id": "synthetic-debt-review",
+  "model_sha256": "d5d6298b1a46c0d938147386cb5f789c250975c32fd76284d1a5003713ac313e",
+  "currency": "USD",
+  "amount_unit": "millions",
+  "periods": [
+    {
+      "id": "Y1",
+      "start": "2030-01-01",
+      "end": "2031-01-01"
+    },
+    {
+      "id": "Y2",
+      "start": "2031-01-01",
+      "end": "2032-01-01"
+    },
+    {
+      "id": "Y3",
+      "start": "2032-01-01",
+      "end": "2033-01-01"
+    }
+  ],
+  "initial_debt": "100",
+  "required_final_debt": "0",
+  "money_tolerance": "0.000001",
+  "ratio_tolerance": "0.000001",
+  "covenant": {
+    "operator": "gte",
+    "threshold": "1.2"
+  },
+  "inputs": {
+    "period_ids": [
+      "Y1",
+      "Y2",
+      "Y3"
+    ],
+    "currency": "USD",
+    "amount_unit": "millions",
+    "series": {
+      "drawdown": [
+        "0",
+        "0",
+        "0"
+      ],
+      "repayment": [
+        "30",
+        "30",
+        "40"
+      ],
+      "interest": [
+        "10",
+        "7",
+        "4"
+      ],
+      "cfads": [
+        "50",
+        null,
+        "44"
+      ]
+    },
+    "references": {
+      "drawdown": [
+        "Inputs!B2",
+        "Inputs!C2",
+        "Inputs!D2"
+      ],
+      "repayment": [
+        "Inputs!B3",
+        "Inputs!C3",
+        "Inputs!D3"
+      ],
+      "interest": [
+        "Inputs!B4",
+        "Inputs!C4",
+        "Inputs!D4"
+      ],
+      "cfads": [
+        "Inputs!B5",
+        "Inputs!C5",
+        "Inputs!D5"
+      ]
+    }
+  },
+  "observed": {
+    "period_ids": [
+      "Y1",
+      "Y2",
+      "Y3"
+    ],
+    "currency": "USD",
+    "amount_unit": "millions",
+    "series": {
+      "opening_debt": [
+        "100",
+        "70",
+        "40"
+      ],
+      "closing_debt": [
+        "70",
+        "40",
+        "0"
+      ],
+      "debt_service": [
+        "40",
+        "37",
+        "44"
+      ],
+      "dscr": [
+        "1.25",
+        null,
+        "1"
+      ],
+      "covenant": [
+        "PASS",
+        null,
+        "FAIL"
+      ]
+    },
+    "references": {
+      "opening_debt": [
+        "Model!B2",
+        "Model!C2",
+        "Model!D2"
+      ],
+      "closing_debt": [
+        "Model!B3",
+        "Model!C3",
+        "Model!D3"
+      ],
+      "debt_service": [
+        "Model!B4",
+        "Model!C4",
+        "Model!D4"
+      ],
+      "dscr": [
+        "Model!B5",
+        "Model!C5",
+        "Model!D5"
+      ],
+      "covenant": [
+        "Model!B6",
+        "Model!C6",
+        "Model!D6"
+      ]
+    }
+  }
+}

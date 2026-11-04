@@ -2,11 +2,17 @@
 
 ## Portfolio validation
 
-This 15-skill edition expands the original five-skill portfolio. The results below describe the reviewed source and packaged demonstrations.
+This 20-skill edition expands the original five-skill portfolio. The results below describe the reviewed source and packaged demonstrations.
 
-The current local run passed **354 executable tests across 13 packages** using Python 3.11 and the declared dependencies. Tests exercise financial definitions, exact numeric handling, source/mapping coverage, request roundtrips, stale-file evidence, routing, document review coverage and Office structure. Synthetic case-study commands were also executed; their reports are linked from the README.
+The current local run passed **518 executable tests across 18 packages** using Python 3.11 and the declared dependencies. Tests exercise financial definitions, exact numeric handling, source/mapping coverage, request roundtrips, stale-file evidence, routing, document review coverage and Office structure. The same 518 tests passed from fresh extracted packages. All 20 skill archives were checked against their source files. Synthetic case-study commands were also executed; their reports are linked from the README.
 
 The evidence-brief skill passed **15 source-based assertions across three actual tasks** in a separate reviewer pass. The same three baseline tasks without the skill passed 14; the observed miss strengthened a conditional statement into a commitment. One sample per case cannot establish general performance superiority. The unchanged prompt optimizer retains its earlier 11 checks across three cases, documented in [its evaluation record](PROMPT_EVALUATIONS.md).
+
+The five data and integration additions have 164 executable tests within that total. Bloomberg tests cover BDP construction and blank caches; Capital IQ tests cover formula preservation and declared layouts. The audit tests recompute mapped financial results. Data-retrieval tests use synthetic responses. MCP tests cover the bounded protocol and API adapter.
+
+The MCP example also passed a subprocess stdio/loopback HTTP demonstration and an interoperability check with the official MCP Python SDK 1.29.0. Those local checks were reproduced independently. They do not establish live-provider access or hosted deployment. The optional SDK check uses the package-local requirements file and is separate from the standard-library unit suite.
+
+Five additional response-only scenarios checked provider and integration limits. Both the with-skill and baseline responses passed all 18 assertions. These ties provide no evidence of a performance advantage; the exercise checks the stated boundaries and does not test live systems.
 
 ## Reproduce
 

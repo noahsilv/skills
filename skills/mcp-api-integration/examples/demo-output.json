@@ -1,0 +1,38 @@
+{
+  "fixture": "synthetic localhost API; no live provider was queried",
+  "transport": "newline-delimited MCP JSON-RPC over subprocess stdio",
+  "protocol": "2024-11-05",
+  "discovered_tools": [
+    "metric_catalog",
+    "metric_observations"
+  ],
+  "catalog_page_count": 1,
+  "catalog_next_offset": 1,
+  "observations": [
+    {
+      "series_id": "DEMO_OUTPUT",
+      "year": 2022,
+      "value": "100.00",
+      "unit": "index, 2022=100",
+      "source": "Synthetic portfolio fixture"
+    },
+    {
+      "series_id": "DEMO_OUTPUT",
+      "year": 2023,
+      "value": null,
+      "unit": "index, 2022=100",
+      "source": "Synthetic portfolio fixture"
+    },
+    {
+      "series_id": "DEMO_OUTPUT",
+      "year": 2024,
+      "value": "105.25",
+      "unit": "index, 2022=100",
+      "source": "Synthetic portfolio fixture"
+    }
+  ],
+  "pagination_complete": true,
+  "oversized_page_request": {
+    "error": "invalid_arguments"
+  }
+}

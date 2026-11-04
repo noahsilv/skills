@@ -1,0 +1,10 @@
+{
+  "client": "MCP Python SDK",
+  "negotiated_protocol": "2024-11-05",
+  "discovered_tools": [
+    "metric_catalog",
+    "metric_observations"
+  ],
+  "initialization_discovery_pagination_missing_error_recovery": "PASS",
+  "upstream": "synthetic loopback only"
+}
