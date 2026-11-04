@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "2.0.0-draft",
+  "release": "2.0.0",
   "review_date": "2026-11-04",
   "excluded_from_hashes": [
     "release-manifest.json"
@@ -48,8 +48,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "baa0a8fb0b8cde10710efb59d4e5d09bde68db09a9b2b8e49e50edae03c4c68c",
-      "bytes": 2387
+      "sha256": "9668cdaffcc9b3ca9c3f422d63f7b8142646bdbe41b5048c5cc42c19edd18129",
+      "bytes": 2383
     },
     {
       "path": "docs/case-studies/diligence-workflow.md",

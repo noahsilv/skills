@@ -1,8 +1,8 @@
 # Validation and limitations
 
-## Local expansion draft
+## Portfolio validation
 
-This 15-skill expansion is a local draft. The previously published five-skill edition remains separate; no expanded release has been pushed.
+This 15-skill edition expands the original five-skill portfolio. The results below describe the reviewed source and packaged demonstrations.
 
 The current local run passed **354 executable tests across 13 packages** using Python 3.11 and the declared dependencies. Tests exercise financial definitions, exact numeric handling, source/mapping coverage, request roundtrips, stale-file evidence, routing, document review coverage and Office structure. Synthetic case-study commands were also executed; their reports are linked from the README.
 
@@ -26,4 +26,4 @@ Calculations and checks are bounded by explicit input contracts. A consistent so
 
 Native Word/Excel/PowerPoint rendering, live-provider refresh, spreadsheet-engine recalculation, deployment-scale reliability and automatic triggering across agent hosts have not been tested here. Office tools do not certify universal format compatibility or confidentiality. No operational time-saving, adoption or financial-impact measurements are claimed.
 
-The manifest identifies the local draft source bytes and excludes itself from its hashes. It is not a signature, external certification or evidence of publication.
+The manifest identifies the reviewed source bytes and excludes itself from its hashes. It is not a signature, external certification or evidence of publication.
