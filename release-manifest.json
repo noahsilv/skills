@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "release": "1.0.0",
+  "review_date": "2026-11-04",
+  "excluded_from_hashes": [
+    "release-manifest.json"
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/checks.yml",
+      "sha256": "d6d1fe007ccdad84d234e0e6ea1af99c96fb2d9f51b152e1d7074a7547a790b2",
+      "bytes": 396
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "ae4ac18c9dd4c6a09fe0b979098ff5046ce2bf457d77edc82e48fb0ec48f4e77",
+      "bytes": 97
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "6e24a6abacb9bcee8bd038a5d134766d37ed0d10f43ea8122a1d8e2bd1805926",
+      "bytes": 1147
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "README.md",
+      "sha256": "0abb062c32e64a46e476306b90b7917a94a56be7d7eb5d934bc2b70499d5c5ef",
+      "bytes": 3142
+    },
+    {
+      "path": "docs/PROMPT_EVALUATIONS.md",
+      "sha256": "f9cb8068cc417852a5a2cc02969b4c923943dc8bb38270b0316ef7cabf83f1e6",
+      "bytes": 6398
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "3730a4aa1939eb1875966969490d3803c6f74f9feb9bb078a79caf1a2a2be6ef",
+      "bytes": 3732
+    },
+    {
+      "path": "requirements-dev.txt",
+      "sha256": "15965006e49e69c0a3374d0164a16c6b87dad2b6cbe1140ae08d566d3850643e",
+      "bytes": 30
+    },
+    {
+      "path": "scripts/test.py",
+      "sha256": "c8587fbb9c5f5f5f70a23b2c203fa752a6166e10b4c8ad35753290a8a95de27a",
+      "bytes": 1316
+    },
+    {
+      "path": "scripts/validate.py",
+      "sha256": "1c2e4581bf6b6cc8ca81f2a688934eb972029e7cf8e95091d000fd7576d5a50c",
+      "bytes": 5146
+    },
+    {
+      "path": "skills/docx-footnotes/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/docx-footnotes/README.md",
+      "sha256": "11d49b09eccd8b622723dfa68fa9a1fe334004f7566156515a4da6d93c8bfdb5",
+      "bytes": 3020
+    },
+    {
+      "path": "skills/docx-footnotes/SKILL.md",
+      "sha256": "862442dbc39b1d1f446d8cc45e15c099a3834e2aa5a437bb24e5d7d8ae3dac4b",
+      "bytes": 4449
+    },
+    {
+      "path": "skills/docx-footnotes/examples/make_example.py",
+      "sha256": "8b5608d235848f68b3c84c64f089d2870a6132f8a753b7abf609c3d850f63334",
+      "bytes": 2007
+    },
+    {
+      "path": "skills/docx-footnotes/examples/notes.json",
+      "sha256": "8fc8f7630dcf677207a4977364feb3fcbce91af263d0ac60436edb3516633de8",
+      "bytes": 237
+    },
+    {
+      "path": "skills/docx-footnotes/references/implementation.md",
+      "sha256": "1b6025e1acb983fc4dea80db00f367e291415764b9fba77d3ef1bf7f35bf6639",
+      "bytes": 3738
+    },
+    {
+      "path": "skills/docx-footnotes/scripts/add_footnotes.py",
+      "sha256": "afc16200c77e6d8ee2f76646039f576abde2be0682bf5e15e1e5502a06af8cb4",
+      "bytes": 21393
+    },
+    {
+      "path": "skills/docx-footnotes/tests/test_footnotes.py",
+      "sha256": "928260b566c1eec2d08be67e5d26807fb3fa8fda1f8b38760fa57598cca100fc",
+      "bytes": 16491
+    },
+    {
+      "path": "skills/model-regression-testing/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/model-regression-testing/README.md",
+      "sha256": "6caf02586b1280c124df9201dfb1201aa0a03f0bff435ebf7ac5302aba0469f7",
+      "bytes": 860
+    },
+    {
+      "path": "skills/model-regression-testing/SKILL.md",
+      "sha256": "ee38e7946a9097ac2cecff1dcfb424d740a26c4eed8e9922bec74c9dcb506aae",
+      "bytes": 5266
+    },
+    {
+      "path": "skills/model-regression-testing/examples/README.md",
+      "sha256": "dcaa3fb86e755b75d145e10eb607687ddd8371304333db70ecfdbae643039d30",
+      "bytes": 4196
+    },
+    {
+      "path": "skills/model-regression-testing/examples/baseline.json",
+      "sha256": "99d2cd873cde2faa4b80d045e5dc671a29f4767b17ef43479e337857ade71968",
+      "bytes": 364
+    },
+    {
+      "path": "skills/model-regression-testing/examples/changes.json",
+      "sha256": "501a404cb0ee460fdadaed5d5477fb45534fa1bc8e33ffef70e03002257ed9ca",
+      "bytes": 148
+    },
+    {
+      "path": "skills/model-regression-testing/examples/current.json",
+      "sha256": "ba26993fd6c250b9a72eff7988fe83761021484e3b2e4dc00bec7f86d69e07bb",
+      "bytes": 368
+    },
+    {
+      "path": "skills/model-regression-testing/examples/make_demo.py",
+      "sha256": "2886f20b34fbe22bf109acd708addd9f64838bcc914ea9fc324c8fc981c8a3cd",
+      "bytes": 1104
+    },
+    {
+      "path": "skills/model-regression-testing/examples/watch.json",
+      "sha256": "a3db7afd229aac0bd52201a338ae7f8db7c2f6149e3a042877de6c073169dabd",
+      "bytes": 356
+    },
+    {
+      "path": "skills/model-regression-testing/requirements.txt",
+      "sha256": "8c0f4f6c58f18562ef50e30c93e94fe47d339a849cd0c6703c014e813ea1fee6",
+      "bytes": 95
+    },
+    {
+      "path": "skills/model-regression-testing/scripts/export_workbook.py",
+      "sha256": "92440cae3bd9dad33872563f06ab0d4272029b3f06523988214dc0ded7ad9fdc",
+      "bytes": 4638
+    },
+    {
+      "path": "skills/model-regression-testing/scripts/regression.py",
+      "sha256": "438ec070db50e807751e8592041ad3db9270013f95c9a746a8819e471901b22f",
+      "bytes": 11194
+    },
+    {
+      "path": "skills/model-regression-testing/tests/test_export.py",
+      "sha256": "c7cce2c15d2aa711e9804a3cb026040efa604b9e48a950f9eb0eafca567d86c6",
+      "bytes": 2552
+    },
+    {
+      "path": "skills/model-regression-testing/tests/test_regression.py",
+      "sha256": "6bee6560fb63ffa6e84b279290b3de95a37d73c92bc3f1fed29b6b9eead81886",
+      "bytes": 9295
+    },
+    {
+      "path": "skills/office-package-audit/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/office-package-audit/README.md",
+      "sha256": "e68a4ba602f9593bef8602a88a156b2828e50eb3a9adee58cb442ca4a0b03098",
+      "bytes": 4856
+    },
+    {
+      "path": "skills/office-package-audit/SKILL.md",
+      "sha256": "6f628ab9153250a6a1ceb9047ced32b22ec2963464bf123ef59cbf2eb6870590",
+      "bytes": 4180
+    },
+    {
+      "path": "skills/office-package-audit/examples/make_examples.py",
+      "sha256": "1023d767e92222e5ff97381205f795a6255ada4806e4dabd0064447f22540a4f",
+      "bytes": 3888
+    },
+    {
+      "path": "skills/office-package-audit/scripts/audit.py",
+      "sha256": "0a14decbf53ca684f19f63f10ffb5daf902686051185b6e9fe8ff447236f6168",
+      "bytes": 28961
+    },
+    {
+      "path": "skills/office-package-audit/tests/test_audit.py",
+      "sha256": "bde41bc044cca7c50f6bf0332ac491c5390255bf1ac33cc628f9f073594cdc57",
+      "bytes": 20619
+    },
+    {
+      "path": "skills/prompt-optimizer/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/prompt-optimizer/README.md",
+      "sha256": "e57d7560049f68810c0361642bfd5dbe675a8bdc2248b1d82dfd129b0a2ea546",
+      "bytes": 1264
+    },
+    {
+      "path": "skills/prompt-optimizer/SKILL.md",
+      "sha256": "ad491f32f855b5dde4c157b2442225a9fd46c4fa7196f13cd1eb73f1ac771edd",
+      "bytes": 4210
+    },
+    {
+      "path": "skills/prompt-optimizer/evals/evals.json",
+      "sha256": "de8baf47d85175a62ae7b14922f5b535639bdaa98d4e96f0b4ffc937a3090db5",
+      "bytes": 2777
+    },
+    {
+      "path": "skills/prompt-optimizer/references/runtime.md",
+      "sha256": "59c7f237f7c0ea6396d940ca99d239ad3038592d1e6720dbc37194069ff66947",
+      "bytes": 1830
+    },
+    {
+      "path": "skills/workbook-tieout/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/workbook-tieout/README.md",
+      "sha256": "93656d748dac160599234f44fbfd9207c69ab8f53da7f7becfe6b67997bca19f",
+      "bytes": 831
+    },
+    {
+      "path": "skills/workbook-tieout/SKILL.md",
+      "sha256": "71384195105412c7e78319a14e4dc85f53825227e5d46483a87562e295f21cca",
+      "bytes": 3915
+    },
+    {
+      "path": "skills/workbook-tieout/examples/README.md",
+      "sha256": "2ed8d1d782908523c071f0b0bb215cef8cb0ea8ddd20d4292798f5d1709ace66",
+      "bytes": 2395
+    },
+    {
+      "path": "skills/workbook-tieout/examples/make_demo.py",
+      "sha256": "cb9a503cbd336bf48fa218745fab00a44835d505b6da59d94cdda2596505cc4f",
+      "bytes": 1813
+    },
+    {
+      "path": "skills/workbook-tieout/requirements.txt",
+      "sha256": "06d28d69e958deafb09f0a44fcae9b548f15e4debc14ebc39aad5f0934856fbf",
+      "bytes": 16
+    },
+    {
+      "path": "skills/workbook-tieout/scripts/tieout.py",
+      "sha256": "8ad0ed1bed9031ab019af438f5c3fc0e1dba8d8792628422006706624c1f0d8a",
+      "bytes": 12152
+    },
+    {
+      "path": "skills/workbook-tieout/tests/test_tieout.py",
+      "sha256": "c904821f40ce769541adbcdf81904c6a3038a708bd08c3fce86f405408bf7073",
+      "bytes": 8759
+    }
+  ]
+}

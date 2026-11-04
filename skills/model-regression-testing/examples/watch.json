@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "items": [
+    {"id": "operating-profit", "sheet": "Model", "cell": "B2", "unit": "USD thousands", "period": "FY2025"},
+    {"id": "ending-cash", "sheet": "Model", "cell": "B3", "unit": "USD thousands", "period": "FY2025"},
+    {"id": "balance-check", "sheet": "Model", "cell": "B4", "unit": "boolean", "period": "FY2025"}
+  ]
+}

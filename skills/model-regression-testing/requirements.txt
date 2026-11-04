@@ -1,0 +1,2 @@
+# Only the optional XLSX exporter and XLSX example/tests need this dependency.
+openpyxl==3.1.5

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "label": "Synthetic edited state",
+  "value_basis": "literal",
+  "items": [
+    {"id": "operating-profit", "value": 240, "unit": "USD thousands", "period": "FY2025"},
+    {"id": "ending-cash", "value": 410, "unit": "USD thousands", "period": "FY2025"},
+    {"id": "balance-check", "value": true, "unit": "boolean", "period": "FY2025"}
+  ]
+}

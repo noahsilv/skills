@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "changes": [
+    {"id": "operating-profit", "reason": "Synthetic cost correction reduces operating profit by 10."}
+  ]
+}
