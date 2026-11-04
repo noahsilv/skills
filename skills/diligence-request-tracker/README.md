@@ -1,9 +1,6 @@
 # Diligence request tracker
 
-A local request-list workflow that combines financial diligence discipline with
-explicit data boundaries. Permanent IDs survive client edits and follow-up rounds;
-responses are staged as proposals, and a review records which responses were
-accepted and which requests were explicitly closed.
+Track diligence requests across client edits and follow-up rounds using permanent IDs. Returned responses become proposals for review. The review records which responses were accepted and which requests were explicitly closed. The workflow runs locally and keeps client and internal data separate.
 
 This self-contained implementation uses Python 3.10+ and the standard library.
 It has no institutional policy fields, external systems, network calls or message

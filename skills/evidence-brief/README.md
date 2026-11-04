@@ -1,6 +1,6 @@
 # Evidence brief
 
-A portable workflow for converting mixed source material into a short decision brief with explicit attribution, decision status, and unresolved evidence. It shows the language-model part of an evidence workflow: deciding what a source actually supports, rather than merely finding a citation string.
+Write a short decision brief from mixed source material, with explicit attribution, decision status and unresolved evidence. This portable workflow uses the language model to assess what each source supports. Finding a citation string alone is insufficient.
 
 Read [SKILL.md](SKILL.md), then inspect the [synthetic examples](examples/README.md). No external services or Python dependencies are required. Three realistic behavior prompts are in the repository-only `evals/evals.json`; they cover both financing and software delivery decisions. That folder is excluded from installable skill archives. Evaluation results should be recorded separately after actual runs. The checked-in example is an authored demonstration, not a benchmark result.
 

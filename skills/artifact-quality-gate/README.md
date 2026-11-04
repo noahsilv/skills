@@ -1,8 +1,6 @@
 # Artifact Quality Gate
 
-Local draft portfolio package. Freeze requested checks, record file identities
-for caller-reported results, and aggregate only evidence that still matches the
-current artifacts. Python 3.11+; standard library only.
+This local draft records the requested checks and the files used for each reported result. It aggregates the evidence only while those files still match. Requires Python 3.11+ and the standard library.
 
 The strongest successful verdict is **ATTESTED**: every required check has a
 self-reported pass, the files still match, and the records belong to the same

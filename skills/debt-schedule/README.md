@@ -1,6 +1,6 @@
 # Debt schedule
 
-A portable finance workflow and exact Python engine for a single fixed-rate, non-revolving facility. It converts dated draws and repayments into reconciled balances, cash interest, debt service and an inspectable accrual trail.
+Calculate balances, cash interest and debt service for a single fixed-rate, non-revolving facility. The portable workflow and exact Python engine use dated draws and repayments and provide an accrual trail for review.
 
 Read [SKILL.md](SKILL.md), the [input contract](references/input-contract.md) and the [synthetic example](examples/README.md). Requires Python 3.11+ with no third-party dependencies.
 

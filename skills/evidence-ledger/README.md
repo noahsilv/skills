@@ -1,9 +1,6 @@
 # Evidence ledger
 
-A local evidence register for figures and other scalar claims used in financing,
-diligence and analytical writing. It combines finance context with a deterministic
-proposal/review workflow: citations travel with each claim, and accepting a new
-value preserves the previous record and its review history.
+Keep a local register of figures and other scalar claims used in financing, diligence and analytical writing. Each claim retains its citations through a deterministic proposal and review process. Accepting a new value preserves the previous record and its review history.
 
 The package is independently authored and self-contained. Python 3.10+ and the
 standard library are sufficient. There are no connectors, network calls or

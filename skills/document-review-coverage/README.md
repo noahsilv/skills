@@ -1,6 +1,6 @@
 # Document review coverage
 
-A portable review workflow and independently implemented Python helper that bind reviewer records to a particular text artifact and saved review inventory. It inventories content blocks, reconciles unit/check pairs, retains comments and proposed changes, and detects changed scope, stale files, and missing quote spans.
+Keep reviewer records tied to the text and review inventory they cover. The portable workflow and independently implemented Python helper inventory content blocks and reconcile unit/check pairs. They retain comments and proposed changes, and flag changed scope, stale files and missing quote spans.
 
 Read [SKILL.md](SKILL.md) for the workflow and [the record format](references/record-format.md) for the JSON contract. Follow [the example guide](examples/README.md) to inspect complete records with an unresolved revision, missing records, a stale document, and a reduced check list that cannot make an incomplete review complete.
 

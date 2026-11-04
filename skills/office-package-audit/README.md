@@ -1,6 +1,6 @@
 # Office package audit
 
-A read-only Python inspector for Office Open XML files. It combines selected structural checks with a map of content that a reviewer may otherwise overlook. There are no third-party Python dependencies and no network calls.
+Inspect Office Open XML files without changing them. This Python tool checks selected structures and lists content a reviewer may otherwise overlook. It requires no third-party Python dependencies and makes no network calls.
 
 Run with Python 3.10 or newer:
 

@@ -1,6 +1,6 @@
 # Financial statement analysis
 
-A portable historical analysis workflow with explicit source references, accounting reconciliations and missing-data coverage. It connects finance reasoning to a reproducible, strictly validated data contract.
+Analyze historical financial statements using explicit source references and accounting reconciliations, and report missing data. The portable workflow uses a reproducible data contract with strict validation.
 
 - Six checks cover the balance sheet, gross profit, operating profit, cash movement, cash cross-reference and equity movement.
 - Eight metrics cover margins, current liquidity, gross/net debt and debt/equity. Definitions are fixed and visible; no credit-rating thresholds are assigned.

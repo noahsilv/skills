@@ -9,6 +9,6 @@ python scripts/debt_schedule.py examples/terms.json --out /tmp/debt-schedule-exa
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-Choose a new output path for each run. The checked-in `output/` directory contains the result generated from the same JSON. It is a readable demonstration, not a live model.
+Choose a new output path for each run. The checked-in `output/` directory contains the result generated from the same JSON. It is a saved demonstration; it is not a live model.
 
 Check the first interest period independently: USD 400,000 accrues for 104 days before the additional USD 200,000 draw, then USD 600,000 accrues for 77 days. Interest is `(400000 × 104 + 600000 × 77) × 0.055 / 365`, rounded once to cents. Later periods use the lower principal after each dated repayment. The final principal balance is zero and unused commitment is USD 150,000.

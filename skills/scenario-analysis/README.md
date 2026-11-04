@@ -1,6 +1,6 @@
 # Scenario analysis
 
-A portable financial workflow with a standalone case registry, strict override validation and exact operating cash calculations. Named cases and one-factor sensitivities start from a preserved base; outputs expose effective assumption changes, cash bridges, deltas and defined DSCR coverage.
+Compare named operating cases and one-factor sensitivities against a preserved base. This portable financial workflow has a standalone case registry, strict override validation and exact operating cash calculations. Its outputs show the effective assumption changes, cash bridges, deltas and defined DSCR coverage.
 
 Read [SKILL.md](SKILL.md), the [model contract](references/model-contract.md) and the [synthetic example](examples/README.md). Requires Python 3.11+ and no third-party dependencies.
 

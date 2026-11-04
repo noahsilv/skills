@@ -1,8 +1,6 @@
 # Skill Router
 
-Local draft portfolio package. Route an explicit request against an explicit
-catalog without dispatching tools or importing skill code. Python 3.11+;
-standard library only. All example names and content are synthetic.
+This local draft matches an explicit request to entries in an explicit catalog. It does not dispatch tools or import skill code. Requires Python 3.11+ and the standard library. All example names and content are synthetic.
 
 ## Run the example
 

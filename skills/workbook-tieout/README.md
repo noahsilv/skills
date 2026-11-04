@@ -1,6 +1,6 @@
 # Workbook tieout
 
-An explicit, read-only reconciliation between two Excel workbooks. The package includes a portable agent workflow, a Python comparison helper, synthetic examples and tests.
+Reconcile explicitly mapped values in two Excel workbooks without changing either file. The package includes a portable agent workflow, a Python comparison helper, synthetic examples and tests.
 
 Read [SKILL.md](SKILL.md) for the workflow, coverage requirements and interpretation of PASS, FAIL, INCOMPLETE and REVIEW. Follow [the example guide](examples/README.md) to generate a deliberate mismatch and see the report.
 

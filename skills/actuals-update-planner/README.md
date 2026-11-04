@@ -1,6 +1,6 @@
 # Actuals update planner
 
-A plan-only workflow for bringing reported financial results into a forecast model. The finance work is visible in period derivations, scale/sign conversion, estimate snapshots and source-linked variances. The implementation uses strict schemas, explicit coverage, decimal arithmetic, source hashes and protected formulas.
+Prepare a plan for updating a forecast model with reported financial results. The plan shows period derivations, scale and sign conversions, estimate snapshots and variances linked to sources. It uses strict schemas, explicit coverage, decimal arithmetic and source hashes, and protects formulas.
 
 Read [SKILL.md](SKILL.md), [the mapping contract](references/schema.md) and [the synthetic examples](examples/README.md).
 

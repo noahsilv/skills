@@ -12,7 +12,7 @@ All example text and reviewer records were created for this package. They do not
 | Missing scope coverage | [reviews-clarity-only.json](reviews-clarity-only.json) with the original inventory | 4 of 8 valid unique pairs; exit 2 | Source-support review records are missing. |
 | Reduced check list | [inventory-scope-changed.json](inventory-scope-changed.json) with the unchanged clarity-only ledger | Inventory binding and coverage unverified; exit 2 | Removing source-support from the inventory changes its hash. No unchanged ledger record counts toward the reduced scope. |
 
-Inspect the actual [complete report](outputs/complete/report.md), [incomplete report](outputs/incomplete/report.md), [stale-artifact report](outputs/stale/report.md), [missing-scope report](outputs/scope-original/report.md), and [changed-scope report](outputs/scope-changed/report.md). These files were produced by the helper, not written as hoped-for output. Every report labels the semantic conclusion `NOT_ASSESSED`.
+Inspect the actual [complete report](outputs/complete/report.md), [incomplete report](outputs/incomplete/report.md), [stale-artifact report](outputs/stale/report.md), [missing-scope report](outputs/scope-original/report.md), and [changed-scope report](outputs/scope-changed/report.md). The helper generated these files. Every report labels the semantic conclusion `NOT_ASSESSED`.
 
 Run from the skill directory with fresh output paths:
 

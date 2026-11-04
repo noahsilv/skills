@@ -1,8 +1,8 @@
 # Finance and AI Workflow Engineering
 
-A portfolio by [Noah Silverman](https://github.com/noahsilv) showing how financial analysis, diligence and document work can be turned into explicit, testable AI-assisted workflows.
+A portfolio by [Noah Silverman](https://github.com/noahsilv) of AI-assisted workflows for financial analysis, diligence and document work. Each workflow sets out the task and the checks used to review it.
 
-The collection connects domain decisions—what a number means, which source supports a claim, what needs review—with engineering controls such as strict schemas, stable identifiers, capability-aware routing and checks tied to the current file. The examples use synthetic data and can be inspected without an account or internal system.
+The workflows record what numbers mean, which sources support a claim and what still needs review. They use strict schemas, stable identifiers, routing based on available tools, and checks tied to the current file. Examples use synthetic data and can be inspected without an account or internal system.
 
 ## Start with a case study
 
@@ -12,7 +12,7 @@ The collection connects domain decisions—what a number means, which source sup
 | [Diligence and evidence-based briefing](docs/case-studies/diligence-workflow.md) | Track information requests and distinguish supported facts, gaps and decisions. | Stable IDs, versioned evidence, review proposals and traceable outputs. |
 | [Routing and quality controls](docs/case-studies/engineering-controls.md) | Identify what can be relied on before a deliverable is used. | Capability checks, content fingerprints, stale-evidence rejection and bounded tools. |
 
-Each case study links to actual generated results and the commands that produced them. Financial inputs and outcomes in these demonstrations are invented examples, not client work or investment recommendations.
+Each case study includes generated results and the commands used to produce them. The financial inputs and outcomes are invented for the examples. They are not client work or investment recommendations.
 
 ## The skills
 
@@ -48,9 +48,9 @@ Each case study links to actual generated results and the commands that produced
 
 ## What this portfolio represents
 
-These are generalized public demonstrations of workflows developed in a larger personal library. Their public implementations have been rebuilt or adapted to stand alone, using synthetic examples and explicit limits. The public Git history records this portfolio's development; it is not the full history of the underlying work.
+These examples come from a larger personal workflow library. They were rebuilt or adapted for public use, with synthetic data and stated limits. The Git history records the public portfolio's development, rather than the full history of the underlying work.
 
-Development and review are AI-assisted. The portfolio demonstrates the resulting workflow specifications, financial definitions, interfaces, implementation choices and validation evidence. It makes no unmeasured claim about time saved, operational adoption or business impact. The [portfolio guide](docs/PORTFOLIO_GUIDE.md) explains how to assess the work from either a finance or an engineering perspective.
+Development and review are AI-assisted. The workflow specifications, financial definitions, interfaces, implementation choices and validation results are available to inspect. No measured time savings, operational adoption or business impact are claimed. The [portfolio guide](docs/PORTFOLIO_GUIDE.md) explains what to look for when reviewing the finance and engineering work.
 
 ## Inspect or reproduce
 
@@ -71,4 +71,4 @@ Read [validation and limitations](docs/VALIDATION.md) for the actual check resul
 
 ## Rights
 
-All rights reserved. This is a public showcase; see [LICENSE](LICENSE) for terms and [CONTRIBUTING.md](CONTRIBUTING.md) before proposing contributions.
+All rights reserved. This is a public portfolio; see [LICENSE](LICENSE) for terms and [CONTRIBUTING.md](CONTRIBUTING.md) before proposing contributions.

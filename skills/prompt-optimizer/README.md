@@ -1,6 +1,6 @@
 # Prompt optimizer
 
-An instruction-only skill for making prompts clearer without changing the task. It separates the desired result from evidence, available tools, model controls and completion checks.
+Clarify a prompt without changing the task. This instruction-only skill separates the desired result from the evidence, available tools, model controls and completion checks.
 
 For authorized use, copy this entire folder into your agent's skill directory, or attach `SKILL.md` and its referenced material in a chat. The host decides whether and how skills are loaded.
 

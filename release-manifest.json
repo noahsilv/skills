@@ -28,8 +28,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "3761f0c78eef7133be2dae94530aaee401600d75bfaed89a417f0b9dc449c247",
-      "bytes": 5662
+      "sha256": "b0d89a020afc8a53bcc50779d1c76573d9ba0ebe822c25c5ee201161c521c855",
+      "bytes": 5539
     },
     {
       "path": "catalog/skills.json",
@@ -123,8 +123,8 @@
     },
     {
       "path": "skills/actuals-update-planner/README.md",
-      "sha256": "4f8e9c8b3a2a7fd606460d7a41fa2d5dede0c7b1a2f714b9680a4719d78379ca",
-      "bytes": 1415
+      "sha256": "08df5ca2f04d8728d1236e35c70590663a531e1243f6695681f623f90ef774f9",
+      "bytes": 1389
     },
     {
       "path": "skills/actuals-update-planner/SKILL.md",
@@ -193,8 +193,8 @@
     },
     {
       "path": "skills/artifact-quality-gate/README.md",
-      "sha256": "c37d568dc0a50f5f6a0cc89d6de28fd0db3ef0fb31c768bb04e12496dcc46511",
-      "bytes": 8702
+      "sha256": "05f81ffc0b6e1483fc3661920f5d3176c72ac16ed254f46a236cb98813113ce6",
+      "bytes": 8689
     },
     {
       "path": "skills/artifact-quality-gate/SKILL.md",
@@ -253,8 +253,8 @@
     },
     {
       "path": "skills/debt-schedule/README.md",
-      "sha256": "204f1847440ad1d20da3a8a35e01a99c7224f7041df93994dd5560dd9e37d626",
-      "bytes": 1217
+      "sha256": "45be3eb2be3bd340b11c0bbcf2eb54704f6bf3937162c4fd80ea3716220527fd",
+      "bytes": 1207
     },
     {
       "path": "skills/debt-schedule/SKILL.md",
@@ -263,8 +263,8 @@
     },
     {
       "path": "skills/debt-schedule/examples/README.md",
-      "sha256": "8abc6d436ea97a44d0feed89d598fddb7428bba43217f2393569c0f9fbef5b1b",
-      "bytes": 1086
+      "sha256": "557315111537b18544856583a197dd316848287f2bf313b425bb15de1c28b982",
+      "bytes": 1089
     },
     {
       "path": "skills/debt-schedule/examples/output/accruals.csv",
@@ -313,8 +313,8 @@
     },
     {
       "path": "skills/diligence-request-tracker/README.md",
-      "sha256": "5b83e7f9b9b02dd65dc81a1770405db91a285fd9709228fbeb80d2bf42be4567",
-      "bytes": 5950
+      "sha256": "026ed8af9cbe24c9daf881e75843b1bfe7e7604712e3c6f128d25e621acbefc2",
+      "bytes": 5956
     },
     {
       "path": "skills/diligence-request-tracker/SKILL.md",
@@ -423,8 +423,8 @@
     },
     {
       "path": "skills/document-review-coverage/README.md",
-      "sha256": "3482109b549cae6c9b7211ff5dbaa960db26216a71c0040d21480f6dc84bee13",
-      "bytes": 1517
+      "sha256": "3da16395f577244c51d9af1980d9cf5e804d4c0a24960d113596f60c1bf46551",
+      "bytes": 1496
     },
     {
       "path": "skills/document-review-coverage/SKILL.md",
@@ -433,8 +433,8 @@
     },
     {
       "path": "skills/document-review-coverage/examples/README.md",
-      "sha256": "1c81ae069b5f45574ccd0f807ba47cb0ddfaa6456315c2494738d39f4859b147",
-      "bytes": 4117
+      "sha256": "931ff73c1a09b36233736a132aab57c478d4d7ade4b27711e4ee8bb7b6a47996",
+      "bytes": 4077
     },
     {
       "path": "skills/document-review-coverage/examples/draft-stale.md",
@@ -588,8 +588,8 @@
     },
     {
       "path": "skills/evidence-brief/README.md",
-      "sha256": "88bfbeb027d6694aee95b7ae381352884b7df4546f3cee2168c1b8faf348aac6",
-      "bytes": 1368
+      "sha256": "ba1a0a8b7d913928f8142dd556cc3a56f25ef38795cb7f73d815a88f07c0216a",
+      "bytes": 1326
     },
     {
       "path": "skills/evidence-brief/SKILL.md",
@@ -603,8 +603,8 @@
     },
     {
       "path": "skills/evidence-brief/examples/README.md",
-      "sha256": "f97391e5548f1a296c0876dd725f14301fb84977af69057050eff28210efa8f8",
-      "bytes": 1147
+      "sha256": "b4bf6da41805b5fafe02b2ba2b007f5978e82a19aee72fb643a6a9494654105c",
+      "bytes": 1140
     },
     {
       "path": "skills/evidence-brief/examples/financing/auto-summary.md",
@@ -653,8 +653,8 @@
     },
     {
       "path": "skills/evidence-ledger/README.md",
-      "sha256": "ed278682e3e390dae4f9527c17e4fcb075f67819f83a300f5942b0fdc032fed4",
-      "bytes": 4075
+      "sha256": "266668fa0b046a02d468039ba8949cf0146003b2225748ea64622ae2d515447d",
+      "bytes": 4043
     },
     {
       "path": "skills/evidence-ledger/SKILL.md",
@@ -763,7 +763,7 @@
     },
     {
       "path": "skills/financial-statement-analysis/README.md",
-      "sha256": "ac2f4db7cbb59865d90f907bf55d11c83971348b07c63a2e48d8f33dcb61ea19",
+      "sha256": "1a61380da38b64b4407ed2adbe06c7c821da8dcda9e5b5ba814d67e4e0ea6f9f",
       "bytes": 1461
     },
     {
@@ -853,8 +853,8 @@
     },
     {
       "path": "skills/model-regression-testing/README.md",
-      "sha256": "6caf02586b1280c124df9201dfb1201aa0a03f0bff435ebf7ac5302aba0469f7",
-      "bytes": 860
+      "sha256": "b2d252302073254a5eb200e483caf310831cd698d71c770e5895518398029c81",
+      "bytes": 901
     },
     {
       "path": "skills/model-regression-testing/SKILL.md",
@@ -923,8 +923,8 @@
     },
     {
       "path": "skills/office-package-audit/README.md",
-      "sha256": "e68a4ba602f9593bef8602a88a156b2828e50eb3a9adee58cb442ca4a0b03098",
-      "bytes": 4856
+      "sha256": "f7f35cb4064a10630b58153e0a05dc76865a540ece67a70cbbfc8e7cddc20bcf",
+      "bytes": 4857
     },
     {
       "path": "skills/office-package-audit/SKILL.md",
@@ -953,8 +953,8 @@
     },
     {
       "path": "skills/prompt-optimizer/README.md",
-      "sha256": "e57d7560049f68810c0361642bfd5dbe675a8bdc2248b1d82dfd129b0a2ea546",
-      "bytes": 1264
+      "sha256": "36b9b8880af5d4e84fc746778ae921367020e0ae79f5172f8a55d1ebdee21914",
+      "bytes": 1257
     },
     {
       "path": "skills/prompt-optimizer/SKILL.md",
@@ -978,8 +978,8 @@
     },
     {
       "path": "skills/scenario-analysis/README.md",
-      "sha256": "e2dcbac30bd3ea8afb0e69ff4cf2604847f5893931aae0fa775a61338f67908f",
-      "bytes": 1728
+      "sha256": "c1f0602f85037c740dfa93f54760c98c4f6833ce4d5fad3a91caa6b0a0015740",
+      "bytes": 1751
     },
     {
       "path": "skills/scenario-analysis/SKILL.md",
@@ -1128,8 +1128,8 @@
     },
     {
       "path": "skills/skill-router/README.md",
-      "sha256": "328bf6818bd0d731d3557b559dcd497900e1833d5605b0c140b8dfcbbbedbcf7",
-      "bytes": 5805
+      "sha256": "37f6e18387fdb0488919fbf0b42831a96fb129e4f4b541e1c969c3c897fe2c78",
+      "bytes": 5809
     },
     {
       "path": "skills/skill-router/SKILL.md",
@@ -1193,8 +1193,8 @@
     },
     {
       "path": "skills/workbook-tieout/README.md",
-      "sha256": "93656d748dac160599234f44fbfd9207c69ab8f53da7f7becfe6b67997bca19f",
-      "bytes": 831
+      "sha256": "a78823a6d3121494cba7e0cd50e18fc4b6a8765fa29317d838020c540b5b6a12",
+      "bytes": 852
     },
     {
       "path": "skills/workbook-tieout/SKILL.md",
