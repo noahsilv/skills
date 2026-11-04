@@ -1,0 +1,14 @@
+{
+  "actor": "Synthetic reviewer",
+  "date": "2026-02-01",
+  "decisions": [
+    {
+      "action": "accept",
+      "claim_id": "CLM-010",
+      "supersedes": []
+    }
+  ],
+  "proposal_sha256": "061202e9527d40c82dba92cc322574e37775fc9561f104c0e23c1eafe2bc0590",
+  "reference": "Synthetic exercise decision; no real-world acceptance or approval.",
+  "review_id": "DEMO-REVIEW-1"
+}

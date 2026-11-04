@@ -1,0 +1,28 @@
+Fictional financial disclosure for software demonstration only.
+Cedar Circuit Components (synthetic); consolidated; currency USD; scale 1000; period 2025-01-01 to 2025-12-31.
+Synthetic audited status declaration for this example. No real auditor or assurance.Revenue 1,280,000
+Cost of sales (720,000)
+Operating cash flow 185,000
+Total assets 1,300,000
+Total liabilities 650,000
+Total equity 650,000
+Current assets 500,000
+Current liabilities 240,000
+Cash and equivalents 150,000
+Current borrowings excluding leases 90,000
+Noncurrent borrowings excluding leases 300,000
+Current lease liabilities 15,000
+Noncurrent lease liabilities 45,000
+Gross profit 560,000
+Operating expenses (310,000)
+Operating profit 250,000
+Net income 180,000
+Opening cash 100,000
+Closing cash 150,000
+Investing cash flow (110,000)
+Financing cash flow (25,000)
+FX cash movement 0
+Opening equity 500,000
+Other comprehensive income 0
+Owner contributions 20,000
+Dividends 50,000

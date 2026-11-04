@@ -1,0 +1,33 @@
+{
+  "claims": [
+    {
+      "basis": "reported_actual",
+      "claim_id": "CLM-010",
+      "currency": "USD",
+      "entity": "Synthetic Asset A",
+      "evidence": [
+        {
+          "locator": "Line 4",
+          "source_id": "SRC-A-v1"
+        }
+      ],
+      "metric": "annual_revenue",
+      "period": "FY2025",
+      "qualifiers": [
+        "standalone"
+      ],
+      "units": "million",
+      "unknown_reason": null,
+      "value": 18.5
+    }
+  ],
+  "sources": [
+    {
+      "label": "source-initial.txt",
+      "limitations": "Synthetic exercise; source truth and reason for revisions are not validated.",
+      "sha256": "c93bc4ee7b4839e62ea735c64ea46d75ca062d626ea5348d351108f1c37661df",
+      "source_id": "SRC-A-v1",
+      "version": "2026-01-15"
+    }
+  ]
+}

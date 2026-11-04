@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "query": "Use sheet inspection, then review report claims against evidence.",
+  "available_capabilities": ["python3.11"],
+  "limit": 2
+}

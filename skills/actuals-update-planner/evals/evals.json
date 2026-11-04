@@ -1,0 +1,24 @@
+{
+  "skill_name": "actuals-update-planner",
+  "evaluation_status": "Review prompts supplied; deterministic helper tests executed separately. No agent-vs-baseline benchmark run.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Generate the annual synthetic case and plan the FY2025 update. Show source-backed input variances, preserve formula rows and forecast assumptions, and state whether any workbook was updated or recalculated.",
+      "expected_output": "PLAN_READY with three hardcode links and one header proposal; actual revenue 1280, costs -720, operating cash flow 185 in USD millions; typed source-sheet plan; unchanged workbook hash and no calculation claim.",
+      "files": ["examples/make_demo.py"]
+    },
+    {
+      "id": 2,
+      "prompt": "Use the cumulative synthetic case to plan Q2 actuals from the half-year report. Explain the dates, prior-period deductions and signed cost variance.",
+      "expected_output": "Q2 revenue 375, costs -225 and operating cash flow 70, explicit Q1 source cells and contiguous date coverage, protected formula/forecast scopes, no workbook save.",
+      "files": ["examples/make_demo.py"]
+    },
+    {
+      "id": 3,
+      "prompt": "Generate the annual case, then change one source excerpt to cite physical page 1 instead of page 2. Attempt a plan and explain the evidence failure without producing an actionable partial update.",
+      "expected_output": "REJECTED due to absent evidence on the cited physical page; no plan directory or workbook mutation; correct the citation against the original synthetic text before rerunning.",
+      "files": ["examples/make_demo.py"]
+    }
+  ]
+}

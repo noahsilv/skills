@@ -1,0 +1,33 @@
+{
+  "base_sha256": "2d973a85ea4f15b1bd8815e32f84cf64050894ca5705ad4c70dd66ea22478fbc",
+  "export_sha256": "ce659fe19d2cf57968a378f6d36b5853554d56337306ff36017b518a0706ea70",
+  "round_id": "round-1",
+  "rows": [
+    {
+      "category": "Operating performance",
+      "due_date": "2026-02-20",
+      "evidence_reference": "",
+      "request": "Provide the FY2025 revenue reconciliation for Synthetic Asset A.",
+      "request_id": "REQ-010",
+      "response": ""
+    },
+    {
+      "category": "Debt",
+      "due_date": "2026-02-20",
+      "evidence_reference": "",
+      "request": "Provide the outstanding debt schedule and identify unreconciled balances.",
+      "request_id": "REQ-040",
+      "response": ""
+    },
+    {
+      "category": "Forecast",
+      "due_date": "2026-02-20",
+      "evidence_reference": "",
+      "request": "Provide the assumptions supporting the next-year operating forecast.",
+      "request_id": "REQ-090",
+      "response": ""
+    }
+  ],
+  "schema_version": 1,
+  "tracker_id": "synthetic-diligence"
+}

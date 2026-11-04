@@ -11,7 +11,9 @@ from urllib.parse import unquote
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILLS = {"prompt-optimizer", "workbook-tieout", "model-regression-testing", "office-package-audit", "docx-footnotes"}
+from build_catalog import REGISTRY, build
+
+SKILLS = set(REGISTRY)
 IGNORED_DIRS = {".git", ".venv", "__pycache__", ".pytest_cache", "dist"}
 ALLOWED_SUFFIXES = {".md", ".py", ".json", ".txt", ".yml", ".yaml", ".csv"}
 
@@ -29,6 +31,11 @@ def source_files():
 
 def validate(check_manifest=False):
     errors = []
+    try:
+        if (ROOT / "catalog" / "skills.json").read_text() != build():
+            errors.append("catalog is stale; run scripts/build_catalog.py")
+    except (OSError, ValueError, yaml.YAMLError) as exc:
+        errors.append(f"catalog invalid: {exc}")
     names = {p.name for p in (ROOT / "skills").iterdir() if p.is_dir() and p.name not in IGNORED_DIRS}
     if names != SKILLS:
         errors.append(f"unexpected skill membership: {sorted(names ^ SKILLS)}")

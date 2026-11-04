@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "analysis_id": "Synthetic_Operations",
+  "currency": "USD",
+  "money_decimals": 2,
+  "periods": [
+    {"id": "Year_1", "start_date": "2027-01-01", "end_date": "2028-01-01"},
+    {"id": "Year_2", "start_date": "2028-01-01", "end_date": "2029-01-01"},
+    {"id": "Year_3", "start_date": "2029-01-01", "end_date": "2030-01-01"}
+  ],
+  "base_assumptions": {
+    "volume": ["10000", "11000", "12000"],
+    "unit_price": ["45", "46", "47"],
+    "unit_variable_cost": ["18", "19", "20"],
+    "fixed_cost": ["80000", "82000", "84000"],
+    "cash_taxes": ["25000", "27000", "29000"],
+    "maintenance_capex": ["20000", "22000", "24000"],
+    "working_capital_increase": ["10000", "11000", "12000"],
+    "debt_service": ["80000", "85000", "90000"]
+  },
+  "cases": [
+    {"id": "base", "overrides": {}},
+    {"id": "volume_down", "overrides": {"volume": {"operation": "multiply", "values": ["0.85", "0.85", "0.85"]}}},
+    {"id": "fixed_cost_up", "overrides": {"fixed_cost": {"operation": "multiply", "values": ["1.15", "1.15", "1.15"]}}},
+    {"id": "combined", "overrides": {
+      "volume": {"operation": "multiply", "values": ["0.85", "0.85", "0.85"]},
+      "fixed_cost": {"operation": "multiply", "values": ["1.15", "1.15", "1.15"]}
+    }},
+    {"id": "capex_step", "overrides": {"maintenance_capex": {"operation": "add", "values": ["10000", "0", "0"]}}}
+  ],
+  "sensitivities": [
+    {"id": "volume_multiplier", "assumption": "volume", "operation": "multiply", "values": ["0.8", "0.9", "1", "1.1", "1.2"]},
+    {"id": "price_multiplier", "assumption": "unit_price", "operation": "multiply", "values": ["0.9", "1", "1.1"]}
+  ]
+}

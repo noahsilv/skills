@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "id": "actuals-update-planner",
+      "path": "skills/actuals-update-planner/SKILL.md",
+      "description": "Plan a source-linked actuals update to an existing forecast workbook using explicit row, period, unit and evidence mappings. Use when reported annual or interim results must replace estimate inputs while preserving forecast assumptions and formulas. Produces proposed cell edits, estimate snapshots and variances; reads XLSX but never changes or recalculates it.",
+      "aliases": [
+        "plan an actuals update"
+      ],
+      "required_capabilities": [
+        "python3.11",
+        "openpyxl"
+      ]
+    },
+    {
+      "id": "artifact-quality-gate",
+      "path": "skills/artifact-quality-gate/SKILL.md",
+      "description": "Validate that explicitly required artifact checks have complete self-reported records bound to current file hashes and one immutable run. Use when collecting file review evidence, reconciling check logs, or preparing a delivery note that must distinguish attested checks from missing, stale, or failed checks. Rehashes artifacts, checker files, and logs; does not execute checkers, independently certify correctness, or validate recalculation.",
+      "aliases": [
+        "verify current check evidence"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "debt-schedule",
+      "path": "skills/debt-schedule/SKILL.md",
+      "description": "Build and verify a dated debt roll-forward for a fixed-rate non-revolving facility from explicit terms, drawdowns and repayments. Use for loan amortization, partial-period interest or debt-service calculations when the caller needs traceable balances and cash payments. Produces an exact accrual trail, CSV schedule and readable report; does not recalculate an Excel model.",
+      "aliases": [
+        "loan amortization"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "diligence-request-tracker",
+      "path": "skills/diligence-request-tracker/SKILL.md",
+      "description": "Build and reconcile local diligence information-request rounds with permanent request IDs, a client-only CSV export, archived original returns and response proposals. Use for financing or investment diligence lists, follow-up rounds and returned client spreadsheets. Responses remain proposals until reviewed; this skill does not send files, contact clients or update external systems.",
+      "aliases": [
+        "information request roundtrip"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "document-review-coverage",
+      "path": "skills/document-review-coverage/SKILL.md",
+      "description": "Inventory a Markdown or plain-text document, record review judgments for each declared unit and check, and reconcile the records against the current source. Use for a document review coverage audit, a review proposal sheet, or tracking reviewer comments and supported revisions. Finds missing or duplicate review slots, stale artifacts, unmatched quotations, and unresolved work. Coverage is a recordkeeping check; it does not certify that judgments or proposed revisions are correct. Does not edit the document or inspect Word/PDF layout.",
+      "aliases": [
+        "check reviewer coverage"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "docx-footnotes",
+      "path": "skills/docx-footnotes/SKILL.md",
+      "description": "Add native footnotes to a supported Word .docx using explicit text markers, while preserving existing notes and writing a new file. Use for automated citations or supplementary notes when the document can be prepared with standalone marker runs and structural checks are required.",
+      "aliases": [
+        "insert native citations"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "evidence-brief",
+      "path": "skills/evidence-brief/SKILL.md",
+      "description": "Prepare a concise decision brief from meeting records, source documents, or project updates. Use when asked for a management readout, decision memo, evidence-based summary, or a short account of what was agreed and what remains uncertain. Trace material claims to sources, preserve qualifications, distinguish proposals from decisions, and identify only supported actions and owners. Do not use for creative summaries or as a substitute for substantive financial, legal, or technical diligence.",
+      "aliases": [
+        "draft a decision brief"
+      ],
+      "required_capabilities": []
+    },
+    {
+      "id": "evidence-ledger",
+      "path": "skills/evidence-ledger/SKILL.md",
+      "description": "Maintain cited claims across source versions, flag conflicting values or units, and stage reviewed updates without silently replacing accepted records. Use for financing diligence, investment memo evidence, research handoffs, and questions about which source supports a figure or what changed. This skill records evidence and review decisions; it does not determine source truth, creditworthiness, or investment merit.",
+      "aliases": [
+        "maintain sourced claims"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "financial-statement-analysis",
+      "path": "skills/financial-statement-analysis/SKILL.md",
+      "description": "Normalize historical financial statements into explicit entity, period, currency, scale and source records, then reconcile accounting identities and calculate defined metrics with coverage. Use for source-linked historical financial analysis, missing-data review or statement reconciliation. Produces JSON and a readable report from reviewed normalized inputs; excludes forecasts, valuations and credit ratings.",
+      "aliases": [
+        "analyze normalized statements"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "model-regression-testing",
+      "path": "skills/model-regression-testing/SKILL.md",
+      "description": "Detect unexpected changes to a model's watched outputs using immutable JSON snapshots, explicit intended-change declarations and typed comparisons. Use before and after actuals updates, formula edits, scenario rewiring or other changes to an already reviewed model. Includes an optional read-only XLSX exporter.",
+      "aliases": [
+        "compare model snapshots"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "office-package-audit",
+      "path": "skills/office-package-audit/SKILL.md",
+      "description": "Inspect an Office document, spreadsheet or presentation for broken package relationships, malformed XML, duplicate identifiers and content that needs review before sharing. Use after scripted Office edits or when checking metadata, hidden content, comments, revisions, notes, embedded objects or external links. Produces a read-only JSON report with part locations and explicit inspection limits.",
+      "aliases": [
+        "inspect Office package structure"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "prompt-optimizer",
+      "path": "skills/prompt-optimizer/SKILL.md",
+      "description": "Rewrite prompts and agent briefs into clear, testable instructions while preserving the user's intent. Use when asked to improve a prompt, adapt it to a different model or tool environment, or diagnose inconsistent outputs.",
+      "aliases": [
+        "improve a prompt"
+      ],
+      "required_capabilities": []
+    },
+    {
+      "id": "scenario-analysis",
+      "path": "skills/scenario-analysis/SKILL.md",
+      "description": "Build a reproducible financial case registry, preserve the base assumptions, validate overrides and compare named cases with isolated one-factor sensitivities. Use for base/downside comparisons, operating cash stress tests or tracing which assumptions change a result. Includes a standalone volume-price-cost cash model with explicit debt service and exact arithmetic; does not recalculate Excel workbooks.",
+      "aliases": [
+        "compare financial cases"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "skill-router",
+      "path": "skills/skill-router/SKILL.md",
+      "description": "Suggest bounded skill candidates from an explicitly supplied local JSON catalog. Use when a user asks which installed skill fits a request, names a skill alias, or needs to see capability gaps before choosing a workflow. Validates catalog paths and names, prioritizes named skills, and returns deterministic lexical suggestions. Does not execute tools, dispatch agents, or establish semantic relevance.",
+      "aliases": [
+        "find a workflow"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
+      "id": "workbook-tieout",
+      "path": "skills/workbook-tieout/SKILL.md",
+      "description": "Reconcile explicitly mapped cells between two Excel workbooks, with declared periods, units and conversions. Use when checking re-keyed historical data, an actuals update, or a model against its identified source. Reports mismatches and incomplete coverage without changing either workbook.",
+      "aliases": [
+        "reconcile spreadsheet cells"
+      ],
+      "required_capabilities": [
+        "python3.11",
+        "openpyxl"
+      ]
+    }
+  ]
+}

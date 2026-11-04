@@ -1,0 +1,9 @@
+{
+  "claims": [],
+  "ledger_id": "synthetic-asset-review",
+  "parent_sha256": null,
+  "reviews": [],
+  "revision": 0,
+  "schema_version": 1,
+  "sources": []
+}

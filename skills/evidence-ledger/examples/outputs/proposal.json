@@ -1,0 +1,88 @@
+{
+  "added": {
+    "claims": [
+      "CLM-020",
+      "CLM-030"
+    ],
+    "sources": [
+      "SRC-A-v2"
+    ]
+  },
+  "base_sha256": "8326dc4e815259d89a0d931abc633bf003193267f23eb26fe8cac4d25dbce8b6",
+  "candidate_check": {
+    "conflicts": [
+      {
+        "claim_ids": [
+          "CLM-010",
+          "CLM-020"
+        ],
+        "reason": "value_or_context_difference"
+      }
+    ],
+    "source_truth": "not_checked",
+    "statuses": {
+      "CLM-010": "accepted",
+      "CLM-020": "pending",
+      "CLM-030": "pending"
+    },
+    "structure": "valid",
+    "unknown_claims": [
+      "CLM-030"
+    ]
+  },
+  "ledger_id": "synthetic-asset-review",
+  "schema_version": 1,
+  "update": {
+    "claims": [
+      {
+        "basis": "reported_actual",
+        "claim_id": "CLM-020",
+        "currency": "USD",
+        "entity": "Synthetic Asset A",
+        "evidence": [
+          {
+            "locator": "Line 4",
+            "source_id": "SRC-A-v2"
+          }
+        ],
+        "metric": "annual_revenue",
+        "period": "FY2025",
+        "qualifiers": [
+          "standalone"
+        ],
+        "units": "million",
+        "unknown_reason": null,
+        "value": 19.1
+      },
+      {
+        "basis": "reported_actual",
+        "claim_id": "CLM-030",
+        "currency": "USD",
+        "entity": "Synthetic Asset A",
+        "evidence": [
+          {
+            "locator": "Line 6",
+            "source_id": "SRC-A-v2"
+          }
+        ],
+        "metric": "outstanding_debt",
+        "period": "FY2025",
+        "qualifiers": [
+          "standalone"
+        ],
+        "units": "million",
+        "unknown_reason": "No outstanding debt balance supplied in the extract.",
+        "value": null
+      }
+    ],
+    "sources": [
+      {
+        "label": "source-revised.txt",
+        "limitations": "Synthetic exercise; source truth and reason for revisions are not validated.",
+        "sha256": "9734c71ac0104d64a672cd7339f82aafa9a2620c6c9dab166e47ac10b7ce802b",
+        "source_id": "SRC-A-v2",
+        "version": "2026-02-02"
+      }
+    ]
+  }
+}

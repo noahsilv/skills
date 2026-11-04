@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "1.0.0",
+  "release": "2.0.0-draft",
   "review_date": "2026-11-04",
   "excluded_from_hashes": [
     "release-manifest.json"
@@ -28,8 +28,18 @@
     },
     {
       "path": "README.md",
-      "sha256": "0abb062c32e64a46e476306b90b7917a94a56be7d7eb5d934bc2b70499d5c5ef",
-      "bytes": 3142
+      "sha256": "3761f0c78eef7133be2dae94530aaee401600d75bfaed89a417f0b9dc449c247",
+      "bytes": 5662
+    },
+    {
+      "path": "catalog/skills.json",
+      "sha256": "612788253d093f858065dd2d55bd6c4a7edd3a48116ef9de723144e6d4392d08",
+      "bytes": 9509
+    },
+    {
+      "path": "docs/PORTFOLIO_GUIDE.md",
+      "sha256": "4f653a27cd1b270e89e13b1d17bd451bc74717cf262329284c4507f3c1434d8b",
+      "bytes": 2879
     },
     {
       "path": "docs/PROMPT_EVALUATIONS.md",
@@ -38,8 +48,53 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "3730a4aa1939eb1875966969490d3803c6f74f9feb9bb078a79caf1a2a2be6ef",
-      "bytes": 3732
+      "sha256": "baa0a8fb0b8cde10710efb59d4e5d09bde68db09a9b2b8e49e50edae03c4c68c",
+      "bytes": 2387
+    },
+    {
+      "path": "docs/case-studies/diligence-workflow.md",
+      "sha256": "23a3b7d5e84141aef41eb7bb0fa505ac4c66611b6e9121298f6591a825084834",
+      "bytes": 2487
+    },
+    {
+      "path": "docs/case-studies/engineering-controls.md",
+      "sha256": "c83437b95858717003655be25a3ceceebd5e28b77b04fc902c5b74bcd431049a",
+      "bytes": 2196
+    },
+    {
+      "path": "docs/case-studies/financial-workflow.md",
+      "sha256": "73ac6f0c6d86ff1c67bb3f4a8be31c147ebfc99c0b364bb2c9e0ef12148dd98a",
+      "bytes": 2482
+    },
+    {
+      "path": "docs/case-studies/outputs/engineering-controls.md",
+      "sha256": "14ce27ea2e3a20aa190fca306ec945731b04a17e97b49943f549f11e2aab0955",
+      "bytes": 936
+    },
+    {
+      "path": "docs/case-studies/outputs/financing-brief.md",
+      "sha256": "ff8d83d8e676368ab5de77fd8b745b19c3ec31c24111534c5fb6bf8529fb42e3",
+      "bytes": 2356
+    },
+    {
+      "path": "docs/case-studies/outputs/financing-ledger.md",
+      "sha256": "43d5f9191c895f38e454dde17fddcbcb32abc59a25f9544631b849904a611fdd",
+      "bytes": 1270
+    },
+    {
+      "path": "docs/case-studies/outputs/financing-response.md",
+      "sha256": "5a973f07a3b3e442b490b5f2f479d61f273bc0a463d2c9ca925fe367c032211b",
+      "bytes": 571
+    },
+    {
+      "path": "examples/engineering_controls_demo.py",
+      "sha256": "096792f50893223a805a0f23407927e539794dd7c7422eb6fba9bbbba5e33f16",
+      "bytes": 4873
+    },
+    {
+      "path": "examples/financing_evidence_demo.py",
+      "sha256": "2e1bce6c15643be0f6ca7c1ca34ac325aed6f4a7d6795ad61a57de0f444b927c",
+      "bytes": 6478
     },
     {
       "path": "requirements-dev.txt",
@@ -47,14 +102,444 @@
       "bytes": 30
     },
     {
+      "path": "scripts/build_catalog.py",
+      "sha256": "3462ed715347ce30acb487068710ca39512cd6aa4e6ca576de48fc579112e9de",
+      "bytes": 3273
+    },
+    {
       "path": "scripts/test.py",
-      "sha256": "c8587fbb9c5f5f5f70a23b2c203fa752a6166e10b4c8ad35753290a8a95de27a",
-      "bytes": 1316
+      "sha256": "d9decac6145ef6bc516074d744db59e1ebce382f9e233bda27146ea2d3b6c0ee",
+      "bytes": 1599
     },
     {
       "path": "scripts/validate.py",
-      "sha256": "1c2e4581bf6b6cc8ca81f2a688934eb972029e7cf8e95091d000fd7576d5a50c",
-      "bytes": 5146
+      "sha256": "fdf6cec21b8f40a93776af9e625f6435ecbac962215a265c9fa8b059c1eec2b8",
+      "bytes": 5354
+    },
+    {
+      "path": "skills/actuals-update-planner/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/actuals-update-planner/README.md",
+      "sha256": "4f8e9c8b3a2a7fd606460d7a41fa2d5dede0c7b1a2f714b9680a4719d78379ca",
+      "bytes": 1415
+    },
+    {
+      "path": "skills/actuals-update-planner/SKILL.md",
+      "sha256": "90cc98fd7660e06362889f165bbf7089f2d218fd7b7a83dc3add5507b575821b",
+      "bytes": 4956
+    },
+    {
+      "path": "skills/actuals-update-planner/evals/evals.json",
+      "sha256": "d39305dd232609ea145d42ed999e80796c52f60d1d34c08823883046f9d9d2f7",
+      "bytes": 1646
+    },
+    {
+      "path": "skills/actuals-update-planner/examples/README.md",
+      "sha256": "a8a099b6da83108fc198b33bb53772ad1821d12446b4f5649f394fcd9bdba352",
+      "bytes": 3121
+    },
+    {
+      "path": "skills/actuals-update-planner/examples/annual-plan.json",
+      "sha256": "167af7f0ff202a57b2d0d8cbc0d54a8b914aea5c67254db8b66eafe28a88112a",
+      "bytes": 10909
+    },
+    {
+      "path": "skills/actuals-update-planner/examples/annual-plan.md",
+      "sha256": "209fe97ccf45b93d23873aa4f7dddc357575b3999daea00e967e783ce99dceba",
+      "bytes": 2725
+    },
+    {
+      "path": "skills/actuals-update-planner/examples/cumulative-plan.json",
+      "sha256": "ca859efc4122575c8a9d520c3b6cd88b7f8c574c22af9c395fe0ce1ed2879290",
+      "bytes": 11137
+    },
+    {
+      "path": "skills/actuals-update-planner/examples/cumulative-plan.md",
+      "sha256": "f6871a0a028e69053283b53d74a6f0ecd0808ee5699c651bda8fb4de467a348d",
+      "bytes": 2728
+    },
+    {
+      "path": "skills/actuals-update-planner/examples/make_demo.py",
+      "sha256": "e6a878377fd3f4c9be70fc818ccb7374bc800162c5f48949845b9d3430dcc745",
+      "bytes": 6574
+    },
+    {
+      "path": "skills/actuals-update-planner/references/schema.md",
+      "sha256": "81d837c3e18c7d48d682b0794dbf3957f274f1bb739cbcbfb7149b528f4c8e7f",
+      "bytes": 8207
+    },
+    {
+      "path": "skills/actuals-update-planner/requirements.txt",
+      "sha256": "06d28d69e958deafb09f0a44fcae9b548f15e4debc14ebc39aad5f0934856fbf",
+      "bytes": 16
+    },
+    {
+      "path": "skills/actuals-update-planner/scripts/plan.py",
+      "sha256": "3096ec559c094d0f54d709b6ab6c4032fa349256746a7165b4089a7d242ec1ed",
+      "bytes": 35121
+    },
+    {
+      "path": "skills/actuals-update-planner/tests/test_plan.py",
+      "sha256": "90d73d8a4ce8883ef25dc21f80fa5cf646f6fba1a0904df620d2cb6dbe0474c6",
+      "bytes": 17095
+    },
+    {
+      "path": "skills/artifact-quality-gate/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/artifact-quality-gate/README.md",
+      "sha256": "c37d568dc0a50f5f6a0cc89d6de28fd0db3ef0fb31c768bb04e12496dcc46511",
+      "bytes": 8702
+    },
+    {
+      "path": "skills/artifact-quality-gate/SKILL.md",
+      "sha256": "659acb9d70958b6a40ed51a8998fbc27796af0662e3c7ec0da9f499924405b5f",
+      "bytes": 3543
+    },
+    {
+      "path": "skills/artifact-quality-gate/evals/evals.json",
+      "sha256": "55cfbca62cfc9bb614f2755ab64fcb867de3f293c9562eff0c197f3a94145c84",
+      "bytes": 1276
+    },
+    {
+      "path": "skills/artifact-quality-gate/examples/inputs/checker.py",
+      "sha256": "dacfcfa9f5ff94ff78a61021c1622a650921bac3d6905bf07bddf231456017ae",
+      "bytes": 833
+    },
+    {
+      "path": "skills/artifact-quality-gate/examples/inputs/record-request.json",
+      "sha256": "97d0c3ad966f5fdb900ac3c88c9c176eba7aba59253126c45f1d3f05ac556f2e",
+      "bytes": 281
+    },
+    {
+      "path": "skills/artifact-quality-gate/examples/inputs/sample.csv",
+      "sha256": "47c7ffd4af6c14d5b28945e4529e7829714ada9cc5b3f24bdc0084eea6128e0c",
+      "bytes": 73
+    },
+    {
+      "path": "skills/artifact-quality-gate/examples/inputs/spec.json",
+      "sha256": "9265cab68c8259c4cae1a1c5a30936e05fb22cec518cb56c35c6ef96da5c8109",
+      "bytes": 277
+    },
+    {
+      "path": "skills/artifact-quality-gate/examples/output.md",
+      "sha256": "deca7f509840c31be559ec472a8680f6a0d7e2e3cf5847a7b9ba72552f06ad06",
+      "bytes": 1038
+    },
+    {
+      "path": "skills/artifact-quality-gate/scripts/demo.py",
+      "sha256": "eb1e536253b490d772895a0a31d9dab1d9f88873cb7d42e171485472e7e667be",
+      "bytes": 2811
+    },
+    {
+      "path": "skills/artifact-quality-gate/scripts/gate.py",
+      "sha256": "cee130646ba8312669a7aea26e520c4594e052694dc5c69d01342a4801c2f6a1",
+      "bytes": 17692
+    },
+    {
+      "path": "skills/artifact-quality-gate/tests/test_gate.py",
+      "sha256": "8557d949edd0bacb0c08d412efacb92f905c518baf391cdb8cb988cd3fea1f75",
+      "bytes": 18492
+    },
+    {
+      "path": "skills/debt-schedule/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/debt-schedule/README.md",
+      "sha256": "204f1847440ad1d20da3a8a35e01a99c7224f7041df93994dd5560dd9e37d626",
+      "bytes": 1217
+    },
+    {
+      "path": "skills/debt-schedule/SKILL.md",
+      "sha256": "febcb39971ad09c661814692ff566fee4298cd0f941df607ade9000b9901ebc8",
+      "bytes": 5048
+    },
+    {
+      "path": "skills/debt-schedule/examples/README.md",
+      "sha256": "8abc6d436ea97a44d0feed89d598fddb7428bba43217f2393569c0f9fbef5b1b",
+      "bytes": 1086
+    },
+    {
+      "path": "skills/debt-schedule/examples/output/accruals.csv",
+      "sha256": "6606ddd92406c796f0917739af355d1c62b48e1a606c24aa7d826cdff3c00476",
+      "bytes": 455
+    },
+    {
+      "path": "skills/debt-schedule/examples/output/report.json",
+      "sha256": "9731d27a74356ffa982c9622afe0440e2d04d211071c7e10cc018452b8da715e",
+      "bytes": 3312
+    },
+    {
+      "path": "skills/debt-schedule/examples/output/report.md",
+      "sha256": "7c5edc0e260f54500170054167d2855bdb9c6fecc162576a0332ca42852abb32",
+      "bytes": 1619
+    },
+    {
+      "path": "skills/debt-schedule/examples/output/schedule.csv",
+      "sha256": "eb72db4caa77e35bbffe1ffdf3e9cf629ae13ca3ac07ee70b76f5308c0d90aca",
+      "bytes": 469
+    },
+    {
+      "path": "skills/debt-schedule/examples/terms.json",
+      "sha256": "f02070ef25970ea7e050f7af00fe4f9c388710c0b36da6461fc840a5a40e9d33",
+      "bytes": 765
+    },
+    {
+      "path": "skills/debt-schedule/references/input-contract.md",
+      "sha256": "b5c446b0da18ac668c638034f5b8820092f58616438e76214469488aa076ebd5",
+      "bytes": 3084
+    },
+    {
+      "path": "skills/debt-schedule/scripts/debt_schedule.py",
+      "sha256": "49a1639b7bd5703373d845e9fa681747b22ac9455471225645a01a2599457869",
+      "bytes": 14503
+    },
+    {
+      "path": "skills/debt-schedule/tests/test_debt_schedule.py",
+      "sha256": "9608f4b4517db9642f125ddf1f19ea23612a00f8ac54692d4d3bd9b9f3203861",
+      "bytes": 12049
+    },
+    {
+      "path": "skills/diligence-request-tracker/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/diligence-request-tracker/README.md",
+      "sha256": "5b83e7f9b9b02dd65dc81a1770405db91a285fd9709228fbeb80d2bf42be4567",
+      "bytes": 5950
+    },
+    {
+      "path": "skills/diligence-request-tracker/SKILL.md",
+      "sha256": "19c32f7649183a87cac8b274f6a501674fbe0720f7826ac079f5e8867502e2ad",
+      "bytes": 4542
+    },
+    {
+      "path": "skills/diligence-request-tracker/evals/evals.json",
+      "sha256": "ee22bbdeda15b378da684093596e0be9e31ac5b43722e3002f9c32d3ae06b318",
+      "bytes": 1903
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/README.md",
+      "sha256": "0415eca4463accf52c10b3267f97eec7f248f3c873759756f4a1bb6ad2a2cf8d",
+      "bytes": 1255
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/inputs/requests.json",
+      "sha256": "107ef32d20a5f45eddac878c1beac17c746a8c4eb67c5b2bd5120eaf68645e0a",
+      "bytes": 1035
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/inputs/returned.csv",
+      "sha256": "ab87967fe7cd0828ff7e5fda509e5144b6e5240c1898dad99657e197e374c0d4",
+      "bytes": 597
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/archive/ab87967fe7cd0828ff7e5fda509e5144b6e5240c1898dad99657e197e374c0d4.csv",
+      "sha256": "ab87967fe7cd0828ff7e5fda509e5144b6e5240c1898dad99657e197e374c0d4",
+      "bytes": 597
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/client-round-1.csv",
+      "sha256": "ce659fe19d2cf57968a378f6d36b5853554d56337306ff36017b518a0706ea70",
+      "bytes": 420
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/client-round-2.csv",
+      "sha256": "29f736384ccc604cba9699bbd82e92029d8b28d08f3680f9337c1c408a69137e",
+      "bytes": 368
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/proposals.json",
+      "sha256": "f36e394d0d9fb98be8853ca049d1c8f1691bc3707912fdf6bb2f4946df777d17",
+      "bytes": 2181
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/proposals.md",
+      "sha256": "7f119dcd3654c2db4fbcea8a550ac0ac3178f67038dc5f05a8a34f0e00bafd3f",
+      "bytes": 646
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/review.json",
+      "sha256": "88c0eb321715b3af42837485d3d3335c719db4b1b0773536c06bb91d2273bcbe",
+      "bytes": 497
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/round-1.json",
+      "sha256": "978569c6048175e82c9c2362f6c50a429be84a2c431c4b0deab5ca07af646885",
+      "bytes": 1032
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/round-2.json",
+      "sha256": "aeef9d062a1d4a91a89d427f0f40f5a9e34837ca2240ad94cdc6936da8fa78d9",
+      "bytes": 842
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/tracker-0.json",
+      "sha256": "2d973a85ea4f15b1bd8815e32f84cf64050894ca5705ad4c70dd66ea22478fbc",
+      "bytes": 1303
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/tracker.json",
+      "sha256": "5d20598db4cf263dadb09a5fd021474869e5d5f60d766175d17b581f6e32cd14",
+      "bytes": 3328
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/outputs/validation.json",
+      "sha256": "f4cd62bea0fadbdfca9f79b8ff60c8fa7f92a0c78b1b319065286273dae6af6f",
+      "bytes": 155
+    },
+    {
+      "path": "skills/diligence-request-tracker/examples/run_demo.py",
+      "sha256": "b19399ccf6530a0002f8af7e91fca1491a1a8563005caf15c43fe5c16fb6b48c",
+      "bytes": 3135
+    },
+    {
+      "path": "skills/diligence-request-tracker/references/roundtrip-contract.md",
+      "sha256": "6662fe059f7ad536abd2818afe5a8089be6a84ae9da7f439e64b19fbded541e6",
+      "bytes": 3929
+    },
+    {
+      "path": "skills/diligence-request-tracker/scripts/tracker.py",
+      "sha256": "2202258c9a990e4fca566efedd1cf2d89af969602fe707f78ab15b6368ee7af7",
+      "bytes": 23653
+    },
+    {
+      "path": "skills/diligence-request-tracker/tests/test_tracker.py",
+      "sha256": "9271e4fbac92f281c9827c322300f392422e78542211219ef19fdb95a3a96d98",
+      "bytes": 15308
+    },
+    {
+      "path": "skills/document-review-coverage/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/document-review-coverage/README.md",
+      "sha256": "3482109b549cae6c9b7211ff5dbaa960db26216a71c0040d21480f6dc84bee13",
+      "bytes": 1517
+    },
+    {
+      "path": "skills/document-review-coverage/SKILL.md",
+      "sha256": "7bad76bbafdd64c7143df92dc0f2ad5eb304e695b8c3dfd19c5b76873a0b0f7a",
+      "bytes": 6867
+    },
+    {
+      "path": "skills/document-review-coverage/examples/README.md",
+      "sha256": "1c81ae069b5f45574ccd0f807ba47cb0ddfaa6456315c2494738d39f4859b147",
+      "bytes": 4117
+    },
+    {
+      "path": "skills/document-review-coverage/examples/draft-stale.md",
+      "sha256": "65460a2e1707496a6218fc252bc3f01b297d4517b38f1e661dd5995730bce3d7",
+      "bytes": 206
+    },
+    {
+      "path": "skills/document-review-coverage/examples/draft.md",
+      "sha256": "13ce0e3cf38b5f9c8cde568b3c2f3f98bcd6b002a193e93cbeee952b20201e09",
+      "bytes": 206
+    },
+    {
+      "path": "skills/document-review-coverage/examples/inventory-scope-changed.json",
+      "sha256": "833ba33141ce0289a1be13a3edfabcfbb1990a4d6227e744070b12e503a11572",
+      "bytes": 1241
+    },
+    {
+      "path": "skills/document-review-coverage/examples/inventory.json",
+      "sha256": "643d63b63a44fea8ce9bd9e099122187beb4ff31ed9abea5d634b6f3b663a75b",
+      "bytes": 1263
+    },
+    {
+      "path": "skills/document-review-coverage/examples/outputs/complete/report.json",
+      "sha256": "3e6f32777552709e8a5cec33683377a7601f4b09961f6b8465e2792f73444489",
+      "bytes": 6321
+    },
+    {
+      "path": "skills/document-review-coverage/examples/outputs/complete/report.md",
+      "sha256": "51321dec86b7bfe0fcdf046f140569fd4b2de6c180652dc18bf42381a9b5bf59",
+      "bytes": 6187
+    },
+    {
+      "path": "skills/document-review-coverage/examples/outputs/incomplete/report.json",
+      "sha256": "ab98a7b2f08a5969d115ff0f6d4b2c30e6f5d941a85a2309070b84f5aa04be55",
+      "bytes": 5749
+    },
+    {
+      "path": "skills/document-review-coverage/examples/outputs/incomplete/report.md",
+      "sha256": "3e0a15a5686d29114b4e8fe6e745f85a2033df1fca2ba9663968690f0726cf98",
+      "bytes": 5396
+    },
+    {
+      "path": "skills/document-review-coverage/examples/outputs/scope-changed/report.json",
+      "sha256": "7b620ed6c7038832b2239196d8498fe21e9cc6a2d63939a9a6756c068d0f49f5",
+      "bytes": 3949
+    },
+    {
+      "path": "skills/document-review-coverage/examples/outputs/scope-changed/report.md",
+      "sha256": "75c4ddb75dcd51de8e937d3148ab454f7207ebaabf2b79fb9c91bd4eedc57984",
+      "bytes": 3757
+    },
+    {
+      "path": "skills/document-review-coverage/examples/outputs/scope-original/report.json",
+      "sha256": "ec7f48f820217b80d23092859caf951c41ff9e0ec011d1d00ad07b726628cd70",
+      "bytes": 4122
+    },
+    {
+      "path": "skills/document-review-coverage/examples/outputs/scope-original/report.md",
+      "sha256": "6faf8223a657065625794c67bdddfb87a0e4f5f98cc20a8f41f14b1cccffebb6",
+      "bytes": 3735
+    },
+    {
+      "path": "skills/document-review-coverage/examples/outputs/stale/report.json",
+      "sha256": "303efe43e2c5f3e9a6fe0c2455cb1903f6d3aab4d6bea26ab29a6b72960c5848",
+      "bytes": 6511
+    },
+    {
+      "path": "skills/document-review-coverage/examples/outputs/stale/report.md",
+      "sha256": "ccb19531959dac70a86bdfe6849a6d1d1e78bf7db3ca076797723e4a0a78d901",
+      "bytes": 6383
+    },
+    {
+      "path": "skills/document-review-coverage/examples/reviews-clarity-only.json",
+      "sha256": "e5be8d5866ea2e19e6cb17349646d12368e40ce40c55344958a25b486dcaa08e",
+      "bytes": 1968
+    },
+    {
+      "path": "skills/document-review-coverage/examples/reviews-complete.json",
+      "sha256": "886bca941d5302d37a44489c64fe04f8d8dbfe5978066381d27b3cfdc6dec97a",
+      "bytes": 4376
+    },
+    {
+      "path": "skills/document-review-coverage/examples/reviews-incomplete.json",
+      "sha256": "f992c7bc75e48f5e255c7b12258926a852bf26c8820d60e38482f7e444940b8f",
+      "bytes": 3562
+    },
+    {
+      "path": "skills/document-review-coverage/examples/supporting-note.md",
+      "sha256": "e83f6cc5bb27fdc301ea96bcbe0e7a56c6816c7dbd9aec50903859c2f9f3dfe0",
+      "bytes": 426
+    },
+    {
+      "path": "skills/document-review-coverage/references/record-format.md",
+      "sha256": "3f08ba541488440ed4aa9702d1680ade8259430d9b2a1705538b01f08bc82964",
+      "bytes": 7702
+    },
+    {
+      "path": "skills/document-review-coverage/scripts/review_coverage.py",
+      "sha256": "a065d710b8259d2e87e4bba96c852d321ceacd758a413c67af82f43db1b286cc",
+      "bytes": 22557
+    },
+    {
+      "path": "skills/document-review-coverage/tests/test_review_coverage.py",
+      "sha256": "335977276341f00fbfcae4db9461d421c25dfc3824326414cca7ec3e65f41455",
+      "bytes": 20236
     },
     {
       "path": "skills/docx-footnotes/LICENSE",
@@ -95,6 +580,271 @@
       "path": "skills/docx-footnotes/tests/test_footnotes.py",
       "sha256": "928260b566c1eec2d08be67e5d26807fb3fa8fda1f8b38760fa57598cca100fc",
       "bytes": 16491
+    },
+    {
+      "path": "skills/evidence-brief/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/evidence-brief/README.md",
+      "sha256": "88bfbeb027d6694aee95b7ae381352884b7df4546f3cee2168c1b8faf348aac6",
+      "bytes": 1368
+    },
+    {
+      "path": "skills/evidence-brief/SKILL.md",
+      "sha256": "eba4e8a93725a9e914d8baf6807d5ca1b13e0013e9721d25d97afd312788fe0a",
+      "bytes": 5978
+    },
+    {
+      "path": "skills/evidence-brief/evals/evals.json",
+      "sha256": "ca18e462407c8f83c58ea4dcd277da6fc780473acb86895d78e1b0061972cc3c",
+      "bytes": 4643
+    },
+    {
+      "path": "skills/evidence-brief/examples/README.md",
+      "sha256": "f97391e5548f1a296c0876dd725f14301fb84977af69057050eff28210efa8f8",
+      "bytes": 1147
+    },
+    {
+      "path": "skills/evidence-brief/examples/financing/auto-summary.md",
+      "sha256": "aff94c69a89651e9c5c65832e1e84107d30904a362cfd122a7c4999ce0585115",
+      "bytes": 408
+    },
+    {
+      "path": "skills/evidence-brief/examples/financing/committee-record.md",
+      "sha256": "f13bc426a1f2bd7a2b9d021ae283bf1672cf9acc79bb4580686f2acf5688668b",
+      "bytes": 1160
+    },
+    {
+      "path": "skills/evidence-brief/examples/financing/concept-deck.md",
+      "sha256": "d7a38145382f31bf406032483e5f4f3ac51b729c21fb8c8dfd7825d321ef36ce",
+      "bytes": 509
+    },
+    {
+      "path": "skills/evidence-brief/examples/incident/partial-record.md",
+      "sha256": "11772f1c7980fda53551dea8f2ca9575919299f4e743446b144d2f807de5c199",
+      "bytes": 1119
+    },
+    {
+      "path": "skills/evidence-brief/examples/incident/status-note.md",
+      "sha256": "b6cb86e5aecd74b2c84d705f610ce4e17584590acec7e519e7db2ae6e4b79591",
+      "bytes": 546
+    },
+    {
+      "path": "skills/evidence-brief/examples/pilot/cost-note.md",
+      "sha256": "c83a048a5aed1a683e8f0ce0a4ec37808fcf3790b199c1453fae185760b47394",
+      "bytes": 833
+    },
+    {
+      "path": "skills/evidence-brief/examples/pilot/meeting.md",
+      "sha256": "837dc14768540a81ae2686e93d71d99b2270ae960c4385b8e30bd6a85d04491f",
+      "bytes": 1533
+    },
+    {
+      "path": "skills/evidence-brief/examples/pilot/sample-brief.md",
+      "sha256": "8950ff8e046335656685eed3ba6256e191af6207a46c4df266610b5ca2220832",
+      "bytes": 1923
+    },
+    {
+      "path": "skills/evidence-ledger/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/evidence-ledger/README.md",
+      "sha256": "ed278682e3e390dae4f9527c17e4fcb075f67819f83a300f5942b0fdc032fed4",
+      "bytes": 4075
+    },
+    {
+      "path": "skills/evidence-ledger/SKILL.md",
+      "sha256": "a5d4f5031683dfdcd95f067c10198decbe339e6026096cee5e98194ebe93c7b1",
+      "bytes": 4025
+    },
+    {
+      "path": "skills/evidence-ledger/evals/evals.json",
+      "sha256": "864ab37e37f4283016afcbc5ed1079c9358797df11ca25528a9a6cd4933b6a79",
+      "bytes": 1968
+    },
+    {
+      "path": "skills/evidence-ledger/examples/README.md",
+      "sha256": "1d667b354782b2f098a1b9eaf6b8a5a318cbdf695971ffece0d8e63d07ed4265",
+      "bytes": 1115
+    },
+    {
+      "path": "skills/evidence-ledger/examples/inputs/source-initial.txt",
+      "sha256": "c93bc4ee7b4839e62ea735c64ea46d75ca062d626ea5348d351108f1c37661df",
+      "bytes": 201
+    },
+    {
+      "path": "skills/evidence-ledger/examples/inputs/source-revised.txt",
+      "sha256": "9734c71ac0104d64a672cd7339f82aafa9a2620c6c9dab166e47ac10b7ce802b",
+      "bytes": 250
+    },
+    {
+      "path": "skills/evidence-ledger/examples/inputs/update-initial.json",
+      "sha256": "78994abdaac8bbe8a6e5c69cac9f868607d8b2a838c26e2efcc8aef4b2977bf5",
+      "bytes": 776
+    },
+    {
+      "path": "skills/evidence-ledger/examples/inputs/update-revised.json",
+      "sha256": "4d0063c84fc49e835883a7e4f164fba5cdf2c19098d3767b955221e117f5825e",
+      "bytes": 1268
+    },
+    {
+      "path": "skills/evidence-ledger/examples/outputs/ledger-0.json",
+      "sha256": "bae7bf778da234ca88b5efcae1a8af54b4ef91790dd46dc2a80aae607745d655",
+      "bytes": 159
+    },
+    {
+      "path": "skills/evidence-ledger/examples/outputs/ledger-1.json",
+      "sha256": "8326dc4e815259d89a0d931abc633bf003193267f23eb26fe8cac4d25dbce8b6",
+      "bytes": 1398
+    },
+    {
+      "path": "skills/evidence-ledger/examples/outputs/ledger.json",
+      "sha256": "36d133b9b7bc66467bb0354e0c9e2fafc386c30ec645489d29640bcc28659588",
+      "bytes": 2944
+    },
+    {
+      "path": "skills/evidence-ledger/examples/outputs/ledger.md",
+      "sha256": "9eb51f412629b13d05af7933ba74377bf130e1995b7794b08767c9e4fbf26d05",
+      "bytes": 890
+    },
+    {
+      "path": "skills/evidence-ledger/examples/outputs/proposal-initial.json",
+      "sha256": "061202e9527d40c82dba92cc322574e37775fc9561f104c0e23c1eafe2bc0590",
+      "bytes": 1289
+    },
+    {
+      "path": "skills/evidence-ledger/examples/outputs/proposal.json",
+      "sha256": "8f3fbbdc100a36d8c237be4512b36b6b721879e0b65ddee6b7dc3d4051c69d39",
+      "bytes": 2060
+    },
+    {
+      "path": "skills/evidence-ledger/examples/outputs/review-1.json",
+      "sha256": "6791e1ebb867eec62c37bfd5a853985b1ac55741d698ffb97e7e8a329be5a006",
+      "bytes": 378
+    },
+    {
+      "path": "skills/evidence-ledger/examples/outputs/review-2.json",
+      "sha256": "35841dd1f3b98df0299ed53f9287a9353ab3f766037bf6b22c01812d96d4af82",
+      "bytes": 285
+    },
+    {
+      "path": "skills/evidence-ledger/examples/outputs/validation.json",
+      "sha256": "6d92f65eeeeb6616d2128ed261966e06118d6b55f76105ba22d08af4b672ec07",
+      "bytes": 347
+    },
+    {
+      "path": "skills/evidence-ledger/examples/run_demo.py",
+      "sha256": "b89d42869fe9aa3f5a3ee3845fd721ff0154ce5a8028f03378df173c1448d2b9",
+      "bytes": 3151
+    },
+    {
+      "path": "skills/evidence-ledger/references/record-contract.md",
+      "sha256": "a8db0457b1b9cc83717981a7e9cb26911c560e56e31af3a2769e9bf31eb13f77",
+      "bytes": 3239
+    },
+    {
+      "path": "skills/evidence-ledger/scripts/ledger.py",
+      "sha256": "a4019b1819dabaeb2c97fbd3d1e4629736c9413dee426c8e4d96837d88dc8374",
+      "bytes": 14982
+    },
+    {
+      "path": "skills/evidence-ledger/tests/test_ledger.py",
+      "sha256": "bfccefc46d9a6138a1847eaa92c6e80e3856b6641687e5ebb265e01b05699b12",
+      "bytes": 9208
+    },
+    {
+      "path": "skills/financial-statement-analysis/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/financial-statement-analysis/README.md",
+      "sha256": "ac2f4db7cbb59865d90f907bf55d11c83971348b07c63a2e48d8f33dcb61ea19",
+      "bytes": 1461
+    },
+    {
+      "path": "skills/financial-statement-analysis/SKILL.md",
+      "sha256": "e6c0df40a7aa958f1aa42eff6414cf0843f0e35205c70ba33909c9e53ec363f6",
+      "bytes": 5034
+    },
+    {
+      "path": "skills/financial-statement-analysis/evals/evals.json",
+      "sha256": "6c7b03909596bfa533340bcb1a39c0a753d5072413ec98be97b2c2de2d8794bd",
+      "bytes": 1600
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/README.md",
+      "sha256": "7f6ed51a7fe113a3c97b1ed930142aab193175650a1eb16ce4c5c2602d3c5d06",
+      "bytes": 1809
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/complete-report/report.json",
+      "sha256": "bc5af7b06782abc71ad9d54d7e634344a768f386d85b45948eb8c098afa84d00",
+      "bytes": 22208
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/complete-report/report.md",
+      "sha256": "3d2702693db6781165e7d039ef0167434ddb13c34a9916c46ceb2d20d0003c38",
+      "bytes": 1896
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/complete.json",
+      "sha256": "e8cfd4b8a98b07ffe7c6377d0c84840e91e49b5a6415b307c19f67161643cdee",
+      "bytes": 9542
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/discrepancy-report/report.json",
+      "sha256": "1e17311039db52b21b408f9aa2d2935b0e65eebbb7fc9b9fa7aa50bd1b0c0a78",
+      "bytes": 22248
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/discrepancy-report/report.md",
+      "sha256": "22f37b3566f592cbd5fcb142a29b3f5c3b4ffab5ea5d7820a004dae719537480",
+      "bytes": 1899
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/discrepancy.json",
+      "sha256": "56fecf3d69d963a0bc1cb218339ae20fcce4ec134ff5f537f51d3a38a61e355c",
+      "bytes": 9576
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/incomplete-report/report.json",
+      "sha256": "e17ea39e2b3c79759846aaf55930c67ac6bcec732d28762c443abc52067bbbbb",
+      "bytes": 21456
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/incomplete-report/report.md",
+      "sha256": "09af9ff68086c34ca7a461c24074858a0675a84bb131c8a054b6455d92cbde1f",
+      "bytes": 1978
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/incomplete.json",
+      "sha256": "ef5c3b238410829099fe5a576a9d843a637eb99138fbcc6ff250409d496ae9eb",
+      "bytes": 9073
+    },
+    {
+      "path": "skills/financial-statement-analysis/examples/synthetic-disclosure.txt",
+      "sha256": "410ab82040b573f1e95cd61af0e525a004a3cd62a1a0360fea9718fb2d960783",
+      "bytes": 949
+    },
+    {
+      "path": "skills/financial-statement-analysis/references/schema.md",
+      "sha256": "bc01a573ea2960914cc74c9c6d5f98cdda0e2b31c712c73dcc616ac89e245ea5",
+      "bytes": 6643
+    },
+    {
+      "path": "skills/financial-statement-analysis/scripts/analyze.py",
+      "sha256": "bbc8dc4851bf6562598b37564f990a820f881c7848f45b48805376cd65829a0e",
+      "bytes": 18306
+    },
+    {
+      "path": "skills/financial-statement-analysis/tests/test_analysis.py",
+      "sha256": "6fa221329325beaa4178b54200e41a5556039675d0a8149128822dff61fad750",
+      "bytes": 11946
     },
     {
       "path": "skills/model-regression-testing/LICENSE",
@@ -220,6 +970,221 @@
       "path": "skills/prompt-optimizer/references/runtime.md",
       "sha256": "59c7f237f7c0ea6396d940ca99d239ad3038592d1e6720dbc37194069ff66947",
       "bytes": 1830
+    },
+    {
+      "path": "skills/scenario-analysis/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/scenario-analysis/README.md",
+      "sha256": "e2dcbac30bd3ea8afb0e69ff4cf2604847f5893931aae0fa775a61338f67908f",
+      "bytes": 1728
+    },
+    {
+      "path": "skills/scenario-analysis/SKILL.md",
+      "sha256": "7a0e39d3f8b945c3fc58af2546d6d40b07be7832c23bc0869b443e8cf94f6931",
+      "bytes": 5644
+    },
+    {
+      "path": "skills/scenario-analysis/examples/README.md",
+      "sha256": "6c831c41cb0d6a1ec4cf8062ca005800c330fd348ba5126aa11c4233c2a8456a",
+      "bytes": 3079
+    },
+    {
+      "path": "skills/scenario-analysis/examples/cases.json",
+      "sha256": "78cded8bad05a989f1b0d56c2bc86143978b5e947d093d814c78e0f34265cd51",
+      "bytes": 1651
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-operating-case.json",
+      "sha256": "e47083846302cab62a64ed1f8c5380825b664df1037abf34297a3f0cc4f1ee39",
+      "bytes": 1596
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/debt/accruals.csv",
+      "sha256": "6606ddd92406c796f0917739af355d1c62b48e1a606c24aa7d826cdff3c00476",
+      "bytes": 455
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/debt/report.json",
+      "sha256": "9731d27a74356ffa982c9622afe0440e2d04d211071c7e10cc018452b8da715e",
+      "bytes": 3312
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/debt/report.md",
+      "sha256": "7c5edc0e260f54500170054167d2855bdb9c6fecc162576a0332ca42852abb32",
+      "bytes": 1619
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/debt/schedule.csv",
+      "sha256": "eb72db4caa77e35bbffe1ffdf3e9cf629ae13ca3ac07ee70b76f5308c0d90aca",
+      "bytes": 469
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/handoff.json",
+      "sha256": "40e73f15a7ee259930dc85bbb68a2b4458aea14b537c17bf0e93fa60784cff08",
+      "bytes": 1677
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/handoff.md",
+      "sha256": "2b7b25ca17c54eee940b9c9beb2fb9c8b7f986c00666c4b6fa1f4ba7401679b4",
+      "bytes": 1920
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/scenario/assumption_changes.csv",
+      "sha256": "79f25db61fafc94fc8bc986857c7ef14a4f118b060c0fcb50821dbf715b396ae",
+      "bytes": 1166
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/scenario/cases.csv",
+      "sha256": "f97ef0ee5fdbf6772c05f0778bf0f0b4f4ebe361a1e393acc91ca9daa13c4a6a",
+      "bytes": 726
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/scenario/period_results.csv",
+      "sha256": "406852718c3082984112576c61966348f7a250746d7086f4fa5c68f7f3ff06b0",
+      "bytes": 2265
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/scenario/report.json",
+      "sha256": "239e4be356e9ece0b73803d887c1595a0f171c8c944bc47ebd59ad169b707e2a",
+      "bytes": 55762
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/scenario/report.md",
+      "sha256": "fbff536c38dac20bfa792432f968045ad1b53942d3ec69c2da48153c70b96647",
+      "bytes": 2777
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/scenario/sensitivities.csv",
+      "sha256": "8ed11e2cc82d433f231ebc195b33f5bf02060dd4fa995e0fec1fbc41c12b5b3e",
+      "bytes": 801
+    },
+    {
+      "path": "skills/scenario-analysis/examples/connected-output/scenario-input.json",
+      "sha256": "f095f56fef44c77717a9d376511923016470387c15ca3d166a632443a813f86f",
+      "bytes": 2511
+    },
+    {
+      "path": "skills/scenario-analysis/examples/output/assumption_changes.csv",
+      "sha256": "b08feb3ec9ec9317c9e8062057bf86795d1639e38798edd2b35281f3d9bd619e",
+      "bytes": 946
+    },
+    {
+      "path": "skills/scenario-analysis/examples/output/cases.csv",
+      "sha256": "f3759c1b6babd713addfea3637f00dacdb777a2491aff7a31109723908fd5e6c",
+      "bytes": 845
+    },
+    {
+      "path": "skills/scenario-analysis/examples/output/period_results.csv",
+      "sha256": "8b4cd195080184daf810b776e2fd7d3a9a8e125725fd0d6d3f3c3ebffbec3e08",
+      "bytes": 2091
+    },
+    {
+      "path": "skills/scenario-analysis/examples/output/report.json",
+      "sha256": "14ccd27f3836c5531328eb002cc691e8ce67361fd9fe16532c1060195ed1b545",
+      "bytes": 59736
+    },
+    {
+      "path": "skills/scenario-analysis/examples/output/report.md",
+      "sha256": "ad2892eacabaafa1ce721a9d28effefa1a5afaeafb3cbdceb24b3348e3778d8d",
+      "bytes": 3188
+    },
+    {
+      "path": "skills/scenario-analysis/examples/output/sensitivities.csv",
+      "sha256": "8e937d1d1c446b6cb8bf7babf9d0a89b791d590fedef3aa30bed57885a81f6d1",
+      "bytes": 1164
+    },
+    {
+      "path": "skills/scenario-analysis/examples/run_connected_demo.py",
+      "sha256": "dde909f941a578a1f8ecce6b6b3de0861582b5b9dfcdcf711176c15a002fe073",
+      "bytes": 8234
+    },
+    {
+      "path": "skills/scenario-analysis/references/model-contract.md",
+      "sha256": "f0f5f012aa6f41ada01a6c50ec4940c2e76cff43797f4497e56682ff6c515440",
+      "bytes": 6873
+    },
+    {
+      "path": "skills/scenario-analysis/scripts/scenario_analysis.py",
+      "sha256": "5ea0212fbd16fb7896f933aba00ae2e83daff2e6b3ef1f5bd7ab26ab25d63cf4",
+      "bytes": 21039
+    },
+    {
+      "path": "skills/scenario-analysis/tests/test_connected_handoff.py",
+      "sha256": "1d69e284699bca4ee41fb8c19e1d70cd9307d9ad2646088dd1bd829faccfbefc",
+      "bytes": 3499
+    },
+    {
+      "path": "skills/scenario-analysis/tests/test_scenario_analysis.py",
+      "sha256": "86d06916c33e27ae726b800b50fc9eb80c00e25c144c8785729c6910cf413741",
+      "bytes": 14335
+    },
+    {
+      "path": "skills/skill-router/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/skill-router/README.md",
+      "sha256": "328bf6818bd0d731d3557b559dcd497900e1833d5605b0c140b8dfcbbbedbcf7",
+      "bytes": 5805
+    },
+    {
+      "path": "skills/skill-router/SKILL.md",
+      "sha256": "195678958310ac302d679dfb01283f7ca5033a792625e1479ff3e0c24b96290e",
+      "bytes": 2753
+    },
+    {
+      "path": "skills/skill-router/evals/evals.json",
+      "sha256": "899578eadba82825fa3b4b4e71c8a9f361f1f6dada9e3f33863f2f9704f962a3",
+      "bytes": 1227
+    },
+    {
+      "path": "skills/skill-router/examples/catalog.json",
+      "sha256": "1e6ce94774475906ac3896073a58827e9cd6e6a2019b5eaa726b8ae19fb546a6",
+      "bytes": 680
+    },
+    {
+      "path": "skills/skill-router/examples/output.md",
+      "sha256": "2a034c2f994dc230a1b419f028c50b643ef7c45437278defb399abf4745d16f7",
+      "bytes": 826
+    },
+    {
+      "path": "skills/skill-router/examples/request.json",
+      "sha256": "2a0d9a19003cfe3555ccb667ed0166f2db740e353222c268ec127e606fb4a0d9",
+      "bytes": 164
+    },
+    {
+      "path": "skills/skill-router/examples/templates/alpha.txt",
+      "sha256": "8b60d2a93472a2d5d8c1e27b2ef74d83b45f0351d1f53a2728d431cc6484d51d",
+      "bytes": 157
+    },
+    {
+      "path": "skills/skill-router/examples/templates/beta.txt",
+      "sha256": "c720efcbfb90ee49963eb09bf3a7d96789bf7b27f8b1d5fc01fd81e31fd44a44",
+      "bytes": 232
+    },
+    {
+      "path": "skills/skill-router/examples/templates/gamma.txt",
+      "sha256": "d255585b25c2ece9e05cb212c233770dc97196a2e834c483114e75862d3c165e",
+      "bytes": 166
+    },
+    {
+      "path": "skills/skill-router/scripts/demo.py",
+      "sha256": "53e6d4d34cc52a327192c69bb85ec7299bd420df784b998a5023b434dedcae14",
+      "bytes": 2069
+    },
+    {
+      "path": "skills/skill-router/scripts/route.py",
+      "sha256": "cdff633ca1769b076cf542b8dd078ca579e66d4b13c806a57fe835571d1fb186",
+      "bytes": 9964
+    },
+    {
+      "path": "skills/skill-router/tests/test_route.py",
+      "sha256": "9def84aace27bc0b771a4b7af2fe17c6919f72215365facfeb010d4f8e854a78",
+      "bytes": 11978
     },
     {
       "path": "skills/workbook-tieout/LICENSE",

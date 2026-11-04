@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "artifacts": [{"id": "sample-data", "path": "sample.csv"}],
+  "checks": [{"id": "csv-shape", "artifact_ids": ["sample-data"], "requirement": "Check for account,amount header, two columns per row, and at least one data row.", "kind": "file_check"}]
+}

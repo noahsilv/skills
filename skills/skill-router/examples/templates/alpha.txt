@@ -1,0 +1,6 @@
+---
+name: claim-review
+description: Synthetic catalog fixture for reviewing claims.
+---
+
+Synthetic fixture only. No checker implementation is supplied here.

@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "model": "fixed-rate-non-revolving-v1",
+  "facility_id": "Synthetic_Facility",
+  "currency": "USD",
+  "unit": "currency units",
+  "money_decimals": 2,
+  "annual_rate": "0.055",
+  "day_count": "ACT/365F",
+  "commitment": "750000.00",
+  "opening_balance": "0.00",
+  "prior_drawdowns": "0.00",
+  "unused_commitment": "150000.00",
+  "periods": [
+    {
+      "start_date": "2027-01-01",
+      "end_date": "2027-07-01",
+      "days": 181,
+      "opening_balance": "0.00",
+      "drawdowns": "600000.00",
+      "repayments": "0.00",
+      "closing_balance": "600000.00",
+      "interest_exact": "965800/73",
+      "interest_paid": "13230.14",
+      "debt_service": "13230.14"
+    },
+    {
+      "start_date": "2027-07-01",
+      "end_date": "2028-01-01",
+      "days": 184,
+      "opening_balance": "600000.00",
+      "drawdowns": "0.00",
+      "repayments": "150000.00",
+      "closing_balance": "450000.00",
+      "interest_exact": "1214400/73",
+      "interest_paid": "16635.62",
+      "debt_service": "166635.62"
+    },
+    {
+      "start_date": "2028-01-01",
+      "end_date": "2028-07-01",
+      "days": 182,
+      "opening_balance": "450000.00",
+      "drawdowns": "0.00",
+      "repayments": "200000.00",
+      "closing_balance": "250000.00",
+      "interest_exact": "900900/73",
+      "interest_paid": "12341.10",
+      "debt_service": "212341.10"
+    },
+    {
+      "start_date": "2028-07-01",
+      "end_date": "2029-01-01",
+      "days": 184,
+      "opening_balance": "250000.00",
+      "drawdowns": "0.00",
+      "repayments": "250000.00",
+      "closing_balance": "0.00",
+      "interest_exact": "506000/73",
+      "interest_paid": "6931.51",
+      "debt_service": "256931.51"
+    }
+  ],
+  "accrual_segments": [
+    {
+      "period_end": "2027-07-01",
+      "start_date": "2027-01-01",
+      "end_date": "2027-04-15",
+      "days": 104,
+      "principal": "400000.00",
+      "interest_exact": "457600/73",
+      "interest_display": "6268.493150684932"
+    },
+    {
+      "period_end": "2027-07-01",
+      "start_date": "2027-04-15",
+      "end_date": "2027-07-01",
+      "days": 77,
+      "principal": "600000.00",
+      "interest_exact": "508200/73",
+      "interest_display": "6961.643835616438"
+    },
+    {
+      "period_end": "2028-01-01",
+      "start_date": "2027-07-01",
+      "end_date": "2028-01-01",
+      "days": 184,
+      "principal": "600000.00",
+      "interest_exact": "1214400/73",
+      "interest_display": "16635.616438356164"
+    },
+    {
+      "period_end": "2028-07-01",
+      "start_date": "2028-01-01",
+      "end_date": "2028-07-01",
+      "days": 182,
+      "principal": "450000.00",
+      "interest_exact": "900900/73",
+      "interest_display": "12341.095890410959"
+    },
+    {
+      "period_end": "2029-01-01",
+      "start_date": "2028-07-01",
+      "end_date": "2029-01-01",
+      "days": 184,
+      "principal": "250000.00",
+      "interest_exact": "506000/73",
+      "interest_display": "6931.506849315068"
+    }
+  ],
+  "totals": {
+    "drawdowns": "600000.00",
+    "repayments": "600000.00",
+    "interest_paid": "49138.37",
+    "debt_service": "649138.37"
+  },
+  "checks": {
+    "principal_roll_forward": "PASS",
+    "maturity_balance_zero": "PASS"
+  },
+  "input_sha256": "f02070ef25970ea7e050f7af00fe4f9c388710c0b36da6461fc840a5a40e9d33"
+}

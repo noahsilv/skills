@@ -1,0 +1,6 @@
+sensitivity_id,assumption,operation,level,revenue,ebitda,cfads,debt_service,cash_after_debt_service,minimum_defined_dscr,periods_with_dscr,period_count,delta_cash_after_debt_service
+volume_multiplier,volume,multiply,0.800000000000,2326400.00,1012000.00,670000.00,649138.37,20861.63,0.831350,4,4,-346000.00
+volume_multiplier,volume,multiply,0.900000000000,2617200.00,1185000.00,843000.00,649138.37,193861.63,1.028679,4,4,-173000.00
+volume_multiplier,volume,multiply,1.000000000000,2908000.00,1358000.00,1016000.00,649138.37,366861.63,1.226008,4,4,0.00
+volume_multiplier,volume,multiply,1.100000000000,3198800.00,1531000.00,1189000.00,649138.37,539861.63,1.423337,4,4,173000.00
+volume_multiplier,volume,multiply,1.200000000000,3489600.00,1704000.00,1362000.00,649138.37,712861.63,1.620665,4,4,346000.00

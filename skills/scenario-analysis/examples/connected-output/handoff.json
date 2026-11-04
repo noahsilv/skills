@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "mapping_method": "one debt payment period to one identical scenario period",
+  "currency": "USD",
+  "unit": "currency units",
+  "mapping": [
+    {
+      "scenario_period": "H1_2027",
+      "start_date": "2027-01-01",
+      "end_date": "2027-07-01",
+      "source": "debt/report.json#/periods/0/debt_service",
+      "debt_service": "13230.14"
+    },
+    {
+      "scenario_period": "H2_2027",
+      "start_date": "2027-07-01",
+      "end_date": "2028-01-01",
+      "source": "debt/report.json#/periods/1/debt_service",
+      "debt_service": "166635.62"
+    },
+    {
+      "scenario_period": "H1_2028",
+      "start_date": "2028-01-01",
+      "end_date": "2028-07-01",
+      "source": "debt/report.json#/periods/2/debt_service",
+      "debt_service": "212341.10"
+    },
+    {
+      "scenario_period": "H2_2028",
+      "start_date": "2028-07-01",
+      "end_date": "2029-01-01",
+      "source": "debt/report.json#/periods/3/debt_service",
+      "debt_service": "256931.51"
+    }
+  ],
+  "debt_input_sha256": "f02070ef25970ea7e050f7af00fe4f9c388710c0b36da6461fc840a5a40e9d33",
+  "debt_script_sha256": "49a1639b7bd5703373d845e9fa681747b22ac9455471225645a01a2599457869",
+  "debt_report_sha256": "9731d27a74356ffa982c9622afe0440e2d04d211071c7e10cc018452b8da715e",
+  "scenario_template_sha256": "e47083846302cab62a64ed1f8c5380825b664df1037abf34297a3f0cc4f1ee39",
+  "derived_scenario_input_sha256": "f095f56fef44c77717a9d376511923016470387c15ca3d166a632443a813f86f",
+  "scenario_script_sha256": "5ea0212fbd16fb7896f933aba00ae2e83daff2e6b3ef1f5bd7ab26ab25d63cf4",
+  "scenario_report_sha256": "239e4be356e9ece0b73803d887c1595a0f171c8c944bc47ebd59ad169b707e2a"
+}

@@ -1,0 +1,26 @@
+{
+  "skill_name": "evidence-ledger",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Record the two synthetic revenue extracts. Keep the original accepted figure visible and show the later conflicting value as pending. Outstanding debt is missing; retain that gap. Return cited records and a readable review table.",
+      "expected_output": "Source hashes and line locators, unchanged accepted claim, pending conflicting claim, null debt claim with an explicit reason, no source-truth assertion.",
+      "files": ["examples/inputs/source-initial.txt", "examples/inputs/source-revised.txt", "examples/inputs/update-initial.json", "examples/inputs/update-revised.json"],
+      "assertions": ["The original claim remains available with its acceptance reference.", "No missing value or confidence score is invented.", "The reported conflict includes the exact claim IDs and contexts."]
+    },
+    {
+      "id": 2,
+      "prompt": "A revised claim uses thousands while the previous claim uses millions for the same entity, metric and period. Stage the update and explain what needs review without choosing a winner.",
+      "expected_output": "A value/context conflict with both declared units preserved; no automatic conversion, acceptance or overwrite.",
+      "files": ["examples/inputs/update-initial.json"],
+      "assertions": ["Unit differences are surfaced without conversion.", "Source labels or recency do not automatically determine which value is accepted."]
+    },
+    {
+      "id": 3,
+      "prompt": "Apply a reviewed proposal after the base ledger has been edited. Preserve the files and explain the refusal.",
+      "expected_output": "A stale-base rejection, unchanged base and no new applied ledger; a fresh proposal is required.",
+      "files": ["examples/outputs/ledger-1.json", "examples/outputs/proposal.json"],
+      "assertions": ["Application refuses the stale base.", "The earlier accepted claim and prior files remain intact."]
+    }
+  ]
+}

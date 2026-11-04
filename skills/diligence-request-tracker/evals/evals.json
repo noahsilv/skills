@@ -1,0 +1,26 @@
+{
+  "skill_name": "diligence-request-tracker",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a client request round from the synthetic internal tracker, reconcile the returned CSV as proposals, and preserve private notes internally. Do not close any request until its review explicitly says to.",
+      "expected_output": "Six-column client export, exact archived return hash, unchanged tracker after reconciliation, and reviewable response proposals.",
+      "files": ["examples/inputs/requests.json", "examples/inputs/returned.csv"],
+      "assertions": ["Private notes and internal status are absent from the client CSV.", "Reconciliation does not apply or close requests.", "The returned bytes are archived before parsing."]
+    },
+    {
+      "id": 2,
+      "prompt": "The client return contains a duplicate REQ-010, a blank ID, an unknown ID and an omitted original request. Reconcile it without guessing matches or renumbering rows.",
+      "expected_output": "Explicit duplicate, blank, unknown and missing-ID anomalies, quarantined rows, no applied changes and a preserved original return.",
+      "files": ["examples/inputs/requests.json"],
+      "assertions": ["Every duplicated row is quarantined.", "IDs are matched exactly without fuzzy matching.", "Anomalies block application."]
+    },
+    {
+      "id": 3,
+      "prompt": "After explicitly closing REQ-010, export a follow-up round for REQ-040 and REQ-090. The accepted REQ-040 response starts with an equals sign; keep it literal and preserve the original IDs.",
+      "expected_output": "A client CSV with the original two surviving IDs, a protected formula-like response and no private columns.",
+      "files": ["examples/outputs/tracker.json"],
+      "assertions": ["Remaining IDs are never renumbered.", "Formula-like text receives a protective prefix.", "Internal notes do not leak into the next round."]
+    }
+  ]
+}

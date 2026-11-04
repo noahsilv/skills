@@ -1,0 +1,14 @@
+case_id,period_id,assumption,operation,override_value,base_value,applied_value,change
+volume_down,Year_1,volume,multiply,17/20,10000/1,8500/1,-1500/1
+volume_down,Year_2,volume,multiply,17/20,11000/1,9350/1,-1650/1
+volume_down,Year_3,volume,multiply,17/20,12000/1,10200/1,-1800/1
+fixed_cost_up,Year_1,fixed_cost,multiply,23/20,80000/1,92000/1,12000/1
+fixed_cost_up,Year_2,fixed_cost,multiply,23/20,82000/1,94300/1,12300/1
+fixed_cost_up,Year_3,fixed_cost,multiply,23/20,84000/1,96600/1,12600/1
+combined,Year_1,volume,multiply,17/20,10000/1,8500/1,-1500/1
+combined,Year_1,fixed_cost,multiply,23/20,80000/1,92000/1,12000/1
+combined,Year_2,volume,multiply,17/20,11000/1,9350/1,-1650/1
+combined,Year_2,fixed_cost,multiply,23/20,82000/1,94300/1,12300/1
+combined,Year_3,volume,multiply,17/20,12000/1,10200/1,-1800/1
+combined,Year_3,fixed_cost,multiply,23/20,84000/1,96600/1,12600/1
+capex_step,Year_1,maintenance_capex,add,10000/1,20000/1,30000/1,10000/1

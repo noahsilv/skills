@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "segmentation": "nonblank-blocks-v1",
+  "checks": [
+    "clarity",
+    "source-support"
+  ],
+  "source": {
+    "name": "draft.md",
+    "sha256": "13ce0e3cf38b5f9c8cde568b3c2f3f98bcd6b002a193e93cbeee952b20201e09",
+    "bytes": 206,
+    "lines": 7
+  },
+  "blank_lines": [
+    2,
+    4,
+    6
+  ],
+  "units": [
+    {
+      "id": "U0001",
+      "start_line": 1,
+      "end_line": 1,
+      "sha256": "d397ef467202ccd84cfcccca12c916e11d3c7cf587dc6852ab26596aad18ec6b",
+      "text": "# Synthetic component rollout note\n"
+    },
+    {
+      "id": "U0002",
+      "start_line": 3,
+      "end_line": 3,
+      "sha256": "3a95dbb966b1b2f4fbcd4a8194fb7e2e838e5bcbe9a4f78ea181bd1b5513c28c",
+      "text": "The current test group includes 24 accounts.\n"
+    },
+    {
+      "id": "U0003",
+      "start_line": 5,
+      "end_line": 5,
+      "sha256": "c57b7b3f8861a2747802707ec704f5d3d65ea9dda5ac61d1839fcaeef5a81f25",
+      "text": "The 120-account rollout is approved for 18 June.\n"
+    },
+    {
+      "id": "U0004",
+      "start_line": 7,
+      "end_line": 7,
+      "sha256": "e6e3516b8a630835f4de66440c50e47357ed1d93623b3a57835500657223ff9d",
+      "text": "Monthly hosting is estimated at 4,000 credits, excluding support and tax.\n"
+    }
+  ]
+}

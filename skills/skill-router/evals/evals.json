@@ -1,0 +1,8 @@
+{
+  "skill_name": "skill-router",
+  "evals": [
+    {"id": 1, "prompt": "Run scripts/demo.py into a fresh external temporary directory and inspect the routed request. Explain why sheet inspection comes first and whether its declared dependencies are available.", "expected_output": "table-inspector is first by explicit alias; office-engine is a missing declared capability; no tool is executed by the router.", "files": ["examples/catalog.json", "examples/request.json"]},
+    {"id": 2, "prompt": "Generate the external synthetic catalog with scripts/demo.py. In that generated catalog, give claim-review the alias SHEET_inspection as well. Route the same request.", "expected_output": "Catalog validation rejects the ambiguous normalized alias; the source templates remain unchanged.", "files": ["examples/catalog.json", "examples/request.json"]},
+    {"id": 3, "prompt": "Generate the external synthetic catalog with scripts/demo.py. Use a new temporary request asking for photograph restoration. State what the empty result can and cannot establish.", "expected_output": "No matching candidates; no claim that the task is impossible, and no invented skill or semantic confidence.", "files": ["examples/catalog.json"]}
+  ]
+}

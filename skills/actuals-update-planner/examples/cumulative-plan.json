@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "status": "PLAN_READY",
+  "workbook_mutated": false,
+  "recalculated": false,
+  "entity": "Cedar Circuit Components (synthetic)",
+  "scope": "consolidated",
+  "period": {
+    "start": "2025-04-01",
+    "end": "2025-06-30"
+  },
+  "currency": "USD",
+  "scale": "1000000",
+  "model_sheet": "Forecast",
+  "source_sheet": "Q2 2025 Sources",
+  "sources": [
+    {
+      "id": "disclosure",
+      "file": "synthetic-disclosure.txt",
+      "sha256": "5a046ed815f6e5ae71fb4b1853129d9833f5e0277bcc0abb71c358c000baf2c3",
+      "entity": "Cedar Circuit Components (synthetic)",
+      "scope": "consolidated",
+      "currency": "USD",
+      "scale": "1000",
+      "period": {
+        "start": "2025-01-01",
+        "end": "2025-06-30"
+      },
+      "audit_status": "interim",
+      "context_evidence": {
+        "page": 1,
+        "excerpt": "Cedar Circuit Components (synthetic); consolidated; currency USD; scale 1000; period 2025-01-01 to 2025-06-30."
+      },
+      "audit_evidence": {
+        "page": 1,
+        "excerpt": "Synthetic interim status declaration for this example. No real auditor or assurance."
+      }
+    }
+  ],
+  "evidence_limits": "Text excerpts and hashes verified. Source authenticity, audit opinion and original PDF-to-text transcription are not authenticated.",
+  "coverage": {
+    "mapped_inputs": 3,
+    "target_numeric_inputs": 4,
+    "excluded_rows": [
+      {
+        "row": 8,
+        "label": "Growth assumption",
+        "reason": "Forward driver assumption; not a reported financial result."
+      }
+    ],
+    "unused_source_ids": []
+  },
+  "protected": {
+    "rule": "All existing cells except the enumerated proposed model edits remain protected; every existing formula remains protected.",
+    "forecast_columns": [
+      {
+        "column": "D",
+        "expected_header": "Q3 2025E"
+      },
+      {
+        "column": "E",
+        "expected_header": "Q4 2025E"
+      }
+    ],
+    "formulas": [
+      {
+        "sheet": "Forecast",
+        "cell": "D5",
+        "formula": "=C5*(1+D8)"
+      },
+      {
+        "sheet": "Forecast",
+        "cell": "E5",
+        "formula": "=D5*(1+E8)"
+      },
+      {
+        "sheet": "Forecast",
+        "cell": "D6",
+        "formula": "=C6*(1+D8)"
+      },
+      {
+        "sheet": "Forecast",
+        "cell": "E6",
+        "formula": "=D6*(1+E8)"
+      },
+      {
+        "sheet": "Forecast",
+        "cell": "B7",
+        "formula": "=SUM(B5:B6)"
+      },
+      {
+        "sheet": "Forecast",
+        "cell": "C7",
+        "formula": "=SUM(C5:C6)"
+      },
+      {
+        "sheet": "Forecast",
+        "cell": "D7",
+        "formula": "=SUM(D5:D6)"
+      },
+      {
+        "sheet": "Forecast",
+        "cell": "E7",
+        "formula": "=SUM(E5:E6)"
+      },
+      {
+        "sheet": "Forecast",
+        "cell": "D9",
+        "formula": "=C9*(1+D8)"
+      },
+      {
+        "sheet": "Forecast",
+        "cell": "E9",
+        "formula": "=D9*(1+E8)"
+      }
+    ]
+  },
+  "proposed_source_cells": [
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "A1",
+      "kind": "text",
+      "value": "Reported actuals, conversion, estimate snapshot and variance"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "A2",
+      "kind": "text",
+      "value": "Line"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "B2",
+      "kind": "text",
+      "value": "Reported value"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "C2",
+      "kind": "text",
+      "value": "Conversion factor"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "D2",
+      "kind": "text",
+      "value": "Converted reported"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "E2",
+      "kind": "text",
+      "value": "Prior actuals"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "F2",
+      "kind": "text",
+      "value": "Standalone actual"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "G2",
+      "kind": "text",
+      "value": "Estimate snapshot"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "H2",
+      "kind": "text",
+      "value": "Variance"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "I2",
+      "kind": "text",
+      "value": "Variance %"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "J2",
+      "kind": "text",
+      "value": "Citation"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "A3",
+      "kind": "text",
+      "value": "Revenue"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "B3",
+      "kind": "number",
+      "value": "675000"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "C3",
+      "kind": "number",
+      "value": "0.001"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "D3",
+      "kind": "formula",
+      "value": "=B3*C3"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "E3",
+      "kind": "formula",
+      "value": "='Forecast'!B5"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "F3",
+      "kind": "formula",
+      "value": "=D3-E3"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "G3",
+      "kind": "number",
+      "value": "330"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "H3",
+      "kind": "formula",
+      "value": "=F3-G3"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "I3",
+      "kind": "formula",
+      "value": "=IF(G3=0,\"undefined\",H3/ABS(G3)*100)"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "J3",
+      "kind": "text",
+      "value": "synthetic-disclosure.txt | physical text page 2 | Revenue 675,000"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "A4",
+      "kind": "text",
+      "value": "Cost of sales"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "B4",
+      "kind": "number",
+      "value": "-410000"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "C4",
+      "kind": "number",
+      "value": "0.001"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "D4",
+      "kind": "formula",
+      "value": "=B4*C4"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "E4",
+      "kind": "formula",
+      "value": "='Forecast'!B6"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "F4",
+      "kind": "formula",
+      "value": "=D4-E4"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "G4",
+      "kind": "number",
+      "value": "-200"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "H4",
+      "kind": "formula",
+      "value": "=F4-G4"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "I4",
+      "kind": "formula",
+      "value": "=IF(G4=0,\"undefined\",H4/ABS(G4)*100)"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "J4",
+      "kind": "text",
+      "value": "synthetic-disclosure.txt | physical text page 2 | Cost of sales (410,000)"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "A5",
+      "kind": "text",
+      "value": "Operating cash flow"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "B5",
+      "kind": "number",
+      "value": "120000"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "C5",
+      "kind": "number",
+      "value": "0.001"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "D5",
+      "kind": "formula",
+      "value": "=B5*C5"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "E5",
+      "kind": "formula",
+      "value": "='Forecast'!B9"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "F5",
+      "kind": "formula",
+      "value": "=D5-E5"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "G5",
+      "kind": "number",
+      "value": "60"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "H5",
+      "kind": "formula",
+      "value": "=F5-G5"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "I5",
+      "kind": "formula",
+      "value": "=IF(G5=0,\"undefined\",H5/ABS(G5)*100)"
+    },
+    {
+      "sheet": "Q2 2025 Sources",
+      "cell": "J5",
+      "kind": "text",
+      "value": "synthetic-disclosure.txt | physical text page 2 | Operating cash flow 120,000"
+    }
+  ],
+  "proposed_model_edits": [
+    {
+      "sheet": "Forecast",
+      "cell": "C5",
+      "before_kind": "number",
+      "before": "330",
+      "after_kind": "formula",
+      "after": "='Q2 2025 Sources'!F3",
+      "prospective_value": "375.000",
+      "mapping_id": "sales"
+    },
+    {
+      "sheet": "Forecast",
+      "cell": "C6",
+      "before_kind": "number",
+      "before": "-200",
+      "after_kind": "formula",
+      "after": "='Q2 2025 Sources'!F4",
+      "prospective_value": "-225.000",
+      "mapping_id": "costs"
+    },
+    {
+      "sheet": "Forecast",
+      "cell": "C9",
+      "before_kind": "number",
+      "before": "60",
+      "after_kind": "formula",
+      "after": "='Q2 2025 Sources'!F5",
+      "prospective_value": "70.000",
+      "mapping_id": "operating_cash"
+    },
+    {
+      "sheet": "Forecast",
+      "cell": "C4",
+      "before_kind": "text",
+      "before": "Q2 2025E",
+      "after_kind": "text",
+      "after": "Q2 2025A"
+    }
+  ],
+  "variances": [
+    {
+      "id": "sales",
+      "label": "Revenue",
+      "model_cell": "C5",
+      "estimate": "330",
+      "actual": "375.000",
+      "delta": "45.000",
+      "variance_percent": "13.636364",
+      "percent_status": "CALCULATED",
+      "source_id": "disclosure",
+      "citation": {
+        "page": 2,
+        "excerpt": "Revenue 675,000"
+      },
+      "source_value": "675000",
+      "conversion_factor": "0.001",
+      "basis": "cumulative",
+      "prior_cells": [
+        "'Forecast'!B5"
+      ],
+      "prior_values": [
+        "300"
+      ]
+    },
+    {
+      "id": "costs",
+      "label": "Cost of sales",
+      "model_cell": "C6",
+      "estimate": "-200",
+      "actual": "-225.000",
+      "delta": "-25.000",
+      "variance_percent": "-12.500000",
+      "percent_status": "CALCULATED",
+      "source_id": "disclosure",
+      "citation": {
+        "page": 2,
+        "excerpt": "Cost of sales (410,000)"
+      },
+      "source_value": "-410000",
+      "conversion_factor": "0.001",
+      "basis": "cumulative",
+      "prior_cells": [
+        "'Forecast'!B6"
+      ],
+      "prior_values": [
+        "-185"
+      ]
+    },
+    {
+      "id": "operating_cash",
+      "label": "Operating cash flow",
+      "model_cell": "C9",
+      "estimate": "60",
+      "actual": "70.000",
+      "delta": "10.000",
+      "variance_percent": "16.666667",
+      "percent_status": "CALCULATED",
+      "source_id": "disclosure",
+      "citation": {
+        "page": 2,
+        "excerpt": "Operating cash flow 120,000"
+      },
+      "source_value": "120000",
+      "conversion_factor": "0.001",
+      "basis": "cumulative",
+      "prior_cells": [
+        "'Forecast'!B9"
+      ],
+      "prior_values": [
+        "50"
+      ]
+    }
+  ],
+  "inputs": {
+    "model": {
+      "file": "model.xlsx",
+      "sha256": "6c3f05d221a567bdaaeb22f3ba33dd616ee701218d2469e0b32ab102c2f0d7cd"
+    },
+    "mapping": {
+      "file": "mapping.json",
+      "sha256": "978144ad0cde449ab95a02db7d978fc22f05477e3af72fcfa14f6d190845a94a"
+    }
+  }
+}

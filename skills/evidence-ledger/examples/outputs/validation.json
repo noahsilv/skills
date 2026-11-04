@@ -1,0 +1,21 @@
+{
+  "conflicts": [
+    {
+      "claim_ids": [
+        "CLM-010",
+        "CLM-020"
+      ],
+      "reason": "value_or_context_difference"
+    }
+  ],
+  "source_truth": "not_checked",
+  "statuses": {
+    "CLM-010": "accepted",
+    "CLM-020": "pending",
+    "CLM-030": "pending"
+  },
+  "structure": "valid",
+  "unknown_claims": [
+    "CLM-030"
+  ]
+}

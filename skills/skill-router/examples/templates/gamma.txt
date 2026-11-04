@@ -1,0 +1,6 @@
+---
+name: file-identity
+description: Synthetic catalog fixture for file identity checks.
+---
+
+Synthetic fixture only. A matching hash establishes byte identity only.

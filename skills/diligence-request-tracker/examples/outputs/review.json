@@ -1,0 +1,19 @@
+{
+  "actor": "Synthetic reviewer",
+  "date": "2026-02-21",
+  "decisions": [
+    {
+      "accept_response": true,
+      "close": true,
+      "request_id": "REQ-010"
+    },
+    {
+      "accept_response": true,
+      "close": false,
+      "request_id": "REQ-040"
+    }
+  ],
+  "proposal_sha256": "f36e394d0d9fb98be8853ca049d1c8f1691bc3707912fdf6bb2f4946df777d17",
+  "reference": "Synthetic exercise decision; accept both responses and explicitly close only REQ-010.",
+  "review_id": "DEMO-REVIEW-1"
+}

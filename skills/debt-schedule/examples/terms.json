@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "facility_id": "Synthetic_Facility",
+  "currency": "USD",
+  "money_decimals": 2,
+  "start_date": "2027-01-01",
+  "maturity_date": "2029-01-01",
+  "commitment": "750000.00",
+  "opening_balance": "0.00",
+  "prior_drawdowns": "0.00",
+  "annual_rate": "0.055",
+  "day_count": "ACT/365F",
+  "payment_dates": ["2027-07-01", "2028-01-01", "2028-07-01", "2029-01-01"],
+  "events": [
+    {"date": "2027-01-01", "type": "drawdown", "amount": "400000.00"},
+    {"date": "2027-04-15", "type": "drawdown", "amount": "200000.00"},
+    {"date": "2028-01-01", "type": "repayment", "amount": "150000.00"},
+    {"date": "2028-07-01", "type": "repayment", "amount": "200000.00"},
+    {"date": "2029-01-01", "type": "repayment", "amount": "250000.00"}
+  ]
+}

@@ -1,42 +1,29 @@
 # Validation and limitations
 
-## Reproduce the executable checks
+## Local expansion draft
 
-From the repository root, create a fresh Python 3.11 environment and install `requirements-dev.txt`. Run:
+This 15-skill expansion is a local draft. The previously published five-skill edition remains separate; no expanded release has been pushed.
+
+The current local run passed **354 executable tests across 13 packages** using Python 3.11 and the declared dependencies. Tests exercise financial definitions, exact numeric handling, source/mapping coverage, request roundtrips, stale-file evidence, routing, document review coverage and Office structure. Synthetic case-study commands were also executed; their reports are linked from the README.
+
+The evidence-brief skill passed **15 source-based assertions across three actual tasks** in a separate reviewer pass. The same three baseline tasks without the skill passed 14; the observed miss strengthened a conditional statement into a commitment. One sample per case cannot establish general performance superiority. The unchanged prompt optimizer retains its earlier 11 checks across three cases, documented in [its evaluation record](PROMPT_EVALUATIONS.md).
+
+## Reproduce
+
+From the repository root, install requirements-dev.txt in a fresh Python 3.11 environment and run:
 
 ```sh
+python scripts/build_catalog.py --check
 python scripts/validate.py --manifest
 python scripts/test.py
 ```
 
-The metadata check also parses source files, resolves local Markdown links and compares the release manifest with the working tree. The test runner executes four independent package test suites; zero available suites is a failure. Prompt behavior is evaluated separately.
+Each package has its own instructions, synthetic examples and limits. The runner rejects absent or zero-test executable suites. Instruction-only workflows require behavioral review as well as static validation.
 
-Fixtures are constructed from synthetic JSON, small generated spreadsheets and minimal Office XML. Test-generated Office files are temporary and are not shipped in the repository. The executable suites exercise:
+## Scope
 
-| Package | Checks |
-| --- | --- |
-| Workbook tieout | Explicit coverage, unit conversion, missing or incorrect data, tolerance boundaries, typed comparisons and formula-cache limitations. |
-| Model regression testing | Changed/unchanged declarations, missing watch items, period/unit/type changes, decimal precision, baseline preservation and read-only spreadsheet export. |
-| Office package audit | Input bounds, ZIP/XML errors, relationship/content-type consistency, review surfaces, report redaction and exit statuses. |
-| DOCX footnotes | Existing and newly created note infrastructure, IDs, markers, XML namespaces, package preservation, unsupported inputs and output non-overwrite guarantees. |
+Calculations and checks are bounded by explicit input contracts. A consistent source citation, matching hash or complete review record does not establish financial truth, reviewer authority or the adequacy of the chosen scope. Proposed actuals edits are plans; cached spreadsheet values are not recalculation. Routing suggestions do not execute tools.
 
-## Release check results
+Native Word/Excel/PowerPoint rendering, live-provider refresh, spreadsheet-engine recalculation, deployment-scale reliability and automatic triggering across agent hosts have not been tested here. Office tools do not certify universal format compatibility or confidentiality. No operational time-saving, adoption or financial-impact measurements are claimed.
 
-On 2026-11-04, the local Python 3.11 validation run used a fresh environment with only the declared dependencies. All **107 executable tests passed**: 30 for footnotes, 20 for regression testing/export, 40 for package audit and 17 for workbook tieout. Package frontmatter validation passed for all five skills. Independently generated malformed-input probes were used to find and fix edge cases before this run.
-
-These are local results, not a claim that a remote CI run or native Office validation has completed. The commands above let a reader reproduce the checks against the manifest.
-
-## Prompt behavior
-
-[Recorded prompt evaluations](PROMPT_EVALUATIONS.md) contain the actual outputs for three synthetic tasks. A separate evaluation agent reviewed 11 output-based assertions. This is a single-run smoke evaluation in a Codex agent environment. It is not a statistical benchmark, a measurement of speed, or evidence of performance on other models or hosts.
-
-## Limits that matter
-
-- Spreadsheet helpers read supplied snapshots or stored workbook values. They do not execute Excel or recalculate formulas. Cached formula values remain review-required.
-- A consistent comparison does not establish that a source is accurate, that the selected watch list is complete, or that a financial assumption is appropriate.
-- Office inspection implements selected package checks, not every OOXML schema rule. Arbitrary XML, images, embedded objects and other content may require separate substantive review.
-- The Word editor has a deliberately narrow supported scope. A structural test cannot establish pagination, appearance, accessibility or native application compatibility.
-- Microsoft Word, Excel and PowerPoint opening/rendering, spreadsheet-engine recalculation, and automatic skill triggering in every agent host were **not run** in this environment. Use the intended applications to validate artifacts before operational delivery.
-- Automated scans and synthetic tests do not establish confidentiality or authorship. Review the actual material and the intended use.
-
-The manifest binds the published source to the reviewed files. It is a reproducibility aid, not a digital signature or a third-party certification. Updating a source file invalidates its recorded hash.
+The manifest identifies the local draft source bytes and excludes itself from its hashes. It is not a signature, external certification or evidence of publication.

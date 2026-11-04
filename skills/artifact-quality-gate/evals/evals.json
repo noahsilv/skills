@@ -1,0 +1,8 @@
+{
+  "skill_name": "artifact-quality-gate",
+  "evals": [
+    {"id": 1, "prompt": "Run the synthetic demo into a fresh temporary directory. Explain exactly what ATTESTED establishes and what the CSV checker actually checked.", "expected_output": "Current source, checker, and log hashes match one run and one required reported pass; only CSV shape is checked, with no correctness or recalculation claim.", "files": ["examples/inputs/sample.csv", "examples/inputs/spec.json"]},
+    {"id": 2, "prompt": "After a fresh demo, change the CSV's amount for synthetic-revenue while preserving the filename. Aggregate the prior record into a new report path.", "expected_output": "Exit 2 and INCOMPLETE error for changed artifact; no new success report; the old record is not repaired or relabeled.", "files": ["examples/inputs/sample.csv"]},
+    {"id": 3, "prompt": "Create a temporary spec requiring a recalculation check, then try to record a pass with a log claiming that an engine ran. Explain the supported next step.", "expected_output": "The recalculation pass is rejected. Record not_run with an honest reason, or an observed failure with evidence; no generic relabeling to obtain ATTESTED.", "files": ["examples/inputs/spec.json", "examples/inputs/record-request.json"]}
+  ]
+}

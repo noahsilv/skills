@@ -1,0 +1,25 @@
+{
+  "base_sha256": "5d20598db4cf263dadb09a5fd021474869e5d5f60d766175d17b581f6e32cd14",
+  "export_sha256": "29f736384ccc604cba9699bbd82e92029d8b28d08f3680f9337c1c408a69137e",
+  "round_id": "round-2",
+  "rows": [
+    {
+      "category": "Debt",
+      "due_date": "2026-02-20",
+      "evidence_reference": "Synthetic formula-like text used only to test safe export.",
+      "request": "Provide the outstanding debt schedule and identify unreconciled balances.",
+      "request_id": "REQ-040",
+      "response": "=SUM(1,2)"
+    },
+    {
+      "category": "Forecast",
+      "due_date": "2026-02-20",
+      "evidence_reference": "",
+      "request": "Provide the assumptions supporting the next-year operating forecast.",
+      "request_id": "REQ-090",
+      "response": ""
+    }
+  ],
+  "schema_version": 1,
+  "tracker_id": "synthetic-diligence"
+}

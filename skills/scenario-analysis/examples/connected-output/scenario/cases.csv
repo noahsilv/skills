@@ -1,0 +1,5 @@
+case_id,status,revenue,ebitda,cfads,debt_service,cash_after_debt_service,minimum_defined_dscr,periods_with_dscr,period_count,delta_revenue,delta_ebitda,delta_cfads,delta_debt_service,delta_cash_after_debt_service
+base,BASE,2908000.00,1358000.00,1016000.00,649138.37,366861.63,1.226008,4,4,0.00,0.00,0.00,0.00,0.00
+volume_down,OUTPUT_CHANGED,2471800.00,1098500.00,756500.00,649138.37,107361.63,0.930014,4,4,-436200.00,-259500.00,-259500.00,0.00,-259500.00
+fixed_cost_up,OUTPUT_CHANGED,2908000.00,1302200.00,960200.00,649138.37,311061.63,1.169962,4,4,0.00,-55800.00,-55800.00,0.00,-55800.00
+combined,OUTPUT_CHANGED,2471800.00,1042700.00,700700.00,649138.37,51561.63,0.873968,4,4,-436200.00,-315300.00,-315300.00,0.00,-315300.00

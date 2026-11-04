@@ -1,0 +1,6 @@
+Synthetic operating summary, version 2
+Entity: Synthetic Asset A
+Period: FY2025; standalone reported actuals.
+Annual revenue: USD 19.1 million.
+Reason for the revenue revision is not supplied.
+No outstanding debt balance is included in this extract.

@@ -1,0 +1,24 @@
+{
+  "skill_name": "financial-statement-analysis",
+  "evaluation_status": "Review prompts supplied; deterministic helper tests executed separately. No agent-vs-baseline benchmark run.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Analyze the supplied normalized FY2025 synthetic statements. Reconcile the accounting identities, calculate the defined ratios, and identify what the source references do and do not establish.",
+      "expected_output": "COMPLETE report with six passing accounting checks, eight metrics, 26/26 field coverage, a 0.437500 gross margin and 300 net debt; disclose declared source-evidence limits.",
+      "files": ["examples/complete.json", "examples/synthetic-disclosure.txt"]
+    },
+    {
+      "id": 2,
+      "prompt": "Review this incomplete statement input. Explain whether the available cash reconciliation and debt measures can be relied on; do not fill gaps with assumed zeros.",
+      "expected_output": "INCOMPLETE report, separate explicit missing noncurrent lease from absent FX movement, UNKNOWN cash rollforward and debt metrics, source-linked remaining calculations.",
+      "files": ["examples/incomplete.json"]
+    },
+    {
+      "id": 3,
+      "prompt": "Find the inconsistency in this normalized financial statement case and explain the source check required before revising it.",
+      "expected_output": "DISCREPANCY report with balance-sheet residual 1; no automatic rounding plug or altered input; confirm original source amount before correction.",
+      "files": ["examples/discrepancy.json", "examples/synthetic-disclosure.txt"]
+    }
+  ]
+}

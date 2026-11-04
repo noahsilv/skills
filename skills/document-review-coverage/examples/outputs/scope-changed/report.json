@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "source": {
+    "name": "draft.md",
+    "sha256": "13ce0e3cf38b5f9c8cde568b3c2f3f98bcd6b002a193e93cbeee952b20201e09",
+    "bytes": 206,
+    "lines": 7
+  },
+  "inventory_source_sha256": "13ce0e3cf38b5f9c8cde568b3c2f3f98bcd6b002a193e93cbeee952b20201e09",
+  "ledger_source_sha256": "13ce0e3cf38b5f9c8cde568b3c2f3f98bcd6b002a193e93cbeee952b20201e09",
+  "source_binding": "UNVERIFIED",
+  "inventory_sha256": "833ba33141ce0289a1be13a3edfabcfbb1990a4d6227e744070b12e503a11572",
+  "ledger_inventory_sha256": "643d63b63a44fea8ce9bd9e099122187beb4ff31ed9abea5d634b6f3b663a75b",
+  "coverage_status": "UNVERIFIED",
+  "review_conclusion": "NOT_ASSESSED",
+  "limitation": "Counts measure valid submitted records, not review quality. Exact quotations establish text presence only. Factual support, judgment correctness, response adequacy, and implementation of proposed changes are NOT_ASSESSED.",
+  "counts": {
+    "expected_pairs": 4,
+    "submitted_records": 4,
+    "valid_unique_pairs": 0
+  },
+  "checks": [
+    "clarity"
+  ],
+  "units": [
+    {
+      "id": "U0001",
+      "start_line": 1,
+      "end_line": 1,
+      "sha256": "d397ef467202ccd84cfcccca12c916e11d3c7cf587dc6852ab26596aad18ec6b",
+      "text": "# Synthetic component rollout note\n"
+    },
+    {
+      "id": "U0002",
+      "start_line": 3,
+      "end_line": 3,
+      "sha256": "3a95dbb966b1b2f4fbcd4a8194fb7e2e838e5bcbe9a4f78ea181bd1b5513c28c",
+      "text": "The current test group includes 24 accounts.\n"
+    },
+    {
+      "id": "U0003",
+      "start_line": 5,
+      "end_line": 5,
+      "sha256": "c57b7b3f8861a2747802707ec704f5d3d65ea9dda5ac61d1839fcaeef5a81f25",
+      "text": "The 120-account rollout is approved for 18 June.\n"
+    },
+    {
+      "id": "U0004",
+      "start_line": 7,
+      "end_line": 7,
+      "sha256": "e6e3516b8a630835f4de66440c50e47357ed1d93623b3a57835500657223ff9d",
+      "text": "Monthly hosting is estimated at 4,000 credits, excluding support and tax.\n"
+    }
+  ],
+  "blank_lines": [
+    2,
+    4,
+    6
+  ],
+  "diagnostics": [
+    {
+      "code": "REVIEW_INVENTORY_MISMATCH",
+      "message": "The ledger is not bound to these exact inventory bytes and review checks."
+    }
+  ],
+  "missing_pairs": [],
+  "accepted_record_numbers": [],
+  "reviewer_status_counts": {},
+  "manual_review_record_numbers": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "records": [
+    {
+      "unit_id": "U0001",
+      "check": "clarity",
+      "reviewer": "Synthetic reviewer",
+      "verdict": "no-change",
+      "quote": "# Synthetic component rollout note",
+      "comment": "The heading names the subject of this short note.",
+      "status": "closed",
+      "resolution": "Assessment recorded; no source edit claimed."
+    },
+    {
+      "unit_id": "U0002",
+      "check": "clarity",
+      "reviewer": "Synthetic reviewer",
+      "verdict": "no-change",
+      "quote": "The current test group includes 24 accounts.",
+      "comment": "The sentence clearly distinguishes the current test group from the wider rollout.",
+      "status": "closed",
+      "resolution": "Assessment recorded; no source edit claimed."
+    },
+    {
+      "unit_id": "U0003",
+      "check": "clarity",
+      "reviewer": "Synthetic reviewer",
+      "verdict": "no-change",
+      "quote": "The 120-account rollout is approved for 18 June.",
+      "comment": "The sentence is readily understandable. Its approval status is assessed in the separate source-support record.",
+      "status": "closed",
+      "resolution": "Assessment recorded; no source edit claimed."
+    },
+    {
+      "unit_id": "U0004",
+      "check": "clarity",
+      "reviewer": "Synthetic reviewer",
+      "verdict": "no-change",
+      "quote": "Monthly hosting is estimated at 4,000 credits, excluding support and tax.",
+      "comment": "The cost sentence names the monthly period and both exclusions.",
+      "status": "closed",
+      "resolution": "Assessment recorded; no source edit claimed."
+    }
+  ]
+}

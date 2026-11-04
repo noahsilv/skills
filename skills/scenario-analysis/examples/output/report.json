@@ -1,0 +1,1987 @@
+{
+  "schema_version": 1,
+  "model": "operating-cash-bridge-v1",
+  "analysis_id": "Synthetic_Operations",
+  "currency": "USD",
+  "unit": "currency units",
+  "money_decimals": 2,
+  "base_assumptions_sha256": "24eda9569ddea30de17ff24ccd8faf41b55b850432705a7f0ec37d4688fc1daf",
+  "checks": {
+    "base_preserved": "PASS"
+  },
+  "cases": [
+    {
+      "id": "base",
+      "status": "BASE",
+      "changed_assumptions": [],
+      "applied_assumptions": {
+        "volume": [
+          "10000/1",
+          "11000/1",
+          "12000/1"
+        ],
+        "unit_price": [
+          "45/1",
+          "46/1",
+          "47/1"
+        ],
+        "unit_variable_cost": [
+          "18/1",
+          "19/1",
+          "20/1"
+        ],
+        "fixed_cost": [
+          "80000/1",
+          "82000/1",
+          "84000/1"
+        ],
+        "cash_taxes": [
+          "25000/1",
+          "27000/1",
+          "29000/1"
+        ],
+        "maintenance_capex": [
+          "20000/1",
+          "22000/1",
+          "24000/1"
+        ],
+        "working_capital_increase": [
+          "10000/1",
+          "11000/1",
+          "12000/1"
+        ],
+        "debt_service": [
+          "80000/1",
+          "85000/1",
+          "90000/1"
+        ]
+      },
+      "summary": {
+        "revenue": "1520000.00",
+        "ebitda": "645000.00",
+        "cfads": "465000.00",
+        "debt_service": "255000.00",
+        "cash_after_debt_service": "210000.00",
+        "minimum_defined_dscr": "1.687500",
+        "periods_with_dscr": 3,
+        "period_count": 3
+      },
+      "delta_from_base": {
+        "delta_revenue": "0.00",
+        "delta_ebitda": "0.00",
+        "delta_cfads": "0.00",
+        "delta_debt_service": "0.00",
+        "delta_cash_after_debt_service": "0.00"
+      },
+      "exact_summary": {
+        "revenue": "1520000/1",
+        "ebitda": "645000/1",
+        "cfads": "465000/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "210000/1",
+        "minimum_defined_dscr": "27/16"
+      },
+      "periods": [
+        {
+          "period": {
+            "id": "Year_1",
+            "start_date": "2027-01-01",
+            "end_date": "2028-01-01"
+          },
+          "revenue": "450000.00",
+          "variable_cost": "180000.00",
+          "fixed_cost": "80000.00",
+          "ebitda": "190000.00",
+          "cash_taxes": "25000.00",
+          "maintenance_capex": "20000.00",
+          "working_capital_increase": "10000.00",
+          "cfads": "135000.00",
+          "debt_service": "80000.00",
+          "cash_after_debt_service": "55000.00",
+          "dscr": "1.687500",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "450000/1",
+            "variable_cost": "180000/1",
+            "fixed_cost": "80000/1",
+            "ebitda": "190000/1",
+            "cash_taxes": "25000/1",
+            "maintenance_capex": "20000/1",
+            "working_capital_increase": "10000/1",
+            "cfads": "135000/1",
+            "debt_service": "80000/1",
+            "cash_after_debt_service": "55000/1",
+            "dscr": "27/16"
+          }
+        },
+        {
+          "period": {
+            "id": "Year_2",
+            "start_date": "2028-01-01",
+            "end_date": "2029-01-01"
+          },
+          "revenue": "506000.00",
+          "variable_cost": "209000.00",
+          "fixed_cost": "82000.00",
+          "ebitda": "215000.00",
+          "cash_taxes": "27000.00",
+          "maintenance_capex": "22000.00",
+          "working_capital_increase": "11000.00",
+          "cfads": "155000.00",
+          "debt_service": "85000.00",
+          "cash_after_debt_service": "70000.00",
+          "dscr": "1.823529",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "506000/1",
+            "variable_cost": "209000/1",
+            "fixed_cost": "82000/1",
+            "ebitda": "215000/1",
+            "cash_taxes": "27000/1",
+            "maintenance_capex": "22000/1",
+            "working_capital_increase": "11000/1",
+            "cfads": "155000/1",
+            "debt_service": "85000/1",
+            "cash_after_debt_service": "70000/1",
+            "dscr": "31/17"
+          }
+        },
+        {
+          "period": {
+            "id": "Year_3",
+            "start_date": "2029-01-01",
+            "end_date": "2030-01-01"
+          },
+          "revenue": "564000.00",
+          "variable_cost": "240000.00",
+          "fixed_cost": "84000.00",
+          "ebitda": "240000.00",
+          "cash_taxes": "29000.00",
+          "maintenance_capex": "24000.00",
+          "working_capital_increase": "12000.00",
+          "cfads": "175000.00",
+          "debt_service": "90000.00",
+          "cash_after_debt_service": "85000.00",
+          "dscr": "1.944444",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "564000/1",
+            "variable_cost": "240000/1",
+            "fixed_cost": "84000/1",
+            "ebitda": "240000/1",
+            "cash_taxes": "29000/1",
+            "maintenance_capex": "24000/1",
+            "working_capital_increase": "12000/1",
+            "cfads": "175000/1",
+            "debt_service": "90000/1",
+            "cash_after_debt_service": "85000/1",
+            "dscr": "35/18"
+          }
+        }
+      ]
+    },
+    {
+      "id": "volume_down",
+      "status": "OUTPUT_CHANGED",
+      "changed_assumptions": [
+        "volume"
+      ],
+      "applied_assumptions": {
+        "volume": [
+          "8500/1",
+          "9350/1",
+          "10200/1"
+        ],
+        "unit_price": [
+          "45/1",
+          "46/1",
+          "47/1"
+        ],
+        "unit_variable_cost": [
+          "18/1",
+          "19/1",
+          "20/1"
+        ],
+        "fixed_cost": [
+          "80000/1",
+          "82000/1",
+          "84000/1"
+        ],
+        "cash_taxes": [
+          "25000/1",
+          "27000/1",
+          "29000/1"
+        ],
+        "maintenance_capex": [
+          "20000/1",
+          "22000/1",
+          "24000/1"
+        ],
+        "working_capital_increase": [
+          "10000/1",
+          "11000/1",
+          "12000/1"
+        ],
+        "debt_service": [
+          "80000/1",
+          "85000/1",
+          "90000/1"
+        ]
+      },
+      "summary": {
+        "revenue": "1292000.00",
+        "ebitda": "511350.00",
+        "cfads": "331350.00",
+        "debt_service": "255000.00",
+        "cash_after_debt_service": "76350.00",
+        "minimum_defined_dscr": "1.181250",
+        "periods_with_dscr": 3,
+        "period_count": 3
+      },
+      "delta_from_base": {
+        "delta_revenue": "-228000.00",
+        "delta_ebitda": "-133650.00",
+        "delta_cfads": "-133650.00",
+        "delta_debt_service": "0.00",
+        "delta_cash_after_debt_service": "-133650.00"
+      },
+      "exact_summary": {
+        "revenue": "1292000/1",
+        "ebitda": "511350/1",
+        "cfads": "331350/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "76350/1",
+        "minimum_defined_dscr": "189/160"
+      },
+      "periods": [
+        {
+          "period": {
+            "id": "Year_1",
+            "start_date": "2027-01-01",
+            "end_date": "2028-01-01"
+          },
+          "revenue": "382500.00",
+          "variable_cost": "153000.00",
+          "fixed_cost": "80000.00",
+          "ebitda": "149500.00",
+          "cash_taxes": "25000.00",
+          "maintenance_capex": "20000.00",
+          "working_capital_increase": "10000.00",
+          "cfads": "94500.00",
+          "debt_service": "80000.00",
+          "cash_after_debt_service": "14500.00",
+          "dscr": "1.181250",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "382500/1",
+            "variable_cost": "153000/1",
+            "fixed_cost": "80000/1",
+            "ebitda": "149500/1",
+            "cash_taxes": "25000/1",
+            "maintenance_capex": "20000/1",
+            "working_capital_increase": "10000/1",
+            "cfads": "94500/1",
+            "debt_service": "80000/1",
+            "cash_after_debt_service": "14500/1",
+            "dscr": "189/160"
+          }
+        },
+        {
+          "period": {
+            "id": "Year_2",
+            "start_date": "2028-01-01",
+            "end_date": "2029-01-01"
+          },
+          "revenue": "430100.00",
+          "variable_cost": "177650.00",
+          "fixed_cost": "82000.00",
+          "ebitda": "170450.00",
+          "cash_taxes": "27000.00",
+          "maintenance_capex": "22000.00",
+          "working_capital_increase": "11000.00",
+          "cfads": "110450.00",
+          "debt_service": "85000.00",
+          "cash_after_debt_service": "25450.00",
+          "dscr": "1.299412",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "430100/1",
+            "variable_cost": "177650/1",
+            "fixed_cost": "82000/1",
+            "ebitda": "170450/1",
+            "cash_taxes": "27000/1",
+            "maintenance_capex": "22000/1",
+            "working_capital_increase": "11000/1",
+            "cfads": "110450/1",
+            "debt_service": "85000/1",
+            "cash_after_debt_service": "25450/1",
+            "dscr": "2209/1700"
+          }
+        },
+        {
+          "period": {
+            "id": "Year_3",
+            "start_date": "2029-01-01",
+            "end_date": "2030-01-01"
+          },
+          "revenue": "479400.00",
+          "variable_cost": "204000.00",
+          "fixed_cost": "84000.00",
+          "ebitda": "191400.00",
+          "cash_taxes": "29000.00",
+          "maintenance_capex": "24000.00",
+          "working_capital_increase": "12000.00",
+          "cfads": "126400.00",
+          "debt_service": "90000.00",
+          "cash_after_debt_service": "36400.00",
+          "dscr": "1.404444",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "479400/1",
+            "variable_cost": "204000/1",
+            "fixed_cost": "84000/1",
+            "ebitda": "191400/1",
+            "cash_taxes": "29000/1",
+            "maintenance_capex": "24000/1",
+            "working_capital_increase": "12000/1",
+            "cfads": "126400/1",
+            "debt_service": "90000/1",
+            "cash_after_debt_service": "36400/1",
+            "dscr": "316/225"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fixed_cost_up",
+      "status": "OUTPUT_CHANGED",
+      "changed_assumptions": [
+        "fixed_cost"
+      ],
+      "applied_assumptions": {
+        "volume": [
+          "10000/1",
+          "11000/1",
+          "12000/1"
+        ],
+        "unit_price": [
+          "45/1",
+          "46/1",
+          "47/1"
+        ],
+        "unit_variable_cost": [
+          "18/1",
+          "19/1",
+          "20/1"
+        ],
+        "fixed_cost": [
+          "92000/1",
+          "94300/1",
+          "96600/1"
+        ],
+        "cash_taxes": [
+          "25000/1",
+          "27000/1",
+          "29000/1"
+        ],
+        "maintenance_capex": [
+          "20000/1",
+          "22000/1",
+          "24000/1"
+        ],
+        "working_capital_increase": [
+          "10000/1",
+          "11000/1",
+          "12000/1"
+        ],
+        "debt_service": [
+          "80000/1",
+          "85000/1",
+          "90000/1"
+        ]
+      },
+      "summary": {
+        "revenue": "1520000.00",
+        "ebitda": "608100.00",
+        "cfads": "428100.00",
+        "debt_service": "255000.00",
+        "cash_after_debt_service": "173100.00",
+        "minimum_defined_dscr": "1.537500",
+        "periods_with_dscr": 3,
+        "period_count": 3
+      },
+      "delta_from_base": {
+        "delta_revenue": "0.00",
+        "delta_ebitda": "-36900.00",
+        "delta_cfads": "-36900.00",
+        "delta_debt_service": "0.00",
+        "delta_cash_after_debt_service": "-36900.00"
+      },
+      "exact_summary": {
+        "revenue": "1520000/1",
+        "ebitda": "608100/1",
+        "cfads": "428100/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "173100/1",
+        "minimum_defined_dscr": "123/80"
+      },
+      "periods": [
+        {
+          "period": {
+            "id": "Year_1",
+            "start_date": "2027-01-01",
+            "end_date": "2028-01-01"
+          },
+          "revenue": "450000.00",
+          "variable_cost": "180000.00",
+          "fixed_cost": "92000.00",
+          "ebitda": "178000.00",
+          "cash_taxes": "25000.00",
+          "maintenance_capex": "20000.00",
+          "working_capital_increase": "10000.00",
+          "cfads": "123000.00",
+          "debt_service": "80000.00",
+          "cash_after_debt_service": "43000.00",
+          "dscr": "1.537500",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "450000/1",
+            "variable_cost": "180000/1",
+            "fixed_cost": "92000/1",
+            "ebitda": "178000/1",
+            "cash_taxes": "25000/1",
+            "maintenance_capex": "20000/1",
+            "working_capital_increase": "10000/1",
+            "cfads": "123000/1",
+            "debt_service": "80000/1",
+            "cash_after_debt_service": "43000/1",
+            "dscr": "123/80"
+          }
+        },
+        {
+          "period": {
+            "id": "Year_2",
+            "start_date": "2028-01-01",
+            "end_date": "2029-01-01"
+          },
+          "revenue": "506000.00",
+          "variable_cost": "209000.00",
+          "fixed_cost": "94300.00",
+          "ebitda": "202700.00",
+          "cash_taxes": "27000.00",
+          "maintenance_capex": "22000.00",
+          "working_capital_increase": "11000.00",
+          "cfads": "142700.00",
+          "debt_service": "85000.00",
+          "cash_after_debt_service": "57700.00",
+          "dscr": "1.678824",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "506000/1",
+            "variable_cost": "209000/1",
+            "fixed_cost": "94300/1",
+            "ebitda": "202700/1",
+            "cash_taxes": "27000/1",
+            "maintenance_capex": "22000/1",
+            "working_capital_increase": "11000/1",
+            "cfads": "142700/1",
+            "debt_service": "85000/1",
+            "cash_after_debt_service": "57700/1",
+            "dscr": "1427/850"
+          }
+        },
+        {
+          "period": {
+            "id": "Year_3",
+            "start_date": "2029-01-01",
+            "end_date": "2030-01-01"
+          },
+          "revenue": "564000.00",
+          "variable_cost": "240000.00",
+          "fixed_cost": "96600.00",
+          "ebitda": "227400.00",
+          "cash_taxes": "29000.00",
+          "maintenance_capex": "24000.00",
+          "working_capital_increase": "12000.00",
+          "cfads": "162400.00",
+          "debt_service": "90000.00",
+          "cash_after_debt_service": "72400.00",
+          "dscr": "1.804444",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "564000/1",
+            "variable_cost": "240000/1",
+            "fixed_cost": "96600/1",
+            "ebitda": "227400/1",
+            "cash_taxes": "29000/1",
+            "maintenance_capex": "24000/1",
+            "working_capital_increase": "12000/1",
+            "cfads": "162400/1",
+            "debt_service": "90000/1",
+            "cash_after_debt_service": "72400/1",
+            "dscr": "406/225"
+          }
+        }
+      ]
+    },
+    {
+      "id": "combined",
+      "status": "OUTPUT_CHANGED",
+      "changed_assumptions": [
+        "volume",
+        "fixed_cost"
+      ],
+      "applied_assumptions": {
+        "volume": [
+          "8500/1",
+          "9350/1",
+          "10200/1"
+        ],
+        "unit_price": [
+          "45/1",
+          "46/1",
+          "47/1"
+        ],
+        "unit_variable_cost": [
+          "18/1",
+          "19/1",
+          "20/1"
+        ],
+        "fixed_cost": [
+          "92000/1",
+          "94300/1",
+          "96600/1"
+        ],
+        "cash_taxes": [
+          "25000/1",
+          "27000/1",
+          "29000/1"
+        ],
+        "maintenance_capex": [
+          "20000/1",
+          "22000/1",
+          "24000/1"
+        ],
+        "working_capital_increase": [
+          "10000/1",
+          "11000/1",
+          "12000/1"
+        ],
+        "debt_service": [
+          "80000/1",
+          "85000/1",
+          "90000/1"
+        ]
+      },
+      "summary": {
+        "revenue": "1292000.00",
+        "ebitda": "474450.00",
+        "cfads": "294450.00",
+        "debt_service": "255000.00",
+        "cash_after_debt_service": "39450.00",
+        "minimum_defined_dscr": "1.031250",
+        "periods_with_dscr": 3,
+        "period_count": 3
+      },
+      "delta_from_base": {
+        "delta_revenue": "-228000.00",
+        "delta_ebitda": "-170550.00",
+        "delta_cfads": "-170550.00",
+        "delta_debt_service": "0.00",
+        "delta_cash_after_debt_service": "-170550.00"
+      },
+      "exact_summary": {
+        "revenue": "1292000/1",
+        "ebitda": "474450/1",
+        "cfads": "294450/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "39450/1",
+        "minimum_defined_dscr": "33/32"
+      },
+      "periods": [
+        {
+          "period": {
+            "id": "Year_1",
+            "start_date": "2027-01-01",
+            "end_date": "2028-01-01"
+          },
+          "revenue": "382500.00",
+          "variable_cost": "153000.00",
+          "fixed_cost": "92000.00",
+          "ebitda": "137500.00",
+          "cash_taxes": "25000.00",
+          "maintenance_capex": "20000.00",
+          "working_capital_increase": "10000.00",
+          "cfads": "82500.00",
+          "debt_service": "80000.00",
+          "cash_after_debt_service": "2500.00",
+          "dscr": "1.031250",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "382500/1",
+            "variable_cost": "153000/1",
+            "fixed_cost": "92000/1",
+            "ebitda": "137500/1",
+            "cash_taxes": "25000/1",
+            "maintenance_capex": "20000/1",
+            "working_capital_increase": "10000/1",
+            "cfads": "82500/1",
+            "debt_service": "80000/1",
+            "cash_after_debt_service": "2500/1",
+            "dscr": "33/32"
+          }
+        },
+        {
+          "period": {
+            "id": "Year_2",
+            "start_date": "2028-01-01",
+            "end_date": "2029-01-01"
+          },
+          "revenue": "430100.00",
+          "variable_cost": "177650.00",
+          "fixed_cost": "94300.00",
+          "ebitda": "158150.00",
+          "cash_taxes": "27000.00",
+          "maintenance_capex": "22000.00",
+          "working_capital_increase": "11000.00",
+          "cfads": "98150.00",
+          "debt_service": "85000.00",
+          "cash_after_debt_service": "13150.00",
+          "dscr": "1.154706",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "430100/1",
+            "variable_cost": "177650/1",
+            "fixed_cost": "94300/1",
+            "ebitda": "158150/1",
+            "cash_taxes": "27000/1",
+            "maintenance_capex": "22000/1",
+            "working_capital_increase": "11000/1",
+            "cfads": "98150/1",
+            "debt_service": "85000/1",
+            "cash_after_debt_service": "13150/1",
+            "dscr": "1963/1700"
+          }
+        },
+        {
+          "period": {
+            "id": "Year_3",
+            "start_date": "2029-01-01",
+            "end_date": "2030-01-01"
+          },
+          "revenue": "479400.00",
+          "variable_cost": "204000.00",
+          "fixed_cost": "96600.00",
+          "ebitda": "178800.00",
+          "cash_taxes": "29000.00",
+          "maintenance_capex": "24000.00",
+          "working_capital_increase": "12000.00",
+          "cfads": "113800.00",
+          "debt_service": "90000.00",
+          "cash_after_debt_service": "23800.00",
+          "dscr": "1.264444",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "479400/1",
+            "variable_cost": "204000/1",
+            "fixed_cost": "96600/1",
+            "ebitda": "178800/1",
+            "cash_taxes": "29000/1",
+            "maintenance_capex": "24000/1",
+            "working_capital_increase": "12000/1",
+            "cfads": "113800/1",
+            "debt_service": "90000/1",
+            "cash_after_debt_service": "23800/1",
+            "dscr": "569/450"
+          }
+        }
+      ]
+    },
+    {
+      "id": "capex_step",
+      "status": "OUTPUT_CHANGED",
+      "changed_assumptions": [
+        "maintenance_capex"
+      ],
+      "applied_assumptions": {
+        "volume": [
+          "10000/1",
+          "11000/1",
+          "12000/1"
+        ],
+        "unit_price": [
+          "45/1",
+          "46/1",
+          "47/1"
+        ],
+        "unit_variable_cost": [
+          "18/1",
+          "19/1",
+          "20/1"
+        ],
+        "fixed_cost": [
+          "80000/1",
+          "82000/1",
+          "84000/1"
+        ],
+        "cash_taxes": [
+          "25000/1",
+          "27000/1",
+          "29000/1"
+        ],
+        "maintenance_capex": [
+          "30000/1",
+          "22000/1",
+          "24000/1"
+        ],
+        "working_capital_increase": [
+          "10000/1",
+          "11000/1",
+          "12000/1"
+        ],
+        "debt_service": [
+          "80000/1",
+          "85000/1",
+          "90000/1"
+        ]
+      },
+      "summary": {
+        "revenue": "1520000.00",
+        "ebitda": "645000.00",
+        "cfads": "455000.00",
+        "debt_service": "255000.00",
+        "cash_after_debt_service": "200000.00",
+        "minimum_defined_dscr": "1.562500",
+        "periods_with_dscr": 3,
+        "period_count": 3
+      },
+      "delta_from_base": {
+        "delta_revenue": "0.00",
+        "delta_ebitda": "0.00",
+        "delta_cfads": "-10000.00",
+        "delta_debt_service": "0.00",
+        "delta_cash_after_debt_service": "-10000.00"
+      },
+      "exact_summary": {
+        "revenue": "1520000/1",
+        "ebitda": "645000/1",
+        "cfads": "455000/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "200000/1",
+        "minimum_defined_dscr": "25/16"
+      },
+      "periods": [
+        {
+          "period": {
+            "id": "Year_1",
+            "start_date": "2027-01-01",
+            "end_date": "2028-01-01"
+          },
+          "revenue": "450000.00",
+          "variable_cost": "180000.00",
+          "fixed_cost": "80000.00",
+          "ebitda": "190000.00",
+          "cash_taxes": "25000.00",
+          "maintenance_capex": "30000.00",
+          "working_capital_increase": "10000.00",
+          "cfads": "125000.00",
+          "debt_service": "80000.00",
+          "cash_after_debt_service": "45000.00",
+          "dscr": "1.562500",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "450000/1",
+            "variable_cost": "180000/1",
+            "fixed_cost": "80000/1",
+            "ebitda": "190000/1",
+            "cash_taxes": "25000/1",
+            "maintenance_capex": "30000/1",
+            "working_capital_increase": "10000/1",
+            "cfads": "125000/1",
+            "debt_service": "80000/1",
+            "cash_after_debt_service": "45000/1",
+            "dscr": "25/16"
+          }
+        },
+        {
+          "period": {
+            "id": "Year_2",
+            "start_date": "2028-01-01",
+            "end_date": "2029-01-01"
+          },
+          "revenue": "506000.00",
+          "variable_cost": "209000.00",
+          "fixed_cost": "82000.00",
+          "ebitda": "215000.00",
+          "cash_taxes": "27000.00",
+          "maintenance_capex": "22000.00",
+          "working_capital_increase": "11000.00",
+          "cfads": "155000.00",
+          "debt_service": "85000.00",
+          "cash_after_debt_service": "70000.00",
+          "dscr": "1.823529",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "506000/1",
+            "variable_cost": "209000/1",
+            "fixed_cost": "82000/1",
+            "ebitda": "215000/1",
+            "cash_taxes": "27000/1",
+            "maintenance_capex": "22000/1",
+            "working_capital_increase": "11000/1",
+            "cfads": "155000/1",
+            "debt_service": "85000/1",
+            "cash_after_debt_service": "70000/1",
+            "dscr": "31/17"
+          }
+        },
+        {
+          "period": {
+            "id": "Year_3",
+            "start_date": "2029-01-01",
+            "end_date": "2030-01-01"
+          },
+          "revenue": "564000.00",
+          "variable_cost": "240000.00",
+          "fixed_cost": "84000.00",
+          "ebitda": "240000.00",
+          "cash_taxes": "29000.00",
+          "maintenance_capex": "24000.00",
+          "working_capital_increase": "12000.00",
+          "cfads": "175000.00",
+          "debt_service": "90000.00",
+          "cash_after_debt_service": "85000.00",
+          "dscr": "1.944444",
+          "dscr_status": "DEFINED",
+          "exact_metrics": {
+            "revenue": "564000/1",
+            "variable_cost": "240000/1",
+            "fixed_cost": "84000/1",
+            "ebitda": "240000/1",
+            "cash_taxes": "29000/1",
+            "maintenance_capex": "24000/1",
+            "working_capital_increase": "12000/1",
+            "cfads": "175000/1",
+            "debt_service": "90000/1",
+            "cash_after_debt_service": "85000/1",
+            "dscr": "35/18"
+          }
+        }
+      ]
+    }
+  ],
+  "sensitivities": [
+    {
+      "sensitivity_id": "volume_multiplier",
+      "assumption": "volume",
+      "operation": "multiply",
+      "level": "0.800000000000",
+      "revenue": "1216000.00",
+      "ebitda": "466800.00",
+      "cfads": "286800.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "31800.00",
+      "minimum_defined_dscr": "1.012500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "-178200.00",
+      "level_exact": "4/5",
+      "exact_summary": {
+        "revenue": "1216000/1",
+        "ebitda": "466800/1",
+        "cfads": "286800/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "31800/1",
+        "minimum_defined_dscr": "81/80"
+      },
+      "delta_cash_after_debt_service_exact": "-178200/1",
+      "period_metrics_exact": [
+        {
+          "revenue": "360000/1",
+          "variable_cost": "144000/1",
+          "fixed_cost": "80000/1",
+          "ebitda": "136000/1",
+          "cash_taxes": "25000/1",
+          "maintenance_capex": "20000/1",
+          "working_capital_increase": "10000/1",
+          "cfads": "81000/1",
+          "debt_service": "80000/1",
+          "cash_after_debt_service": "1000/1",
+          "dscr": "81/80"
+        },
+        {
+          "revenue": "404800/1",
+          "variable_cost": "167200/1",
+          "fixed_cost": "82000/1",
+          "ebitda": "155600/1",
+          "cash_taxes": "27000/1",
+          "maintenance_capex": "22000/1",
+          "working_capital_increase": "11000/1",
+          "cfads": "95600/1",
+          "debt_service": "85000/1",
+          "cash_after_debt_service": "10600/1",
+          "dscr": "478/425"
+        },
+        {
+          "revenue": "451200/1",
+          "variable_cost": "192000/1",
+          "fixed_cost": "84000/1",
+          "ebitda": "175200/1",
+          "cash_taxes": "29000/1",
+          "maintenance_capex": "24000/1",
+          "working_capital_increase": "12000/1",
+          "cfads": "110200/1",
+          "debt_service": "90000/1",
+          "cash_after_debt_service": "20200/1",
+          "dscr": "551/450"
+        }
+      ]
+    },
+    {
+      "sensitivity_id": "volume_multiplier",
+      "assumption": "volume",
+      "operation": "multiply",
+      "level": "0.900000000000",
+      "revenue": "1368000.00",
+      "ebitda": "555900.00",
+      "cfads": "375900.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "120900.00",
+      "minimum_defined_dscr": "1.350000",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "-89100.00",
+      "level_exact": "9/10",
+      "exact_summary": {
+        "revenue": "1368000/1",
+        "ebitda": "555900/1",
+        "cfads": "375900/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "120900/1",
+        "minimum_defined_dscr": "27/20"
+      },
+      "delta_cash_after_debt_service_exact": "-89100/1",
+      "period_metrics_exact": [
+        {
+          "revenue": "405000/1",
+          "variable_cost": "162000/1",
+          "fixed_cost": "80000/1",
+          "ebitda": "163000/1",
+          "cash_taxes": "25000/1",
+          "maintenance_capex": "20000/1",
+          "working_capital_increase": "10000/1",
+          "cfads": "108000/1",
+          "debt_service": "80000/1",
+          "cash_after_debt_service": "28000/1",
+          "dscr": "27/20"
+        },
+        {
+          "revenue": "455400/1",
+          "variable_cost": "188100/1",
+          "fixed_cost": "82000/1",
+          "ebitda": "185300/1",
+          "cash_taxes": "27000/1",
+          "maintenance_capex": "22000/1",
+          "working_capital_increase": "11000/1",
+          "cfads": "125300/1",
+          "debt_service": "85000/1",
+          "cash_after_debt_service": "40300/1",
+          "dscr": "1253/850"
+        },
+        {
+          "revenue": "507600/1",
+          "variable_cost": "216000/1",
+          "fixed_cost": "84000/1",
+          "ebitda": "207600/1",
+          "cash_taxes": "29000/1",
+          "maintenance_capex": "24000/1",
+          "working_capital_increase": "12000/1",
+          "cfads": "142600/1",
+          "debt_service": "90000/1",
+          "cash_after_debt_service": "52600/1",
+          "dscr": "713/450"
+        }
+      ]
+    },
+    {
+      "sensitivity_id": "volume_multiplier",
+      "assumption": "volume",
+      "operation": "multiply",
+      "level": "1.000000000000",
+      "revenue": "1520000.00",
+      "ebitda": "645000.00",
+      "cfads": "465000.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "210000.00",
+      "minimum_defined_dscr": "1.687500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "0.00",
+      "level_exact": "1/1",
+      "exact_summary": {
+        "revenue": "1520000/1",
+        "ebitda": "645000/1",
+        "cfads": "465000/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "210000/1",
+        "minimum_defined_dscr": "27/16"
+      },
+      "delta_cash_after_debt_service_exact": "0/1",
+      "period_metrics_exact": [
+        {
+          "revenue": "450000/1",
+          "variable_cost": "180000/1",
+          "fixed_cost": "80000/1",
+          "ebitda": "190000/1",
+          "cash_taxes": "25000/1",
+          "maintenance_capex": "20000/1",
+          "working_capital_increase": "10000/1",
+          "cfads": "135000/1",
+          "debt_service": "80000/1",
+          "cash_after_debt_service": "55000/1",
+          "dscr": "27/16"
+        },
+        {
+          "revenue": "506000/1",
+          "variable_cost": "209000/1",
+          "fixed_cost": "82000/1",
+          "ebitda": "215000/1",
+          "cash_taxes": "27000/1",
+          "maintenance_capex": "22000/1",
+          "working_capital_increase": "11000/1",
+          "cfads": "155000/1",
+          "debt_service": "85000/1",
+          "cash_after_debt_service": "70000/1",
+          "dscr": "31/17"
+        },
+        {
+          "revenue": "564000/1",
+          "variable_cost": "240000/1",
+          "fixed_cost": "84000/1",
+          "ebitda": "240000/1",
+          "cash_taxes": "29000/1",
+          "maintenance_capex": "24000/1",
+          "working_capital_increase": "12000/1",
+          "cfads": "175000/1",
+          "debt_service": "90000/1",
+          "cash_after_debt_service": "85000/1",
+          "dscr": "35/18"
+        }
+      ]
+    },
+    {
+      "sensitivity_id": "volume_multiplier",
+      "assumption": "volume",
+      "operation": "multiply",
+      "level": "1.100000000000",
+      "revenue": "1672000.00",
+      "ebitda": "734100.00",
+      "cfads": "554100.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "299100.00",
+      "minimum_defined_dscr": "2.025000",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "89100.00",
+      "level_exact": "11/10",
+      "exact_summary": {
+        "revenue": "1672000/1",
+        "ebitda": "734100/1",
+        "cfads": "554100/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "299100/1",
+        "minimum_defined_dscr": "81/40"
+      },
+      "delta_cash_after_debt_service_exact": "89100/1",
+      "period_metrics_exact": [
+        {
+          "revenue": "495000/1",
+          "variable_cost": "198000/1",
+          "fixed_cost": "80000/1",
+          "ebitda": "217000/1",
+          "cash_taxes": "25000/1",
+          "maintenance_capex": "20000/1",
+          "working_capital_increase": "10000/1",
+          "cfads": "162000/1",
+          "debt_service": "80000/1",
+          "cash_after_debt_service": "82000/1",
+          "dscr": "81/40"
+        },
+        {
+          "revenue": "556600/1",
+          "variable_cost": "229900/1",
+          "fixed_cost": "82000/1",
+          "ebitda": "244700/1",
+          "cash_taxes": "27000/1",
+          "maintenance_capex": "22000/1",
+          "working_capital_increase": "11000/1",
+          "cfads": "184700/1",
+          "debt_service": "85000/1",
+          "cash_after_debt_service": "99700/1",
+          "dscr": "1847/850"
+        },
+        {
+          "revenue": "620400/1",
+          "variable_cost": "264000/1",
+          "fixed_cost": "84000/1",
+          "ebitda": "272400/1",
+          "cash_taxes": "29000/1",
+          "maintenance_capex": "24000/1",
+          "working_capital_increase": "12000/1",
+          "cfads": "207400/1",
+          "debt_service": "90000/1",
+          "cash_after_debt_service": "117400/1",
+          "dscr": "1037/450"
+        }
+      ]
+    },
+    {
+      "sensitivity_id": "volume_multiplier",
+      "assumption": "volume",
+      "operation": "multiply",
+      "level": "1.200000000000",
+      "revenue": "1824000.00",
+      "ebitda": "823200.00",
+      "cfads": "643200.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "388200.00",
+      "minimum_defined_dscr": "2.362500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "178200.00",
+      "level_exact": "6/5",
+      "exact_summary": {
+        "revenue": "1824000/1",
+        "ebitda": "823200/1",
+        "cfads": "643200/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "388200/1",
+        "minimum_defined_dscr": "189/80"
+      },
+      "delta_cash_after_debt_service_exact": "178200/1",
+      "period_metrics_exact": [
+        {
+          "revenue": "540000/1",
+          "variable_cost": "216000/1",
+          "fixed_cost": "80000/1",
+          "ebitda": "244000/1",
+          "cash_taxes": "25000/1",
+          "maintenance_capex": "20000/1",
+          "working_capital_increase": "10000/1",
+          "cfads": "189000/1",
+          "debt_service": "80000/1",
+          "cash_after_debt_service": "109000/1",
+          "dscr": "189/80"
+        },
+        {
+          "revenue": "607200/1",
+          "variable_cost": "250800/1",
+          "fixed_cost": "82000/1",
+          "ebitda": "274400/1",
+          "cash_taxes": "27000/1",
+          "maintenance_capex": "22000/1",
+          "working_capital_increase": "11000/1",
+          "cfads": "214400/1",
+          "debt_service": "85000/1",
+          "cash_after_debt_service": "129400/1",
+          "dscr": "1072/425"
+        },
+        {
+          "revenue": "676800/1",
+          "variable_cost": "288000/1",
+          "fixed_cost": "84000/1",
+          "ebitda": "304800/1",
+          "cash_taxes": "29000/1",
+          "maintenance_capex": "24000/1",
+          "working_capital_increase": "12000/1",
+          "cfads": "239800/1",
+          "debt_service": "90000/1",
+          "cash_after_debt_service": "149800/1",
+          "dscr": "1199/450"
+        }
+      ]
+    },
+    {
+      "sensitivity_id": "price_multiplier",
+      "assumption": "unit_price",
+      "operation": "multiply",
+      "level": "0.900000000000",
+      "revenue": "1368000.00",
+      "ebitda": "493000.00",
+      "cfads": "313000.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "58000.00",
+      "minimum_defined_dscr": "1.125000",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "-152000.00",
+      "level_exact": "9/10",
+      "exact_summary": {
+        "revenue": "1368000/1",
+        "ebitda": "493000/1",
+        "cfads": "313000/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "58000/1",
+        "minimum_defined_dscr": "9/8"
+      },
+      "delta_cash_after_debt_service_exact": "-152000/1",
+      "period_metrics_exact": [
+        {
+          "revenue": "405000/1",
+          "variable_cost": "180000/1",
+          "fixed_cost": "80000/1",
+          "ebitda": "145000/1",
+          "cash_taxes": "25000/1",
+          "maintenance_capex": "20000/1",
+          "working_capital_increase": "10000/1",
+          "cfads": "90000/1",
+          "debt_service": "80000/1",
+          "cash_after_debt_service": "10000/1",
+          "dscr": "9/8"
+        },
+        {
+          "revenue": "455400/1",
+          "variable_cost": "209000/1",
+          "fixed_cost": "82000/1",
+          "ebitda": "164400/1",
+          "cash_taxes": "27000/1",
+          "maintenance_capex": "22000/1",
+          "working_capital_increase": "11000/1",
+          "cfads": "104400/1",
+          "debt_service": "85000/1",
+          "cash_after_debt_service": "19400/1",
+          "dscr": "522/425"
+        },
+        {
+          "revenue": "507600/1",
+          "variable_cost": "240000/1",
+          "fixed_cost": "84000/1",
+          "ebitda": "183600/1",
+          "cash_taxes": "29000/1",
+          "maintenance_capex": "24000/1",
+          "working_capital_increase": "12000/1",
+          "cfads": "118600/1",
+          "debt_service": "90000/1",
+          "cash_after_debt_service": "28600/1",
+          "dscr": "593/450"
+        }
+      ]
+    },
+    {
+      "sensitivity_id": "price_multiplier",
+      "assumption": "unit_price",
+      "operation": "multiply",
+      "level": "1.000000000000",
+      "revenue": "1520000.00",
+      "ebitda": "645000.00",
+      "cfads": "465000.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "210000.00",
+      "minimum_defined_dscr": "1.687500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "0.00",
+      "level_exact": "1/1",
+      "exact_summary": {
+        "revenue": "1520000/1",
+        "ebitda": "645000/1",
+        "cfads": "465000/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "210000/1",
+        "minimum_defined_dscr": "27/16"
+      },
+      "delta_cash_after_debt_service_exact": "0/1",
+      "period_metrics_exact": [
+        {
+          "revenue": "450000/1",
+          "variable_cost": "180000/1",
+          "fixed_cost": "80000/1",
+          "ebitda": "190000/1",
+          "cash_taxes": "25000/1",
+          "maintenance_capex": "20000/1",
+          "working_capital_increase": "10000/1",
+          "cfads": "135000/1",
+          "debt_service": "80000/1",
+          "cash_after_debt_service": "55000/1",
+          "dscr": "27/16"
+        },
+        {
+          "revenue": "506000/1",
+          "variable_cost": "209000/1",
+          "fixed_cost": "82000/1",
+          "ebitda": "215000/1",
+          "cash_taxes": "27000/1",
+          "maintenance_capex": "22000/1",
+          "working_capital_increase": "11000/1",
+          "cfads": "155000/1",
+          "debt_service": "85000/1",
+          "cash_after_debt_service": "70000/1",
+          "dscr": "31/17"
+        },
+        {
+          "revenue": "564000/1",
+          "variable_cost": "240000/1",
+          "fixed_cost": "84000/1",
+          "ebitda": "240000/1",
+          "cash_taxes": "29000/1",
+          "maintenance_capex": "24000/1",
+          "working_capital_increase": "12000/1",
+          "cfads": "175000/1",
+          "debt_service": "90000/1",
+          "cash_after_debt_service": "85000/1",
+          "dscr": "35/18"
+        }
+      ]
+    },
+    {
+      "sensitivity_id": "price_multiplier",
+      "assumption": "unit_price",
+      "operation": "multiply",
+      "level": "1.100000000000",
+      "revenue": "1672000.00",
+      "ebitda": "797000.00",
+      "cfads": "617000.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "362000.00",
+      "minimum_defined_dscr": "2.250000",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "152000.00",
+      "level_exact": "11/10",
+      "exact_summary": {
+        "revenue": "1672000/1",
+        "ebitda": "797000/1",
+        "cfads": "617000/1",
+        "debt_service": "255000/1",
+        "cash_after_debt_service": "362000/1",
+        "minimum_defined_dscr": "9/4"
+      },
+      "delta_cash_after_debt_service_exact": "152000/1",
+      "period_metrics_exact": [
+        {
+          "revenue": "495000/1",
+          "variable_cost": "180000/1",
+          "fixed_cost": "80000/1",
+          "ebitda": "235000/1",
+          "cash_taxes": "25000/1",
+          "maintenance_capex": "20000/1",
+          "working_capital_increase": "10000/1",
+          "cfads": "180000/1",
+          "debt_service": "80000/1",
+          "cash_after_debt_service": "100000/1",
+          "dscr": "9/4"
+        },
+        {
+          "revenue": "556600/1",
+          "variable_cost": "209000/1",
+          "fixed_cost": "82000/1",
+          "ebitda": "265600/1",
+          "cash_taxes": "27000/1",
+          "maintenance_capex": "22000/1",
+          "working_capital_increase": "11000/1",
+          "cfads": "205600/1",
+          "debt_service": "85000/1",
+          "cash_after_debt_service": "120600/1",
+          "dscr": "1028/425"
+        },
+        {
+          "revenue": "620400/1",
+          "variable_cost": "240000/1",
+          "fixed_cost": "84000/1",
+          "ebitda": "296400/1",
+          "cash_taxes": "29000/1",
+          "maintenance_capex": "24000/1",
+          "working_capital_increase": "12000/1",
+          "cfads": "231400/1",
+          "debt_service": "90000/1",
+          "cash_after_debt_service": "141400/1",
+          "dscr": "1157/450"
+        }
+      ]
+    }
+  ],
+  "case_summary_rows": [
+    {
+      "case_id": "base",
+      "status": "BASE",
+      "revenue": "1520000.00",
+      "ebitda": "645000.00",
+      "cfads": "465000.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "210000.00",
+      "minimum_defined_dscr": "1.687500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_revenue": "0.00",
+      "delta_ebitda": "0.00",
+      "delta_cfads": "0.00",
+      "delta_debt_service": "0.00",
+      "delta_cash_after_debt_service": "0.00"
+    },
+    {
+      "case_id": "volume_down",
+      "status": "OUTPUT_CHANGED",
+      "revenue": "1292000.00",
+      "ebitda": "511350.00",
+      "cfads": "331350.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "76350.00",
+      "minimum_defined_dscr": "1.181250",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_revenue": "-228000.00",
+      "delta_ebitda": "-133650.00",
+      "delta_cfads": "-133650.00",
+      "delta_debt_service": "0.00",
+      "delta_cash_after_debt_service": "-133650.00"
+    },
+    {
+      "case_id": "fixed_cost_up",
+      "status": "OUTPUT_CHANGED",
+      "revenue": "1520000.00",
+      "ebitda": "608100.00",
+      "cfads": "428100.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "173100.00",
+      "minimum_defined_dscr": "1.537500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_revenue": "0.00",
+      "delta_ebitda": "-36900.00",
+      "delta_cfads": "-36900.00",
+      "delta_debt_service": "0.00",
+      "delta_cash_after_debt_service": "-36900.00"
+    },
+    {
+      "case_id": "combined",
+      "status": "OUTPUT_CHANGED",
+      "revenue": "1292000.00",
+      "ebitda": "474450.00",
+      "cfads": "294450.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "39450.00",
+      "minimum_defined_dscr": "1.031250",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_revenue": "-228000.00",
+      "delta_ebitda": "-170550.00",
+      "delta_cfads": "-170550.00",
+      "delta_debt_service": "0.00",
+      "delta_cash_after_debt_service": "-170550.00"
+    },
+    {
+      "case_id": "capex_step",
+      "status": "OUTPUT_CHANGED",
+      "revenue": "1520000.00",
+      "ebitda": "645000.00",
+      "cfads": "455000.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "200000.00",
+      "minimum_defined_dscr": "1.562500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_revenue": "0.00",
+      "delta_ebitda": "0.00",
+      "delta_cfads": "-10000.00",
+      "delta_debt_service": "0.00",
+      "delta_cash_after_debt_service": "-10000.00"
+    }
+  ],
+  "period_rows": [
+    {
+      "case_id": "base",
+      "period_id": "Year_1",
+      "revenue": "450000.00",
+      "variable_cost": "180000.00",
+      "fixed_cost": "80000.00",
+      "ebitda": "190000.00",
+      "cash_taxes": "25000.00",
+      "maintenance_capex": "20000.00",
+      "working_capital_increase": "10000.00",
+      "cfads": "135000.00",
+      "debt_service": "80000.00",
+      "cash_after_debt_service": "55000.00",
+      "dscr": "1.687500",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "base",
+      "period_id": "Year_2",
+      "revenue": "506000.00",
+      "variable_cost": "209000.00",
+      "fixed_cost": "82000.00",
+      "ebitda": "215000.00",
+      "cash_taxes": "27000.00",
+      "maintenance_capex": "22000.00",
+      "working_capital_increase": "11000.00",
+      "cfads": "155000.00",
+      "debt_service": "85000.00",
+      "cash_after_debt_service": "70000.00",
+      "dscr": "1.823529",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "base",
+      "period_id": "Year_3",
+      "revenue": "564000.00",
+      "variable_cost": "240000.00",
+      "fixed_cost": "84000.00",
+      "ebitda": "240000.00",
+      "cash_taxes": "29000.00",
+      "maintenance_capex": "24000.00",
+      "working_capital_increase": "12000.00",
+      "cfads": "175000.00",
+      "debt_service": "90000.00",
+      "cash_after_debt_service": "85000.00",
+      "dscr": "1.944444",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "volume_down",
+      "period_id": "Year_1",
+      "revenue": "382500.00",
+      "variable_cost": "153000.00",
+      "fixed_cost": "80000.00",
+      "ebitda": "149500.00",
+      "cash_taxes": "25000.00",
+      "maintenance_capex": "20000.00",
+      "working_capital_increase": "10000.00",
+      "cfads": "94500.00",
+      "debt_service": "80000.00",
+      "cash_after_debt_service": "14500.00",
+      "dscr": "1.181250",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "volume_down",
+      "period_id": "Year_2",
+      "revenue": "430100.00",
+      "variable_cost": "177650.00",
+      "fixed_cost": "82000.00",
+      "ebitda": "170450.00",
+      "cash_taxes": "27000.00",
+      "maintenance_capex": "22000.00",
+      "working_capital_increase": "11000.00",
+      "cfads": "110450.00",
+      "debt_service": "85000.00",
+      "cash_after_debt_service": "25450.00",
+      "dscr": "1.299412",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "volume_down",
+      "period_id": "Year_3",
+      "revenue": "479400.00",
+      "variable_cost": "204000.00",
+      "fixed_cost": "84000.00",
+      "ebitda": "191400.00",
+      "cash_taxes": "29000.00",
+      "maintenance_capex": "24000.00",
+      "working_capital_increase": "12000.00",
+      "cfads": "126400.00",
+      "debt_service": "90000.00",
+      "cash_after_debt_service": "36400.00",
+      "dscr": "1.404444",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "fixed_cost_up",
+      "period_id": "Year_1",
+      "revenue": "450000.00",
+      "variable_cost": "180000.00",
+      "fixed_cost": "92000.00",
+      "ebitda": "178000.00",
+      "cash_taxes": "25000.00",
+      "maintenance_capex": "20000.00",
+      "working_capital_increase": "10000.00",
+      "cfads": "123000.00",
+      "debt_service": "80000.00",
+      "cash_after_debt_service": "43000.00",
+      "dscr": "1.537500",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "fixed_cost_up",
+      "period_id": "Year_2",
+      "revenue": "506000.00",
+      "variable_cost": "209000.00",
+      "fixed_cost": "94300.00",
+      "ebitda": "202700.00",
+      "cash_taxes": "27000.00",
+      "maintenance_capex": "22000.00",
+      "working_capital_increase": "11000.00",
+      "cfads": "142700.00",
+      "debt_service": "85000.00",
+      "cash_after_debt_service": "57700.00",
+      "dscr": "1.678824",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "fixed_cost_up",
+      "period_id": "Year_3",
+      "revenue": "564000.00",
+      "variable_cost": "240000.00",
+      "fixed_cost": "96600.00",
+      "ebitda": "227400.00",
+      "cash_taxes": "29000.00",
+      "maintenance_capex": "24000.00",
+      "working_capital_increase": "12000.00",
+      "cfads": "162400.00",
+      "debt_service": "90000.00",
+      "cash_after_debt_service": "72400.00",
+      "dscr": "1.804444",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "combined",
+      "period_id": "Year_1",
+      "revenue": "382500.00",
+      "variable_cost": "153000.00",
+      "fixed_cost": "92000.00",
+      "ebitda": "137500.00",
+      "cash_taxes": "25000.00",
+      "maintenance_capex": "20000.00",
+      "working_capital_increase": "10000.00",
+      "cfads": "82500.00",
+      "debt_service": "80000.00",
+      "cash_after_debt_service": "2500.00",
+      "dscr": "1.031250",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "combined",
+      "period_id": "Year_2",
+      "revenue": "430100.00",
+      "variable_cost": "177650.00",
+      "fixed_cost": "94300.00",
+      "ebitda": "158150.00",
+      "cash_taxes": "27000.00",
+      "maintenance_capex": "22000.00",
+      "working_capital_increase": "11000.00",
+      "cfads": "98150.00",
+      "debt_service": "85000.00",
+      "cash_after_debt_service": "13150.00",
+      "dscr": "1.154706",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "combined",
+      "period_id": "Year_3",
+      "revenue": "479400.00",
+      "variable_cost": "204000.00",
+      "fixed_cost": "96600.00",
+      "ebitda": "178800.00",
+      "cash_taxes": "29000.00",
+      "maintenance_capex": "24000.00",
+      "working_capital_increase": "12000.00",
+      "cfads": "113800.00",
+      "debt_service": "90000.00",
+      "cash_after_debt_service": "23800.00",
+      "dscr": "1.264444",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "capex_step",
+      "period_id": "Year_1",
+      "revenue": "450000.00",
+      "variable_cost": "180000.00",
+      "fixed_cost": "80000.00",
+      "ebitda": "190000.00",
+      "cash_taxes": "25000.00",
+      "maintenance_capex": "30000.00",
+      "working_capital_increase": "10000.00",
+      "cfads": "125000.00",
+      "debt_service": "80000.00",
+      "cash_after_debt_service": "45000.00",
+      "dscr": "1.562500",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "capex_step",
+      "period_id": "Year_2",
+      "revenue": "506000.00",
+      "variable_cost": "209000.00",
+      "fixed_cost": "82000.00",
+      "ebitda": "215000.00",
+      "cash_taxes": "27000.00",
+      "maintenance_capex": "22000.00",
+      "working_capital_increase": "11000.00",
+      "cfads": "155000.00",
+      "debt_service": "85000.00",
+      "cash_after_debt_service": "70000.00",
+      "dscr": "1.823529",
+      "dscr_status": "DEFINED"
+    },
+    {
+      "case_id": "capex_step",
+      "period_id": "Year_3",
+      "revenue": "564000.00",
+      "variable_cost": "240000.00",
+      "fixed_cost": "84000.00",
+      "ebitda": "240000.00",
+      "cash_taxes": "29000.00",
+      "maintenance_capex": "24000.00",
+      "working_capital_increase": "12000.00",
+      "cfads": "175000.00",
+      "debt_service": "90000.00",
+      "cash_after_debt_service": "85000.00",
+      "dscr": "1.944444",
+      "dscr_status": "DEFINED"
+    }
+  ],
+  "assumption_change_rows": [
+    {
+      "case_id": "volume_down",
+      "period_id": "Year_1",
+      "assumption": "volume",
+      "operation": "multiply",
+      "override_value": "17/20",
+      "base_value": "10000/1",
+      "applied_value": "8500/1",
+      "change": "-1500/1"
+    },
+    {
+      "case_id": "volume_down",
+      "period_id": "Year_2",
+      "assumption": "volume",
+      "operation": "multiply",
+      "override_value": "17/20",
+      "base_value": "11000/1",
+      "applied_value": "9350/1",
+      "change": "-1650/1"
+    },
+    {
+      "case_id": "volume_down",
+      "period_id": "Year_3",
+      "assumption": "volume",
+      "operation": "multiply",
+      "override_value": "17/20",
+      "base_value": "12000/1",
+      "applied_value": "10200/1",
+      "change": "-1800/1"
+    },
+    {
+      "case_id": "fixed_cost_up",
+      "period_id": "Year_1",
+      "assumption": "fixed_cost",
+      "operation": "multiply",
+      "override_value": "23/20",
+      "base_value": "80000/1",
+      "applied_value": "92000/1",
+      "change": "12000/1"
+    },
+    {
+      "case_id": "fixed_cost_up",
+      "period_id": "Year_2",
+      "assumption": "fixed_cost",
+      "operation": "multiply",
+      "override_value": "23/20",
+      "base_value": "82000/1",
+      "applied_value": "94300/1",
+      "change": "12300/1"
+    },
+    {
+      "case_id": "fixed_cost_up",
+      "period_id": "Year_3",
+      "assumption": "fixed_cost",
+      "operation": "multiply",
+      "override_value": "23/20",
+      "base_value": "84000/1",
+      "applied_value": "96600/1",
+      "change": "12600/1"
+    },
+    {
+      "case_id": "combined",
+      "period_id": "Year_1",
+      "assumption": "volume",
+      "operation": "multiply",
+      "override_value": "17/20",
+      "base_value": "10000/1",
+      "applied_value": "8500/1",
+      "change": "-1500/1"
+    },
+    {
+      "case_id": "combined",
+      "period_id": "Year_1",
+      "assumption": "fixed_cost",
+      "operation": "multiply",
+      "override_value": "23/20",
+      "base_value": "80000/1",
+      "applied_value": "92000/1",
+      "change": "12000/1"
+    },
+    {
+      "case_id": "combined",
+      "period_id": "Year_2",
+      "assumption": "volume",
+      "operation": "multiply",
+      "override_value": "17/20",
+      "base_value": "11000/1",
+      "applied_value": "9350/1",
+      "change": "-1650/1"
+    },
+    {
+      "case_id": "combined",
+      "period_id": "Year_2",
+      "assumption": "fixed_cost",
+      "operation": "multiply",
+      "override_value": "23/20",
+      "base_value": "82000/1",
+      "applied_value": "94300/1",
+      "change": "12300/1"
+    },
+    {
+      "case_id": "combined",
+      "period_id": "Year_3",
+      "assumption": "volume",
+      "operation": "multiply",
+      "override_value": "17/20",
+      "base_value": "12000/1",
+      "applied_value": "10200/1",
+      "change": "-1800/1"
+    },
+    {
+      "case_id": "combined",
+      "period_id": "Year_3",
+      "assumption": "fixed_cost",
+      "operation": "multiply",
+      "override_value": "23/20",
+      "base_value": "84000/1",
+      "applied_value": "96600/1",
+      "change": "12600/1"
+    },
+    {
+      "case_id": "capex_step",
+      "period_id": "Year_1",
+      "assumption": "maintenance_capex",
+      "operation": "add",
+      "override_value": "10000/1",
+      "base_value": "20000/1",
+      "applied_value": "30000/1",
+      "change": "10000/1"
+    }
+  ],
+  "sensitivity_rows": [
+    {
+      "sensitivity_id": "volume_multiplier",
+      "assumption": "volume",
+      "operation": "multiply",
+      "level": "0.800000000000",
+      "revenue": "1216000.00",
+      "ebitda": "466800.00",
+      "cfads": "286800.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "31800.00",
+      "minimum_defined_dscr": "1.012500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "-178200.00"
+    },
+    {
+      "sensitivity_id": "volume_multiplier",
+      "assumption": "volume",
+      "operation": "multiply",
+      "level": "0.900000000000",
+      "revenue": "1368000.00",
+      "ebitda": "555900.00",
+      "cfads": "375900.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "120900.00",
+      "minimum_defined_dscr": "1.350000",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "-89100.00"
+    },
+    {
+      "sensitivity_id": "volume_multiplier",
+      "assumption": "volume",
+      "operation": "multiply",
+      "level": "1.000000000000",
+      "revenue": "1520000.00",
+      "ebitda": "645000.00",
+      "cfads": "465000.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "210000.00",
+      "minimum_defined_dscr": "1.687500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "0.00"
+    },
+    {
+      "sensitivity_id": "volume_multiplier",
+      "assumption": "volume",
+      "operation": "multiply",
+      "level": "1.100000000000",
+      "revenue": "1672000.00",
+      "ebitda": "734100.00",
+      "cfads": "554100.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "299100.00",
+      "minimum_defined_dscr": "2.025000",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "89100.00"
+    },
+    {
+      "sensitivity_id": "volume_multiplier",
+      "assumption": "volume",
+      "operation": "multiply",
+      "level": "1.200000000000",
+      "revenue": "1824000.00",
+      "ebitda": "823200.00",
+      "cfads": "643200.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "388200.00",
+      "minimum_defined_dscr": "2.362500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "178200.00"
+    },
+    {
+      "sensitivity_id": "price_multiplier",
+      "assumption": "unit_price",
+      "operation": "multiply",
+      "level": "0.900000000000",
+      "revenue": "1368000.00",
+      "ebitda": "493000.00",
+      "cfads": "313000.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "58000.00",
+      "minimum_defined_dscr": "1.125000",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "-152000.00"
+    },
+    {
+      "sensitivity_id": "price_multiplier",
+      "assumption": "unit_price",
+      "operation": "multiply",
+      "level": "1.000000000000",
+      "revenue": "1520000.00",
+      "ebitda": "645000.00",
+      "cfads": "465000.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "210000.00",
+      "minimum_defined_dscr": "1.687500",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "0.00"
+    },
+    {
+      "sensitivity_id": "price_multiplier",
+      "assumption": "unit_price",
+      "operation": "multiply",
+      "level": "1.100000000000",
+      "revenue": "1672000.00",
+      "ebitda": "797000.00",
+      "cfads": "617000.00",
+      "debt_service": "255000.00",
+      "cash_after_debt_service": "362000.00",
+      "minimum_defined_dscr": "2.250000",
+      "periods_with_dscr": 3,
+      "period_count": 3,
+      "delta_cash_after_debt_service": "152000.00"
+    }
+  ],
+  "input_sha256": "78cded8bad05a989f1b0d56c2bc86143978b5e947d093d814c78e0f34265cd51"
+}

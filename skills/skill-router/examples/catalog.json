@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {"id": "claim-review", "path": "alpha/SKILL.md", "description": "Review report claims against evidence and flag unsupported conclusions.", "aliases": ["evidence reviewer"], "required_capabilities": ["python3.11"]},
+    {"id": "table-inspector", "path": "beta/SKILL.md", "description": "Inspect spreadsheet tables and verify workbook formatting.", "aliases": ["sheet inspection"], "required_capabilities": ["python3.11", "office-engine"]},
+    {"id": "file-identity", "path": "gamma/SKILL.md", "description": "Compare file hashes and record evidence identity.", "aliases": ["hash checker"], "required_capabilities": ["python3.11"]}
+  ]
+}

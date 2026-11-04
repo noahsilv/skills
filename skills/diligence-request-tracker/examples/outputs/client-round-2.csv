@@ -1,0 +1,3 @@
+"Request ID","Category","Request","Due date","Response","Evidence reference"
+"REQ-040","Debt","Provide the outstanding debt schedule and identify unreconciled balances.","2026-02-20","'=SUM(1,2)","Synthetic formula-like text used only to test safe export."
+"REQ-090","Forecast","Provide the assumptions supporting the next-year operating forecast.","2026-02-20","",""

@@ -1,0 +1,690 @@
+{
+  "schema_version": 1,
+  "status": "INCOMPLETE",
+  "entity": {
+    "id": "cedar",
+    "name": "Cedar Circuit Components (synthetic)",
+    "scope": "consolidated"
+  },
+  "currency": "USD",
+  "scale": "1000000",
+  "reporting_basis": "Fictional conventional corporate statement presentation; illustrative data only",
+  "sign_convention": "expenses_positive_cash_flows_signed",
+  "sources": [
+    {
+      "id": "disclosure",
+      "document": "synthetic-disclosure.txt",
+      "title": "Fictional FY2025 financial disclosure",
+      "audit_status": "audited",
+      "sha256": "410ab82040b573f1e95cd61af0e525a004a3cd62a1a0360fea9718fb2d960783"
+    }
+  ],
+  "source_evidence": "DECLARED_REFERENCES_NOT_VERIFIED",
+  "reconciliation_tolerance": "0",
+  "tolerance_reason": "Exact synthetic amounts; no rounding allowance.",
+  "ratio_precision": "6 decimal places, ROUND_HALF_EVEN; fractions are not percentages",
+  "periods": [
+    {
+      "id": "fy2025",
+      "label": "FY2025 (synthetic)",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "kind": "annual",
+      "basis": "as_reported",
+      "normalized_values": {
+        "total_assets": {
+          "value": "1300",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Total assets 1,300,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "total_liabilities": {
+          "value": "650",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Total liabilities 650,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "total_equity": {
+          "value": "650",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Total equity 650,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "current_assets": {
+          "value": "500",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current assets 500,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "current_liabilities": {
+          "value": "240",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current liabilities 240,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "cash_and_equivalents": {
+          "value": "150",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Cash and equivalents 150,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "debt_current": {
+          "value": "90",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current borrowings excluding leases 90,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "debt_noncurrent": {
+          "value": "300",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Noncurrent borrowings excluding leases 300,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "leases_current": {
+          "value": "15",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current lease liabilities 15,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "leases_noncurrent": {
+          "value": null,
+          "sources": [],
+          "note": "Deliberate missing-value test; the source amount is withheld from this input."
+        },
+        "revenue": {
+          "value": "1280",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Revenue 1,280,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "cost_of_sales": {
+          "value": "720",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Cost of sales (720,000)"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; expense sign reversed to positive deduction."
+        },
+        "gross_profit": {
+          "value": "560",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Gross profit 560,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "operating_expenses": {
+          "value": "310",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Operating expenses (310,000)"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; expense sign reversed to positive deduction."
+        },
+        "operating_profit": {
+          "value": "250",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Operating profit 250,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "net_income": {
+          "value": "180",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Net income 180,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "opening_cash": {
+          "value": "100",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Opening cash 100,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "closing_cash": {
+          "value": "150",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Closing cash 150,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "cash_from_operations": {
+          "value": "185",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Operating cash flow 185,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "cash_from_investing": {
+          "value": "-110",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Investing cash flow (110,000)"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "cash_from_financing": {
+          "value": "-25",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Financing cash flow (25,000)"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "opening_equity": {
+          "value": "500",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Opening equity 500,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "other_comprehensive_income": {
+          "value": "0",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Other comprehensive income 0"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "owner_contributions": {
+          "value": "20",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Owner contributions 20,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        },
+        "dividends": {
+          "value": "50",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Dividends 50,000"
+            }
+          ],
+          "note": "Source USD thousands divided by 1000; reported sign retained."
+        }
+      },
+      "coverage": {
+        "fields_in_scope": 26,
+        "reported": 24,
+        "explicit_missing": [
+          "leases_noncurrent"
+        ],
+        "absent": [
+          "fx_cash_movement"
+        ],
+        "checks_evaluated": 5,
+        "checks_in_scope": 6,
+        "metrics_calculated": 5,
+        "metrics_in_scope": 8
+      },
+      "checks": [
+        {
+          "id": "balance_sheet",
+          "status": "PASS",
+          "signed_terms": {
+            "total_assets": 1,
+            "total_liabilities": -1,
+            "total_equity": -1
+          },
+          "residual": "0",
+          "missing": [],
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Total assets 1,300,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Total equity 650,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Total liabilities 650,000"
+            }
+          ]
+        },
+        {
+          "id": "gross_profit",
+          "status": "PASS",
+          "signed_terms": {
+            "gross_profit": 1,
+            "revenue": -1,
+            "cost_of_sales": 1
+          },
+          "residual": "0",
+          "missing": [],
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Cost of sales (720,000)"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Gross profit 560,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Revenue 1,280,000"
+            }
+          ]
+        },
+        {
+          "id": "operating_profit",
+          "status": "PASS",
+          "signed_terms": {
+            "operating_profit": 1,
+            "gross_profit": -1,
+            "operating_expenses": 1
+          },
+          "residual": "0",
+          "missing": [],
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Gross profit 560,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Operating expenses (310,000)"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Operating profit 250,000"
+            }
+          ]
+        },
+        {
+          "id": "cash_rollforward",
+          "status": "UNKNOWN",
+          "signed_terms": {
+            "closing_cash": 1,
+            "opening_cash": -1,
+            "cash_from_operations": -1,
+            "cash_from_investing": -1,
+            "cash_from_financing": -1,
+            "fx_cash_movement": -1
+          },
+          "residual": null,
+          "missing": [
+            "fx_cash_movement"
+          ],
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Closing cash 150,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Financing cash flow (25,000)"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Investing cash flow (110,000)"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Opening cash 100,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Operating cash flow 185,000"
+            }
+          ]
+        },
+        {
+          "id": "cash_to_balance_sheet",
+          "status": "PASS",
+          "signed_terms": {
+            "cash_and_equivalents": 1,
+            "closing_cash": -1
+          },
+          "residual": "0",
+          "missing": [],
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Cash and equivalents 150,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Closing cash 150,000"
+            }
+          ]
+        },
+        {
+          "id": "equity_rollforward",
+          "status": "PASS",
+          "signed_terms": {
+            "total_equity": 1,
+            "opening_equity": -1,
+            "net_income": -1,
+            "other_comprehensive_income": -1,
+            "owner_contributions": -1,
+            "dividends": 1
+          },
+          "residual": "0",
+          "missing": [],
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Dividends 50,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Net income 180,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Opening equity 500,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Other comprehensive income 0"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Owner contributions 20,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Total equity 650,000"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "id": "gross_margin",
+          "status": "CALCULATED",
+          "value": "0.437500",
+          "unit": "fraction",
+          "numerator_terms": {
+            "gross_profit": 1
+          },
+          "denominator": "revenue",
+          "missing": [],
+          "reason": "",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Gross profit 560,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Revenue 1,280,000"
+            }
+          ]
+        },
+        {
+          "id": "operating_margin",
+          "status": "CALCULATED",
+          "value": "0.195312",
+          "unit": "fraction",
+          "numerator_terms": {
+            "operating_profit": 1
+          },
+          "denominator": "revenue",
+          "missing": [],
+          "reason": "",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Operating profit 250,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Revenue 1,280,000"
+            }
+          ]
+        },
+        {
+          "id": "net_margin",
+          "status": "CALCULATED",
+          "value": "0.140625",
+          "unit": "fraction",
+          "numerator_terms": {
+            "net_income": 1
+          },
+          "denominator": "revenue",
+          "missing": [],
+          "reason": "",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Net income 180,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Revenue 1,280,000"
+            }
+          ]
+        },
+        {
+          "id": "operating_cash_margin",
+          "status": "CALCULATED",
+          "value": "0.144531",
+          "unit": "fraction",
+          "numerator_terms": {
+            "cash_from_operations": 1
+          },
+          "denominator": "revenue",
+          "missing": [],
+          "reason": "",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Operating cash flow 185,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Revenue 1,280,000"
+            }
+          ]
+        },
+        {
+          "id": "current_ratio",
+          "status": "CALCULATED",
+          "value": "2.083333",
+          "unit": "multiple",
+          "numerator_terms": {
+            "current_assets": 1
+          },
+          "denominator": "current_liabilities",
+          "missing": [],
+          "reason": "",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current assets 500,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current liabilities 240,000"
+            }
+          ]
+        },
+        {
+          "id": "gross_debt",
+          "status": "UNKNOWN",
+          "value": null,
+          "unit": "reporting_units",
+          "numerator_terms": {
+            "debt_current": 1,
+            "debt_noncurrent": 1,
+            "leases_current": 1,
+            "leases_noncurrent": 1
+          },
+          "denominator": null,
+          "missing": [
+            "leases_noncurrent"
+          ],
+          "reason": "Required values are missing",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current borrowings excluding leases 90,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current lease liabilities 15,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Noncurrent borrowings excluding leases 300,000"
+            }
+          ]
+        },
+        {
+          "id": "net_debt",
+          "status": "UNKNOWN",
+          "value": null,
+          "unit": "reporting_units",
+          "numerator_terms": {
+            "debt_current": 1,
+            "debt_noncurrent": 1,
+            "leases_current": 1,
+            "leases_noncurrent": 1,
+            "cash_and_equivalents": -1
+          },
+          "denominator": null,
+          "missing": [
+            "leases_noncurrent"
+          ],
+          "reason": "Required values are missing",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Cash and equivalents 150,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current borrowings excluding leases 90,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current lease liabilities 15,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Noncurrent borrowings excluding leases 300,000"
+            }
+          ]
+        },
+        {
+          "id": "debt_to_equity",
+          "status": "UNKNOWN",
+          "value": null,
+          "unit": "multiple",
+          "numerator_terms": {
+            "debt_current": 1,
+            "debt_noncurrent": 1,
+            "leases_current": 1,
+            "leases_noncurrent": 1
+          },
+          "denominator": "total_equity",
+          "missing": [
+            "leases_noncurrent"
+          ],
+          "reason": "Required values are missing",
+          "sources": [
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current borrowings excluding leases 90,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Current lease liabilities 15,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Noncurrent borrowings excluding leases 300,000"
+            },
+            {
+              "source_id": "disclosure",
+              "locator": "physical text page 2: Total equity 650,000"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "input": {
+    "file": "incomplete.json",
+    "sha256": "ef5c3b238410829099fe5a576a9d843a637eb99138fbcc6ff250409d496ae9eb"
+  }
+}

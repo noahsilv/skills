@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "check_id": "csv-shape",
+  "status": "pass",
+  "summary": "Caller reports that the synthetic CSV passed the header, row-width, and nonempty-data checks.",
+  "evidence": [{"role": "checker", "path": "checker.py"}, {"role": "log", "path": "result.log"}]
+}

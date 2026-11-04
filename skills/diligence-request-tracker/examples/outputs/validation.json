@@ -1,0 +1,10 @@
+{
+  "request_count": 3,
+  "response_truth": "not_checked",
+  "statuses": {
+    "answered": 1,
+    "closed": 1,
+    "open": 1
+  },
+  "structure": "valid"
+}

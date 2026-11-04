@@ -1,0 +1,7 @@
+---
+name: table-inspector
+description: Synthetic catalog fixture for inspecting tables.
+---
+
+Synthetic fixture only. The declared office-engine dependency is unavailable
+in the example request and should appear as a capability gap.
