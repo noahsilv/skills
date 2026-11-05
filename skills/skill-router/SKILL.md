@@ -34,6 +34,14 @@ as a probability. Named phrases in quoted or negated text still match; review
 the original request. Hashes identify the bytes read during this run and do not
 approve the contents.
 
+For multilingual, negated or ambiguous requests, use request version 2 after a
+bounded host intent review. Preserve the original query, translate only the
+requested task into `intent.normalized_query`, and record explicit exclusions in
+`intent.excluded_skill_ids`, with reviewer and rationale. Do not remove constraints
+to improve matching. The script validates this declaration and filters exclusions;
+it does not perform translation or verify the host's interpretation. Read the
+version 2 contract in README.md. Read the selected owning skill before execution.
+
 Run `python scripts/demo.py --output-dir NEW_EXTERNAL_DIRECTORY` for the
 synthetic demo. It materializes text templates as a temporary catalog tree
 outside this package, then saves JSON and readable results there. Run

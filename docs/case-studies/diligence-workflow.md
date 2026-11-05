@@ -28,3 +28,16 @@ The script calls the actual ledger and tracker CLIs. It sends no client message 
 The [document review coverage](../../skills/document-review-coverage/README.md) skill supplies a separate way to bind review records to document bytes and a fixed review scope. Coverage accounting is not proof that the underlying judgment is correct.
 
 This case demonstrates decision-status discipline, stable identifiers, source traceability and controlled updates. No real financing, participant or client document is represented.
+## Context reuse and stale evidence pilot
+
+Run `python examples/context_evidence_demo.py /fresh/output-directory` from the
+repository root. This synthetic composition runs the existing ledger handoff,
+checks an authored fixture brief against its explicit sentence/quotation map,
+then records the actual checker log through the artifact quality gate. Missing
+checks remain INCOMPLETE; the completed fixture check is ATTESTED. Changing a
+copied source invalidates that prior result. The incorrect automated recap fails
+the fixture checker. The final copied source is intentionally changed.
+
+This is reproducible fixture coverage and file-identity checking, not a general
+semantic checker, model-performance benchmark, live transaction or acceptance
+of the ledger's pending claims.

@@ -112,8 +112,19 @@ def no_duplicates(pairs):
 
 def loads(raw):
     try:
-        return json.loads(raw, object_pairs_hook=no_duplicates,
+        value = json.loads(raw, object_pairs_hook=no_duplicates,
                           parse_constant=lambda x: (_ for _ in ()).throw(InputError(f"Invalid JSON constant: {x}")))
+        # Bound nesting explicitly; JSON parser recursion limits differ by Python version.
+        stack = [(value, 0)]
+        while stack:
+            item, depth = stack.pop()
+            if depth > 100:
+                raise ValueError("JSON nesting exceeds 100 levels")
+            if isinstance(item, dict):
+                stack.extend((child, depth + 1) for child in item.values())
+            elif isinstance(item, list):
+                stack.extend((child, depth + 1) for child in item)
+        return value
     except InputError:
         raise
     except (UnicodeError, ValueError, RecursionError) as exc:

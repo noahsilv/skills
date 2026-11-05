@@ -37,6 +37,36 @@ class RoutingTests(unittest.TestCase):
     def run_route(self):
         return router.route(self.catalog, self.request, self.root)
 
+    def reviewed(self):
+        self.request.update(schema_version=2,query='不要使用 beta-audit。请核对报告证据。',
+                            intent={'normalized_query':'Review report evidence','excluded_skill_ids':['beta-audit'],
+                                    'reviewer':'host','rationale':'Preserve the requested review and explicit exclusion.'})
+
+    def test_reviewed_multilingual_intent_preserves_original_and_exclusion(self):
+        self.reviewed();result=self.run_route()
+        self.assertEqual(result['original_query'],self.request['query'])
+        self.assertEqual(result['intent_assurance'],'caller_attested')
+        self.assertEqual(result['suggestions'][0]['id'],'alpha-review')
+        self.assertNotIn('beta-audit',[x['id'] for x in result['suggestions']])
+
+    def test_exclusion_precedes_limit_and_capability_gap_remains(self):
+        self.reviewed();self.request['limit']=1
+        self.request['intent']['normalized_query']='beta-audit alpha-review'
+        self.request['available_capabilities']=[]
+        result=self.run_route()['suggestions'][0]
+        self.assertEqual(result['id'],'alpha-review');self.assertEqual(result['missing_capabilities'],['python3.11'])
+
+    def test_unknown_duplicate_and_malformed_intent_rejected(self):
+        for exclusions in (['unknown'],['beta-audit','beta-audit']):
+            self.reviewed();self.request['intent']['excluded_skill_ids']=exclusions
+            with self.assertRaises(router.ValidationError):self.run_route()
+        self.reviewed();self.request['intent']['confidence']=1
+        with self.assertRaises(router.ValidationError):self.run_route()
+
+    def test_all_excluded_is_valid_empty_result(self):
+        self.reviewed();self.request['intent']['excluded_skill_ids']=[x['id'] for x in self.catalog['skills']]
+        self.assertEqual(self.run_route()['suggestions'],[])
+
     def test_named_id_beats_larger_lexical_overlap(self):
         self.request["query"] = "Use beta-audit for review report claims evidence coverage"
         result = self.run_route()

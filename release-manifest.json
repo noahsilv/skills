@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "release": "3.0.0",
-  "review_date": "2026-11-04",
+  "release": "3.1.0-dev",
+  "review_date": "2026-11-05",
   "excluded_from_hashes": [
     "release-manifest.json"
   ],
@@ -48,8 +48,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "163b42281ba51d2a0d9e9163725a3f209b33704a57c978107cbc437a24bef2b1",
-      "bytes": 3528
+      "sha256": "bf4c73977b5ee48a8dffaac5536a3adb39132ed0fcd6d6a453b14c8d70c65289",
+      "bytes": 4498
     },
     {
       "path": "docs/case-studies/data-and-model-review.md",
@@ -58,8 +58,8 @@
     },
     {
       "path": "docs/case-studies/diligence-workflow.md",
-      "sha256": "23a3b7d5e84141aef41eb7bb0fa505ac4c66611b6e9121298f6591a825084834",
-      "bytes": 2487
+      "sha256": "041abf7678b1d99660ee72cb33d31b8fc202e546da5d0d881789b97c739415a4",
+      "bytes": 3266
     },
     {
       "path": "docs/case-studies/engineering-controls.md",
@@ -90,6 +90,11 @@
       "path": "docs/case-studies/outputs/financing-response.md",
       "sha256": "5a973f07a3b3e442b490b5f2f479d61f273bc0a463d2c9ca925fe367c032211b",
       "bytes": 571
+    },
+    {
+      "path": "examples/context_evidence_demo.py",
+      "sha256": "d7c883ab3649f02577cc81f7c594c60e1eff2243a360609b32c689b785d62af6",
+      "bytes": 6508
     },
     {
       "path": "examples/engineering_controls_demo.py",
@@ -183,8 +188,8 @@
     },
     {
       "path": "skills/actuals-update-planner/scripts/plan.py",
-      "sha256": "3096ec559c094d0f54d709b6ab6c4032fa349256746a7165b4089a7d242ec1ed",
-      "bytes": 35121
+      "sha256": "637afdd4ff6bcdafb68a4735ee57b9dcfe8551379977cdf429f1cb17dddb9ee7",
+      "bytes": 35641
     },
     {
       "path": "skills/actuals-update-planner/tests/test_plan.py",
@@ -298,8 +303,8 @@
     },
     {
       "path": "skills/bloomberg-workbooks/scripts/build_workbook.py",
-      "sha256": "5d841c2d70927b5e11517fcdfa782a7e64b4f62ed8cee89344cb851426780ae1",
-      "bytes": 7141
+      "sha256": "433713d5e55fa18f463c05ab0b470cb1284309b93f68591108db1115c5fab5ea",
+      "bytes": 7661
     },
     {
       "path": "skills/bloomberg-workbooks/tests/test_workbook.py",
@@ -348,8 +353,8 @@
     },
     {
       "path": "skills/capiq-workbooks/scripts/build_plan.py",
-      "sha256": "648e06afa43e5d881cbdec4dcd4ee825ad231917be5b4e415c949554ac962f37",
-      "bytes": 9709
+      "sha256": "38852252438ffb2902ce8fb83a3f0486b7afe7762b50bbe6fe71c5c21a837949",
+      "bytes": 10229
     },
     {
       "path": "skills/capiq-workbooks/tests/test_plan.py",
@@ -703,8 +708,8 @@
     },
     {
       "path": "skills/evidence-brief/SKILL.md",
-      "sha256": "eba4e8a93725a9e914d8baf6807d5ca1b13e0013e9721d25d97afd312788fe0a",
-      "bytes": 5978
+      "sha256": "4d723bc910f518cc70975b2203d81994051201e2a9b63e7517d9631ace877e37",
+      "bytes": 6527
     },
     {
       "path": "skills/evidence-brief/evals/evals.json",
@@ -1023,8 +1028,8 @@
     },
     {
       "path": "skills/financial-statement-analysis/scripts/analyze.py",
-      "sha256": "bbc8dc4851bf6562598b37564f990a820f881c7848f45b48805376cd65829a0e",
-      "bytes": 18306
+      "sha256": "22f52c57eaab1d52c5127905ca6648f20930f4c38f359338419fb7c9284ffe8c",
+      "bytes": 18826
     },
     {
       "path": "skills/financial-statement-analysis/tests/test_analysis.py",
@@ -1468,13 +1473,13 @@
     },
     {
       "path": "skills/skill-router/README.md",
-      "sha256": "37f6e18387fdb0488919fbf0b42831a96fb129e4f4b541e1c969c3c897fe2c78",
-      "bytes": 5809
+      "sha256": "17c19d977188a657c03152cd0ee20417c959f229a914ecb5facc5adc2111428c",
+      "bytes": 6812
     },
     {
       "path": "skills/skill-router/SKILL.md",
-      "sha256": "195678958310ac302d679dfb01283f7ca5033a792625e1479ff3e0c24b96290e",
-      "bytes": 2753
+      "sha256": "d2483473efff3eddb0f114d4d7cc01d4ebccfb79d1bda881cfb0a98cce7bdd83",
+      "bytes": 3317
     },
     {
       "path": "skills/skill-router/evals/evals.json",
@@ -1518,13 +1523,13 @@
     },
     {
       "path": "skills/skill-router/scripts/route.py",
-      "sha256": "cdff633ca1769b076cf542b8dd078ca579e66d4b13c806a57fe835571d1fb186",
-      "bytes": 9964
+      "sha256": "772b67dcf259a5ac3d94346634aae69004285966dd7ee13f7d95426af89db822",
+      "bytes": 10936
     },
     {
       "path": "skills/skill-router/tests/test_route.py",
-      "sha256": "9def84aace27bc0b771a4b7af2fe17c6919f72215365facfeb010d4f8e854a78",
-      "bytes": 11978
+      "sha256": "8dd6145cf9f9b5199bc43e8fc343e233008a67e86162918992e06b8237125bc8",
+      "bytes": 13853
     },
     {
       "path": "skills/workbook-tieout/LICENSE",
@@ -1566,5 +1571,6 @@
       "sha256": "c904821f40ce769541adbcdf81904c6a3038a708bd08c3fce86f405408bf7073",
       "bytes": 8759
     }
-  ]
+  ],
+  "publication_status": "local working-tree update; not published or repackaged"
 }

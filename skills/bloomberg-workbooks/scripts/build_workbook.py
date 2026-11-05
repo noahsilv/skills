@@ -124,8 +124,19 @@ def load(path):
     try:
         if Path(path).stat().st_size > 1_000_000:
             raise InputError('config exceeds 1 MB')
-        return json.loads(Path(path).read_text(encoding='utf-8'), object_pairs_hook=unique,
+        value = json.loads(Path(path).read_text(encoding='utf-8'), object_pairs_hook=unique,
                           parse_constant=lambda value: (_ for _ in ()).throw(InputError('nonfinite JSON number')))
+        # Bound nesting explicitly; JSON parser recursion limits differ by Python version.
+        stack = [(value, 0)]
+        while stack:
+            item, depth = stack.pop()
+            if depth > 100:
+                raise ValueError("JSON nesting exceeds 100 levels")
+            if isinstance(item, dict):
+                stack.extend((child, depth + 1) for child in item.values())
+            elif isinstance(item, list):
+                stack.extend((child, depth + 1) for child in item)
+        return value
     except (UnicodeError, ValueError, RecursionError) as exc:
         raise InputError(str(exc)) from exc
 

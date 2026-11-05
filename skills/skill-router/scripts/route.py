@@ -132,11 +132,18 @@ def validate_catalog(catalog: object, root: Path) -> list[dict]:
 
 
 def validate_request(request: object) -> dict:
-    exact_keys(request, {"schema_version", "query", "available_capabilities", "limit"}, "request")
-    require(type(request["schema_version"]) is int and request["schema_version"] == 1, "request schema_version must be integer 1")
+    require(type(request) is dict, "request must be an object")
+    version = request.get("schema_version")
+    require(type(version) is int and version in (1, 2), "request schema_version must be integer 1 or 2")
+    exact_keys(request, {"schema_version", "query", "available_capabilities", "limit"} | ({"intent"} if version == 2 else set()), "request")
     string(request["query"], "query")
     require(type(request["limit"]) is int and 1 <= request["limit"] <= 5, "limit must be an integer from 1 to 5")
     string_list(request["available_capabilities"], "capability", SLUG)
+    if version == 2:
+        intent = exact_keys(request["intent"], {"normalized_query", "excluded_skill_ids", "reviewer", "rationale"}, "intent")
+        for key in ("normalized_query", "reviewer", "rationale"):
+            string(intent[key], key)
+        string_list(intent["excluded_skill_ids"], "excluded skill", ID)
     return request
 
 
@@ -158,10 +165,15 @@ def fingerprint(path: Path) -> str:
 def route(catalog: object, request: object, root: Path) -> dict:
     entries = validate_catalog(catalog, root)
     request = validate_request(request)
-    query = tokens(request["query"])
+    intent = request.get("intent")
+    excluded = set(intent["excluded_skill_ids"]) if intent else set()
+    require(excluded <= {entry["id"] for entry in entries}, "excluded skill is not in catalog")
+    query = tokens(intent["normalized_query"] if intent else request["query"])
     meaningful = set(query) - STOPWORDS
     candidates = []
     for entry in entries:
+        if entry["id"] in excluded:
+            continue
         names = [entry["id"], *entry["aliases"]]
         named = sorted(name for name in names if phrase_present(query, tokens(name)))
         vocabulary = set(tokens(" ".join([*names, entry["description"]]))) - STOPWORDS
@@ -183,12 +195,16 @@ def route(catalog: object, request: object, root: Path) -> dict:
             "capability_status": "missing_declared" if missing else "declared_available",
             "skill_sha256": fingerprint(entry["_target"]),
         })
-    return {
-        "schema_version": 1, "suggestions": suggestions,
+    result = {
+        "schema_version": request["schema_version"], "suggestions": suggestions,
         "candidate_count": len(candidates), "omitted_count": max(0, len(candidates) - request["limit"]),
         "method": "explicit_name_then_token_overlap",
         "assessment": "Deterministic suggestions, not semantic certainty. Capabilities are caller declarations; no tools or skill instructions were executed.",
     }
+    if intent:
+        result.update(method="reviewed_query_then_token_overlap", intent_assurance="caller_attested",
+                      original_query=request["query"], **intent)
+    return result
 
 
 def write_new(path: Path, data: str) -> None:

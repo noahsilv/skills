@@ -78,6 +78,21 @@ keys, nonfinite numbers, unknown keys, and wrong types are rejected.
 
 ## Ranking and output
 
+Request version 2 adds a required `intent` object with exactly `normalized_query`,
+`excluded_skill_ids`, `reviewer`, and `rationale`. The original `query` remains
+required. All three text fields are nonempty strings; exclusions are unique exact
+IDs from this catalog. Example:
+
+```json
+{"schema_version":2,"query":"不要使用 debt schedule。请根据证据写简报。","available_capabilities":[],"limit":3,"intent":{"normalized_query":"Prepare an evidence brief from supplied sources","excluded_skill_ids":["debt-schedule"],"reviewer":"host","rationale":"Preserve the requested brief and explicit exclusion."}}
+```
+
+The host supplies and reviews the translation and exclusions. The helper filters
+excluded IDs before ranking or limiting, uses the normalized query, preserves both
+queries, and reports `intent_assurance: caller_attested` and
+`method: reviewed_query_then_token_overlap`. This is not an automatic multilingual
+or semantic classifier. Request version 1 retains its original behavior.
+
 1. Normalize the query to ASCII letter/digit tokens.
 2. Identify full ID or alias token sequences in the query. Sort named matches
    ahead of all remaining candidates, then by the longest matching name in
