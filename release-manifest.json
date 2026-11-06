@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "release": "3.1.0-dev",
-  "review_date": "2026-11-05",
+  "review_date": "2026-11-06",
   "excluded_from_hashes": [
     "release-manifest.json"
   ],
@@ -708,8 +708,8 @@
     },
     {
       "path": "skills/evidence-brief/SKILL.md",
-      "sha256": "4d723bc910f518cc70975b2203d81994051201e2a9b63e7517d9631ace877e37",
-      "bytes": 6527
+      "sha256": "563e06de54fc9749642abefa59f637876a33f328e87389fde159fef94891059c",
+      "bytes": 7049
     },
     {
       "path": "skills/evidence-brief/evals/evals.json",
