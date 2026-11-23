@@ -25,6 +25,6 @@ python scripts/test_downloads.py
 
 The first command compares every archive member with its corresponding public source file. The skill packager leaves two authoring files in the repository, the [actuals review prompts](../skills/actuals-update-planner/evals/evals.json) and [statement analysis prompts](../skills/financial-statement-analysis/evals/evals.json). The executable tests ship with all five packages.
 
-The second command extracts each verified package into its own temporary directory and runs its tests there. Some tests require a filesystem with link support.
+The second command extracts each verified package into its own temporary directory and runs its tests there. All 121 tests passed across the five downloads on Ubuntu. Some tests require a filesystem with link support. See the [recorded CI run](https://github.com/noahsilv/skills/actions/runs/45125961888).
 
 The [harnesses](../harnesses/README.md) run across packages from a repository checkout. Their guides show the inputs, commands and evidence for each financial review.

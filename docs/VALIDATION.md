@@ -10,12 +10,13 @@
 | Financing pro forma | Fourteen tests passed from source and from the extracted skill download. The extracted files matched the public package source. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45119281454). |
 | Financial evidence trace | Eight tests passed for tracing source amounts, revised values, units and file identity. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45120830959). |
 | Combined finance checks | All six finance cases passed on Windows and Ubuntu. Ubuntu passed 536 tests in 19 executable skill packages and checked 44 saved formula results with LibreOffice Calc 26.2.6.3. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45124801178). |
+| Standalone skill downloads | All 121 tests passed across five separately extracted archives on Ubuntu. A managed Windows run passed four packages. One actuals planner test required permission to create a symbolic link. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45125961888). |
 
 A separate reviewer used the pro forma instructions on two new synthetic financing cases and checked the arithmetic independently. One case closed with USD150 million of cash and USD345 million of net debt. The other lacked USD48 million of funding and withheld its closing ratios. This was one forward test of the instructions.
 
 ## Earlier portfolio validation
 
-The November 5, 2026 working-tree update passed **522 tests across 18 executable
+The Nov. 5, 2026 working-tree update passed **522 tests across 18 executable
 packages** on Python 3.12. Four existing JSON loaders now enforce a 100-level
 nesting limit explicitly rather than relying on interpreter recursion behavior.
 The router retains v1 behavior and adds caller-reviewed intent/exclusion handling.
@@ -54,6 +55,16 @@ python scripts/test_harnesses.py
 ```
 
 Each package has its own instructions, synthetic examples and limits. The package runner rejects absent or zero-test executable suites. Ubuntu runs the full package suite. Several package tests use symbolic links or hard links and need suitable filesystem permissions. Both CI jobs run the six finance cases. Ubuntu adds the spreadsheet engine check with `--with-calc`; Windows runs the portable checks.
+
+## Check private names before release
+
+Keep a UTF-8 list outside the checkout with one literal name, identifier or path fragment per line. Run the following command from the repository root, substituting the path to that local file.
+
+```sh
+python scripts/check_publication.py --terms ../private-review-terms.txt
+```
+
+The checker reads local file names, text and the contents of declared skill archives. It folds case and normalizes Unicode, then reports how many files matched. It prints neither the terms nor the matching paths. Exit code 0 means the supplied terms had no matches, 1 means at least one file matched and 2 means the scan could not finish. The check covers the current source tree. Earlier Git revisions require a separate history review.
 
 ## Scope
 

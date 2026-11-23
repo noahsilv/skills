@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "9e956e174f01d4da998c6cf4904e29365c268db7bebd3d823cf303d75d2faeeb",
-      "bytes": 1156
+      "sha256": "f8d269c3ba7cf4aa10beeded9871d4d76b2245a79c3cc8dbabce497b995c1493",
+      "bytes": 1204
     },
     {
       "path": ".gitignore",
@@ -58,8 +58,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "5b2349346b47ee2c8e36f48eef640fc9fcea99cf8296f4902683cadc8cb1425b",
-      "bytes": 6840
+      "sha256": "b90a37756cdca8d892389d57c38b6e413a73ac5b370e5304d77b84063b3b69f8",
+      "bytes": 7894
     },
     {
       "path": "docs/case-studies/data-and-model-review.md",
@@ -103,8 +103,8 @@
     },
     {
       "path": "downloads/README.md",
-      "sha256": "287b6a982b08b7df8545365622f11db54d185920214687ce9c5589d722208473",
-      "bytes": 2720
+      "sha256": "b56f9e08058afe8076b703d9459f43ba96905bdbc605c14f5b3c348ba89bc236",
+      "bytes": 2866
     },
     {
       "path": "downloads/actuals-update-planner.skill",
@@ -282,6 +282,11 @@
       "bytes": 3831
     },
     {
+      "path": "scripts/check_publication.py",
+      "sha256": "c6ec27496c55964ae509fcabf98e824c04fb3c980cf494342f4d967a871e3c73",
+      "bytes": 2545
+    },
+    {
       "path": "scripts/test.py",
       "sha256": "d9decac6145ef6bc516074d744db59e1ebce382f9e233bda27146ea2d3b6c0ee",
       "bytes": 1599
@@ -295,6 +300,11 @@
       "path": "scripts/test_harnesses.py",
       "sha256": "725d672a76bc1a6b78a9ddf63807c87030999215b074a30ffb0bfb466ed1f087",
       "bytes": 4648
+    },
+    {
+      "path": "scripts/test_publication.py",
+      "sha256": "3c0dcb219190a715ea963cb9a0d6dc37a4affe5e1117373119158e5c9d8f62b9",
+      "bytes": 3745
     },
     {
       "path": "scripts/validate.py",
