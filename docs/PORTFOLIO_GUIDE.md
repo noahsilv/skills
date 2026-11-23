@@ -1,33 +1,27 @@
-# A guide for hiring teams
+# Reviewing the finance and engineering work
 
-This collection sits at the intersection of finance and AI workflow engineering. It makes recurring professional work explicit enough to inspect, automate in bounded steps and check against evidence.
+The examples show how Noah Silverman translates a finance question into a calculation, a record of the inputs and checks a reviewer can repeat. Development and review are AI-assisted. The examples use synthetic data.
 
-## If you are reviewing financial capability
+## Follow a financing decision
 
-Start with the financial and diligence case studies. Look for explicit definitions of entity, period, currency, units and signs; accounting or cash-flow reconciliation; distinctions between missing data and zero; and a clear explanation of which conclusions are supported.
+Start with the [closing-date financing comparison](../skills/financing-pro-forma/README.md). Both alternatives raise the same amount and leave the same cash balance. Trace the use of proceeds through the debt balance and the change in equity. The funding-gap case shows where the calculation stops when the stated sources fall short.
 
-The debt and scenario demonstrations expose assumptions instead of embedding unexplained benchmark thresholds. The actuals workflow produces a plan that can be reviewed before a model is changed. The evidence workflow preserves uncertainty and the difference between a proposal and an accepted decision.
+For a question about payment timing, use the [debt and liquidity harness](../harnesses/debt-liquidity/README.md). The combined stress leaves a surplus over the full horizon. The period ledger shows how a distribution at the first payment date changes the later funding need.
 
-The Bloomberg and Capital IQ examples show how provider formulas are prepared and checked before a licensed refresh. The model audit compares recomputed financial results with supplied outputs and identifies missing coverage. These examples make the difference between a constructed workbook and verified financial data visible.
+## Inspect a control that catches a mistake
 
-## If you are reviewing engineering capability
+The [actuals review](../harnesses/actuals-review/README.md) compares a submitted workbook with the disclosure and with the original estimate workbook. Read the cost row in the source comparison, then the growth row in the regression report. They answer different questions about the same update.
 
-Start with routing and quality controls, then inspect a package's implementation and tests. Look for deterministic boundaries around language-model work: input schemas, identifier stability, exact numeric handling, read-only or non-overwriting output behavior, content hashes, failure states and reproducible test fixtures.
+The [financing brief](case-studies/diligence-workflow.md) handles a different kind of mistake. Compare the synthetic discussion record with the automated recap. The worked brief preserves the conditions on lender interest and the outstanding diligence request.
 
-The router proposes workflows and reports capability gaps; it does not pretend that a suggestion executed a tool. A quality gate ties check evidence to a particular artifact; it does not treat a matching hash as proof that a calculation or judgment is correct. These distinctions are intentional interface design.
+## Inspect a calculation that can be resumed
 
-The data-retrieval and MCP packages include executable adapters and synthetic service fixtures. Inspect how they handle pagination, invalid requests and upstream failures. The MCP project descriptions in the README also link to separate public implementations.
+Run the [credit review walkthrough](../harnesses/credit-review/README.md). Follow a liquidity receipt to the operating calculation and the debt schedule. Change the operating assumption and compare the two histories. Each completed attempt retains its inputs alongside its results.
 
-## How to interpret authorship and evidence
+## Inspect the integrations
 
-Noah Silverman's portfolio brings together workflow design and AI-assisted development and review. The repository supplies generalized implementations and synthetic demonstrations of methods from a broader personal workflow library. It should be assessed on the design choices and evidence visible here. It does not claim that every line was manually written, that a public example was deployed in a client environment, or that a measured business outcome exists where none is shown.
+The [data and model review](case-studies/data-and-model-review.md) shows provider formulas, missing observations and independently recomputed model results. The [MCP server guide](MCP_SERVERS.md) links to the public implementations and describes the privately held projects.
 
-Tests demonstrate behavior within stated inputs and supported formats. Prompt evaluations are small behavioral exercises, not broad model benchmarks. Native Office rendering, live data-provider refresh, deployment-scale reliability and autonomous production operation require separate evidence; do not infer them from the examples.
+## Interpret the evidence
 
-## Suggested discussion topics
-
-- How would a source discrepancy change the financial conclusion or the next workflow step?
-- Which assumptions belong in the input contract rather than in an agent's guess?
-- What should remain a judgment task, and what can be checked deterministically?
-- How does the workflow detect that an output or its supporting evidence has become stale?
-- Which failure modes need tests before the workflow can handle a new file type or data source?
+The [validation record](VALIDATION.md) identifies the tests, recorded outcomes and environments. The results describe the public implementations on the supplied inputs. Operating adoption, investment performance and time saved have not been measured here.

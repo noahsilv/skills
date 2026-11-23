@@ -56,6 +56,10 @@ def validate(check_manifest=False):
     names = {p.name for p in (ROOT / "skills").iterdir() if p.is_dir() and p.name not in IGNORED_DIRS}
     if names != SKILLS:
         errors.append(f"unexpected skill membership: {sorted(names ^ SKILLS)}")
+    index = ROOT / "skills/README.md"
+    linked = set(re.findall(r"\]\(([a-z0-9-]+)/README\.md\)", index.read_text(encoding="utf-8"))) if index.is_file() else set()
+    if linked != SKILLS:
+        errors.append(f"skill README index differs from the catalog: {sorted(linked ^ SKILLS)}")
     for name in sorted(SKILLS):
         path = ROOT / "skills" / name / "SKILL.md"
         if not path.is_file():

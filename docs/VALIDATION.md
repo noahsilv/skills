@@ -7,7 +7,7 @@
 | Annual actuals review | Two Windows runs produced the same recorded summary. The harness also passed the Linux and Windows jobs in [the public CI run](https://github.com/noahsilv/skills/actions/runs/45116620861). |
 | Debt and liquidity | Five tests passed, including an independent search for the minimum retention cap across 625 four-period cash paths. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45117122900). |
 | Resumable credit review | Eight tests passed. They exercise changed inputs, altered outputs, concurrent writers, interruption and retry. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45118211849). |
-| Financing pro forma | Fourteen tests passed from source and from the extracted skill download. The extracted files matched the public package source. |
+| Financing pro forma | Fourteen tests passed from source and from the extracted skill download. The extracted files matched the public package source. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45119281454). |
 
 A separate reviewer used the pro forma instructions on two new synthetic financing cases and checked the arithmetic independently. One case closed with USD150 million of cash and USD345 million of net debt. The other lacked USD48 million of funding and withheld its closing ratios. This was one forward test of the instructions.
 
@@ -41,15 +41,19 @@ Five additional response-only scenarios checked provider and integration limits.
 
 ## Reproduce
 
-From the repository root, install requirements-dev.txt in a fresh Python 3.11 environment and run:
+From the repository root, create a virtual environment with `python -m venv .venv`. Activate it with `.\.venv\Scripts\Activate.ps1` in PowerShell or `. .venv/bin/activate` in a POSIX shell. Install the dependencies and run the checks.
 
 ```sh
+python -m pip install -r requirements-dev.txt
 python scripts/build_catalog.py --check
 python scripts/validate.py --manifest
 python scripts/test.py
+python harnesses/actuals-review/run.py
+python -m unittest discover -s harnesses/debt-liquidity -p "test_*.py"
+python -m unittest discover -s harnesses/credit-review -p "test_*.py"
 ```
 
-Each package has its own instructions, synthetic examples and limits. The runner rejects absent or zero-test executable suites. Instruction-only workflows require behavioral review as well as static validation.
+Each package has its own instructions, synthetic examples and limits. The runner rejects absent or zero-test executable suites. The full suite runs on Ubuntu in CI. Several package tests use symbolic links or hard links and need suitable filesystem permissions. The Windows CI job checks the catalog, manifest and actuals harness.
 
 ## Scope
 

@@ -33,8 +33,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "32c1c16a20fb4e709f8390a9c347db76f2cb3b7c3ec6954bfc154fc929a6d611",
-      "bytes": 9650
+      "sha256": "eb1cbddbc9280b0ad64c6c5dc4a2eccbd150d5f041b03848ee4bde3d5d967b71",
+      "bytes": 3716
     },
     {
       "path": "catalog/skills.json",
@@ -42,9 +42,14 @@
       "bytes": 12903
     },
     {
+      "path": "docs/MCP_SERVERS.md",
+      "sha256": "b2e6af70e22f45477cacfcad35cdf0e7b29a2257a9697ce2928b4c2f2fdbfa04",
+      "bytes": 2065
+    },
+    {
       "path": "docs/PORTFOLIO_GUIDE.md",
-      "sha256": "a1d8e4980116f2e602f50c9c2d21686162675b1535df7f725256345e4a2fa785",
-      "bytes": 3471
+      "sha256": "744a79363e19d95248adbf533b2e540788896705e72728e30d7c1bc5c80e36be",
+      "bytes": 2428
     },
     {
       "path": "docs/PROMPT_EVALUATIONS.md",
@@ -53,13 +58,13 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "e25e2f5203495fa17165b2dce3537c2b67a18d305fefb4856c0b894dfd3f3bb9",
-      "bytes": 5739
+      "sha256": "982373e3e0e3f3f441f885bc612efb609370e23cfa1b441802e2b61cde46c4fe",
+      "bytes": 6300
     },
     {
       "path": "docs/case-studies/data-and-model-review.md",
-      "sha256": "cf9825025dc46b7daf829150055b7d21d0f381b8877e04e2a8bfb592f6f94269",
-      "bytes": 2802
+      "sha256": "dfd863e852a8c63d34809cd977121ee32bc1bef31120e93b08700bc6daf6aecb",
+      "bytes": 2806
     },
     {
       "path": "docs/case-studies/diligence-workflow.md",
@@ -208,8 +213,13 @@
     },
     {
       "path": "scripts/validate.py",
-      "sha256": "1b1ec6cfcc1d272b02709352bb7a08f8d77587cd5c7142c84b13b1e9440a6c4d",
-      "bytes": 6965
+      "sha256": "c64c159d83f64b4227067cf45fd20842db11ca8978ca3a59ce59652425ebf684",
+      "bytes": 7253
+    },
+    {
+      "path": "skills/README.md",
+      "sha256": "14e8f478ea05adb0a9758bb2b8eecd0bd0fe0a269e04f3390317bec035d72f6d",
+      "bytes": 3837
     },
     {
       "path": "skills/actuals-update-planner/LICENSE",

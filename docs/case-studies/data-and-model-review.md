@@ -22,7 +22,7 @@ The clean case includes a correctly reported covenant breach. Agreement with the
 
 ## Inspect an MCP interface
 
-The [MCP integration example](../../skills/mcp-api-integration/README.md) exposes a small API through a bounded protocol implementation. Its synthetic service lets a reviewer inspect requests and failure behavior without credentials. It is separate from the MCP project descriptions in the repository README.
+The [MCP integration example](../../skills/mcp-api-integration/README.md) exposes a small API through a bounded protocol implementation. Its synthetic service lets a reviewer inspect requests and failure behavior without credentials. The [MCP server guide](../MCP_SERVERS.md) describes Noah's other integrations.
 
 ## Reproduce
 
