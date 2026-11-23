@@ -17,16 +17,23 @@ from build_catalog import REGISTRY, build
 SKILLS = set(REGISTRY)
 IGNORED_DIRS = {".git", ".venv", "__pycache__", ".pytest_cache", "dist"}
 ALLOWED_SUFFIXES = {".md", ".py", ".json", ".txt", ".yml", ".yaml", ".csv"}
-DOWNLOADS = {"downloads/financing-pro-forma.skill": "financing-pro-forma"}
+DOWNLOADS = {f"downloads/{name}.skill": name for name in (
+    "actuals-update-planner", "debt-schedule", "financial-statement-analysis",
+    "financing-pro-forma", "scenario-analysis",
+)}
+# The skill packager keeps these authoring prompts in the source repository.
+SOURCE_ONLY = {"actuals-update-planner/evals/evals.json", "financial-statement-analysis/evals/evals.json"}
 
 
 def verify_download(path, package, files):
     prefix = ROOT / "skills" / package
     expected = {p.relative_to(prefix.parent).as_posix(): p for p in files if p.is_relative_to(prefix)}
+    for name in SOURCE_ONLY:
+        expected.pop(name, None)
     with zipfile.ZipFile(path) as archive:
         members = archive.infolist()
         if archive.comment or len(members) != len(expected) or set(archive.namelist()) != set(expected):
-            raise ValueError("archive must contain exactly the named package's source files")
+            raise ValueError("archive differs from the package's declared distribution files")
         for member in members:
             source = expected[member.filename]
             if member.comment or member.extra or member.file_size != source.stat().st_size:

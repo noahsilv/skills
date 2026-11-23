@@ -45,4 +45,4 @@ Each row opens a package README with its inputs, supported tasks and examples. T
 
 The Bloomberg and Capital IQ demonstrations use synthetic inputs. Live retrieval requires the relevant licensed Excel add-in and has not been verified here. API and MCP checks distinguish synthetic transport tests from calls to live services.
 
-The [JSON catalog](../catalog/skills.json) lists routing aliases and required capabilities. The [financing pro forma download](../downloads/financing-pro-forma.skill) contains the reviewed package for authorized use.
+The [JSON catalog](../catalog/skills.json) lists routing aliases and required capabilities. The [downloads guide](../downloads/README.md) links to five reviewed finance packages available for authorized use.

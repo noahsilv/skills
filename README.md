@@ -34,7 +34,7 @@ The [harness index](harnesses/README.md) lists each case, its command and its ev
 
 The [skill index](skills/README.md) covers financial analysis, model review, diligence, documents and data retrieval. Each package has instructions, an example and a statement of scope. The [machine-readable catalog](catalog/skills.json) records which tools each skill needs.
 
-For authorized use, the [financing pro forma download](downloads/financing-pro-forma.skill) includes the calculator, examples and tests. The repository validator compares each archive member with the corresponding source file.
+Five [finance skill downloads](downloads/README.md) include their instructions, examples and tests for authorized use. The repository validator compares each archive member with the corresponding source file.
 
 ## MCP servers
 

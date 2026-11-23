@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "cc1faf36a02ad32793025514e4ef790e033e7f2fc619f14edcadbe7c2134a194",
-      "bytes": 1110
+      "sha256": "9e956e174f01d4da998c6cf4904e29365c268db7bebd3d823cf303d75d2faeeb",
+      "bytes": 1156
     },
     {
       "path": ".gitignore",
@@ -33,8 +33,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "4613c8d102cab2cce1d10ebf0ed5f0eddc0d3a29353dbd5664afcfe6b7d96bda",
-      "bytes": 3931
+      "sha256": "172b98ee359e0978bb29f82c36212d6c396251ca3b2bc876a4c18e4f029a4073",
+      "bytes": 3913
     },
     {
       "path": "catalog/skills.json",
@@ -58,8 +58,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "25798aafaba8385254cfe2924b399baa9eefd2739c32a0de59591ad573c9165e",
-      "bytes": 6356
+      "sha256": "5b2349346b47ee2c8e36f48eef640fc9fcea99cf8296f4902683cadc8cb1425b",
+      "bytes": 6840
     },
     {
       "path": "docs/case-studies/data-and-model-review.md",
@@ -102,9 +102,34 @@
       "bytes": 571
     },
     {
+      "path": "downloads/README.md",
+      "sha256": "287b6a982b08b7df8545365622f11db54d185920214687ce9c5589d722208473",
+      "bytes": 2720
+    },
+    {
+      "path": "downloads/actuals-update-planner.skill",
+      "sha256": "39e9a625edf9237db821cff31c8a72f5114a176765b602827792a4a12e840701",
+      "bytes": 34186
+    },
+    {
+      "path": "downloads/debt-schedule.skill",
+      "sha256": "acb680c9f58e05af6755a12bf5bf8e61726d2ea1da9825d6dc6faaacc6458f10",
+      "bytes": 16783
+    },
+    {
+      "path": "downloads/financial-statement-analysis.skill",
+      "sha256": "ec468a83b73c78a71c0f45d1a5ab88d10211193fd0ab99cb17deab69c56130e4",
+      "bytes": 32554
+    },
+    {
       "path": "downloads/financing-pro-forma.skill",
       "sha256": "fab46f9b0936106f23b43d1f94d87f4e5a5506e381fc3f4c2c2f2cb281e6baa3",
       "bytes": 13545
+    },
+    {
+      "path": "downloads/scenario-analysis.skill",
+      "sha256": "c4d42919adae639af4eecef57945e6f541e162ad83039e4a9786b607276de4f3",
+      "bytes": 46970
     },
     {
       "path": "examples/context_evidence_demo.py",
@@ -262,19 +287,24 @@
       "bytes": 1599
     },
     {
+      "path": "scripts/test_downloads.py",
+      "sha256": "1b100a0bc0f03a3dba49200630238d0eb91e632ee434f707379121b5fc626912",
+      "bytes": 1870
+    },
+    {
       "path": "scripts/test_harnesses.py",
       "sha256": "725d672a76bc1a6b78a9ddf63807c87030999215b074a30ffb0bfb466ed1f087",
       "bytes": 4648
     },
     {
       "path": "scripts/validate.py",
-      "sha256": "c64c159d83f64b4227067cf45fd20842db11ca8978ca3a59ce59652425ebf684",
-      "bytes": 7253
+      "sha256": "b796c1620a945c39b5a6637bb66813d12e39661e8ebb013c555e37a93a297b8f",
+      "bytes": 7614
     },
     {
       "path": "skills/README.md",
-      "sha256": "14e8f478ea05adb0a9758bb2b8eecd0bd0fe0a269e04f3390317bec035d72f6d",
-      "bytes": 3837
+      "sha256": "5baf0c7032d6d67a8891d4ec3bd631937b88359264bb821bb6d436b09044a214",
+      "bytes": 3828
     },
     {
       "path": "skills/actuals-update-planner/LICENSE",

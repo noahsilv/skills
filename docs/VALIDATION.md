@@ -8,6 +8,8 @@
 | Debt and liquidity | Five tests passed, including an independent search for the minimum retention cap across 625 four-period cash paths. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45117122900). |
 | Resumable credit review | Eight tests passed. They exercise changed inputs, altered outputs, concurrent writers, interruption and retry. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45118211849). |
 | Financing pro forma | Fourteen tests passed from source and from the extracted skill download. The extracted files matched the public package source. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45119281454). |
+| Financial evidence trace | Eight tests passed for tracing source amounts, revised values, units and file identity. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45120830959). |
+| Combined finance checks | All six finance cases passed on Windows and Ubuntu. Ubuntu passed 536 tests in 19 executable skill packages and checked 44 saved formula results with LibreOffice Calc 26.2.6.3. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45124801178). |
 
 A separate reviewer used the pro forma instructions on two new synthetic financing cases and checked the arithmetic independently. One case closed with USD150 million of cash and USD345 million of net debt. The other lacked USD48 million of funding and withheld its closing ratios. This was one forward test of the instructions.
 
