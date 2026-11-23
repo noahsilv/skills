@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "entity": "Cedar Circuit Components (synthetic)",
+  "scope": "consolidated",
+  "as_of": "2025-12-31",
+  "currency": "USD",
+  "scale": "1000000",
+  "cases": [
+    {
+      "id": "refinance",
+      "flows": {
+        "draw_current": "0",
+        "draw_noncurrent": "120",
+        "repay_current": "60",
+        "repay_noncurrent": "40",
+        "equity_contribution": "0",
+        "capital_spending": "0",
+        "cash_expense": "2"
+      }
+    },
+    {
+      "id": "capital_spending",
+      "flows": {
+        "draw_current": "0",
+        "draw_noncurrent": "120",
+        "repay_current": "0",
+        "repay_noncurrent": "0",
+        "equity_contribution": "0",
+        "capital_spending": "100",
+        "cash_expense": "2"
+      }
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import ast
 import hashlib
 import json
 import re
+import zipfile
 from pathlib import Path
 from urllib.parse import unquote
 
@@ -16,6 +17,22 @@ from build_catalog import REGISTRY, build
 SKILLS = set(REGISTRY)
 IGNORED_DIRS = {".git", ".venv", "__pycache__", ".pytest_cache", "dist"}
 ALLOWED_SUFFIXES = {".md", ".py", ".json", ".txt", ".yml", ".yaml", ".csv"}
+DOWNLOADS = {"downloads/financing-pro-forma.skill": "financing-pro-forma"}
+
+
+def verify_download(path, package, files):
+    prefix = ROOT / "skills" / package
+    expected = {p.relative_to(prefix.parent).as_posix(): p for p in files if p.is_relative_to(prefix)}
+    with zipfile.ZipFile(path) as archive:
+        members = archive.infolist()
+        if archive.comment or len(members) != len(expected) or set(archive.namelist()) != set(expected):
+            raise ValueError("archive must contain exactly the named package's source files")
+        for member in members:
+            source = expected[member.filename]
+            if member.comment or member.extra or member.file_size != source.stat().st_size:
+                raise ValueError(f"archive member metadata differs: {member.filename}")
+            if archive.read(member) != source.read_bytes():
+                raise ValueError(f"archive member differs from source: {member.filename}")
 
 
 def source_files():
@@ -62,8 +79,17 @@ def validate(check_manifest=False):
         files = list(source_files())
     except ValueError as exc:
         return [str(exc)]
+    for download in DOWNLOADS:
+        if not (ROOT / download).is_file():
+            errors.append(f"missing skill download: {download}")
     for path in files:
         rel = path.relative_to(ROOT)
+        if rel.as_posix() in DOWNLOADS:
+            try:
+                verify_download(path, DOWNLOADS[rel.as_posix()], files)
+            except (OSError, ValueError, RuntimeError, zipfile.BadZipFile) as exc:
+                errors.append(f"invalid skill download: {rel}: {exc}")
+            continue
         if path.suffix not in ALLOWED_SUFFIXES and path.name != "LICENSE" and rel.as_posix() not in {".gitignore", ".gitattributes"}:
             errors.append(f"unexpected file type: {rel}")
         try:

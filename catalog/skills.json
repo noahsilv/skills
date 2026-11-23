@@ -134,6 +134,17 @@
       ]
     },
     {
+      "id": "financing-pro-forma",
+      "path": "skills/financing-pro-forma/SKILL.md",
+      "description": "Compare how alternative debt draws, repayments and uses of proceeds change closing cash, debt, equity and liquidity. Use for a financing pro forma or a closing-date sources-and-uses bridge.",
+      "aliases": [
+        "compare closing financing cases"
+      ],
+      "required_capabilities": [
+        "python3.11"
+      ]
+    },
+    {
       "id": "independent-model-audit",
       "path": "skills/independent-model-audit/SKILL.md",
       "description": "Audit a declared debt and coverage snapshot by recomputing balances, debt service, DSCR and covenant results from mapped inputs. Use when reviewing model correctness, testing a model before freezing regression outputs, or investigating plausible-looking but inconsistent financial results. Reports every comparison and missing observation; the bundled helper does not extract or recalculate Excel files.",

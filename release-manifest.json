@@ -8,8 +8,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "sha256": "fe9badd55c8ce0b63221565c0a6c187a71f5c5d47ad549e35d4e954a696f87d9",
-      "bytes": 90
+      "sha256": "15cd6d75c8fed739cfbd5ddb098948fa5822d1a382757535a82c7bf503a39b75",
+      "bytes": 105
     },
     {
       "path": ".github/workflows/checks.yml",
@@ -33,13 +33,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "654edeb9e966142698237a84f7bad5a1266efbe40eb56e556ba23a911d7b609e",
-      "bytes": 9289
+      "sha256": "32c1c16a20fb4e709f8390a9c347db76f2cb3b7c3ec6954bfc154fc929a6d611",
+      "bytes": 9650
     },
     {
       "path": "catalog/skills.json",
-      "sha256": "b4a70d4c640adb94da987c0f3071c99ca2397c9c7482e8841919cb4ecbf7c05b",
-      "bytes": 12456
+      "sha256": "7c19b211175598234a29daf626868508d1833869611f07e2af2cd42633915f02",
+      "bytes": 12903
     },
     {
       "path": "docs/PORTFOLIO_GUIDE.md",
@@ -53,8 +53,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "bf4c73977b5ee48a8dffaac5536a3adb39132ed0fcd6d6a453b14c8d70c65289",
-      "bytes": 4498
+      "sha256": "e25e2f5203495fa17165b2dce3537c2b67a18d305fefb4856c0b894dfd3f3bb9",
+      "bytes": 5739
     },
     {
       "path": "docs/case-studies/data-and-model-review.md",
@@ -73,8 +73,8 @@
     },
     {
       "path": "docs/case-studies/financial-workflow.md",
-      "sha256": "3e4c3ae7ee02c5e2fbb90dba730e990c6f9e0f36f16a02d6ad47710b7c34fc64",
-      "bytes": 2795
+      "sha256": "a8ca575400c53373638079fe9dbe888c8d080002fbbbba6195ac5d5a6189df24",
+      "bytes": 3148
     },
     {
       "path": "docs/case-studies/outputs/engineering-controls.md",
@@ -95,6 +95,11 @@
       "path": "docs/case-studies/outputs/financing-response.md",
       "sha256": "5a973f07a3b3e442b490b5f2f479d61f273bc0a463d2c9ca925fe367c032211b",
       "bytes": 571
+    },
+    {
+      "path": "downloads/financing-pro-forma.skill",
+      "sha256": "fab46f9b0936106f23b43d1f94d87f4e5a5506e381fc3f4c2c2f2cb281e6baa3",
+      "bytes": 13545
     },
     {
       "path": "examples/context_evidence_demo.py",
@@ -193,8 +198,8 @@
     },
     {
       "path": "scripts/build_catalog.py",
-      "sha256": "d48e0c06e28d4c5202e01a5ac82751bfc2352e014d921230ed483c699d4b1ffe",
-      "bytes": 3749
+      "sha256": "9aa9b5f8d7326c9f0739a8afc541aeabff99b36ddc2bd449f08eadc2e770f291",
+      "bytes": 3831
     },
     {
       "path": "scripts/test.py",
@@ -203,8 +208,8 @@
     },
     {
       "path": "scripts/validate.py",
-      "sha256": "35f0b5647eaa812035431ae1df9638be4c995ed07f08cd3bbd5a1c3ca89fe95e",
-      "bytes": 5556
+      "sha256": "1b1ec6cfcc1d272b02709352bb7a08f8d77587cd5c7142c84b13b1e9440a6c4d",
+      "bytes": 6965
     },
     {
       "path": "skills/actuals-update-planner/LICENSE",
@@ -1115,6 +1120,56 @@
       "path": "skills/financial-statement-analysis/tests/test_analysis.py",
       "sha256": "6fa221329325beaa4178b54200e41a5556039675d0a8149128822dff61fad750",
       "bytes": 11946
+    },
+    {
+      "path": "skills/financing-pro-forma/LICENSE",
+      "sha256": "b85c3e8487b9437e027943259f29eb51c12ca62d545f3b60c0462de8c06ee83c",
+      "bytes": 466
+    },
+    {
+      "path": "skills/financing-pro-forma/README.md",
+      "sha256": "080fd229148de642441ac8d3b959717aedf18d2ce1a9707f57245be4a07b9932",
+      "bytes": 2590
+    },
+    {
+      "path": "skills/financing-pro-forma/SKILL.md",
+      "sha256": "29bc8cb54c9be103104b6e4684633e38f5443ecb479dc8bf87e72b23986d798e",
+      "bytes": 2299
+    },
+    {
+      "path": "skills/financing-pro-forma/examples/comparison.json",
+      "sha256": "64d9b7bdcc458ac4842eb7fadd11dd069563a6b23730af8d0ed80a95fffd37c7",
+      "bytes": 4436
+    },
+    {
+      "path": "skills/financing-pro-forma/examples/opening.json",
+      "sha256": "c9a48121c92e40b489f7a4d02043634d3f990ef5b74c8aafc39d975e84f74273",
+      "bytes": 1600
+    },
+    {
+      "path": "skills/financing-pro-forma/examples/transactions.json",
+      "sha256": "fcd89ee40c095d97c79fc119ec32c543cb45f6bfdba8a0600198de95fe0e9bb9",
+      "bytes": 773
+    },
+    {
+      "path": "skills/financing-pro-forma/examples/unfunded.json",
+      "sha256": "545ae6cf583633aaad1fb5a020d9aa786115fc48baf00072b9cde554429fd81f",
+      "bytes": 480
+    },
+    {
+      "path": "skills/financing-pro-forma/references/contract.md",
+      "sha256": "af219eb0897c28b6a5e2ed4e0c7e096308d9b426c02ab64964e0bd181a22b0ef",
+      "bytes": 2807
+    },
+    {
+      "path": "skills/financing-pro-forma/scripts/bridge.py",
+      "sha256": "7560f4b78dcdef7dc0ee0568726e6ae9c47965401ba09f403b3797d1f0f98f7b",
+      "bytes": 11739
+    },
+    {
+      "path": "skills/financing-pro-forma/tests/test_bridge.py",
+      "sha256": "2d51f7b224decbce72913476bde7b7c70382ff5a33a0b43148c44e432471910a",
+      "bytes": 9284
     },
     {
       "path": "skills/independent-model-audit/LICENSE",

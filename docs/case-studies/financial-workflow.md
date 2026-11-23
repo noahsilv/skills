@@ -26,4 +26,8 @@ A separate synthetic example demonstrates [statement reconciliation](../../skill
 
 The [annual actuals review harness](../../harnesses/actuals-review/README.md) runs the planner, then reviews two separately generated model returns. A source comparison catches a transposed cost. A comparison with the original workbook catches a change to the next year's growth assumption.
 
+## Financing at closing
+
+The [financing pro forma](../../skills/financing-pro-forma/README.md) uses the same synthetic issuer's opening balance sheet. Borrowing USD120 million to refinance debt increases net debt by USD2 million. Using the proceeds for capital spending increases net debt by USD102 million. Both cases end with USD168 million of cash.
+
 These examples demonstrate financial specification, exact calculations, explicit handoffs and testable failure states. They do not establish operating performance on real client models or native Excel recalculation.

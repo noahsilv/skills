@@ -39,6 +39,7 @@ The public repositories provide code and test suites for inspection. These descr
 | Skill | Purpose |
 | --- | --- |
 | [Financial statement analysis](skills/financial-statement-analysis/SKILL.md) | Reconcile normalized statements and compute explicitly defined metrics. |
+| [Financing pro forma](skills/financing-pro-forma/README.md) | Compare refinancing and capital spending against the same opening balance sheet. |
 | [Debt schedule](skills/debt-schedule/SKILL.md) | Model defined borrowing terms and explain the resulting balance and debt service. |
 | [Scenario analysis](skills/scenario-analysis/SKILL.md) | Keep the baseline explicit while comparing changes in assumptions. |
 | [Actuals update planner](skills/actuals-update-planner/SKILL.md) | Turn sourced historical data into a reviewable model-update plan. |
@@ -85,6 +86,8 @@ Development and review are AI-assisted. The workflow specifications, financial d
 ## Inspect or reproduce
 
 Browse the case studies first. For authorized use, copy a complete folder from `skills/` into your agent's supported skill directory and read its `SKILL.md`. Technical instructions do not expand the reuse rights in the license.
+
+The [packaged financing pro forma](downloads/financing-pro-forma.skill) includes its instructions, calculator, examples and tests. The repository check compares each file in the download with the reviewed source.
 
 The examples use Python 3.11 or newer. Create a virtual environment, activate it and install the dependencies. In PowerShell, the activation command is `.\.venv\Scripts\Activate.ps1`. In a POSIX shell, use `. .venv/bin/activate`.
 

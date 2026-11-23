@@ -1,6 +1,17 @@
 # Validation and limitations
 
-## Portfolio validation
+## Finance harnesses and closing-date pro forma
+
+| Check | Observed result |
+| --- | --- |
+| Annual actuals review | Two Windows runs produced the same recorded summary. The harness also passed the Linux and Windows jobs in [the public CI run](https://github.com/noahsilv/skills/actions/runs/45116620861). |
+| Debt and liquidity | Five tests passed, including an independent search for the minimum retention cap across 625 four-period cash paths. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45117122900). |
+| Resumable credit review | Eight tests passed. They exercise changed inputs, altered outputs, concurrent writers, interruption and retry. See [the CI run](https://github.com/noahsilv/skills/actions/runs/45118211849). |
+| Financing pro forma | Fourteen tests passed from source and from the extracted skill download. The extracted files matched the public package source. |
+
+A separate reviewer used the pro forma instructions on two new synthetic financing cases and checked the arithmetic independently. One case closed with USD150 million of cash and USD345 million of net debt. The other lacked USD48 million of funding and withheld its closing ratios. This was one forward test of the instructions.
+
+## Earlier portfolio validation
 
 The November 5, 2026 working-tree update passed **522 tests across 18 executable
 packages** on Python 3.12. Four existing JSON loaders now enforce a 100-level

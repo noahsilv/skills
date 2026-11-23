@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "entity": "Cedar Circuit Components (synthetic)",
+  "scope": "consolidated",
+  "as_of": "2025-12-31",
+  "currency": "USD",
+  "scale": "1000000",
+  "source": {
+    "label": "Historical statement report, fy2025",
+    "sha256": "bc5af7b06782abc71ad9d54d7e634344a768f386d85b45948eb8c098afa84d00",
+    "locators": {
+      "total_assets": "disclosure, physical text page 2: Total assets 1,300,000",
+      "total_liabilities": "disclosure, physical text page 2: Total liabilities 650,000",
+      "total_equity": "disclosure, physical text page 2: Total equity 650,000",
+      "current_assets": "disclosure, physical text page 2: Current assets 500,000",
+      "current_liabilities": "disclosure, physical text page 2: Current liabilities 240,000",
+      "cash_and_equivalents": "disclosure, physical text page 2: Cash and equivalents 150,000",
+      "debt_current": "disclosure, physical text page 2: Current borrowings excluding leases 90,000",
+      "debt_noncurrent": "disclosure, physical text page 2: Noncurrent borrowings excluding leases 300,000",
+      "leases_current": "disclosure, physical text page 2: Current lease liabilities 15,000",
+      "leases_noncurrent": "disclosure, physical text page 2: Noncurrent lease liabilities 45,000"
+    }
+  },
+  "opening_balances": {
+    "total_assets": "1300",
+    "total_liabilities": "650",
+    "total_equity": "650",
+    "current_assets": "500",
+    "current_liabilities": "240",
+    "cash_and_equivalents": "150",
+    "debt_current": "90",
+    "debt_noncurrent": "300",
+    "leases_current": "15",
+    "leases_noncurrent": "45"
+  },
+  "opening_metrics": {
+    "borrowings_excluding_leases": "390",
+    "lease_liabilities": "60",
+    "gross_debt_including_leases": "450",
+    "net_debt_including_leases": "300",
+    "gross_debt_to_equity": "0.692308",
+    "current_ratio": "2.083333"
+  },
+  "cases": [
+    {
+      "id": "refinance",
+      "status": "BALANCED",
+      "flows": {
+        "draw_current": "0",
+        "draw_noncurrent": "120",
+        "repay_current": "60",
+        "repay_noncurrent": "40",
+        "equity_contribution": "0",
+        "capital_spending": "0",
+        "cash_expense": "2"
+      },
+      "new_funding": "120",
+      "transaction_uses": "102",
+      "change_in_cash": "18",
+      "cash_before_additional_funding": "168",
+      "funding_gap": "0",
+      "closing_balances": {
+        "total_assets": "1318",
+        "total_liabilities": "670",
+        "total_equity": "648",
+        "current_assets": "518",
+        "current_liabilities": "180",
+        "cash_and_equivalents": "168",
+        "debt_current": "30",
+        "debt_noncurrent": "380",
+        "leases_current": "15",
+        "leases_noncurrent": "45"
+      },
+      "closing_metrics": {
+        "borrowings_excluding_leases": "410",
+        "lease_liabilities": "60",
+        "gross_debt_including_leases": "470",
+        "net_debt_including_leases": "302",
+        "gross_debt_to_equity": "0.725309",
+        "current_ratio": "2.877778"
+      },
+      "change_in_net_debt": "2"
+    },
+    {
+      "id": "capital_spending",
+      "status": "BALANCED",
+      "flows": {
+        "draw_current": "0",
+        "draw_noncurrent": "120",
+        "repay_current": "0",
+        "repay_noncurrent": "0",
+        "equity_contribution": "0",
+        "capital_spending": "100",
+        "cash_expense": "2"
+      },
+      "new_funding": "120",
+      "transaction_uses": "102",
+      "change_in_cash": "18",
+      "cash_before_additional_funding": "168",
+      "funding_gap": "0",
+      "closing_balances": {
+        "total_assets": "1418",
+        "total_liabilities": "770",
+        "total_equity": "648",
+        "current_assets": "518",
+        "current_liabilities": "240",
+        "cash_and_equivalents": "168",
+        "debt_current": "90",
+        "debt_noncurrent": "420",
+        "leases_current": "15",
+        "leases_noncurrent": "45"
+      },
+      "closing_metrics": {
+        "borrowings_excluding_leases": "510",
+        "lease_liabilities": "60",
+        "gross_debt_including_leases": "570",
+        "net_debt_including_leases": "402",
+        "gross_debt_to_equity": "0.879630",
+        "current_ratio": "2.158333"
+      },
+      "change_in_net_debt": "102"
+    }
+  ],
+  "input_sha256": {
+    "opening": "c9a48121c92e40b489f7a4d02043634d3f990ef5b74c8aafc39d975e84f74273",
+    "transactions": "fcd89ee40c095d97c79fc119ec32c543cb45f6bfdba8a0600198de95fe0e9bb9"
+  }
+}

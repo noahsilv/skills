@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "entity": "Cedar Circuit Components (synthetic)",
+  "scope": "consolidated",
+  "as_of": "2025-12-31",
+  "currency": "USD",
+  "scale": "1000000",
+  "cases": [
+    {
+      "id": "funding_gap",
+      "flows": {
+        "draw_current": "0",
+        "draw_noncurrent": "120",
+        "repay_current": "0",
+        "repay_noncurrent": "0",
+        "equity_contribution": "0",
+        "capital_spending": "300",
+        "cash_expense": "2"
+      }
+    }
+  ]
+}

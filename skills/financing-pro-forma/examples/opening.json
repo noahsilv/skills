@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "entity": "Cedar Circuit Components (synthetic)",
+  "scope": "consolidated",
+  "as_of": "2025-12-31",
+  "currency": "USD",
+  "scale": "1000000",
+  "source": {
+    "label": "Historical statement report, fy2025",
+    "sha256": "bc5af7b06782abc71ad9d54d7e634344a768f386d85b45948eb8c098afa84d00",
+    "locators": {
+      "total_assets": "disclosure, physical text page 2: Total assets 1,300,000",
+      "total_liabilities": "disclosure, physical text page 2: Total liabilities 650,000",
+      "total_equity": "disclosure, physical text page 2: Total equity 650,000",
+      "current_assets": "disclosure, physical text page 2: Current assets 500,000",
+      "current_liabilities": "disclosure, physical text page 2: Current liabilities 240,000",
+      "cash_and_equivalents": "disclosure, physical text page 2: Cash and equivalents 150,000",
+      "debt_current": "disclosure, physical text page 2: Current borrowings excluding leases 90,000",
+      "debt_noncurrent": "disclosure, physical text page 2: Noncurrent borrowings excluding leases 300,000",
+      "leases_current": "disclosure, physical text page 2: Current lease liabilities 15,000",
+      "leases_noncurrent": "disclosure, physical text page 2: Noncurrent lease liabilities 45,000"
+    }
+  },
+  "balances": {
+    "total_assets": "1300",
+    "total_liabilities": "650",
+    "total_equity": "650",
+    "current_assets": "500",
+    "current_liabilities": "240",
+    "cash_and_equivalents": "150",
+    "debt_current": "90",
+    "debt_noncurrent": "300",
+    "leases_current": "15",
+    "leases_noncurrent": "45"
+  }
+}

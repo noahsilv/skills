@@ -22,6 +22,7 @@ REGISTRY = {
     "evidence-ledger": (["maintain sourced claims"], ["python3.11"]),
     "financial-data-retrieval": (["retrieve public financial data"], ["python3.11"]),
     "financial-statement-analysis": (["analyze normalized statements"], ["python3.11"]),
+    "financing-pro-forma": (["compare closing financing cases"], ["python3.11"]),
     "independent-model-audit": (["recompute model outputs"], ["python3.11"]),
     "mcp-api-integration": (["build an API-backed MCP tool"], ["python3.11"]),
     "model-regression-testing": (["compare model snapshots"], ["python3.11"]),
