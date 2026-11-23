@@ -1,20 +1,24 @@
 # Synthetic review examples
 
-All example text and reviewer records were created for this package. They do not describe a real organization, project, customer, or review.
+The example uses fictional text and reviewer records created for this package.
 
 [draft.md](draft.md) overstates approval of a component rollout. [supporting-note.md](supporting-note.md) describes a conditional proposal. The generated [inventory](inventory.json) contains four text blocks and two declared review checks, for eight expected unit/check pairs. The original draft is never changed by the helper.
 
+## Compare the five outcomes
+
 | Case | Input ledger/artifact | Actual helper result | What remains |
 | --- | --- | --- | --- |
-| Complete records | [reviews-complete.json](reviews-complete.json) | 8 of 8 valid unique pairs; exit 0 | Record 6 proposes correcting approval to a conditional proposal; record 8 contains a reply awaiting acceptance. |
-| Incomplete records | [reviews-incomplete.json](reviews-incomplete.json) | 6 of 8 valid unique pairs; exit 2 | One pair is absent; record 6 cites text that does not exist in the evidence. Its proposal remains visible but does not count. |
+| Complete records | [reviews-complete.json](reviews-complete.json) | 8 of 8 valid unique pairs; exit 0 | Record 6 proposes correcting the approval claim. Record 8 awaits acceptance of a reply. |
+| Incomplete records | [reviews-incomplete.json](reviews-incomplete.json) | 6 of 8 valid unique pairs; exit 2 | One pair is absent. Record 6 cites missing evidence. Its proposal remains visible and is excluded from coverage. |
 | Stale artifact | [draft-stale.md](draft-stale.md) with the complete ledger | Binding and coverage unverified; exit 2 | The rollout date changed. No old record is counted against the new bytes. |
 | Missing scope coverage | [reviews-clarity-only.json](reviews-clarity-only.json) with the original inventory | 4 of 8 valid unique pairs; exit 2 | Source-support review records are missing. |
 | Reduced check list | [inventory-scope-changed.json](inventory-scope-changed.json) with the unchanged clarity-only ledger | Inventory binding and coverage unverified; exit 2 | Removing source-support from the inventory changes its hash. No unchanged ledger record counts toward the reduced scope. |
 
 Inspect the actual [complete report](outputs/complete/report.md), [incomplete report](outputs/incomplete/report.md), [stale-artifact report](outputs/stale/report.md), [missing-scope report](outputs/scope-original/report.md), and [changed-scope report](outputs/scope-changed/report.md). The helper generated these files. Every report labels the semantic conclusion `NOT_ASSESSED`.
 
-Run from the skill directory with fresh output paths:
+## Reproduce the reports
+
+Run from the skill directory with fresh output paths in a POSIX shell.
 
 ```sh
 python scripts/review_coverage.py inventory examples/draft.md \

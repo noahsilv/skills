@@ -2,6 +2,8 @@
 
 Each `.skill` archive contains the source files of one public package, including its instructions, examples, license and tests. The worked examples use synthetic data. Use is subject to the [repository license](../LICENSE).
 
+## Choose a package
+
 | Finance task | Download | Read the worked example |
 | --- | --- | --- |
 | Analyze historical financial statements and check six accounting reconciliations | [Financial statement analysis](financial-statement-analysis.skill) | [Statement checks and metrics](../skills/financial-statement-analysis/examples/README.md) |
@@ -12,11 +14,13 @@ Each `.skill` archive contains the source files of one public package, including
 
 ## Inspect a package
 
-Open the archive with a ZIP reader. Start with the package README for the financial question and example command. `SKILL.md` gives the agent workflow. Use a new directory outside the repository for any example outputs you retain. The core scenario calculation runs independently. Its optional connected example also needs the debt schedule package.
+Open the archive with a ZIP reader and extract the package. Start with its README for the financial question and example command. `SKILL.md` gives the agent workflow. Use a new directory outside the repository for outputs you retain.
+
+The scenario package can run the operating case on its own. To calculate contractual debt payments and carry them into the operating case, also download the debt schedule package.
 
 ## Verify a download
 
-The [release manifest](../release-manifest.json) lists the SHA-256 digest and size of each archive. From a checkout with the development requirements installed, run the following commands.
+The [release manifest](../release-manifest.json) lists the SHA-256 digest and size of each archive. To check all five against their source files, run the following commands from a repository checkout with the development requirements installed.
 
 ```sh
 python scripts/validate.py --manifest

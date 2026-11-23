@@ -1,17 +1,23 @@
 # Bloomberg workbooks
 
-Builds a BDP formula matrix with separate controls, identifiers and field definitions. The example creates four provider formulas for two invented securities and two fields. No market values are supplied.
+Build a Bloomberg BDP formula matrix from a list of securities and fields. The example writes four formulas for two invented securities and two fields. Controls, identifiers and field definitions occupy separate parts of the workbook.
 
-This demonstrates formula construction, unit labels and a clear refresh boundary. BDH and BDS workflows are documented; the helper generates BDP matrices only.
+## Build the example
+
+Run the commands from this package directory. Choose a new output directory in a scratch location.
 
 ```sh
 python -m pip install openpyxl
-python scripts/build_workbook.py examples/config.json /tmp/bloomberg-demo
+python scripts/build_workbook.py examples/config.json ../bloomberg-demo
 python -m unittest discover -s tests -v
 ```
 
-The output directory must be new. Read the generated `report.json` before opening `workbook.xlsx`. The [saved example report](examples/report.json) and [workbook inspection](examples/inspection.md) were produced by the included example.
+## Inspect the result
 
-Tests check formula references, blank caches, literal inputs, invalid configs and refusal to overwrite outputs. They do not establish provider availability or native Excel behavior. Bloomberg access and the connected licensed add-in are needed to retrieve data. The identifiers are deliberately synthetic and will not establish a valid security lookup.
+Read `report.json` before opening `workbook.xlsx`. The example records `FORMULAS_CONSTRUCTED` and `live_refresh: NOT_RUN`. Inspect the formula references and unit labels in the [saved report](examples/report.json) and [workbook inspection](examples/inspection.md).
+
+## Provider access and scope
+
+The tests cover formula references, blank caches, literal inputs, invalid configurations and overwrite protection. Retrieving market values requires valid identifiers, Bloomberg access and a connected licensed Excel add-in. The example covers workbook construction only. The helper generates BDP matrices. The workflow also documents BDH and BDS.
 
 Read [SKILL.md](SKILL.md) for the workflow and [the config contract](references/config.md) for supported inputs. Bloomberg is a third-party service; this portfolio example is not an official Bloomberg product. Reuse is governed by [LICENSE](LICENSE).

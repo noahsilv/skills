@@ -6,11 +6,17 @@ The demonstration checks principal movements, cash debt service, DSCR and an exp
 
 Start with [the synthetic cases](examples/README.md) or read [the workflow](SKILL.md). The [snapshot contract](references/snapshot-contract.md) specifies the units, periods and mapped values.
 
+## Run the clean case
+
+Run from this package directory with Python 3.11 or newer. The script uses the standard library and writes to a new output directory.
+
 ```sh
-python scripts/audit_model.py examples/clean.json --out /tmp/model-audit-clean
+python scripts/audit_model.py examples/clean.json --out ../model-audit-clean
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-The script checks a normalized JSON snapshot. It does not read or recalculate Excel files. Its separate arithmetic is useful audit evidence within the declared scope; it does not establish source accuracy or an independent professional audit.
+## Interpret the findings
 
-Python 3.11 or newer, standard library only. All rights reserved; see [LICENSE](LICENSE).
+Review the principal movements and debt-service calculation before interpreting covenant compliance. An accurate ratio can still breach the stated covenant. A missing input leaves the affected check incomplete. The calculation uses a normalized JSON snapshot. Workbook recalculation, source verification and an independent professional audit require separate work.
+
+Copyright and use terms are in [LICENSE](LICENSE).

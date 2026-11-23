@@ -2,8 +2,12 @@
 
 Write a short decision brief from mixed source material, with explicit attribution, decision status and unresolved evidence. This portable workflow uses the language model to assess what each source supports. Finding a citation string alone is insufficient.
 
-Read [SKILL.md](SKILL.md), then inspect the [synthetic examples](examples/README.md). No external services or Python dependencies are required. Three realistic behavior prompts are in the repository-only `evals/evals.json`; they cover both financing and software delivery decisions. That folder is excluded from installable skill archives. Evaluation results should be recorded separately after actual runs. The checked-in example is an authored demonstration, not a benchmark result.
+## Work through a brief
 
-This package was independently written from the author's experience developing source-grounded meeting and management briefing workflows. This portable edition contains no private transcripts, counterpart examples, organizational templates, filing destinations, or approval rules.
+Read [the workflow](SKILL.md), then compare the [pilot meeting record](examples/pilot/meeting.md) and [cost note](examples/pilot/cost-note.md) with the [sample brief](examples/pilot/sample-brief.md). Check who proposed each action, which decision the sources support and which questions remain open. The workflow requires no external services or Python dependencies.
 
-The skill does not authenticate its sources, settle disputed evidence, approve decisions, or send messages. A source may be wrong, incomplete, or outdated. Citation lookup alone cannot validate a paraphrase or detect an omitted qualification; that review remains a reasoning task.
+## Evaluation and scope
+
+The [example guide](examples/README.md) also describes financing and incident cases. The repository contains three evaluation prompts in `evals/evals.json`. Installable archives exclude this folder. The sample brief is an authored demonstration. Record the outcomes of independent runs separately.
+
+The author or reviewer must assess whether a source is current, whether a paraphrase is accurate and whether a material qualification was omitted. Source authentication, disputed evidence, approvals and external messages remain the responsibility of the people using the brief.

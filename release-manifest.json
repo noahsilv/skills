@@ -33,8 +33,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "172b98ee359e0978bb29f82c36212d6c396251ca3b2bc876a4c18e4f029a4073",
-      "bytes": 3913
+      "sha256": "3a95bf5e1f5ede18d81c06603a2ec9acc2db00386c21186e141b115bd3fe9141",
+      "bytes": 3980
     },
     {
       "path": "catalog/skills.json",
@@ -103,23 +103,23 @@
     },
     {
       "path": "downloads/README.md",
-      "sha256": "b56f9e08058afe8076b703d9459f43ba96905bdbc605c14f5b3c348ba89bc236",
-      "bytes": 2866
+      "sha256": "45cd6eeddeeb5a6859cd3e2da2ea3397f1d635d70073a49e4f7dc28137348ffb",
+      "bytes": 3009
     },
     {
       "path": "downloads/actuals-update-planner.skill",
-      "sha256": "39e9a625edf9237db821cff31c8a72f5114a176765b602827792a4a12e840701",
-      "bytes": 34186
+      "sha256": "b872bb82c867c4b1ba7d04a36635068fdd8d7ef9c29e2984303a424780c6a049",
+      "bytes": 34164
     },
     {
       "path": "downloads/debt-schedule.skill",
-      "sha256": "acb680c9f58e05af6755a12bf5bf8e61726d2ea1da9825d6dc6faaacc6458f10",
-      "bytes": 16783
+      "sha256": "0fb43b53f710fbbedf834512d575d33505d72efaa15c42d881f3f0c21c38a9e9",
+      "bytes": 16743
     },
     {
       "path": "downloads/financial-statement-analysis.skill",
-      "sha256": "ec468a83b73c78a71c0f45d1a5ab88d10211193fd0ab99cb17deab69c56130e4",
-      "bytes": 32554
+      "sha256": "d62d9c48df3dc833d113a3d369cacf6cd1d3522851025c01e62ef105f0afc614",
+      "bytes": 32543
     },
     {
       "path": "downloads/financing-pro-forma.skill",
@@ -128,8 +128,8 @@
     },
     {
       "path": "downloads/scenario-analysis.skill",
-      "sha256": "c4d42919adae639af4eecef57945e6f541e162ad83039e4a9786b607276de4f3",
-      "bytes": 46970
+      "sha256": "32c8ac0489a75f95141a13ff7809adfa16847b400303fa356e862e2f171aa721",
+      "bytes": 47027
     },
     {
       "path": "examples/context_evidence_demo.py",
@@ -148,8 +148,8 @@
     },
     {
       "path": "harnesses/README.md",
-      "sha256": "c7d3a33182f0e9420f7cc93a3bf41d92501acfdb424d43c8fe742d745cb6778a",
-      "bytes": 2755
+      "sha256": "d8f4bb95eb90af3c069ee29a4bdba3da9a8af5c970b3d3fcebf32b4c8568963e",
+      "bytes": 2608
     },
     {
       "path": "harnesses/actuals-review/README.md",
@@ -338,8 +338,8 @@
     },
     {
       "path": "skills/actuals-update-planner/examples/README.md",
-      "sha256": "a8a099b6da83108fc198b33bb53772ad1821d12446b4f5649f394fcd9bdba352",
-      "bytes": 3121
+      "sha256": "723a4db80cda62a1fe23a833a74daf1f6cff7a88e7cffcdb7ea5d209e330320a",
+      "bytes": 3148
     },
     {
       "path": "skills/actuals-update-planner/examples/annual-plan.json",
@@ -453,8 +453,8 @@
     },
     {
       "path": "skills/bloomberg-workbooks/README.md",
-      "sha256": "54eb9479a1ed44f8a29359e0c6a29e2ab64eaab5cc4dc46e5b7ada4bc1b44db1",
-      "bytes": 1389
+      "sha256": "658c9dd4888795f3865f56690bcf9fa2bade01fa877b2d94f4e34b55946d3368",
+      "bytes": 1453
     },
     {
       "path": "skills/bloomberg-workbooks/SKILL.md",
@@ -508,8 +508,8 @@
     },
     {
       "path": "skills/capiq-workbooks/README.md",
-      "sha256": "036e8f69df2bdea399c1b663fd1b66c447f572537bec9e71f383f62bf85a1275",
-      "bytes": 1223
+      "sha256": "9bbc0b02ca2902b5ea0bb5fe7df4dab4193f42ac62c13ff5ce143420a8e9ddf5",
+      "bytes": 1391
     },
     {
       "path": "skills/capiq-workbooks/SKILL.md",
@@ -568,7 +568,7 @@
     },
     {
       "path": "skills/debt-schedule/examples/README.md",
-      "sha256": "557315111537b18544856583a197dd316848287f2bf313b425bb15de1c28b982",
+      "sha256": "9c894d24f1059b1b4f652bfd129ab077403729893a0a89a97ca2c3250a92c13e",
       "bytes": 1089
     },
     {
@@ -728,8 +728,8 @@
     },
     {
       "path": "skills/document-review-coverage/README.md",
-      "sha256": "3da16395f577244c51d9af1980d9cf5e804d4c0a24960d113596f60c1bf46551",
-      "bytes": 1496
+      "sha256": "444214337d27ed986c5a49b3f8ef6781175f077537635aaed70e6acc7461a2be",
+      "bytes": 1469
     },
     {
       "path": "skills/document-review-coverage/SKILL.md",
@@ -738,8 +738,8 @@
     },
     {
       "path": "skills/document-review-coverage/examples/README.md",
-      "sha256": "931ff73c1a09b36233736a132aab57c478d4d7ade4b27711e4ee8bb7b6a47996",
-      "bytes": 4077
+      "sha256": "e2e97b7e8189495cb0cef50864c31abe212858c97204530081cbed90b45d74f6",
+      "bytes": 4051
     },
     {
       "path": "skills/document-review-coverage/examples/draft-stale.md",
@@ -893,8 +893,8 @@
     },
     {
       "path": "skills/evidence-brief/README.md",
-      "sha256": "ba1a0a8b7d913928f8142dd556cc3a56f25ef38795cb7f73d815a88f07c0216a",
-      "bytes": 1326
+      "sha256": "80a9bce8e4e0aa319c134b80e1add97bcad9e6339a62c576f3eb48c3e3238617",
+      "bytes": 1272
     },
     {
       "path": "skills/evidence-brief/SKILL.md",
@@ -1068,8 +1068,8 @@
     },
     {
       "path": "skills/financial-data-retrieval/README.md",
-      "sha256": "08705c566411dd534848067fafbe1f68be54d751626702487d4c1df24350a81a",
-      "bytes": 1252
+      "sha256": "b879b4b46a9a5b61a406a4ae82ffc459063294039b178becbce17ce894cc4d6b",
+      "bytes": 1434
     },
     {
       "path": "skills/financial-data-retrieval/SKILL.md",
@@ -1158,8 +1158,8 @@
     },
     {
       "path": "skills/financial-statement-analysis/examples/README.md",
-      "sha256": "7f6ed51a7fe113a3c97b1ed930142aab193175650a1eb16ce4c5c2602d3c5d06",
-      "bytes": 1809
+      "sha256": "e2a534a18ad03fdb2255cf3a38df2946d2d9f85f2045729a0929b8c76ff77b11",
+      "bytes": 1727
     },
     {
       "path": "skills/financial-statement-analysis/examples/complete-report/report.json",
@@ -1283,8 +1283,8 @@
     },
     {
       "path": "skills/independent-model-audit/README.md",
-      "sha256": "65e8a634f90c2499199699fb6e0269420736e1a291cdee1de341546ee653b464",
-      "bytes": 1197
+      "sha256": "6c0f085e7141fdead0b2cb089a795db4ea24c9307091028421014f1f78c6ef94",
+      "bytes": 1463
     },
     {
       "path": "skills/independent-model-audit/SKILL.md",
@@ -1438,8 +1438,8 @@
     },
     {
       "path": "skills/model-regression-testing/README.md",
-      "sha256": "b2d252302073254a5eb200e483caf310831cd698d71c770e5895518398029c81",
-      "bytes": 901
+      "sha256": "5e1c7c684a1c4049b5b9fb70cb9fe26e566a0f276816c75efbc5c832151d7f39",
+      "bytes": 1031
     },
     {
       "path": "skills/model-regression-testing/SKILL.md",
@@ -1538,8 +1538,8 @@
     },
     {
       "path": "skills/prompt-optimizer/README.md",
-      "sha256": "36b9b8880af5d4e84fc746778ae921367020e0ae79f5172f8a55d1ebdee21914",
-      "bytes": 1257
+      "sha256": "70f60601e4bbce8469ed71ff7fa60dba9c33252a197b3f9ce620034ee73c34d7",
+      "bytes": 1331
     },
     {
       "path": "skills/prompt-optimizer/SKILL.md",
@@ -1573,8 +1573,8 @@
     },
     {
       "path": "skills/scenario-analysis/examples/README.md",
-      "sha256": "6c831c41cb0d6a1ec4cf8062ca005800c330fd348ba5126aa11c4233c2a8456a",
-      "bytes": 3079
+      "sha256": "d9a228c796b818234ce564001b1e54454ecce8430522151c8905841ec7f7c4c0",
+      "bytes": 3242
     },
     {
       "path": "skills/scenario-analysis/examples/cases.json",
@@ -1778,8 +1778,8 @@
     },
     {
       "path": "skills/workbook-tieout/README.md",
-      "sha256": "a78823a6d3121494cba7e0cd50e18fc4b6a8765fa29317d838020c540b5b6a12",
-      "bytes": 852
+      "sha256": "c1924f0f47faa757e013cf64999deb49d188120fb794a1ea658ed58e9be2591a",
+      "bytes": 1180
     },
     {
       "path": "skills/workbook-tieout/SKILL.md",

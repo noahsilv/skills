@@ -4,6 +4,8 @@ Compare selected model outputs and distinguish declared changes from unexpected 
 
 Read [SKILL.md](SKILL.md) for the workflow and [the example guide](examples/README.md) for schemas and a synthetic regression exercise.
 
+## Run the comparison tests
+
 JSON comparison uses Python 3.11+ and the standard library. Install `openpyxl==3.1.5` for XLSX export, examples and the full test suite:
 
 ```sh
@@ -11,4 +13,6 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-Neither helper recalculates formulas. Cached snapshots require review, missing values cannot pass, and only listed watch items are covered. Baselines are never edited or automatically replaced.
+## Read the comparison
+
+For each monitored item, compare the baseline with the new value and its declared change. A cached formula result requires review because neither helper recalculates it. A missing value cannot pass. The report covers the listed items and preserves the original baseline.

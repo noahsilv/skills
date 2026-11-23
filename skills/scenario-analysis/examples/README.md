@@ -2,16 +2,20 @@
 
 `cases.json` describes an invented operation with three annual periods. It combines units sold, unit prices, variable costs, fixed costs and explicitly supplied cash adjustments. The assumptions, cash payments and scenario choices are illustrative and carry no institutional thresholds or client evidence.
 
-From the package directory:
+## Run the operating cases
+
+Run from the package directory using a new output path.
 
 ```sh
 python scripts/scenario_analysis.py examples/cases.json --out /tmp/scenario-analysis-example
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-Choose a new output path on each run. The checked-in `output/` directory is generated from this JSON and includes human-readable Markdown and CSVs plus exact JSON evidence.
+## Interpret the stress results
 
-The case registry covers base, a 15% volume reduction, 15% higher fixed costs, their combination and a first-period maintenance-capex increase. `combined` versus `volume_down` isolates the fixed-cost lever: total cash after debt service falls by 15% of the three base fixed-cost amounts. Volume stress reduces both revenue and variable costs. Taxes, debt service and the other cash adjustments stay at their explicit inputs in those cases.
+Start with the [saved report](output/report.md). The [period results](output/period_results.csv) show the cash effects by period. The [JSON report](output/report.json) retains the exact values used in the calculations.
+
+The cases cover the base, a 15 percent fall in volume, a 15 percent rise in fixed costs, both stresses together and higher first-period maintenance capital spending. Compare `combined` with `volume_down` to isolate the fixed-cost effect. Across the three periods, cash after debt service falls by 15 percent of total base fixed costs. Lower volume reduces both revenue and variable costs. Taxes, debt service and other cash adjustments stay at their specified values.
 
 The first base period can be checked by hand: revenue is `10000 × 45 = 450000`; variable cost is `10000 × 18 = 180000`; EBITDA is `190000`. Deducting cash taxes `25000`, maintenance capex `20000` and working-capital increase `10000` gives CFADS `135000`. After debt service `80000`, cash is `55000` and DSCR is `1.6875`.
 
