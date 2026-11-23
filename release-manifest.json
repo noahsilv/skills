@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "dc07bbbd354e4107012cf5930b73bb54655472debc3098a563dc0f5089481e70",
-      "bytes": 930
+      "sha256": "dac3a329b3dd42f8a25c969c57b9e9c51c0abfaa13c847450ec5abd8d773b7d5",
+      "bytes": 1013
     },
     {
       "path": ".gitignore",
@@ -33,8 +33,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "720c80d53f78740c02125ec7d6aa2f0a8ec81035abb9c802f46b25ff32099671",
-      "bytes": 9013
+      "sha256": "654edeb9e966142698237a84f7bad5a1266efbe40eb56e556ba23a911d7b609e",
+      "bytes": 9289
     },
     {
       "path": "catalog/skills.json",
@@ -113,8 +113,8 @@
     },
     {
       "path": "harnesses/README.md",
-      "sha256": "43bcca91ffcfb7e8bebbeb9aa923b787b16c24d04d4771b3a3eaaddb01d6030b",
-      "bytes": 1249
+      "sha256": "9eb2fdbbf2c7e52af3ff3a06f8dc35fa789036f2ba410893b5a2c166d4f22207",
+      "bytes": 1470
     },
     {
       "path": "harnesses/actuals-review/README.md",
@@ -130,6 +130,36 @@
       "path": "harnesses/actuals-review/run.py",
       "sha256": "04cb128664c0d5b52758265026b1ca718708d8d6436b7fcd5a34263aafe769b4",
       "bytes": 9197
+    },
+    {
+      "path": "harnesses/credit-review/README.md",
+      "sha256": "993fb797ffe2477494426bf9a16954643c9921c1a110c2538201cdba3c8ff1c7",
+      "bytes": 3991
+    },
+    {
+      "path": "harnesses/credit-review/demo.py",
+      "sha256": "14d9202e7a420aa557689fc3ad1deaeb617e1ef7ea22b3a8d438f1e2bf16534b",
+      "bytes": 3527
+    },
+    {
+      "path": "harnesses/credit-review/expected.json",
+      "sha256": "40d5dc5930bc591112391eb1a14fbf7285709a7a574865d5fe865d683c7999e2",
+      "bytes": 564
+    },
+    {
+      "path": "harnesses/credit-review/run.py",
+      "sha256": "f1753293b438a79adaf4d2b576e2a2d126019018daa2a08601005b50259967ae",
+      "bytes": 10981
+    },
+    {
+      "path": "harnesses/credit-review/stages.py",
+      "sha256": "daedcfe23c2a695fca679456f5be230031fa6a7088273adff0d51fc7315ac364",
+      "bytes": 3310
+    },
+    {
+      "path": "harnesses/credit-review/test_workflow.py",
+      "sha256": "e380060b3faff8f7426c73b8b8b9e3114bec8abafe146e580f4e818337e19aeb",
+      "bytes": 6127
     },
     {
       "path": "harnesses/debt-liquidity/README.md",

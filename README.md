@@ -6,6 +6,8 @@ The examples use synthetic data and run locally. The [workflow harnesses](harnes
 
 Start with the [annual actuals review](harnesses/actuals-review/README.md). It catches a transposed cost figure and an undeclared change to next year's growth assumption. The original estimate workbook stays intact.
 
+For project finance, follow the [cash at each debt payment date](harnesses/debt-liquidity/README.md). The [resumable credit review](harnesses/credit-review/README.md) shows how a changed cost assumption reaches the liquidity result and which prior calculation can be reused.
+
 ## Start with a case study
 
 | Demonstration | Finance perspective | Engineering perspective |

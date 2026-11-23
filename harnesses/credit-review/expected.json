@@ -1,0 +1,29 @@
+{
+  "paused_after_debt": {
+    "debt": "CURRENT",
+    "operating": "READY",
+    "liquidity": "WAITING"
+  },
+  "after_assumptions_changed": {
+    "debt": "CURRENT",
+    "operating": "STALE",
+    "liquidity": "WAITING"
+  },
+  "debt_attempt_reused": true,
+  "attempts_in_order": [
+    "debt",
+    "operating",
+    "liquidity",
+    "operating",
+    "liquidity"
+  ],
+  "minimum_retention_cap_usd": {
+    "original": "62708.23",
+    "revised": "48608.23"
+  },
+  "final_verification": {
+    "debt": "CURRENT",
+    "operating": "CURRENT",
+    "liquidity": "CURRENT"
+  }
+}
