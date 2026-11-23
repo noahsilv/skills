@@ -51,6 +51,7 @@ python scripts/test.py
 python harnesses/actuals-review/run.py
 python -m unittest discover -s harnesses/debt-liquidity -p "test_*.py"
 python -m unittest discover -s harnesses/credit-review -p "test_*.py"
+python -m unittest discover -s harnesses/financial-evidence -p "test_*.py"
 ```
 
 Each package has its own instructions, synthetic examples and limits. The runner rejects absent or zero-test executable suites. The full suite runs on Ubuntu in CI. Several package tests use symbolic links or hard links and need suitable filesystem permissions. The Windows CI job checks the catalog, manifest and actuals harness.

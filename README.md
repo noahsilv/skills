@@ -23,6 +23,8 @@ For the combined stress, the output gives a minimum retention cap of USD62,708.2
 
 The [resumable credit review](harnesses/credit-review/README.md) shows what happens when a reviewer changes an assumption. It keeps the completed debt schedule, reruns the affected calculations and records the source and output hashes for each attempt. The [harness index](harnesses/README.md) links to the other worked cases.
 
+The [financial evidence trace](harnesses/financial-evidence/README.md) follows a correction to reported borrowings through two financing cases. It identifies both the figures that move and the calculations in which the correction cancels.
+
 ## The skills
 
 The [skill index](skills/README.md) covers financial analysis, model review, diligence, documents and data retrieval. Each package has instructions, an example and a statement of scope. The [machine-readable catalog](catalog/skills.json) records which tools each skill needs.

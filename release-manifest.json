@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "dac3a329b3dd42f8a25c969c57b9e9c51c0abfaa13c847450ec5abd8d773b7d5",
-      "bytes": 1013
+      "sha256": "2f654a2c87f71b57e840462c9ad022e29348e4e49183611ad385ff3577236bae",
+      "bytes": 1101
     },
     {
       "path": ".gitignore",
@@ -33,8 +33,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "eb1cbddbc9280b0ad64c6c5dc4a2eccbd150d5f041b03848ee4bde3d5d967b71",
-      "bytes": 3716
+      "sha256": "41b0c16453d4d823b1ba7b45a6e2df81572b250bbafad05017ae8dcb8ed58796",
+      "bytes": 3956
     },
     {
       "path": "catalog/skills.json",
@@ -58,8 +58,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "982373e3e0e3f3f441f885bc612efb609370e23cfa1b441802e2b61cde46c4fe",
-      "bytes": 6300
+      "sha256": "3cc8e4fc2740016c4582f190d8245519255051f486237625344ea53f00c305a9",
+      "bytes": 6375
     },
     {
       "path": "docs/case-studies/data-and-model-review.md",
@@ -123,8 +123,8 @@
     },
     {
       "path": "harnesses/README.md",
-      "sha256": "9eb2fdbbf2c7e52af3ff3a06f8dc35fa789036f2ba410893b5a2c166d4f22207",
-      "bytes": 1470
+      "sha256": "a42b7f9b94cc99deee9905381434fd0523573cc51f9d52b5b41e621fe2a7c338",
+      "bytes": 1682
     },
     {
       "path": "harnesses/actuals-review/README.md",
@@ -195,6 +195,31 @@
       "path": "harnesses/debt-liquidity/test_liquidity.py",
       "sha256": "a1e92fc8c986d9a0c58d99f0707886d992e6cd77a1a4a1eda23f998759e0bdc5",
       "bytes": 3034
+    },
+    {
+      "path": "harnesses/financial-evidence/README.md",
+      "sha256": "9ded0a9996cff08cc6b98cf1af37f50d7165e5068a2aedb25d949ec45034456a",
+      "bytes": 3299
+    },
+    {
+      "path": "harnesses/financial-evidence/evidence_graph.py",
+      "sha256": "6ab788abba23ce8b20b8890a5b5f746b3c1bc773f0e7716ad01b850a47cfafc5",
+      "bytes": 10228
+    },
+    {
+      "path": "harnesses/financial-evidence/expected.json",
+      "sha256": "f4dc9f0b8c42158ce56d4d4c6310878d63db3fbd48a7e01e58c3b67b881ba6d4",
+      "bytes": 391
+    },
+    {
+      "path": "harnesses/financial-evidence/run.py",
+      "sha256": "713b40637b785e4ed593c677e16de8a623e07f261531288ff78cd37b6f1200a9",
+      "bytes": 5896
+    },
+    {
+      "path": "harnesses/financial-evidence/test_trace.py",
+      "sha256": "7a2ba18c62920b7d33720263044f48956cc7d4e75a2bff0aa3b031409b9d79ec",
+      "bytes": 6050
     },
     {
       "path": "requirements-dev.txt",

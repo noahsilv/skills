@@ -1,0 +1,8 @@
+{
+  "reported.debt_current": ["90000", "95000", "USD thousands"],
+  "opening.net_debt": ["300", "305", "USD millions"],
+  "refinance.closing.net_debt": ["302", "307", "USD millions"],
+  "refinance.change_in_net_debt": ["2", "2", "USD millions"],
+  "capital_spending.closing.net_debt": ["402", "407", "USD millions"],
+  "capital_spending.change_in_net_debt": ["102", "102", "USD millions"]
+}
