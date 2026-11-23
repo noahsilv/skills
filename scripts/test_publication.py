@@ -8,6 +8,7 @@ from unittest.mock import patch
 from zipfile import ZipFile
 
 import check_publication as scan
+import validate
 
 
 class PublicationTests(unittest.TestCase):
@@ -75,6 +76,38 @@ class PublicationTests(unittest.TestCase):
                     contextlib.redirect_stderr(error):
                 self.assertEqual(scan.main(), 2)
             self.assertNotIn("private-name", error.getvalue())
+
+
+class ArchiveSourceTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        self.source = self.root / "skills" / "example" / "SKILL.md"
+        self.source.parent.mkdir(parents=True)
+        self.source.write_bytes(b"public version 1")
+        self.archive = self.root / "example.skill"
+
+    def check(self, files, comment=b""):
+        with ZipFile(self.archive, "w") as archive:
+            for name, value in files.items():
+                archive.writestr(name, value)
+            archive.comment = comment
+        with patch.object(validate, "ROOT", self.root):
+            validate.verify_download(self.archive, "example", [self.source])
+
+    def test_exact_source_required_even_when_size_is_identical(self):
+        self.check({"example/SKILL.md": self.source.read_bytes()})
+        with self.assertRaisesRegex(ValueError, "differs from source"):
+            self.check({"example/SKILL.md": b"public version 2"})
+
+    def test_missing_extra_and_commented_archives_are_rejected(self):
+        expected = {"example/SKILL.md": self.source.read_bytes()}
+        for files, comment in (({}, b""), ({**expected, "example/notes.txt": b"extra"}, b""),
+                               (expected, b"unreviewed annotation")):
+            with self.subTest(names=list(files), comment=comment):
+                with self.assertRaises(ValueError):
+                    self.check(files, comment)
 
 
 if __name__ == "__main__":

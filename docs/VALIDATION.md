@@ -66,6 +66,8 @@ python scripts/check_publication.py --terms ../private-review-terms.txt
 
 The checker reads local file names, text and the contents of declared skill archives. It folds case and normalizes Unicode, then reports how many files matched. It prints neither the terms nor the matching paths. Exit code 0 means the supplied terms had no matches, 1 means at least one file matched and 2 means the scan could not finish. The check covers the current source tree. Earlier Git revisions require a separate history review.
 
+Run `python scripts/test_publication.py` to exercise the release checks with synthetic terms and archives. The tests include a same-size edit to a packaged file, an extra file, a missing file and an archive comment.
+
 ## Scope
 
 Calculations and checks are bounded by explicit input contracts. A consistent source citation, matching hash or complete review record does not establish financial truth, reviewer authority or the adequacy of the chosen scope. Proposed actuals edits are plans; cached spreadsheet values are not recalculation. Routing suggestions do not execute tools.

@@ -58,8 +58,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "b90a37756cdca8d892389d57c38b6e413a73ac5b370e5304d77b84063b3b69f8",
-      "bytes": 7894
+      "sha256": "803188b9ec89ddccd4c285f957a3db6b87fd71f64a7abc5957d24fe0e3261d3e",
+      "bytes": 8111
     },
     {
       "path": "docs/case-studies/data-and-model-review.md",
@@ -303,8 +303,8 @@
     },
     {
       "path": "scripts/test_publication.py",
-      "sha256": "3c0dcb219190a715ea963cb9a0d6dc37a4affe5e1117373119158e5c9d8f62b9",
-      "bytes": 3745
+      "sha256": "7ea9cce0be911326ebc9f669e1c68e9804228b110dfd083d882243ad4968e698",
+      "bytes": 5282
     },
     {
       "path": "scripts/validate.py",
