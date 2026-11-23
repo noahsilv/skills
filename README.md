@@ -21,9 +21,14 @@ python harnesses/debt-liquidity/run.py
 
 For the combined stress, the output gives a minimum retention cap of USD62,708.23. Use the [period ledger](harnesses/debt-liquidity/README.md#read-the-combined-stress) to check it against the three later payments.
 
-The [resumable credit review](harnesses/credit-review/README.md) shows what happens when a reviewer changes an assumption. It keeps the completed debt schedule, reruns the affected calculations and records the source and output hashes for each attempt. The [harness index](harnesses/README.md) links to the other worked cases.
+To run the six finance cases together, install the Python dependencies and run the portfolio checks.
 
-The [financial evidence trace](harnesses/financial-evidence/README.md) follows a correction to reported borrowings through two financing cases. It identifies both the figures that move and the calculations in which the correction cancels.
+```sh
+python -m pip install -r requirements-dev.txt
+python scripts/test_harnesses.py
+```
+
+The [harness index](harnesses/README.md) lists each case, its command and its evidence. For the engineering behind a financing review, follow a [source correction](harnesses/financial-evidence/README.md), [resume a credit calculation](harnesses/credit-review/README.md) or [check the saved workbook results](harnesses/excel-recalculation/README.md).
 
 ## The skills
 

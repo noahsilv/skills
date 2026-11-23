@@ -4,15 +4,21 @@ Compare named operating cases and one-factor sensitivities against a preserved b
 
 Read [SKILL.md](SKILL.md), the [model contract](references/model-contract.md) and the [synthetic example](examples/README.md). Requires Python 3.11+ and no third-party dependencies.
 
+## Run the example
+
+From this package directory, choose a new output directory next to the package.
+
 ```sh
-python scripts/scenario_analysis.py examples/cases.json --out /tmp/scenario-analysis-run
+python scripts/scenario_analysis.py examples/cases.json --out ../scenario-analysis-run
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-Use a new output directory. The input file and base assumptions remain unchanged. Exact rational arithmetic is retained in JSON; Markdown and CSV display totals are rounded. No-op cases and zero-service DSCR periods are reported explicitly.
+## Read the results
 
-This local portfolio draft calculates a declared volume-price-cost cash bridge. Taxes, capex, working capital and debt service are explicit inputs. It does not recalculate Excel, solve taxes or debt, assess scenario probabilities, apply covenant thresholds or validate a forecast. The core engine does not import the debt package; its optional handoff is documented explicitly.
+Compare each case with the base assumptions and follow volume, price and costs through to cash available for debt service. The JSON retains exact fractions. The Markdown and CSV reports round displayed totals and identify periods with zero debt service. A case that leaves assumptions unchanged is flagged explicitly.
 
 An optional [connected demonstration](examples/README.md#executed-debt-handoff) executes both engines using explicit script/input paths, checks a one-to-one period mapping and records evidence hashes. Its sibling debt package dependency is declared; the core scenario engine remains standalone.
 
-The unit tests establish arithmetic, isolation and validation behavior, not an agent performance benchmark. Copyright and use terms are in [LICENSE](LICENSE).
+## Scope
+
+The user supplies taxes, capital expenditure, working capital and debt service. The core engine runs independently of the debt package. Forecast validation, scenario probabilities, covenant thresholds and Excel recalculation require separate review. Copyright and use terms are in [LICENSE](LICENSE).

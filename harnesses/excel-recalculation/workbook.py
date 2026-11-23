@@ -4,6 +4,7 @@ from decimal import Decimal
 from io import BytesIO
 from pathlib import Path
 import sys
+from xml.etree import ElementTree as ET
 from zipfile import ZipFile
 
 from openpyxl import Workbook, load_workbook
@@ -90,6 +91,23 @@ def snapshot(book):
             for sheet in book}
 
 
+def clear_formula_caches(sheet):
+    namespace = "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+    tag = "{" + namespace + "}"
+    root = ET.fromstring(sheet)
+    formulas = [cell for cell in root.iter(tag + "c") if cell.find(tag + "f") is not None]
+    if len(formulas) != 2 * len(LINES):
+        raise ValueError("Unexpected number of formulas in the generated fixture")
+    for cell in formulas:
+        value = cell.find(tag + "v")
+        if value is not None:
+            if value.text:
+                raise ValueError("A generated formula unexpectedly has a saved result")
+            cell.remove(value)
+    ET.register_namespace("", namespace)
+    return ET.tostring(root, encoding="utf-8")
+
+
 def prepare(path, version):
     book = build(version)
     try:
@@ -99,10 +117,7 @@ def prepare(path, version):
                 # A newly authored formula has no saved value. Omit the empty
                 # numeric value element emitted by openpyxl on the bridge tab.
                 sheet = "xl/worksheets/sheet2.xml"
-                original = parts.read(sheet)
-                if original.count(b"<v></v>") != 2 * len(LINES):
-                    raise ValueError("Unexpected formula-cache structure in the generated fixture")
-                pending = original.replace(b"<v></v>", b"")
+                pending = clear_formula_caches(parts.read(sheet))
                 with path.open("xb") as output, ZipFile(output, "w") as archive:
                     for part in parts.infolist():
                         archive.writestr(part, pending if part.filename == sheet else parts.read(part))

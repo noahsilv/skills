@@ -5,7 +5,7 @@ from xml.etree import ElementTree as ET
 from zipfile import ZipFile
 
 from openpyxl import load_workbook
-from workbook import prepare, verify
+from workbook import clear_formula_caches, prepare, verify
 
 
 class WorkbookTests(unittest.TestCase):
@@ -25,6 +25,16 @@ class WorkbookTests(unittest.TestCase):
         with self.assertRaises(FileExistsError):
             prepare(self.path, "challenge")
         self.assertEqual(original, self.path.read_bytes())
+
+    def test_empty_cache_encodings_have_the_same_meaning(self):
+        namespace = "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+        for value in ("<v/>", "<v></v>", ""):
+            with self.subTest(value=value):
+                row = "<c><f>A1</f>" + value + "</c>"
+                sheet = f'<worksheet xmlns="{namespace}">{row * 22}</worksheet>'
+                result = ET.fromstring(clear_formula_caches(sheet.encode()))
+                self.assertEqual(len(list(result.iter(f"{{{namespace}}}f"))), 22)
+                self.assertEqual(list(result.iter(f"{{{namespace}}}v")), [])
 
     def test_challenge_changes_exactly_one_input(self):
         challenge = self.path.with_name("challenge.xlsx")

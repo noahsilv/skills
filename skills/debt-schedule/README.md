@@ -4,13 +4,21 @@ Calculate balances, cash interest and debt service for a single fixed-rate, non-
 
 Read [SKILL.md](SKILL.md), the [input contract](references/input-contract.md) and the [synthetic example](examples/README.md). Requires Python 3.11+ with no third-party dependencies.
 
+## Run the example
+
+From this package directory, choose a new output directory next to the package.
+
 ```sh
-python scripts/debt_schedule.py examples/terms.json --out /tmp/debt-schedule-run
+python scripts/debt_schedule.py examples/terms.json --out ../debt-schedule-run
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-Output paths must be new. Inputs remain unchanged. Exact fractions avoid floating-point drift; only cash interest payments are rounded. Supported day counts are ACT/365F and ACT/360. The engine requires explicit full principal repayment at maturity and does not insert a plug.
+## Read the results
 
-This local portfolio draft is bounded: no fees, floating rates, holidays, FX, compounding, refinancing, covenants or Excel recalculation. Included tests establish arithmetic and validation behavior for the documented engine; they are not a benchmark of agent skill selection or a review of loan documentation.
+Follow each dated draw and repayment to the closing principal balance, then check the accrued interest against the cash payment. The engine keeps exact fractions until it rounds interest payments. It supports ACT/365F and ACT/360 and requires the terms to specify full principal repayment at maturity.
+
+## Scope
+
+The schedule covers simple fixed-rate debt in one currency. Fees, floating rates, holiday adjustment, compounding, refinancing, covenants and workbook recalculation fall outside the calculation.
 
 Copyright and use terms are in [LICENSE](LICENSE).

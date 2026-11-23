@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "85987a56f2c1006bfa45d5e37ac3e416bbde6752441754cab0356cd6a7abef27",
-      "bytes": 1499
+      "sha256": "cc1faf36a02ad32793025514e4ef790e033e7f2fc619f14edcadbe7c2134a194",
+      "bytes": 1110
     },
     {
       "path": ".gitignore",
@@ -33,8 +33,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "41b0c16453d4d823b1ba7b45a6e2df81572b250bbafad05017ae8dcb8ed58796",
-      "bytes": 3956
+      "sha256": "4613c8d102cab2cce1d10ebf0ed5f0eddc0d3a29353dbd5664afcfe6b7d96bda",
+      "bytes": 3931
     },
     {
       "path": "catalog/skills.json",
@@ -58,8 +58,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "6a9728353a9a7041d0d5578beab13db285710b065aa5ca51ebb3aafe939644fe",
-      "bytes": 6566
+      "sha256": "25798aafaba8385254cfe2924b399baa9eefd2739c32a0de59591ad573c9165e",
+      "bytes": 6356
     },
     {
       "path": "docs/case-studies/data-and-model-review.md",
@@ -108,8 +108,8 @@
     },
     {
       "path": "examples/context_evidence_demo.py",
-      "sha256": "d7c883ab3649f02577cc81f7c594c60e1eff2243a360609b32c689b785d62af6",
-      "bytes": 6508
+      "sha256": "6280dfe987eac6935e0157a7529936d9654be0d98caf6ede41e246d100d4fa46",
+      "bytes": 6849
     },
     {
       "path": "examples/engineering_controls_demo.py",
@@ -123,8 +123,8 @@
     },
     {
       "path": "harnesses/README.md",
-      "sha256": "8fb24d8471c1bbe32de2d9066ecc2af5f3dc17109f2e34779b40337cb395b12d",
-      "bytes": 1913
+      "sha256": "c7d3a33182f0e9420f7cc93a3bf41d92501acfdb424d43c8fe742d745cb6778a",
+      "bytes": 2755
     },
     {
       "path": "harnesses/actuals-review/README.md",
@@ -213,13 +213,13 @@
     },
     {
       "path": "harnesses/excel-recalculation/test_workbook.py",
-      "sha256": "46dbc4694c3b5fdcb24676c43e4a741a92ae73b52f932b9ceaafeb0e554e44bc",
-      "bytes": 2810
+      "sha256": "6f176d116a8ae97721c076abe0cad7341a1f8e36d3379114ace08c149b6259db",
+      "bytes": 3438
     },
     {
       "path": "harnesses/excel-recalculation/workbook.py",
-      "sha256": "af544ff5c4ebc5517f9fd426a280da232a82a5252e412f3233740d91cff9ab7e",
-      "bytes": 6718
+      "sha256": "df463ee40b646f3d76bb12c3aef803835f558017dc161feeb5568d657bda4697",
+      "bytes": 7270
     },
     {
       "path": "harnesses/financial-evidence/README.md",
@@ -262,6 +262,11 @@
       "bytes": 1599
     },
     {
+      "path": "scripts/test_harnesses.py",
+      "sha256": "725d672a76bc1a6b78a9ddf63807c87030999215b074a30ffb0bfb466ed1f087",
+      "bytes": 4648
+    },
+    {
       "path": "scripts/validate.py",
       "sha256": "c64c159d83f64b4227067cf45fd20842db11ca8978ca3a59ce59652425ebf684",
       "bytes": 7253
@@ -278,8 +283,8 @@
     },
     {
       "path": "skills/actuals-update-planner/README.md",
-      "sha256": "08df5ca2f04d8728d1236e35c70590663a531e1243f6695681f623f90ef774f9",
-      "bytes": 1389
+      "sha256": "79280a5fb91434070a61ed21c686366ba4aa42be49a2382030491185c84909dc",
+      "bytes": 1456
     },
     {
       "path": "skills/actuals-update-planner/SKILL.md",
@@ -348,8 +353,8 @@
     },
     {
       "path": "skills/artifact-quality-gate/README.md",
-      "sha256": "05f81ffc0b6e1483fc3661920f5d3176c72ac16ed254f46a236cb98813113ce6",
-      "bytes": 8689
+      "sha256": "25c6bf9820b5de1e306749c2ef8555076241340891d6d51a47ef0bd63034d914",
+      "bytes": 8720
     },
     {
       "path": "skills/artifact-quality-gate/SKILL.md",
@@ -513,8 +518,8 @@
     },
     {
       "path": "skills/debt-schedule/README.md",
-      "sha256": "45be3eb2be3bd340b11c0bbcf2eb54704f6bf3937162c4fd80ea3716220527fd",
-      "bytes": 1207
+      "sha256": "46d0e6061b56199bd8655b7d51688702bc7fd363f62b492f7194ca059357f590",
+      "bytes": 1247
     },
     {
       "path": "skills/debt-schedule/SKILL.md",
@@ -1098,8 +1103,8 @@
     },
     {
       "path": "skills/financial-statement-analysis/README.md",
-      "sha256": "1a61380da38b64b4407ed2adbe06c7c821da8dcda9e5b5ba814d67e4e0ea6f9f",
-      "bytes": 1461
+      "sha256": "86ddfda49e3a306398941cbf81dc9f4583e420d560a04faa31b34f4ff8029fae",
+      "bytes": 1574
     },
     {
       "path": "skills/financial-statement-analysis/SKILL.md",
@@ -1518,8 +1523,8 @@
     },
     {
       "path": "skills/scenario-analysis/README.md",
-      "sha256": "c1f0602f85037c740dfa93f54760c98c4f6833ce4d5fad3a91caa6b0a0015740",
-      "bytes": 1751
+      "sha256": "e85bf9df77890fefece0cb8df8aadcf62a60e5f62f96c2c1881638ad77ba1799",
+      "bytes": 1721
     },
     {
       "path": "skills/scenario-analysis/SKILL.md",
@@ -1668,8 +1673,8 @@
     },
     {
       "path": "skills/skill-router/README.md",
-      "sha256": "17c19d977188a657c03152cd0ee20417c959f229a914ecb5facc5adc2111428c",
-      "bytes": 6812
+      "sha256": "e593d3efe9dde6316f7067c2a64aef0b2ae52b1027b8a18dea7c9146adbc99a4",
+      "bytes": 6828
     },
     {
       "path": "skills/skill-router/SKILL.md",

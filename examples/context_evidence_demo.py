@@ -30,7 +30,10 @@ def main():
         result=fixture_checks(a.out,(a.out/'brief.md').read_text());print(json.dumps(result));return 0 if result['passed'] else 1
     a.out.mkdir(parents=True,exist_ok=False)
     for name in ('committee-record.md','concept-deck.md','auto-summary.md'):shutil.copyfile(SOURCES/name,a.out/name)
-    subprocess.run([sys.executable,str(ROOT/'examples/financing_evidence_demo.py'),str(a.out/'ledger')],check=True,capture_output=True,text=True,timeout=30)
+    # This composition launches several ledger and tracker commands. Preserve
+    # the innermost failure so an operator can identify the failed handoff.
+    subprocess.run([sys.executable, str(ROOT / 'examples/financing_evidence_demo.py'),
+                    str(a.out / 'ledger')], check=True, capture_output=True, text=True, timeout=120)
     rows=[
       ('decision','Only further diligence within the existing advisory budget was authorized; no facility amount or tenor was approved. [DISCUSSION 02:10]','committee-record.md','The only decision today is to authorize further diligence within the existing advisory budget. We do not approve any facility amount or tenor.'),
       ('request','The sponsor requested EUR42 million over seven years. [DECK Slide 3]','concept-deck.md','Requested refinancing is 42 million euros with a seven-year tenor.'),
@@ -70,5 +73,8 @@ def main():
 
 if __name__=='__main__':
     try:raise SystemExit(main())
+    except subprocess.CalledProcessError as exc:
+        print((exc.stderr or exc.stdout or str(exc)).strip(), file=sys.stderr)
+        raise SystemExit(2)
     except (OSError,ValueError,subprocess.SubprocessError,AssertionError) as exc:
         print(str(exc),file=sys.stderr);raise SystemExit(2)

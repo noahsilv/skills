@@ -4,13 +4,19 @@ Prepare a plan for updating a forecast model with reported financial results. Th
 
 Read [SKILL.md](SKILL.md), [the mapping contract](references/schema.md) and [the synthetic examples](examples/README.md).
 
+## Run the annual update
+
+From this package directory, choose new sibling directories for the generated case and the review.
+
 ```sh
 python -m pip install -r requirements.txt
-python examples/make_demo.py --out /tmp/actuals-planner-demo --case annual
-python scripts/plan.py /tmp/actuals-planner-demo/model.xlsx --mapping /tmp/actuals-planner-demo/mapping.json --sources /tmp/actuals-planner-demo/sources --out /tmp/actuals-planner-review
+python examples/make_demo.py --out ../actuals-planner-demo --case annual
+python scripts/plan.py ../actuals-planner-demo/model.xlsx --mapping ../actuals-planner-demo/mapping.json --sources ../actuals-planner-demo/sources --out ../actuals-planner-review
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-Use new destinations. Requires Python 3.11+ and `openpyxl==3.1.5`. The helper reads XLSX without saving it. Source text may come from audited, unaudited or interim statements, with explicit evidence and status. Excerpt checks do not authenticate documents, confirm an audit opinion or prove original PDF transcription. The plan is limited to explicitly mapped monetary hardcodes; formula propagation and forecast effects remain uncalculated.
+## Review the plan
 
-This is a local portfolio draft with no measured business-impact claim. The all-rights-reserved notice is in [LICENSE](LICENSE).
+For each mapped monetary input, compare the estimate snapshot with the reported amount after the stated sign and unit conversions. The helper reads the workbook and writes a separate plan. Audited, unaudited and interim statements retain their supplied source labels. Document authenticity, original PDF transcription and the effects of changing a forecast formula require separate checks.
+
+The example uses Python 3.11 or newer and `openpyxl==3.1.5`. Copyright and use terms are in [LICENSE](LICENSE).

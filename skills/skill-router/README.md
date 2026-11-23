@@ -1,6 +1,6 @@
 # Skill Router
 
-This local draft matches an explicit request to entries in an explicit catalog. It does not dispatch tools or import skill code. Requires Python 3.11+ and the standard library. All example names and content are synthetic.
+Match a request against a supplied skill catalog and return candidates for the caller to review. The caller owns tool execution. The router uses Python 3.11 or newer and the standard library. All example names and requests are synthetic.
 
 ## Run the example
 

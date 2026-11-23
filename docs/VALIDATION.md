@@ -48,14 +48,10 @@ python -m pip install -r requirements-dev.txt
 python scripts/build_catalog.py --check
 python scripts/validate.py --manifest
 python scripts/test.py
-python harnesses/actuals-review/run.py
-python -m unittest discover -s harnesses/debt-liquidity -p "test_*.py"
-python -m unittest discover -s harnesses/credit-review -p "test_*.py"
-python -m unittest discover -s harnesses/financial-evidence -p "test_*.py"
-python -m unittest discover -s harnesses/excel-recalculation
+python scripts/test_harnesses.py
 ```
 
-Each package has its own instructions, synthetic examples and limits. The runner rejects absent or zero-test executable suites. The full suite runs on Ubuntu in CI. Several package tests use symbolic links or hard links and need suitable filesystem permissions. The Windows CI job checks the catalog, manifest and actuals harness.
+Each package has its own instructions, synthetic examples and limits. The package runner rejects absent or zero-test executable suites. Ubuntu runs the full package suite. Several package tests use symbolic links or hard links and need suitable filesystem permissions. Both CI jobs run the six finance cases. Ubuntu adds the spreadsheet engine check with `--with-calc`; Windows runs the portable checks.
 
 ## Scope
 

@@ -1,6 +1,6 @@
 # Artifact Quality Gate
 
-This local draft records the requested checks and the files used for each reported result. It aggregates the evidence only while those files still match. Requires Python 3.11+ and the standard library.
+Record the checks a reviewer requested, the files each check covered and the result supplied by its caller. The gate rechecks the file hashes when it combines those records. It runs on Python 3.11 or newer with the standard library.
 
 The strongest successful verdict is **ATTESTED**: every required check has a
 self-reported pass, the files still match, and the records belong to the same

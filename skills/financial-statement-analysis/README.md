@@ -8,11 +8,17 @@ Analyze historical financial statements using explicit source references and acc
 
 Start with [SKILL.md](SKILL.md), [schema and metric definitions](references/schema.md), and [the synthetic worked cases](examples/README.md). Python 3.11+ is the only dependency.
 
+## Run the example
+
+From this package directory, choose a new output directory next to the package.
+
 ```sh
-python scripts/analyze.py examples/complete.json --out /tmp/statement-analysis-review
+python scripts/analyze.py examples/complete.json --out ../statement-analysis-review
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-The report directory must be new. The helper does not read original financial reports, extract PDFs, perform FX conversion, calculate an Excel workbook or provide a credit opinion. Source references and audit labels are reviewed user inputs. Tests demonstrate the helper's stated behavior on synthetic data; no production performance or measured business impact is claimed.
+## Interpret the report
 
-This is a local portfolio draft. The all-rights-reserved notice is in [LICENSE](LICENSE).
+Start with the six reconciliations. A failed tieout and a missing input require different follow-up. Then inspect the metric definitions and source references before using a ratio. The analyst supplies the statement figures, source references, audit labels and currency basis. Original-document extraction, foreign exchange conversion, workbook recalculation and credit opinions require separate work.
+
+Copyright and use terms are in [LICENSE](LICENSE).
