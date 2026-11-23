@@ -18,6 +18,8 @@ The handoff checks dates, currency and units and records input, code and output 
 
 Use the [scenario example instructions](../../skills/scenario-analysis/examples/README.md) to reproduce the run. Inspect [debt terms and scope](../../skills/debt-schedule/README.md) before changing assumptions.
 
+The [debt and liquidity harness](../../harnesses/debt-liquidity/README.md) follows the cash through the payment dates. It shows how much of the first surplus must remain available to cover the three later shortfalls.
+
 ## Reported statements and actuals
 
 A separate synthetic example demonstrates [statement reconciliation](../../skills/financial-statement-analysis/README.md) and [source-linked actuals planning](../../skills/actuals-update-planner/README.md). It preserves entity, period, currency, scale, sign and source location. Missing information remains visible rather than becoming zero.

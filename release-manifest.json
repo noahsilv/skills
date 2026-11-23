@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "b49960f459f920bd309599ad6bdabca521d586b72a9966d6cffaa16a9707de62",
-      "bytes": 846
+      "sha256": "dc07bbbd354e4107012cf5930b73bb54655472debc3098a563dc0f5089481e70",
+      "bytes": 930
     },
     {
       "path": ".gitignore",
@@ -73,8 +73,8 @@
     },
     {
       "path": "docs/case-studies/financial-workflow.md",
-      "sha256": "68844ed0b3a3398b6bd307c7bd32dee431200df73b323f40f87f53748acd0ae4",
-      "bytes": 2577
+      "sha256": "3e4c3ae7ee02c5e2fbb90dba730e990c6f9e0f36f16a02d6ad47710b7c34fc64",
+      "bytes": 2795
     },
     {
       "path": "docs/case-studies/outputs/engineering-controls.md",
@@ -113,8 +113,8 @@
     },
     {
       "path": "harnesses/README.md",
-      "sha256": "6b2ec31de3a41bb82aff2f5b53e47b398ff219d5c84d2469a614165ea15936cb",
-      "bytes": 1014
+      "sha256": "43bcca91ffcfb7e8bebbeb9aa923b787b16c24d04d4771b3a3eaaddb01d6030b",
+      "bytes": 1249
     },
     {
       "path": "harnesses/actuals-review/README.md",
@@ -130,6 +130,31 @@
       "path": "harnesses/actuals-review/run.py",
       "sha256": "04cb128664c0d5b52758265026b1ca718708d8d6436b7fcd5a34263aafe769b4",
       "bytes": 9197
+    },
+    {
+      "path": "harnesses/debt-liquidity/README.md",
+      "sha256": "489e2882754b43dc195b3f7e99a02b39edfc3a3f08f297316b66c22470e72175",
+      "bytes": 2869
+    },
+    {
+      "path": "harnesses/debt-liquidity/expected.md",
+      "sha256": "c22eeb9a96f0de18f025dd4923ba1819245f5b97f502f0feec021e2e97bc70bb",
+      "bytes": 914
+    },
+    {
+      "path": "harnesses/debt-liquidity/liquidity.py",
+      "sha256": "821973d52eb74c21d4d8896d3f9666bd0b7c7da47ebd858b0ad1e73c9661bb0e",
+      "bytes": 5327
+    },
+    {
+      "path": "harnesses/debt-liquidity/run.py",
+      "sha256": "dcf177b45925e1ea9011d3c7beae003e09fb2647d05d2facfeb5bade8db6a204",
+      "bytes": 2432
+    },
+    {
+      "path": "harnesses/debt-liquidity/test_liquidity.py",
+      "sha256": "a1e92fc8c986d9a0c58d99f0707886d992e6cd77a1a4a1eda23f998759e0bdc5",
+      "bytes": 3034
     },
     {
       "path": "requirements-dev.txt",
