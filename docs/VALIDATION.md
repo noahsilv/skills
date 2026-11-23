@@ -52,6 +52,7 @@ python harnesses/actuals-review/run.py
 python -m unittest discover -s harnesses/debt-liquidity -p "test_*.py"
 python -m unittest discover -s harnesses/credit-review -p "test_*.py"
 python -m unittest discover -s harnesses/financial-evidence -p "test_*.py"
+python -m unittest discover -s harnesses/excel-recalculation
 ```
 
 Each package has its own instructions, synthetic examples and limits. The runner rejects absent or zero-test executable suites. The full suite runs on Ubuntu in CI. Several package tests use symbolic links or hard links and need suitable filesystem permissions. The Windows CI job checks the catalog, manifest and actuals harness.
@@ -60,6 +61,6 @@ Each package has its own instructions, synthetic examples and limits. The runner
 
 Calculations and checks are bounded by explicit input contracts. A consistent source citation, matching hash or complete review record does not establish financial truth, reviewer authority or the adequacy of the chosen scope. Proposed actuals edits are plans; cached spreadsheet values are not recalculation. Routing suggestions do not execute tools.
 
-Native Word/Excel/PowerPoint rendering, live-provider refresh, spreadsheet-engine recalculation, deployment-scale reliability and automatic triggering across agent hosts have not been tested here. Office tools do not certify universal format compatibility or confidentiality. No operational time-saving, adoption or financial-impact measurements are claimed.
+The [financing workbook recalculation](../harnesses/excel-recalculation/README.md) compares the saved results of a baseline and revised workbook with a separate Python calculation. The Ubuntu workflow runs both with LibreOffice Calc. Desktop Excel opened an add-in dialog during the local test and a verified save remains outstanding. Native Office rendering, live-provider refresh, deployment-scale reliability and automatic triggering across agent hosts still require separate evidence.
 
 The manifest identifies the reviewed source bytes and excludes itself from its hashes. It is not a signature, external certification or evidence of publication.

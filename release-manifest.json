@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "2f654a2c87f71b57e840462c9ad022e29348e4e49183611ad385ff3577236bae",
-      "bytes": 1101
+      "sha256": "85987a56f2c1006bfa45d5e37ac3e416bbde6752441754cab0356cd6a7abef27",
+      "bytes": 1499
     },
     {
       "path": ".gitignore",
@@ -58,8 +58,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "3cc8e4fc2740016c4582f190d8245519255051f486237625344ea53f00c305a9",
-      "bytes": 6375
+      "sha256": "6a9728353a9a7041d0d5578beab13db285710b065aa5ca51ebb3aafe939644fe",
+      "bytes": 6566
     },
     {
       "path": "docs/case-studies/data-and-model-review.md",
@@ -123,8 +123,8 @@
     },
     {
       "path": "harnesses/README.md",
-      "sha256": "a42b7f9b94cc99deee9905381434fd0523573cc51f9d52b5b41e621fe2a7c338",
-      "bytes": 1682
+      "sha256": "8fb24d8471c1bbe32de2d9066ecc2af5f3dc17109f2e34779b40337cb395b12d",
+      "bytes": 1913
     },
     {
       "path": "harnesses/actuals-review/README.md",
@@ -195,6 +195,31 @@
       "path": "harnesses/debt-liquidity/test_liquidity.py",
       "sha256": "a1e92fc8c986d9a0c58d99f0707886d992e6cd77a1a4a1eda23f998759e0bdc5",
       "bytes": 3034
+    },
+    {
+      "path": "harnesses/excel-recalculation/README.md",
+      "sha256": "434723bf2a4e48857851fb809baa5e9daad8da127ed46fbe3d91dffe2c76453f",
+      "bytes": 2961
+    },
+    {
+      "path": "harnesses/excel-recalculation/recalculate.py",
+      "sha256": "fb9ac5105e9ca643e487951fd287095fc3a7ab64776fc8af23c3e2442be04792",
+      "bytes": 2078
+    },
+    {
+      "path": "harnesses/excel-recalculation/run.py",
+      "sha256": "521555115a5362a1836b9e970ed3dedbd20315df5c45f885a0704d5d84107e85",
+      "bytes": 1235
+    },
+    {
+      "path": "harnesses/excel-recalculation/test_workbook.py",
+      "sha256": "46dbc4694c3b5fdcb24676c43e4a741a92ae73b52f932b9ceaafeb0e554e44bc",
+      "bytes": 2810
+    },
+    {
+      "path": "harnesses/excel-recalculation/workbook.py",
+      "sha256": "af544ff5c4ebc5517f9fd426a280da232a82a5252e412f3233740d91cff9ab7e",
+      "bytes": 6718
     },
     {
       "path": "harnesses/financial-evidence/README.md",
