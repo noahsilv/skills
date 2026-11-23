@@ -65,7 +65,7 @@ def make_demo(output, case="annual"):
                   "Dividends 50,000"]
     source_text = "Fictional financial disclosure for software demonstration only.\n" + context + "\n" + audit + "\f" + "\n".join(lines) + "\n"
     source_path = sources / "synthetic-disclosure.txt"
-    source_path.write_text(source_text, encoding="utf-8")
+    source_path.write_text(source_text, encoding="utf-8", newline="\n")
     sha = lambda path: hashlib.sha256(path.read_bytes()).hexdigest()
     mapping = {
         "schema_version": 1, "entity": entity, "scope": "consolidated", "model_sha256": sha(output / "model.xlsx"),

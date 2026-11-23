@@ -12,7 +12,7 @@ The financial question is whether cash arrives when debt must be paid, and wheth
 | Cash after debt service, USD | 366,861.63 | 51,561.63 |
 | Minimum period DSCR | 1.226008 | 0.873968 |
 
-Positive total cash does not imply adequate cash generation in every payment period. In the combined case, one period's cash available for debt service is less than that period's debt payment. This is an arithmetic observation, not an assumed covenant or a credit conclusion.
+In the combined case, cash available for debt service falls short in three of the four periods. The shortfalls are USD8,485.62, USD21,841.10 and USD32,381.51. The first period's surplus brings total cash after debt service to USD51,561.63. The [period results](../../skills/scenario-analysis/examples/connected-output/scenario/report.json) give each payment and coverage ratio.
 
 The handoff checks dates, currency and units and records input, code and output hashes. Operating stresses leave contractual debt service unchanged. Changing interest or amortization requires a new debt calculation and a new handoff.
 
@@ -22,6 +22,6 @@ Use the [scenario example instructions](../../skills/scenario-analysis/examples/
 
 A separate synthetic example demonstrates [statement reconciliation](../../skills/financial-statement-analysis/README.md) and [source-linked actuals planning](../../skills/actuals-update-planner/README.md). It preserves entity, period, currency, scale, sign and source location. Missing information remains visible rather than becoming zero.
 
-The planner produces proposed edits and variances. It does not save or recalculate the workbook. The existing [tieout](../../skills/workbook-tieout/README.md) and [regression](../../skills/model-regression-testing/README.md) packages show complementary checks on mapped cells and selected outputs.
+The [annual actuals review harness](../../harnesses/actuals-review/README.md) runs the planner, then reviews two separately generated model returns. A source comparison catches a transposed cost. A comparison with the original workbook catches a change to the next year's growth assumption.
 
 These examples demonstrate financial specification, exact calculations, explicit handoffs and testable failure states. They do not establish operating performance on real client models or native Excel recalculation.

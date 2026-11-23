@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "0cc71952f25bd7001434129a7dc49012f840ae8671130916d7cda5417b6a66a2",
-      "bytes": 742
+      "sha256": "b49960f459f920bd309599ad6bdabca521d586b72a9966d6cffaa16a9707de62",
+      "bytes": 846
     },
     {
       "path": ".gitignore",
@@ -33,8 +33,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "e282776f53437c57ee1d8b6414b0aebb1be081dc63e8cd41aa58438058c38391",
-      "bytes": 8902
+      "sha256": "720c80d53f78740c02125ec7d6aa2f0a8ec81035abb9c802f46b25ff32099671",
+      "bytes": 9013
     },
     {
       "path": "catalog/skills.json",
@@ -73,8 +73,8 @@
     },
     {
       "path": "docs/case-studies/financial-workflow.md",
-      "sha256": "73ac6f0c6d86ff1c67bb3f4a8be31c147ebfc99c0b364bb2c9e0ef12148dd98a",
-      "bytes": 2482
+      "sha256": "68844ed0b3a3398b6bd307c7bd32dee431200df73b323f40f87f53748acd0ae4",
+      "bytes": 2577
     },
     {
       "path": "docs/case-studies/outputs/engineering-controls.md",
@@ -110,6 +110,26 @@
       "path": "examples/financing_evidence_demo.py",
       "sha256": "2e1bce6c15643be0f6ca7c1ca34ac325aed6f4a7d6795ad61a57de0f444b927c",
       "bytes": 6478
+    },
+    {
+      "path": "harnesses/README.md",
+      "sha256": "6b2ec31de3a41bb82aff2f5b53e47b398ff219d5c84d2469a614165ea15936cb",
+      "bytes": 1014
+    },
+    {
+      "path": "harnesses/actuals-review/README.md",
+      "sha256": "559f31b08b24405a295589b2a655d2c77231e243d395ac1898733639cbe14ba0",
+      "bytes": 2590
+    },
+    {
+      "path": "harnesses/actuals-review/expected.json",
+      "sha256": "37928e40d5e5e62b2b50c092250dd31fb0faa891be854e1449ba6b33796706f9",
+      "bytes": 1210
+    },
+    {
+      "path": "harnesses/actuals-review/run.py",
+      "sha256": "04cb128664c0d5b52758265026b1ca718708d8d6436b7fcd5a34263aafe769b4",
+      "bytes": 9197
     },
     {
       "path": "requirements-dev.txt",
@@ -178,8 +198,8 @@
     },
     {
       "path": "skills/actuals-update-planner/examples/make_demo.py",
-      "sha256": "e6a878377fd3f4c9be70fc818ccb7374bc800162c5f48949845b9d3430dcc745",
-      "bytes": 6574
+      "sha256": "4d14a76848555f10851834d5ea68da2b7909885fcae20d359b4882315ab7d968",
+      "bytes": 6588
     },
     {
       "path": "skills/actuals-update-planner/references/schema.md",

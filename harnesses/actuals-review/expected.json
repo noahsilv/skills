@@ -1,0 +1,44 @@
+{
+  "fixture": "Synthetic annual actuals review",
+  "disclosure_sha256": "410ab82040b573f1e95cd61af0e525a004a3cd62a1a0360fea9718fb2d960783",
+  "baseline_preserved": true,
+  "recalculated": false,
+  "results": [
+    {
+      "case": "reconciled",
+      "tieout": "PASS",
+      "row_status": {
+        "sales": "MATCH",
+        "costs": "MATCH",
+        "operating_cash": "MATCH"
+      },
+      "signed_cost_difference_usd_millions": "0",
+      "regression": "REVIEW",
+      "watch_status": {
+        "costs": "EXPECTED_CHANGED",
+        "growth": "STABLE",
+        "operating_cash": "EXPECTED_CHANGED",
+        "sales": "EXPECTED_CHANGED"
+      },
+      "growth_difference_percentage_points": "0.00"
+    },
+    {
+      "case": "exceptions",
+      "tieout": "FAIL",
+      "row_status": {
+        "sales": "MATCH",
+        "costs": "MISMATCH",
+        "operating_cash": "MATCH"
+      },
+      "signed_cost_difference_usd_millions": "18",
+      "regression": "FAIL",
+      "watch_status": {
+        "costs": "EXPECTED_CHANGED",
+        "growth": "REGRESSION",
+        "operating_cash": "EXPECTED_CHANGED",
+        "sales": "EXPECTED_CHANGED"
+      },
+      "growth_difference_percentage_points": "1.00"
+    }
+  ]
+}

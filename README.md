@@ -2,7 +2,9 @@
 
 A portfolio by [Noah Silverman](https://github.com/noahsilv) of AI-assisted workflows for financial analysis, diligence and document work. Each workflow sets out the task and the checks used to review it.
 
-The workflows record what numbers mean, which sources support a claim and what still needs review. They use strict schemas, stable identifiers, routing based on available tools, and checks tied to the current file. Examples use synthetic data and can be inspected without an account or internal system.
+The examples use synthetic data and run locally. The [workflow harnesses](harnesses/README.md) connect individual tools so a reviewer can follow a figure across files and reproduce a failed check.
+
+Start with the [annual actuals review](harnesses/actuals-review/README.md). It catches a transposed cost figure and an undeclared change to next year's growth assumption. The original estimate workbook stays intact.
 
 ## Start with a case study
 
