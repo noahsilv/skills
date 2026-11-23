@@ -32,7 +32,7 @@ def source_files():
 def validate(check_manifest=False):
     errors = []
     try:
-        if (ROOT / "catalog" / "skills.json").read_text() != build():
+        if (ROOT / "catalog" / "skills.json").read_text(encoding="utf-8") != build():
             errors.append("catalog is stale; run scripts/build_catalog.py")
     except (OSError, ValueError, yaml.YAMLError) as exc:
         errors.append(f"catalog invalid: {exc}")
@@ -64,7 +64,7 @@ def validate(check_manifest=False):
         return [str(exc)]
     for path in files:
         rel = path.relative_to(ROOT)
-        if path.suffix not in ALLOWED_SUFFIXES and path.name != "LICENSE" and str(rel) != ".gitignore":
+        if path.suffix not in ALLOWED_SUFFIXES and path.name != "LICENSE" and rel.as_posix() not in {".gitignore", ".gitattributes"}:
             errors.append(f"unexpected file type: {rel}")
         try:
             content = path.read_text(encoding="utf-8")
@@ -93,11 +93,16 @@ def validate(check_manifest=False):
                     errors.append(f"broken or escaping link: {rel}: {target}")
     if check_manifest:
         try:
-            manifest = json.loads((ROOT / "release-manifest.json").read_text())
-            expected = {entry["path"]: entry["sha256"] for entry in manifest["files"]}
+            manifest = json.loads((ROOT / "release-manifest.json").read_text(encoding="utf-8"))
+            expected = {entry["path"]: (entry["sha256"], entry["bytes"]) for entry in manifest["files"]}
             if len(expected) != len(manifest["files"]):
                 raise ValueError("duplicate manifest paths")
-            actual = {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files if p.relative_to(ROOT).as_posix() != "release-manifest.json"}
+            actual = {}
+            for path in files:
+                name = path.relative_to(ROOT).as_posix()
+                if name != "release-manifest.json":
+                    data = path.read_bytes()
+                    actual[name] = (hashlib.sha256(data).hexdigest(), len(data))
             if actual != expected:
                 missing = sorted(set(expected) - set(actual))
                 extra = sorted(set(actual) - set(expected))

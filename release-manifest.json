@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "release": "3.1.0-dev",
-  "review_date": "2026-11-06",
+  "review_date": "2026-11-23",
   "excluded_from_hashes": [
     "release-manifest.json"
   ],
   "files": [
     {
+      "path": ".gitattributes",
+      "sha256": "fe9badd55c8ce0b63221565c0a6c187a71f5c5d47ad549e35d4e954a696f87d9",
+      "bytes": 90
+    },
+    {
       "path": ".github/workflows/checks.yml",
-      "sha256": "d6d1fe007ccdad84d234e0e6ea1af99c96fb2d9f51b152e1d7074a7547a790b2",
-      "bytes": 396
+      "sha256": "0cc71952f25bd7001434129a7dc49012f840ae8671130916d7cda5417b6a66a2",
+      "bytes": 742
     },
     {
       "path": ".gitignore",
@@ -28,8 +33,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "14d968a546511b205c43788eaa8a6548a42f1229cf6fea81b13566c3be298e5c",
-      "bytes": 8708
+      "sha256": "e282776f53437c57ee1d8b6414b0aebb1be081dc63e8cd41aa58438058c38391",
+      "bytes": 8902
     },
     {
       "path": "catalog/skills.json",
@@ -113,8 +118,8 @@
     },
     {
       "path": "scripts/build_catalog.py",
-      "sha256": "aaa6ae9e33069aa470c5e325d5cf5d6ce04fcdb5b702c79442fdba00ad23d8ea",
-      "bytes": 3679
+      "sha256": "d48e0c06e28d4c5202e01a5ac82751bfc2352e014d921230ed483c699d4b1ffe",
+      "bytes": 3749
     },
     {
       "path": "scripts/test.py",
@@ -123,8 +128,8 @@
     },
     {
       "path": "scripts/validate.py",
-      "sha256": "fdf6cec21b8f40a93776af9e625f6435ecbac962215a265c9fa8b059c1eec2b8",
-      "bytes": 5354
+      "sha256": "35f0b5647eaa812035431ae1df9638be4c995ed07f08cd3bbd5a1c3ca89fe95e",
+      "bytes": 5556
     },
     {
       "path": "skills/actuals-update-planner/LICENSE",
@@ -1377,6 +1382,11 @@
       "bytes": 1920
     },
     {
+      "path": "skills/scenario-analysis/examples/connected-output/scenario-input.json",
+      "sha256": "f095f56fef44c77717a9d376511923016470387c15ca3d166a632443a813f86f",
+      "bytes": 2511
+    },
+    {
       "path": "skills/scenario-analysis/examples/connected-output/scenario/assumption_changes.csv",
       "sha256": "79f25db61fafc94fc8bc986857c7ef14a4f118b060c0fcb50821dbf715b396ae",
       "bytes": 1166
@@ -1405,11 +1415,6 @@
       "path": "skills/scenario-analysis/examples/connected-output/scenario/sensitivities.csv",
       "sha256": "8ed11e2cc82d433f231ebc195b33f5bf02060dd4fa995e0fec1fbc41c12b5b3e",
       "bytes": 801
-    },
-    {
-      "path": "skills/scenario-analysis/examples/connected-output/scenario-input.json",
-      "sha256": "f095f56fef44c77717a9d376511923016470387c15ca3d166a632443a813f86f",
-      "bytes": 2511
     },
     {
       "path": "skills/scenario-analysis/examples/output/assumption_changes.csv",
@@ -1572,5 +1577,5 @@
       "bytes": 8759
     }
   ],
-  "publication_status": "local working-tree update; not published or repackaged"
+  "publication_status": "Reviewed source snapshot. See Git history for publication."
 }

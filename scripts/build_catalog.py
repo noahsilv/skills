@@ -40,13 +40,13 @@ def build():
     entries = []
     for name, (aliases, capabilities) in sorted(REGISTRY.items()):
         path = ROOT / "skills" / name / "SKILL.md"
-        match = re.match(r"\A---\n(.*?)\n---(?:\n|$)", path.read_text(), re.S)
+        match = re.match(r"\A---\n(.*?)\n---(?:\n|$)", path.read_text(encoding="utf-8"), re.S)
         if not match:
             raise ValueError(f"missing metadata: {name}")
         metadata = yaml.safe_load(match.group(1))
         if not isinstance(metadata, dict) or metadata.get("name") != name or not isinstance(metadata.get("description"), str):
             raise ValueError(f"invalid metadata: {name}")
-        entries.append({"id": name, "path": str(path.relative_to(ROOT)), "description": metadata["description"], "aliases": aliases, "required_capabilities": capabilities})
+        entries.append({"id": name, "path": path.relative_to(ROOT).as_posix(), "description": metadata["description"], "aliases": aliases, "required_capabilities": capabilities})
     return json.dumps({"schema_version": 1, "skills": entries}, indent=2, ensure_ascii=False) + "\n"
 
 
@@ -58,12 +58,12 @@ def main():
         content = build()
         output = ROOT / "catalog" / "skills.json"
         if args.check:
-            if not output.exists() or output.read_text() != content:
+            if not output.exists() or output.read_text(encoding="utf-8") != content:
                 raise ValueError("catalog is stale; run scripts/build_catalog.py")
             print("PASS: catalog matches package descriptions and routing registry")
         else:
             output.parent.mkdir(exist_ok=True)
-            output.write_text(content)
+            output.write_text(content, encoding="utf-8", newline="\n")
             print(f"Wrote catalog for {len(REGISTRY)} skills")
         return 0
     except (ValueError, OSError, yaml.YAMLError) as exc:

@@ -82,11 +82,15 @@ Development and review are AI-assisted. The workflow specifications, financial d
 
 Browse the case studies first. For authorized use, copy a complete folder from `skills/` into your agent's supported skill directory and read its `SKILL.md`. Technical instructions do not expand the reuse rights in the license.
 
-For the executable demonstrations, Python 3.11 or newer is the development baseline:
+The examples use Python 3.11 or newer. Create a virtual environment, activate it and install the dependencies. In PowerShell, the activation command is `.\.venv\Scripts\Activate.ps1`. In a POSIX shell, use `. .venv/bin/activate`.
 
 ```sh
-python3 -m venv .venv
-. .venv/bin/activate
+python -m venv .venv
+```
+
+After activation, run the checks from the repository root.
+
+```sh
 python -m pip install -r requirements-dev.txt
 python scripts/build_catalog.py --check
 python scripts/validate.py --manifest
